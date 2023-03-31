@@ -92,3 +92,47 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 53.49 seconds
 ```
+
+---
+
+## OS and Domain
+  - CrackMapExec
+```CSS
+▶ crackmapexec smb 10.10.10.193
+```
+![image](https://user-images.githubusercontent.com/83878909/229113091-20e410db-ef11-4d3e-9840-7e5fcd065d14.png)
+
+---
+
+## Configuring DNS Resolution
+  - Add Machine IP to `/etc/resolv.conf`.
+  - Add Hostname to `/etc/hosts`
+
+---
+
+## Webpage
+ ![image](https://user-images.githubusercontent.com/83878909/229113764-bbd518ab-82c4-4e6b-b1c3-cdaa511249e9.png)
+ 
+### Gather Usernames
+ - The webpage contains a bunch of usernames. Collecting the usernames and writing them to a text file.
+![image](https://user-images.githubusercontent.com/83878909/229116611-0fd9d843-ea45-4b28-b88c-951983667aa8.png)
+![image](https://user-images.githubusercontent.com/83878909/229116862-4f309a32-401b-421c-b947-9103d21a484f.png)
+![image](https://user-images.githubusercontent.com/83878909/229117125-3e929593-e126-45ec-8a2e-116539f42d7c.png)
+
+---
+
+## Enumerate Usernames via Kerberos
+  - Kebrute
+```CSS
+▶ kerbrute userenum --dc 10.10.10.193 -d fabricorp.local users.txt
+```
+![image](https://user-images.githubusercontent.com/83878909/229120245-34920022-fc71-41dd-b464-215c5a137658.png)
+
+## Generate Passwords to Brute-Force
+  - Cewl: Crawl the website to gather words which can be used as potential passwords.
+  - 
+```CSS
+▶ cewl -d 7 -m 8 --with-numbers -w cewl.out http://fuse.fabricorp.local/papercut/logs/html/index.htm
+```
+
+
