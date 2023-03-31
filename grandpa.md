@@ -1,4 +1,4 @@
-# HAck the Box - GrandPa (INCOMPLETE)
+# Hack the Box - GrandPa (INCOMPLETE)
 
 ```CSS
 Machine IP: 10.10.10.14 - Windows
