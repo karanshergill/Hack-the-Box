@@ -1,4 +1,4 @@
-# Hack the Box - Fuse
+# Hack the Box - Fuse (INCOMPLETE)
 
 ```CSS
 Machine IP: 10.10.10.193 - Windows
