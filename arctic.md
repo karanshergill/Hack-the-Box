@@ -46,12 +46,20 @@ Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
 ```CSS
 ▶ searchsploit ColdFusion
 ```
-![image](https://user-images.githubusercontent.com/83878909/229274026-3f694391-992f-4552-9732-9677362bef99.png)
+![image](https://user-images.githubusercontent.com/83878909/229282725-1fd751df-4992-44d4-9c8a-c5d2527867c3.png)
 
----
+### Modify the Exploit Code
+![image](https://user-images.githubusercontent.com/83878909/229283393-0791183b-a971-4d68-a64e-32e7e652d8f8.png)
 
-## Google Search for Exploits
-```CSS
-▶ 
-```
+## User Access
+![image](https://user-images.githubusercontent.com/83878909/229284344-ca6b43e3-36da-4815-9b62-4432377668eb.png)
+
+## Privilege Escalation
+### System Information Gathering
+![image](https://user-images.githubusercontent.com/83878909/229284588-f0e96832-3491-4d2b-a027-54795caa0a55.png)
+
+
+
+
+
 
