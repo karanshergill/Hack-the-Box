@@ -36,3 +36,23 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
 ```
 
+![image](https://user-images.githubusercontent.com/83878909/229273435-61068519-cbd8-4c2c-be4f-6dd3c1a87e15.png)
+![image](https://user-images.githubusercontent.com/83878909/229273524-6f7ba081-63f5-4fe6-9b4e-d228ef07ec08.png)
+![image](https://user-images.githubusercontent.com/83878909/229273721-64bd7f7c-3270-4b3c-99d7-2cb0791a8343.png)
+
+---
+
+## Search for Exploits
+```CSS
+▶ searchsploit ColdFusion
+```
+![image](https://user-images.githubusercontent.com/83878909/229274026-3f694391-992f-4552-9732-9677362bef99.png)
+
+---
+
+## MetaSploit
+```CSS
+▶ msf6> search ColdFusion
+```
+![image](https://user-images.githubusercontent.com/83878909/229274267-4890af99-12db-43f7-b266-bab84800b09a.png)
+
