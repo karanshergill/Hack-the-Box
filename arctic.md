@@ -4,6 +4,7 @@
 Machine IP: 10.10.10.11 - Windows
 OS Name: Microsoft Windows Server 2008 R2 Standard
 OS Version: 6.1.7600 N/A Build 7600
+System Type: x64
 ```
 
 ```CSS
