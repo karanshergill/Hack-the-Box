@@ -50,9 +50,8 @@ Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
 
 ---
 
-## MetaSploit
+## Google Search for Exploits
 ```CSS
-▶ msf6> search ColdFusion
+▶ 
 ```
-![image](https://user-images.githubusercontent.com/83878909/229274267-4890af99-12db-43f7-b266-bab84800b09a.png)
 
