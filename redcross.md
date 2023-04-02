@@ -28,3 +28,9 @@ Machine IP: 10.10.10.113 - Debian
 ```
 ![image](https://user-images.githubusercontent.com/83878909/229349757-4437bdf3-24b6-4b47-aa87-b392ff82f9da.png)
 
+
+## Virtual Host Brute-Force
+```CSS
+▶ wfuzz -H 'Host: FUZZ.redcross.htb' -u 'https://10.10.10.113' -w subdomains-top1million-5000.txt --hw 28
+```
+![image](https://user-images.githubusercontent.com/83878909/229351137-705a4132-e00b-45b5-b551-2f9a15acb448.png)
