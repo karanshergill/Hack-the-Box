@@ -48,3 +48,18 @@ Machine IP: 10.10.10.113 - Debian
 
 ---
 
+## Testing for SQL Injection
+  - URL: `https://intra.redcross.htb/?page=login`
+  - Capture the request in BurpSuite and copy it to a text file using `Copy to file`.
+  - Run `sqlmap` with the captured request. 
+![image](https://user-images.githubusercontent.com/83878909/229352907-4b619112-09b4-4d94-bb9e-af767ebf9e9a.png)
+![image](https://user-images.githubusercontent.com/83878909/229352924-ffbba2d9-f739-43a1-b7fa-98c14ad39f6e.png)
+
+### SQLMap
+```CSS
+▶ sqlmap -r login-request.txt --force-ssl --dbms mysql --batch
+```
+**NOT VULNERABLE**
+
+---
+
