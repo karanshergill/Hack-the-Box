@@ -198,3 +198,12 @@ Machine IP: 10.10.10.113 - Debian
   - Replace the session-cookie.
   - Access to `Admin Panel`.
 ![image](https://user-images.githubusercontent.com/83878909/229376623-800edb13-7be8-4481-bd76-7376e723f077.png)
+  - Add User
+![image](https://user-images.githubusercontent.com/83878909/229376917-4614aa30-b6cb-4fd4-a9b0-66f683d5a1fd.png)
+![image](https://user-images.githubusercontent.com/83878909/229376940-2c6ab779-e6a3-47e0-b205-c931ea4aa5d3.png)
+  - Creds: `random:UxNCeFVf`
+  - SSH: Login allowed using the credentials. However, no information of interest was found.
+![image](https://user-images.githubusercontent.com/83878909/229377057-fdc012c7-e75e-4ea1-87b2-d999e1b49d31.png)
+  - Network Firewall: Whitelisted attacker IP.
+
+---
