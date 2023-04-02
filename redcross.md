@@ -207,3 +207,43 @@ Machine IP: 10.10.10.113 - Debian
   - Network Firewall: Whitelisted attacker IP.
 
 ---
+
+## NMAP (After Whitelisting IP)
+```CSS
+▶ nmap -sC -sV 10.10.10.113 -oN nmap.whitelist
+
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-03 01:54 IST                                        [0/1]
+Nmap scan report for redcross.htb (10.10.10.113)
+Host is up (0.089s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.0.8 or later
+22/tcp   open  ssh         OpenSSH 7.4p1 Debian 10+deb9u3 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 67d385f8eeb8062359d7758ea237d0a6 (RSA)
+|   256 89b465271f93721abce3227090db3596 (ECDSA)
+|_  256 66bda11c327432e2e664e8a5251b4d67 (ED25519)
+80/tcp   open  http        Apache httpd 2.4.25
+|_http-title: Did not follow redirect to https://intra.redcross.htb/
+|_http-server-header: Apache/2.4.25 (Debian)
+443/tcp  open  ssl/http    Apache httpd 2.4.25
+|_http-title: Did not follow redirect to https://intra.redcross.htb/
+| tls-alpn: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=intra.redcross.htb/organizationName=Red Cross International/stateOrProvinceName=NY/countryName=US
+| Not valid before: 2018-06-03T19:46:58
+|_Not valid after:  2021-02-27T19:46:58
+|_http-server-header: Apache/2.4.25 (Debian)
+1025/tcp open  NFS-or-IIS?
+5432/tcp open  postgresql  PostgreSQL DB 9.6.7 - 9.6.12
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=redcross.redcross.htb
+| Subject Alternative Name: DNS:redcross.redcross.htb
+| Not valid before: 2018-06-03T19:13:20
+|_Not valid after:  2028-05-31T19:13:20
+Service Info: Host: RedCross; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 182.51 seconds
+```
