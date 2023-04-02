@@ -22,7 +22,8 @@ Machine IP: 10.10.10.113 - Debian
 ```
 ![image](https://user-images.githubusercontent.com/83878909/229342980-9b448de6-1f32-417a-915b-d419ef3afc08.png)
 
-### Recursive Brute-Force
+### Recursive Directory Brute-Force
 ```CSS
-
+▶ gobuster dir --url https://intra.redcross.htb/pages --wordlist Common-PHP-Filenames.txt --no-tls-validation --threads 25 --output intra-dir-pages.out 
 ```
+![image](https://user-images.githubusercontent.com/83878909/229349757-4437bdf3-24b6-4b47-aa87-b392ff82f9da.png)
