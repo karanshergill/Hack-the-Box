@@ -67,3 +67,17 @@ Machine IP: 10.10.10.113 - Debian
 - Logged in as Guest.
 - Working credentials: `guest:guest`.
 ![image](https://user-images.githubusercontent.com/83878909/229353512-1722be64-2483-4f6e-aa8c-ee2d70a9786a.png)
+
+---
+
+## Testing for SQL Injection
+  - URL: `https://intra.redcross.htb/?page=app`
+  - Capture the request in BurpSuite and copy it to a text file using `Copy to file`.
+  - Run `sqlmap` with the captured request. 
+![image](https://user-images.githubusercontent.com/83878909/229353680-3ca112d1-6c52-48ae-a39c-107c461459c9.png)
+
+### SQLMap
+```CSS
+▶ sqlmap -r userid-filter-request.txt -p o --force-ssl --dbms mysql --batch
+```
+
