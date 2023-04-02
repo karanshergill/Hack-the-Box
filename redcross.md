@@ -173,4 +173,15 @@ Machine IP: 10.10.10.113 - Debian
 ---
 
 ## Application Testing
+  - Directory brute-force revealed that this file is accessible: `https://intra.redcross.htb/documentation/account-signup.pdf`
+![image](https://user-images.githubusercontent.com/83878909/229372282-95685fde-0b1f-407f-ac77-efb0404774c0.png)
+  - Found link: `https://intra.redcross.htb/?page=contact`
+![image](https://user-images.githubusercontent.com/83878909/229372360-0d319e37-2cf6-4cd9-94f8-3e61f7a63b5a.png)
+  - Fill (added another parameter `password`)and Submit the form.
+![image](https://user-images.githubusercontent.com/83878909/229372427-a3b10ae4-d13b-46ff-bff1-cde415463213.png)
+![image](https://user-images.githubusercontent.com/83878909/229372475-489e8dc4-7ec2-469e-8497-0b102c63473f.png)
+  - Adding the parameter `password` returned the credentials `guest:guest`.
+
+---
+
 
