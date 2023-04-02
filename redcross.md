@@ -63,3 +63,7 @@ Machine IP: 10.10.10.113 - Debian
 
 ---
 
+## Testing for Default Credentials on Login Page
+- Logged in as Guest.
+- Working credentials: `guest:guest`.
+![image](https://user-images.githubusercontent.com/83878909/229353512-1722be64-2483-4f6e-aa8c-ee2d70a9786a.png)
