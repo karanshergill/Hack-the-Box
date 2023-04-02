@@ -13,8 +13,12 @@ Machine IP: 10.10.10.113 - Debian
 ▶ sudo nmap -sV -sC -p 22,80,443 10.10.10.113 -oN nmap.deep 
 ```
 
+---
+
 ## Application Mapping
 ![image](https://user-images.githubusercontent.com/83878909/229340988-396c149d-59a9-44df-8bb8-846e1a2e6f3b.png)
+
+---
 
 ### Directory Brute-Force
 ```CSS
@@ -28,9 +32,19 @@ Machine IP: 10.10.10.113 - Debian
 ```
 ![image](https://user-images.githubusercontent.com/83878909/229349757-4437bdf3-24b6-4b47-aa87-b392ff82f9da.png)
 
+### Recursive Directory Brute-Force
+```CSS
+▶ gobuster dir --url https://intra.redcross.htb/documentation --wordlist directory-list-2.3-small.txt --no-tls-validation  --threads 25 --output intra-dir-pages.out --extensions pdf,txt 
+```
+![image](https://user-images.githubusercontent.com/83878909/229352633-afb50fcf-6b44-47a5-ad7d-327324b03a67.png)
+
+---
 
 ## Virtual Host Brute-Force
 ```CSS
 ▶ wfuzz -H 'Host: FUZZ.redcross.htb' -u 'https://10.10.10.113' -w subdomains-top1million-5000.txt --hw 28
 ```
 ![image](https://user-images.githubusercontent.com/83878909/229351137-705a4132-e00b-45b5-b551-2f9a15acb448.png)
+
+---
+
