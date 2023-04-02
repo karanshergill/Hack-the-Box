@@ -168,3 +168,9 @@ Machine IP: 10.10.10.113 - Debian
 - hashes.txt
 ![image](https://user-images.githubusercontent.com/83878909/229371164-25bf449a-6810-411a-bdbd-f2b3fe813133.png)
 
+- cracked password: `cookiemonster` for user `charles`.
+
+---
+
+## Application Testing
+
