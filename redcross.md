@@ -3,7 +3,7 @@
 Machine IP: 10.10.10.113 - Debian
 ```
 ## Reconnaisance
-**Disover all TCP open ports**
+**Disover all open TCP ports**
 ```CSS
 ▶ nmap -Pn -sS -p- 10.10.10.113 -T4 --min-rate 1000 -oN nmap.surface
 ```
