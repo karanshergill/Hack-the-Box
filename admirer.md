@@ -48,3 +48,15 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 
 ## Application (Port 80)
 ![image](https://user-images.githubusercontent.com/83878909/229423143-85c36971-4509-41d0-8710-63c5cf8efe6e.png)
+
+## Brute-Force (Common Directories and Files)
+```
+▶ gobuster dir --url http://10.10.10.187 --wordlist /seclists/Discovery/Web-Content/common.txt --threads 25
+```
+![image](https://user-images.githubusercontent.com/83878909/229427047-c09451d1-a6ed-4ccd-89aa-bae599dea65b.png)
+  - robots.txt
+![image](https://user-images.githubusercontent.com/83878909/229427379-501aadd4-818e-4d55-97d8-daf7fec60a39.png)
+
+```CSS
+▶ gobuster dir --url http://10.10.10.187/admin-dir --wordlist /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --extensions php,txt --threads 25
+```
