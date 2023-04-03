@@ -39,7 +39,8 @@ Machine IP: 10.10.11.197 - Linux
   - Found `security.evtx` after unzipping the file.
   - Use the `evtx-converter.py` script below to create a readable `xml` file.
   - Found default password `Def@ultf0r3nz!csPa$$`.
-  - Login in using ssh as user `smorton` and default password.
+
+- Login in using ssh as user `smorton` and default password.
 ![image](https://user-images.githubusercontent.com/83878909/229616049-794f5fac-1c4d-4e89-92e0-49bd3378811c.png)
 
 ---
