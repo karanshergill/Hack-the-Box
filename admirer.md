@@ -104,3 +104,19 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
   3. Create database : `CREATE DATABASE temp; USE temp; CREATE TABLE temp (name VARCHAR(2000));`
   4. Create User : `CREATE USER 'random'@'10.10.14.34' IDENTIFIED BY 'passwd';`
   5. Grant Privileges : `GRANT ALL PRIVILEGES ON temp.* TO 'random'@'10.10.14.34';`
+
+##Firewall Exception
+- Add a Firewall Exception (if enabled): ufw allow from 10.10.14.34 to any port 3306
+
+## Configure MariaDB to bind to attacker VPN address
+1. Change Bind address in : `/etc/mysql/mariadb.conf.d/50-server.cnf`
+2. Bind Address : Attacker Server/VPN IP `bind-address = 10.10.14.34`
+
+## Restart and Check Service
+- Restart MariaDB server and check that the service is listening on the correct port
+```CSS
+▶ systemctl restart mariadb
+▶ netstat -pano | less
+```
+
+---
