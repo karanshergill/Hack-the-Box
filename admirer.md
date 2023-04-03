@@ -98,12 +98,15 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ![image](https://user-images.githubusercontent.com/83878909/229453875-f4a1d735-6a09-4bb5-a360-44caae6481ce.png)
   - About [Adminer vulnerability](https://www.foregenix.com/blog/serious-vulnerability-discovered-in-adminer-tool).
 
+---
+
 ### Create MariaDB Database and User
   1. Start MariaDB : `systemctl start mariadb`
   2. Login to MariaDB : `mysql -u root -p` (The password is root)
-  3. Create database : `CREATE DATABASE temp; USE temp; CREATE TABLE temp (name VARCHAR(2000));`
-  4. Create User : `CREATE USER 'random'@'10.10.14.34' IDENTIFIED BY 'passwd';`
-  5. Grant Privileges : `GRANT ALL PRIVILEGES ON temp.* TO 'random'@'10.10.14.34';`
+  3. Create database : `CREATE DATABASE PwnMe; USE PwnMe; CREATE TABLE pwned (name VARCHAR(2000));`
+  4. Create User : `CREATE USER 'xoxo'@'10.10.10.187' IDENTIFIED BY 'passwd';` ##Specify the Victim IP address
+  5. Grant Privileges : `GRANT ALL PRIVILEGES ON PwnMe.* TO 'xoxo'@'10.10.10.187';` ##Specify the Victim IP address
+  6. Refersh Privileges : `FLUSH PRIVILEGES;`
 
 ## Firewall Exception
 - Add a Firewall Exception (if enabled): ufw allow from 10.10.14.34 to any port 3306
@@ -122,3 +125,9 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ![image](https://user-images.githubusercontent.com/83878909/229494627-683d637e-0a9f-4e7e-ba61-25471d2f19e3.png)
 
 ---
+
+## Exploit
+- Login using the created database and credentials.
+![image](https://user-images.githubusercontent.com/83878909/229499456-19111d24-a091-4402-be57-f7566ffca780.png)
+![image](https://user-images.githubusercontent.com/83878909/229498960-f29142fc-f648-45c1-83ae-cece1cf58fd6.png)
+
