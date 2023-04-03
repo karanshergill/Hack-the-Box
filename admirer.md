@@ -78,4 +78,7 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ![image](https://user-images.githubusercontent.com/83878909/229442818-fc7ff4da-a787-4434-9e9e-b9a0b3ee8cf9.png)
   - `index.php` : Database credentials found `waldo:]F7jLHw:*G>UPrTo}~A"d6b`
 ![image](https://user-images.githubusercontent.com/83878909/229444624-5870fc15-d309-4d7c-a85a-8c0a5511660d.png)
-
+  - `/utility-scripts/db_admin.php`: Database credentials found `waldo:Wh3r3_1s_w4ld0?`
+![image](https://user-images.githubusercontent.com/83878909/229447920-b34a8efb-769a-42de-a16f-a6e808de9bc4.png)
+  - `w4ld0s_s3cr3t_d1r/credentials.txt`
+![image](https://user-images.githubusercontent.com/83878909/229448581-7a114624-eb66-4323-bdab-bab29630636b.png)
