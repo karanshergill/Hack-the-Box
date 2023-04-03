@@ -2,7 +2,7 @@
 
 ```CSS
 Machine IP: 10.10.10.11
-OS: Microsoft Windows Server 2008 R2 Standard
+OS: Windows
 
 Vulnerabilities:
 - Adobe Cloud Fusion 8
