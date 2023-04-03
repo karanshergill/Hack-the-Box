@@ -60,3 +60,9 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ```CSS
 ▶ gobuster dir --url http://10.10.10.187/admin-dir --wordlist /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --extensions php,txt --threads 25
 ```
+![image](https://user-images.githubusercontent.com/83878909/229438336-3f85f7f9-f2b0-4f1f-b238-97f066754b5f.png)
+  - contacts.txt
+  - credentials.txt
+![image](https://user-images.githubusercontent.com/83878909/229438499-9d4192a2-b214-4cdd-b026-8abcf9009cb0.png)
+![image](https://user-images.githubusercontent.com/83878909/229438595-3c5b4ddc-cd03-46be-b12a-5a6d84e6b361.png)
+
