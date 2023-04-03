@@ -82,3 +82,18 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ![image](https://user-images.githubusercontent.com/83878909/229447920-b34a8efb-769a-42de-a16f-a6e808de9bc4.png)
   - `w4ld0s_s3cr3t_d1r/credentials.txt`
 ![image](https://user-images.githubusercontent.com/83878909/229448581-7a114624-eb66-4323-bdab-bab29630636b.png)
+
+---
+
+## Brute-Force
+```
+▶ gobuster dir --url http://10.10.10.187/utility-scripts/ --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/combined_words.txt --extensions php,txt  --threads 50
+```
+![image](https://user-images.githubusercontent.com/83878909/229453408-bae74a9a-7686-4194-a828-c8bf131204e1.png)
+
+---
+
+## Application
+  - Adminer
+![image](https://user-images.githubusercontent.com/83878909/229453875-f4a1d735-6a09-4bb5-a360-44caae6481ce.png)
+
