@@ -66,3 +66,16 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ![image](https://user-images.githubusercontent.com/83878909/229438499-9d4192a2-b214-4cdd-b026-8abcf9009cb0.png)
 ![image](https://user-images.githubusercontent.com/83878909/229438595-3c5b4ddc-cd03-46be-b12a-5a6d84e6b361.png)
 
+---
+
+## FTP Login
+  - FTP Login: `ftpuser:%n?4Wz}R$tTF7`
+![image](https://user-images.githubusercontent.com/83878909/229441021-6974e5c6-1dd5-4819-97ed-e76d136aab22.png)
+  - Download Files: `dump.sql` and `html.tar.gz`.
+![image](https://user-images.githubusercontent.com/83878909/229441387-3b270388-ef2e-425b-b68a-1e0b7037d075.png)
+  - `dump.sql` : No useful information.
+  - `html.tar.gz` : `▶ tar -xvzf html.tar.gz`
+![image](https://user-images.githubusercontent.com/83878909/229442818-fc7ff4da-a787-4434-9e9e-b9a0b3ee8cf9.png)
+  - `index.php` : Database credentials found `waldo:]F7jLHw:*G>UPrTo}~A"d6b`
+![image](https://user-images.githubusercontent.com/83878909/229444624-5870fc15-d309-4d7c-a85a-8c0a5511660d.png)
+
