@@ -1,11 +1,11 @@
 # Hack the Box - Arctic
 
 ```CSS
-Machine IP: 10.10.10.11 - Windows
-OS Name: Microsoft Windows Server 2008 R2 Standard
-OS Version: 6.1.7600 N/A Build 7600
-System Type: x64
-Vulnerabilities: Adobe Cloud Fusion 8 | Windows Kernel Exploit MS10-059
+Machine IP: 10.10.10.11 -Microsoft Windows Server 2008 R2 Standard
+
+Vulnerabilities:
+- Adobe Cloud Fusion 8
+- Windows Kernel Exploit MS10-059
 ```
 
 ## Reconnaisance
