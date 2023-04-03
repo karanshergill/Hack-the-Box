@@ -1,7 +1,8 @@
 # Hack the Box - Arctic
 
 ```CSS
-Machine IP: 10.10.10.11 -Microsoft Windows Server 2008 R2 Standard
+Machine IP: 10.10.10.11
+OS: Microsoft Windows Server 2008 R2 Standard
 
 Vulnerabilities:
 - Adobe Cloud Fusion 8
