@@ -37,28 +37,12 @@ Machine IP: 10.10.11.197 - Linux
   - Download the `zip` file using an online tool `https://www.encryptomatic.com/viewer/`.
 ![image](https://user-images.githubusercontent.com/83878909/229606850-9d9590fa-ea22-4650-82e9-7ec1a48e82b0.png)
   - Found `security.evtx` after unzipping the file.
-  - Use the code below to create a readable file.
-```Python
-import Evtx.Evtx as evtx
-import Evtx.Views as e_views
+  - Use the `evtx-converter.py` script below to create a readable `xml` file.
+  - Found default password `Def@ultf0r3nz!csPa$$`.
+  - Login in using ssh as user `smorton` and default password.
+![image](https://user-images.githubusercontent.com/83878909/229616049-794f5fac-1c4d-4e89-92e0-49bd3378811c.png)
 
-def main():
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        description="Dump a binary EVTX file into XML.")
-    parser.add_argument("evtx", type=str,
-                        help="Path to the Windows EVTX event log file")
-    args = parser.parse_args()
-
-    with evtx.Evtx(args.evtx) as log:
-        print(e_views.XML_HEADER)
-        print("<Events>")
-        for record in log.records():
-            print(record.xml())
-        print("</Events>")
+---
 
 
-if __name__ == "__main__":
-    main()
-```
+
