@@ -145,4 +145,6 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
 ---
 
 ## Privilege Escalation
+- Check for commands user `waldo` can run with `sudo` privileges.
+![image](https://user-images.githubusercontent.com/83878909/229505608-c3ef4196-8607-4701-ae8c-ebdc738e01f7.png)
 
