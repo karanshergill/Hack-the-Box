@@ -103,4 +103,4 @@ Nmap done: 1 IP address (1 host up) scanned in 11.59 seconds
   2. Login to MariaDB : `mysql -u root -p` (The password is root)
   3. Create database : `CREATE DATABASE temp; USE temp; CREATE TABLE temp (name VARCHAR(2000));`
   4. Create User : `CREATE USER 'random'@'10.10.14.34' IDENTIFIED BY 'passwd';`
-  5. Grant Privileges : `GRANT PRIVILEGES ON temp.* TO 'random'@'10.10.14.34';`
+  5. Grant Privileges : `GRANT ALL PRIVILEGES ON temp.* TO 'random'@'10.10.14.34';`
