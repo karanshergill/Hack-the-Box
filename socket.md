@@ -82,5 +82,35 @@ SF:0open\x20a\x20WebSocket\x20connection:\x20did\x20not\x20receive\x20a\x2
 SF:0valid\x20HTTP\x20request\.\n");
 Service Info: Host: qreader.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
-
+## Port 80 (HTTP)
 ![image](https://user-images.githubusercontent.com/83878909/229703936-7e17a816-81bd-423d-85d0-87340533cdc2.png)
+
+## Port 5789 (Web Socket)
+- Test websocket for vulnerabilities.
+- Tool: [STEWS](https://github.com/PalindromeLabs/STEWS)
+- Test for generic Cross-site WebSocket Hijacking (CSWSH).
+
+```CSS
+▶ python3 STEWS-vuln-detect.py -1 -n -u 10.10.11.206:5789
+
+Testing ws://10.10.11.206:5789
+>>>Note: ws://10.10.11.206:5789 allowed http or https for origin
+>>>Note: ws://10.10.11.206:5789 allowed null origin
+>>>Note: ws://10.10.11.206:5789 allowed unusual char (possible parse error)
+>>>VANILLA CSWSH DETECTED: ws://10.10.11.206:5789 likely vulnerable to vanilla CSWSH (any origin)
+====Full list of vulnerable URLs===
+['ws://10.10.11.206:5789']
+['>>>VANILLA CSWSH DETECTED: ws://10.10.11.206:5789 likely vulnerable to vanilla CSWSH (any origin)']
+```
+![image](https://user-images.githubusercontent.com/83878909/229711076-b95bf50d-7021-4e24-8d5a-8d28cb23c0a1.png)
+
+## Application
+- The website offers functions to generate and scan a QR code both online and offline.
+![image](https://user-images.githubusercontent.com/83878909/229722201-95ca3832-3091-42b6-ab72-70edc0d413fe.png)
+
+- Download the Windows version and decompile the `.exe` file.
+- Tool: [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor)
+- Decompile the python bytecode file.
+- Tool: `uncompyle6 qreader.pyc > qreader.py`
+![image](https://user-images.githubusercontent.com/83878909/229724067-57f3db4f-3de5-4057-b3c1-c4a9c74a9fd8.png)
+
