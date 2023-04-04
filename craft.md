@@ -17,4 +17,5 @@ Hostnames:
   - Issues
 ![image](https://user-images.githubusercontent.com/83878909/229787795-a9a9a515-bbe0-4a7a-8143-899f239badca.png)
   - API Token (JWT): `X-Craft-API-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlciIsImV4cCI6MTU0OTM4NTI0Mn0.-wW1aJkLQDOE-GP5pQd3z_BJTe2Uo0jJ_mQ238P5Dqw`
-  - 
+  - Commit: c414b160578943acfe2e158e89409623f41da4c6
+  ![image](https://user-images.githubusercontent.com/83878909/229793366-7d0c7921-d016-4b9d-ad29-10318ed962f5.png)
