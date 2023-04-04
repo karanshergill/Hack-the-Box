@@ -34,4 +34,6 @@ Hostnames:
 ![image](https://user-images.githubusercontent.com/83878909/229799067-a2b83b1c-5d32-424a-a2be-573d9c05664e.png)
   - Add found credentials to `test.py` and execute.
 ![image](https://user-images.githubusercontent.com/83878909/229805482-281bbb46-bf7f-4987-b4d8-4ea5a0853a0f.png)
+  - The cript confirms the credentials and authenticates the token as valid.
 ![image](https://user-images.githubusercontent.com/83878909/229806180-05eed04d-1485-4e15-89d1-473a8c54dfb4.png)
+  - Find an execution point in the script which allows to execute commands.
