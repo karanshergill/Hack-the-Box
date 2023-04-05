@@ -35,3 +35,16 @@ Vulnerabilities:
   - LinEnum
 ![image](https://user-images.githubusercontent.com/83878909/230021523-9877eab9-f69a-42fe-bcca-0444abd9c93a.png)
   - Credentials: `david:$1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/`
+
+### Crack the Password Hash
+```CSS
+▶ hashcat -m 500 -a 3 david.htpasswd /usr/share/wordlists/rockyou.txt
+```
+- Password: 
+- Did not prove to be uselful.
+
+### Further Enumeration
+![image](https://user-images.githubusercontent.com/83878909/230030844-f2ad8410-043f-4f35-9d96-3dc1c9e3fe5d.png)
+![image](https://user-images.githubusercontent.com/83878909/230030105-bc3eb668-ce7f-4844-9188-1ef435299bdb.png)
+
+
