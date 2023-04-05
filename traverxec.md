@@ -29,3 +29,5 @@ Vulnerabilities:
 ### Shell Upgrade
 ![image](https://user-images.githubusercontent.com/83878909/230012750-9484c874-7daf-4e16-a42e-24f309abed30.png)
 
+### Target Enumeration
+![image](https://user-images.githubusercontent.com/83878909/230016737-2c8ebc40-6e3e-44ce-9e0a-155df8d36c9b.png)
