@@ -44,7 +44,15 @@ Vulnerabilities:
 - Did not prove to be uselful.
 
 ### Further Enumeration
-![image](https://user-images.githubusercontent.com/83878909/230030844-f2ad8410-043f-4f35-9d96-3dc1c9e3fe5d.png)
 ![image](https://user-images.githubusercontent.com/83878909/230030105-bc3eb668-ce7f-4844-9188-1ef435299bdb.png)
+![image](https://user-images.githubusercontent.com/83878909/230030844-f2ad8410-043f-4f35-9d96-3dc1c9e3fe5d.png)
+![image](https://user-images.githubusercontent.com/83878909/230031724-3996cd72-8103-443c-af1a-a186d92a5bc0.png)
+
+  - ZIP Contents
+![image](https://user-images.githubusercontent.com/83878909/230033032-f4cd7613-d208-4c2e-b841-6dcf2c83a683.png)
+
+
+### Lateral Movement
+
 
 
