@@ -29,6 +29,7 @@ Vulnerabilities:
 ### Shell Upgrade
 ![image](https://user-images.githubusercontent.com/83878909/230012750-9484c874-7daf-4e16-a42e-24f309abed30.png)
 
+## Lateral Movement
 ### Target Enumeration
   - LinPEAS 
 ![image](https://user-images.githubusercontent.com/83878909/230016737-2c8ebc40-6e3e-44ce-9e0a-155df8d36c9b.png)
@@ -50,9 +51,12 @@ Vulnerabilities:
 
   - ZIP Contents
 ![image](https://user-images.githubusercontent.com/83878909/230033032-f4cd7613-d208-4c2e-b841-6dcf2c83a683.png)
+  - Crack `id_rsa` to get SSH password.
+![image](https://user-images.githubusercontent.com/83878909/230034179-973fb7a6-763c-413c-a4d6-80bc12f3af52.png)
 
+### SSH
+![image](https://user-images.githubusercontent.com/83878909/230034797-e5ee66ee-909f-4ec0-b799-352b455d438d.png)
 
-### Lateral Movement
 
 
 
