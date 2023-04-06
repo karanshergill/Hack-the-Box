@@ -110,8 +110,6 @@ Testing ws://10.10.11.206:5789
 
 - Download the Windows version and decompile the `.exe` file.
 - Tool: [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor)
-- Decompile the python bytecode file.
-- Tool: []().
 ![image](https://user-images.githubusercontent.com/83878909/229724067-57f3db4f-3de5-4057-b3c1-c4a9c74a9fd8.png)
 ![image](https://user-images.githubusercontent.com/83878909/229725104-5a4320b4-2d0a-4033-9924-908951d05a2c.png)
 
