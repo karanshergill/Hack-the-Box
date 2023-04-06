@@ -57,6 +57,20 @@ Vulnerabilities:
 ### SSH
 ![image](https://user-images.githubusercontent.com/83878909/230034797-e5ee66ee-909f-4ec0-b799-352b455d438d.png)
 
+## Privilege Escalation
+![image](https://user-images.githubusercontent.com/83878909/230380766-a993875a-b2de-45f8-89bd-33f25a3dcb1a.png)
+
+![image](https://user-images.githubusercontent.com/83878909/230381186-f53d7130-3e62-4265-9520-f5c831d6e893.png)
+
+```CSS
+david@traverxec:~/bin$ /usr/bin/sudo /usr/bin/journalctl -n5 -unostromo.service
+```
+`journalctl` is a command-line utility  that allows users to view and manipulate logs from the systemd journal. This is a central logging system that collects and stores logs from various system components, such as kernel messages, system services, and applications.
+```CSS
+!/bin/bash
+```
+![image](https://user-images.githubusercontent.com/83878909/230381701-24716b6e-ac0b-44b5-8870-80e861ac5f18.png)
+
 
 
 
