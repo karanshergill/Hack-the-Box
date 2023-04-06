@@ -45,5 +45,5 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 - Sensitive Files
 ![image](https://user-images.githubusercontent.com/83878909/230406379-b3b0b66c-61ee-441d-93c7-dc25d708673c.png)
 ![image](https://user-images.githubusercontent.com/83878909/230406550-166475e5-9eb4-4f61-a20a-02d9a99e6496.png)
-
+- MySQL Credentials: `root:fMVWh7bDHpgZkyfqQXreTjU9` | DB Name: `swagshop`
 
