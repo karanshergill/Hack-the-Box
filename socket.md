@@ -116,4 +116,10 @@ Testing ws://10.10.11.206:5789
 ![image](https://user-images.githubusercontent.com/83878909/229724067-57f3db4f-3de5-4057-b3c1-c4a9c74a9fd8.png)
 ![image](https://user-images.githubusercontent.com/83878909/229725104-5a4320b4-2d0a-4033-9924-908951d05a2c.png)
 
+- Decompile the python byte code file `qreader.pyc`.
+- Tool: [Decompyle++](https://github.com/zrax/pycdc)
+```CSS
+▶ pycdc qreader.pyc > qreader.py
+```
+![image](https://user-images.githubusercontent.com/83878909/230316867-b080dca6-cdfd-4ebd-a4e3-2c437f9ecc46.png)
 
