@@ -42,3 +42,8 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 - Magento Version Information
 ![image](https://user-images.githubusercontent.com/83878909/230405839-266cdc0e-97b7-4b08-bd5a-0b2afc29502f.png)
+- Sensitive Files
+![image](https://user-images.githubusercontent.com/83878909/230406379-b3b0b66c-61ee-441d-93c7-dc25d708673c.png)
+![image](https://user-images.githubusercontent.com/83878909/230406550-166475e5-9eb4-4f61-a20a-02d9a99e6496.png)
+
+
