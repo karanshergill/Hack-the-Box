@@ -1,6 +1,6 @@
 # Hack the Box - Socket
 ```CSS
-Machine IP: 10.10.11.206
+Machine IP: 10.10.11.206 - Linux
 ```
 
 ## Reconnaissance
