@@ -1,6 +1,8 @@
 # Hack the Box - Swagshop
 ```CSS
-Machine IP: 10.10.10.140
+Machine IP: 10.10.10.140 - Linux
+
+Tags: magento
 ```
 
 ## NMAP
@@ -33,3 +35,10 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ![image](https://user-images.githubusercontent.com/83878909/230385940-576fb9d4-0154-4a75-af4c-ffeae45b4231.png)
 
 
+## Magento
+- Tool: [magescan](https://github.com/steverobbins/magescan)
+```CSS
+▶ magescan.phar scan:all http://swagshop.htb
+```
+- Magento Version Information
+![image](https://user-images.githubusercontent.com/83878909/230405839-266cdc0e-97b7-4b08-bd5a-0b2afc29502f.png)
