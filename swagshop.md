@@ -46,6 +46,22 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 - Path: `http://swagshop.htb/app/etc/local.xml`
 ![image](https://user-images.githubusercontent.com/83878909/230406379-b3b0b66c-61ee-441d-93c7-dc25d708673c.png)
 ![image](https://user-images.githubusercontent.com/83878909/230406550-166475e5-9eb4-4f61-a20a-02d9a99e6496.png)
-  - MySQL Credentials: `root:fMVWh7bDHpgZkyfqQXreTjU9` | DB Name: `swagshop`
-- 
+- MySQL Credentials: `root:fMVWh7bDHpgZkyfqQXreTjU9` | DB Name: `swagshop`
+
+### Exploit
+  - Searchsploit
+![image](https://user-images.githubusercontent.com/83878909/230573995-d8195c5b-bb3f-43aa-922d-b665285d5004.png)
+  - Modify exploit
+![image](https://user-images.githubusercontent.com/83878909/230575074-34a8d22c-9187-4d74-8831-77f5f98c8340.png)
+  - Run Exploit
+![image](https://user-images.githubusercontent.com/83878909/230575192-080770c9-d1bc-4cc1-92ac-b2b19458de11.png)
+  - Login to Admin Panel with creds: `forme:forme`
+![image](https://user-images.githubusercontent.com/83878909/230575373-03c3995f-6d22-4d80-b6f0-de065987d98a.png)
+  - Admin Panel Accessible
+![image](https://user-images.githubusercontent.com/83878909/230575645-6d0c0532-f73f-4b5c-a27e-833c806b0dd7.png)
+
+  - Searchsploit
+![image](https://user-images.githubusercontent.com/83878909/230576847-3317eaae-ea23-4d19-9f95-53fb7da677db.png)
+  - Modify Exploit
+
 
