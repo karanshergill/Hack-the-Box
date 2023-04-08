@@ -69,5 +69,4 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
   - Modify Exploit (username, password and install date)
   - Retrieve install date: `http://swagshop.htb/app/etc/local.xml`
 ![image](https://user-images.githubusercontent.com/83878909/230707818-894e563e-de27-4c7a-b528-cf3ec299b1cc.png)
-
-
+  - Run Exploit
