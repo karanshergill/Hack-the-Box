@@ -3,6 +3,9 @@
 Machine IP: 10.10.10.140 - Linux
 
 Tags: magento
+Vulnerabilities:
+  - Magento SQL Injection
+  - Magento PHP Object Injection
 ```
 
 ## NMAP
@@ -55,14 +58,16 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ![image](https://user-images.githubusercontent.com/83878909/230575074-34a8d22c-9187-4d74-8831-77f5f98c8340.png)
   - Run Exploit
 ![image](https://user-images.githubusercontent.com/83878909/230575192-080770c9-d1bc-4cc1-92ac-b2b19458de11.png)
-  - Login page URL: `https://swagshop.htb/index.php/admin`
-  - Login to Admin Panel with creds: `forme:forme`
+  - Log in page URL: `https://swagshop.htb/index.php/admin`
+  - Log in to Admin Panel with creds: `forme:forme`
 ![image](https://user-images.githubusercontent.com/83878909/230575373-03c3995f-6d22-4d80-b6f0-de065987d98a.png)
   - Admin Panel Accessible
 ![image](https://user-images.githubusercontent.com/83878909/230575645-6d0c0532-f73f-4b5c-a27e-833c806b0dd7.png)
 
   - Searchsploit
 ![image](https://user-images.githubusercontent.com/83878909/230576847-3317eaae-ea23-4d19-9f95-53fb7da677db.png)
-  - Modify Exploit
+  - Modify Exploit (username, password and install date)
+  - Retrieve install date: `http://swagshop.htb/app/etc/local.xml`
+![image](https://user-images.githubusercontent.com/83878909/230707818-894e563e-de27-4c7a-b528-cf3ec299b1cc.png)
 
 
