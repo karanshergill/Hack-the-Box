@@ -84,7 +84,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
   - Run: `sudo -l`
 ![image](https://user-images.githubusercontent.com/83878909/230713433-59c5b31e-e861-4602-b6dd-79247b41906f.png)
   - Can execute any file using `vi` as root located in `/var/www/html/*`.
-  - Create a file `a` or with any name, not neccissarily `a` using sudo.
+  - Create a file `a` or with any name, not necessarily `a` using sudo.
   - From within `Vi` spawn a sshell as bash. 
 ![image](https://user-images.githubusercontent.com/83878909/230713860-7540abca-3e4d-4f80-b657-0c4b132fceb1.png)
 
