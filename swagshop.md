@@ -55,6 +55,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ![image](https://user-images.githubusercontent.com/83878909/230575074-34a8d22c-9187-4d74-8831-77f5f98c8340.png)
   - Run Exploit
 ![image](https://user-images.githubusercontent.com/83878909/230575192-080770c9-d1bc-4cc1-92ac-b2b19458de11.png)
+  - Login page URL: `https://swagshop.htb/index.php/admin`
   - Login to Admin Panel with creds: `forme:forme`
 ![image](https://user-images.githubusercontent.com/83878909/230575373-03c3995f-6d22-4d80-b6f0-de065987d98a.png)
   - Admin Panel Accessible
