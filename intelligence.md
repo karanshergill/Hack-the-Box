@@ -102,3 +102,12 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 100.93 seconds
 ```
 
+## Port 80
+  - Homepage
+![image](https://user-images.githubusercontent.com/83878909/230812679-60dfc045-321b-4e62-b577-3006e048ab79.png)
+
+  - Announcement Document
+![image](https://user-images.githubusercontent.com/83878909/230812932-cad5e527-0fd3-40b5-a09e-62a087f9aebd.png)
+
+  - Other Document
+![image](https://user-images.githubusercontent.com/83878909/230813172-f7359efc-a356-4629-9a8a-64564ee6cb07.png)
