@@ -228,7 +228,7 @@ William.Lee
 ---
 
 ## BloodHound
-```
+```CSS
 ▶ bloodhound-python -ns 10.10.10.248 -d intelligence.htb -dc dc.intelligence.htb -u Tiffany.Molina -p NewIntelligenceCorpUser9876 -c All
 ```
 ```CSS
@@ -238,3 +238,11 @@ William.Lee
 ▶ bloodhound
 ```
   - Nothing interesting found about user `Tiffany.Molina`.
+
+
+## Enumerate Other Users on the Domain
+```CSS
+▶ crackmapexec smb 10.10.10.248 -u Tiffany.Molina -p NewIntelligenceCorpUser9876 --users
+```
+![image](https://user-images.githubusercontent.com/83878909/230924220-2bff7ab5-7d47-45c4-b392-2d2695d51ad4.png)
+
