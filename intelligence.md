@@ -102,6 +102,8 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 100.93 seconds
 ```
 
+---
+
 ## Port 80
   - Homepage
 ![image](https://user-images.githubusercontent.com/83878909/230812679-60dfc045-321b-4e62-b577-3006e048ab79.png)
@@ -112,16 +114,60 @@ Nmap done: 1 IP address (1 host up) scanned in 100.93 seconds
   - Other Document
 ![image](https://user-images.githubusercontent.com/83878909/230813172-f7359efc-a356-4629-9a8a-64564ee6cb07.png)
 
+---
+
 ## Brute-Force
   - Create a wordlist to brute-force the `date`, maybe some other documents exist.
 ```CSS
 ▶ for i in $(seq $(date -d "2020-01-01" +%s) 86400 $(date -d "2021-05-15" +%s)); do date -d @$i "+%Y-%m-%d-upload.pdf"; done > files.txt
 ```
-  - Brute-Force the filename.
+- Brute-Force the filename.
 ```CSS
 ▶ for i in $(cat files.txt); do wget http://10.10.10.248/documents/$i; done
 ```
   - Files found.
 ![image](https://user-images.githubusercontent.com/83878909/230816862-cc30d963-0b39-4c13-b2cc-7e89e51206b3.png)
+
+---
+
+## Exiftool
+  - PDF files meta-data.
+![image](https://user-images.githubusercontent.com/83878909/230817269-96fbdaa8-e0a4-48e0-b13e-b00ef8405861.png)
+  - Extract creator names from meta-dta of all the PDF files.
+```CSS
+▶ pdf exiftool *pdf | grep Creator | awk '{print $3}' | sort -u > creators.txt
+```
+```CSS
+Anita.Roberts
+Brian.Baker
+Brian.Morris
+Daniel.Shelton
+Danny.Matthews
+Darryl.Harris
+David.Mcbride
+David.Reed
+David.Wilson
+Ian.Duncan
+Jason.Patterson
+Jason.Wright
+Jennifer.Thomas
+Jessica.Moody
+John.Coleman
+Jose.Williams
+Kaitlyn.Zimmerman
+Kelly.Long
+Nicole.Brock
+Richard.Williams
+Samuel.Richardson
+Scott.Scott
+Stephanie.Young
+Teresa.Williamson
+Thomas.Hall
+Thomas.Valenzuela
+Tiffany.Molina
+Travis.Evans
+Veronica.Patel
+William.Lee
+```
 
 
