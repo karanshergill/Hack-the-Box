@@ -170,4 +170,10 @@ Veronica.Patel
 William.Lee
 ```
 
+-- 
 
+## Valid Usernames
+```CSS
+▶ kerbrute userenum --dc 10.10.10.248 -d intelligence.htb creators.txt
+```
+![image](https://user-images.githubusercontent.com/83878909/230821076-266f1262-a0a6-4d35-bd21-025be8a3c845.png)
