@@ -229,5 +229,12 @@ William.Lee
 
 ## BloodHound
 ```
-▶ 
+▶ bloodhound-python -ns 10.10.10.248 -d intelligence.htb -dc dc.intelligence.htb -u Tiffany.Molina -p NewIntelligenceCorpUser9876 -c All
 ```
+```CSS
+▶ sudo neo4j console
+```
+```CSS
+▶ bloodhound
+```
+  - Nothing interesting found about user `Tiffany.Molina`.
