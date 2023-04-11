@@ -108,3 +108,16 @@ Nmap done: 1 IP address (1 host up) scanned in 73.74 seconds
 ```
 ---
 
+## SMB
+### Anonymous Login
+  - `smbclient`: Anonymous login successful, no shares found.
+  - `smbmap`: Anonymous login successful, no shares found.
+```CSS
+▶ smbclient -L 10.10.10.161
+```
+![image](https://user-images.githubusercontent.com/83878909/231099264-7d07b4f1-6ec9-4ab4-ab12-57dae7e320e0.png)
+
+```CSS
+▶ smbmap -H 10.10.10.161
+```
+![image](https://user-images.githubusercontent.com/83878909/231099068-60034985-65ff-438b-adf7-640e2488425d.png)
