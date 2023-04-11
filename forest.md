@@ -120,4 +120,4 @@ Nmap done: 1 IP address (1 host up) scanned in 73.74 seconds
 ```CSS
 ▶ smbmap -H 10.10.10.161
 ```
-![image](https://user-images.githubusercontent.com/83878909/231099068-60034985-65ff-438b-adf7-640e2488425d.png)
+![image](https://user-images.githubusercontent.com/83878909/231099947-bb13c839-109a-4aa2-b577-e89a1f0cd8da.png)
