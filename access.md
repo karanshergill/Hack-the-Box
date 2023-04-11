@@ -49,3 +49,7 @@ Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 ```
 
 ## FTP Login
+```CSS
+▶ ftp 10.10.10.98
+```
+![image](https://user-images.githubusercontent.com/83878909/231272883-d87603cc-e9b5-461c-a670-5c36226f6a57.png)
