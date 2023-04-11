@@ -7,6 +7,7 @@ Machine IP: 10.10.10.98
 - [NMAP: All TCP ports](#nmap)
 - [NMAP: Open ports Service Version](#nmap-service-version)
 - [FTP Anonymous Login](#ftp-login)
+- [Telnet Anonymous Login](#telnet-login)
 
 ## NMAP Open Ports
 ```CSS
@@ -49,7 +50,24 @@ Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 ```
 
 ## FTP Login
+  - Log in to ftp, anonymous login allowed. 
 ```CSS
 ▶ ftp 10.10.10.98
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231272883-d87603cc-e9b5-461c-a670-5c36226f6a57.png)
+
+### FTP Downloads
+  - Download all directories and files found in FTP.
+```CSS
+▶ wget -m --no-passive ftp://anonymous:anonymous@10.10.10.98
+```
+![image](https://user-images.githubusercontent.com/83878909/231274006-305f40e6-8efc-4af0-8f4c-6e85319bab51.png)
+
+---
+
+## Telnet Anonymous Login
+  - Telent log in failed.
+```CSS
+▶ telnet 10.10.10.98
+```
+![image](https://user-images.githubusercontent.com/83878909/231275176-f81e52d6-3975-497a-b375-17f4cc9eb3e2.png)
