@@ -4,10 +4,11 @@
 Machine IP: 10.10.10.98
 ```
 
-- [NMAP: All TCP ports](#nmap)
+- [NMAP: All TCP ports](#nmap-open-ports)
 - [NMAP: Open ports Service Version](#nmap-service-version)
 - [FTP Anonymous Login](#ftp-login)
-- [Telnet Anonymous Login](#telnet-login)
+  - [Download Files](#ftp-downloads)
+- [Telnet Anonymous Login](#telnet-anonymous-login)
 
 ## NMAP Open Ports
 ```CSS
