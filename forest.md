@@ -106,6 +106,22 @@ PORT      STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 73.74 seconds
 ```
+
+---
+
+## DNS
+### Leak Hostname
+  - `nslookup`: Hostname was not leaked.
+```CSS
+▶ nslookup
+> server 10.10.10.161
+Default server: 10.10.10.161
+Address: 10.10.10.161#53
+> 127.0.0.1
+.;; communications error to 10.10.10.161#53: timed out
+1.0.0.127.in-addr.arpa  name = localhost.
+```
+
 ---
 
 ## SMB
@@ -121,3 +137,6 @@ Nmap done: 1 IP address (1 host up) scanned in 73.74 seconds
 ▶ smbmap -H 10.10.10.161
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231099947-bb13c839-109a-4aa2-b577-e89a1f0cd8da.png)
+
+---
+
