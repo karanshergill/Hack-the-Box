@@ -115,7 +115,7 @@ Nmap done: 1 IP address (1 host up) scanned in 73.74 seconds
 ```CSS
 ▶ smbclient -L 10.10.10.161
 ```
-![image](https://user-images.githubusercontent.com/83878909/231099264-7d07b4f1-6ec9-4ab4-ab12-57dae7e320e0.png)
+![image](https://user-images.githubusercontent.com/83878909/231100575-18e6bc13-9760-4c37-ac20-4eb1afeea6a5.png)
 
 ```CSS
 ▶ smbmap -H 10.10.10.161
