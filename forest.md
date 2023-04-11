@@ -262,5 +262,6 @@ rpcclient $> querygroup 0x47c
 ▶ C:\> .\SharpHound.exe -c all
 ```
   - Import `BloodHound.zip` to BloodHound.
-![image](https://user-images.githubusercontent.com/83878909/231216151-fa829a8d-a352-4ed3-ab1d-7eb821d62906.png)
+  - Mark user `SVC-ALFRESCO@HTB.LOCAL` as owned.
+![image](https://user-images.githubusercontent.com/83878909/231216827-1f4e7ae2-9738-49b8-affd-46d16113a566.png)
 
