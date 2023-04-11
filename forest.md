@@ -140,3 +140,25 @@ Address: 10.10.10.161#53
 
 ---
 
+## LDAP
+### Gather Information
+```CSS
+▶ ldapsearch -H ldap://forest.htb -x -s base namingcontexts
+```
+![image](https://user-images.githubusercontent.com/83878909/231105312-71ae0491-7044-4596-a949-791885c27529.png)
+```CSS
+▶ ldapsearch -H ldap://forest.htb -x -b "DC=htb,DC=local" > ldap-anonymous.out
+```
+![image](https://user-images.githubusercontent.com/83878909/231106400-0e50072f-8e8d-4088-aa50-a4c2bc95078c.png)
+
+### List of Users
+```CSS
+Sebastien Caron
+Santi Rodriguez
+Lucinda Berger
+Andy Hislip
+Mark Brandt
+```
+
+---
+
