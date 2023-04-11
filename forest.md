@@ -253,3 +253,6 @@ rpcclient $> querygroup 0x47c
 ```CSS
 ▶ bloodhound --no-sandbox
 ```
+
+  - Transfer SharpHound to Forest (10.10.10.1)
+![image](https://user-images.githubusercontent.com/83878909/231212665-5ffc6723-103e-442a-ae2e-61e32e832740.png)
