@@ -173,8 +173,26 @@ Mark Brandt
   - `rpcclient` - `enumdomusers`: Enumerate users in the domain.
 ```CSS
 ▶ rpcclient -U "" -N forest.htb
-▶ rpcclient $> enumdomusers
+rpcclient $> enumdomusers
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231115644-07f50007-e232-4e1a-bbd3-f5caa3304655.png)
 
   - Another user `svc-alfresco` discovered. 
+
+### User Groups
+```CSS
+rpcclient $> queryusergroups 0x47b
+        group rid:[0x201] attr:[0x7]
+        group rid:[0x47c] attr:[0x7]
+rpcclient $> querygroup 0x201
+        Group Name:     Domain Users
+        Description:    All domain users
+        Group Attribute:7
+        Num Members:30
+rpcclient $> querygroup 0x47c
+        Group Name:     Service Accounts
+        Description:
+        Group Attribute:7
+        Num Members:1
+```
+![image](https://user-images.githubusercontent.com/83878909/231127882-51b87c41-6484-4f19-92ac-16b225f230ff.png)
