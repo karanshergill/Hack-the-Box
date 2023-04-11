@@ -170,13 +170,11 @@ Mark Brandt
 ## RPC
 ### Gather Information
   - `rpcclient`: Connect to the target as an anonymous user using a "null-session".
-```CSS
-▶ rpcclient -U "" -N forest.htb
-```
-![image](https://user-images.githubusercontent.com/83878909/228514381-ccd5e6a0-d836-468e-9658-f89c61431d83.png)
-
   - `rpcclient` - `enumdomusers`: Enumerate users in the domain.
 ```CSS
+▶ rpcclient -U "" -N forest.htb
 ▶ rpcclient $> enumdomusers
 ```
+![image](https://user-images.githubusercontent.com/83878909/231115644-07f50007-e232-4e1a-bbd3-f5caa3304655.png)
+
 ![image](https://user-images.githubusercontent.com/83878909/228515257-5dcc75cb-07b0-4351-875d-704371e143ad.png)
