@@ -261,3 +261,6 @@ rpcclient $> querygroup 0x47c
 ```CSS
 ▶ C:\> .\SharpHound.exe -c all
 ```
+  - Import `BloodHound.zip` to BloodHound.
+![image](https://user-images.githubusercontent.com/83878909/231216151-fa829a8d-a352-4ed3-ab1d-7eb821d62906.png)
+
