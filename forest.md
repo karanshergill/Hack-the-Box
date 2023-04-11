@@ -153,6 +153,11 @@ Address: 10.10.10.161#53
 
 ### List of Users
 ```CSS
+▶ ldapsearch -H ldap://forest.htb -x -b "DC=htb,DC=local" '(objectClass=User)' sAMAccountName | grep sAMAccountName
+```
+![image](https://user-images.githubusercontent.com/83878909/231109597-909a7111-c95c-47f7-804b-88f4611ff7bc.png)
+
+```CSS
 Sebastien Caron
 Santi Rodriguez
 Lucinda Berger
