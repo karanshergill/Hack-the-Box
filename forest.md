@@ -217,3 +217,9 @@ rpcclient $> querygroup 0x47c
 
 ---
 
+## Foothold
+```
+▶ evil-winrm -u svc-alfresco -p s3rvice -i 10.10.10.161
+```
+![image](https://user-images.githubusercontent.com/83878909/231141723-17ad9489-509d-4273-a5a8-3528bdaf934f.png)
+
