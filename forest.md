@@ -5,6 +5,7 @@ Machine IP: 10.10.10.161
 ```
 
 ## NMAP
+### All TCP Ports
 ```CSS
 ▶ nmap -Pn -sS -p- -T4 --min-rate 1000 10.10.10.161 -oG nmap.surface
 
@@ -38,6 +39,7 @@ PORT      STATE SERVICE
 49706/tcp open  unknown
 ```
 
+### Open TCP Ports
 ```CSS
 ▶ nmap -sC -sV -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,9389 10.10.10.161 -oG nmap.deep
 
@@ -88,5 +90,21 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 25.23 seconds                      
 ```
 
+### Open UDP Ports
+```CSS
+▶ nmap -sU -p- 10.10.10.161 --min-rate 1000 -oN nmap.udp
+
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-03-29 17:05 IST
+Nmap scan report for 10.10.10.161
+Host is up (0.091s latency).
+Not shown: 65457 open|filtered ports, 74 closed ports
+PORT      STATE SERVICE
+123/udp   open  ntp
+389/udp   open  ldap
+58399/udp open  unknown
+58507/udp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 73.74 seconds
+```
 ---
 
