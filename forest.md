@@ -252,6 +252,20 @@ rpcclient $> querygroup 0x47c
 
 ---
 
+### Enumerate DOM Users
+```CSS
+*Evil-WinRM* PS C:\> net user /domain
+```
+![image](https://user-images.githubusercontent.com/83878909/231516040-cf5e557c-e8dc-4380-874e-6d1de1d2abf4.png)
+
+### Enumerate the Current User
+```CSS
+*Evil-WinRM* PS C:\> net user svc-alfresco
+```
+![image](https://user-images.githubusercontent.com/83878909/231516645-ef3607ec-789e-4e0e-a86d-3915f8378b0f.png)
+
+---
+
 ### BloodHound
   - Start Neo4j
 ```CSS
