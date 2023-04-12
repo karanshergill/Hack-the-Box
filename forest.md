@@ -177,7 +177,16 @@ rpcclient $> enumdomusers
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231115644-07f50007-e232-4e1a-bbd3-f5caa3304655.png)
 
-  - Another user `svc-alfresco` discovered. 
+  - Another user `svc-alfresco` discovered.
+  - Updated list of users.
+```CSS
+sebastien
+santi
+lucinda
+andy
+mark
+svc-alfresco
+```
 
 ### User Groups
 ```CSS
