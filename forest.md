@@ -277,15 +277,16 @@ rpcclient $> querygroup 0x47c
 ▶ bloodhound --no-sandbox
 ```
 
-  - Transfer SharpHound to Forest (10.10.10.161)
-![image](https://user-images.githubusercontent.com/83878909/231212665-5ffc6723-103e-442a-ae2e-61e32e832740.png)
-
-  - Execute SharpHound.exe on Forest (10.10.10.161)
-```CSS
-C:\> .\SharpHound.exe -c all
+  - Execute Bloodhound-Python
 ```
-  - Import `BloodHound.zip` to BloodHound.
-  - Mark user `SVC-ALFRESCO@HTB.LOCAL` as owned.
+▶ bloodhound-python -u svc-alfresco -p s3rvice -ns 10.10.10.161 -d HTB.local -c All 
+```
+  
+  - Import all `.json` files to BloodHound.
+
+
+  - Mark `SVC-ALFRESCO@HTB.LOCAL` as owned and set as starting node.
+  - Set `HTB.LOCAL` as ending node. 
 ![image](https://user-images.githubusercontent.com/83878909/231216827-1f4e7ae2-9738-49b8-affd-46d16113a566.png)
 
 ![image](https://user-images.githubusercontent.com/83878909/231560688-e9a29326-4d1e-462b-bf9a-151694e9d952.png)
@@ -294,6 +295,7 @@ C:\> .\SharpHound.exe -c all
 
 ![image](https://user-images.githubusercontent.com/83878909/231561547-2b048aa9-0a83-42b1-ae69-e17eae8aa0e7.png)
 
+![image](https://user-images.githubusercontent.com/83878909/231672978-14a4767f-c968-48cd-b349-42cd7dfa50bc.png)
 
   - Create a new user in the domain.
   - This is possible because svc-alfresco is a member of the group Account Operators.
