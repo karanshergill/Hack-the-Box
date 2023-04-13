@@ -4,7 +4,7 @@ Machine IP: 10.10.10.40
 ```
 
 ## NMAP (TCP - All Ports)
-```
+```CSS
 ▶ nmap -Pn -sS -p- 10.10.10.40 -T4 --min-rate 1000 -oN surface.nmap
 
 Nmap scan report for 10.10.10.40                                        
