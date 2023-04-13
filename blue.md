@@ -24,7 +24,7 @@ PORT      STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 70.46 seconds
 ```
 
-## NMAP (TCP - Open Ports: Service Version and Script)
+## NMAP (TCP - Open Ports: Service Version and Default Scripts)
 ```CSS
 ▶ nmap -sC -sV -p 135,139,445,49152-49157 10.10.10.40 -oN deep.nmap
 
@@ -68,3 +68,9 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 75.47 seconds
 ```
 
+## NMAP (TCP #445 Safe Scripts)
+```CSS
+▶ nmap -Pn -n -p 445 --script safe -oN safe.nmap
+
+
+```
