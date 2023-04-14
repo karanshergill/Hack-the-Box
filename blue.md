@@ -5,7 +5,7 @@ Machine IP: 10.10.10.40
 
 - NMAP Scans
   - [TCP all ports](#NMAP-TCP-All-Ports)
-  - [TCP service version and default scripts of open ports]()
+  - [TCP service version and default scripts of open ports](#NMAP-TCP-Open-Ports:-Service-Version-and-Default-Scripts)
   - [TCP port #445 safe scripts]()
 
 ## NMAP (TCP - All Ports)
