@@ -8,6 +8,9 @@ Machine IP: 10.10.10.40
   - [TCP service version and default scripts of open ports](#Open-TCP-Ports-Service-Version-and-Default-Scripts)
   - [TCP port #445 safe scripts](#Port-445-Safe-Scripts)
 
+- Metasploit(#Metasploit)
+  - Search for exploits(#Seacrh-for-Exploits)
+
 ## NMAP
 ### TCP All Ports
 ```CSS
@@ -99,3 +102,12 @@ Nmap done: 1 IP address (1 host up) scanned in 75.47 seconds
 
 # Nmap done at Thu Apr 13 23:22:33 2023 -- 1 IP address (1 host up) scanned in 106.08 seconds
 ```
+
+---
+
+## Metasploit
+### Search for Exploits
+```CSS
+msf6 > search eternalblue
+```
+![image](https://user-images.githubusercontent.com/83878909/231924001-a45f3cad-bd2e-4491-814f-2585eccf1cc8.png)
