@@ -1,6 +1,9 @@
 # Hack the Box - Blue
 ```CSS
-Machine IP: 10.10.10.40
+Machine IP: 10.10.10.40 - Windows
+
+Vulenerability:
+- MS17-010 EternalBlue CVE-2017-0143
 ```
 
 - [NMAP Scans](#NMAP)
