@@ -3,6 +3,11 @@
 Machine IP: 10.10.10.40
 ```
 
+- NMAP Scans
+  - [TCP all ports](## NMAP (TCP - All Ports)
+  - [TCP service version and default scripts of open ports]()
+  - [TCP port #445 safe scripts]()
+
 ## NMAP (TCP - All Ports)
 ```CSS
 ▶ nmap -Pn -sS -p- 10.10.10.40 -T4 --min-rate 1000 -oN surface.nmap
