@@ -3,10 +3,10 @@
 Machine IP: 10.10.10.40
 ```
 
-- NMAP Scans
+- [NMAP Scans](#NMAP)
   - [TCP all ports](#TCP-All-Ports)
   - [TCP service version and default scripts of open ports](#Open-TCP-Ports-Service-Version-and-Default-Scripts)
-  - [TCP port #445 safe scripts]()
+  - [TCP port #445 safe scripts](#Port-445-Safe-Scripts)
 
 ## NMAP
 ### TCP All Ports
@@ -74,7 +74,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 75.47 seconds
 ```
 
-## NMAP (TCP #445 Safe Scripts)
+### Port 445 Safe Scripts
 ```CSS
 ▶ nmap -Pn -n -p 445 --script safe -oN safe.nmap
 
