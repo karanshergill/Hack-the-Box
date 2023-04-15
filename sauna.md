@@ -1,5 +1,9 @@
 # Hack the Box - Sauna
 
+```CSS
+Machine IP: 10.10.10.175 - Windows
+```
+
 Add to DNS
 ```CSS
 10.10.10.175    egotistical-bank.local sauna sauna.egotistical-bank.local
@@ -142,10 +146,13 @@ administrator@egotistical-bank.local
 fsmith@egotistical-bank.local
 ```
 ### AS-REP Roasting
-  - Find users who have Kerberos preauthentication disabled and get their NTLM hash.
+  - Find users who have Kerberos preauthentication disabled and get their TGT.
 ```CSS
-▶ 
+▶ kerbrute userenum --dc 10.10.10.175 -d egotistical-bank.local users.txt
 ```
+![image](https://user-images.githubusercontent.com/83878909/232200855-613b961b-3a89-4a3c-b2ed-6f3fa3aa124f.png)
+
+
 ---
 
 
