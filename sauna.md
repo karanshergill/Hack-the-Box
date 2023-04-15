@@ -95,3 +95,30 @@ Nmap done: 1 IP address (1 host up) scanned in 132.84 seconds
 
 ### Users
 ![image](https://user-images.githubusercontent.com/83878909/232183269-6ce5ead2-098a-42c1-a77b-99e9b68cce63.png)
+
+```CSS
+Fergus Smith
+Shuan Coins
+Sophie Driver
+Bowie Taylor
+Hugo Bear
+Steven Kerb
+```
+
+---
+
+## LDAPSearch
+### Base DN (Distinguished Name)
+```CSS
+▶ ldapsearch -H ldap://10.10.10.175 -x -s base namingcontexts
+```
+![image](https://user-images.githubusercontent.com/83878909/232185487-95840fae-d92d-4a03-9795-cbddc1511dba.png)
+
+### Subtree Attributes
+```CSS
+▶ ldapsearch -H ldap://10.10.10.175 -b 'DC=EGOTISTICAL-BANK,DC=LOCAL' -s sub
+```
+![image](https://user-images.githubusercontent.com/83878909/232194332-9d8dc461-a687-4416-a6f6-94b4d5b523e9.png)
+
+---
+
