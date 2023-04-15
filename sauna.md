@@ -122,3 +122,21 @@ Steven Kerb
 
 ---
 
+## Kerberos
+### Kerberos Authentication Attack
+  - Identify valid users.
+  - Create a wordlist of potential usernames using the names found earlier.
+
+## Validate Usernames
+```CSS
+▶ kerbrute userenum --dc 10.10.10.175 -d egotistical-bank.local users.txt
+```
+![image](https://user-images.githubusercontent.com/83878909/232199517-5274525c-d5f5-4925-b2c9-5fc31b23082f.png)
+```CSS
+administrator@egotistical-bank.local
+fsmith@egotistical-bank.local
+```
+
+---
+
+
