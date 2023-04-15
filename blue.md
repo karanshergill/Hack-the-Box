@@ -8,7 +8,7 @@ Vulenerability:
 
 - [NMAP Scans](#NMAP)
   - [TCP all ports](#TCP-All-Ports)
-  - [TCP service version and default scripts of open ports](#Open-TCP-Ports-Service-Version-and-Default-Scripts)
+  - [TCP service version and default scripts](#Open-TCP-Ports-Service-Version-and-Default-Scripts)
   - [TCP port #445 safe scripts](#Port-445-Safe-Scripts)
 
 - [Metasploit](#Metasploit)
