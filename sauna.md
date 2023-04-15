@@ -1,5 +1,10 @@
 # Hack the Box - Sauna
 
+Add to DNS
+```CSS
+10.10.10.175    egotistical-bank.local sauna sauna.egotistical-bank.local
+```
+
 ## Nmap
 ### TCP All Ports
 
@@ -136,7 +141,11 @@ Steven Kerb
 administrator@egotistical-bank.local
 fsmith@egotistical-bank.local
 ```
-
+### AS-REP Roasting
+  - Find users who have Kerberos preauthentication disabled and get their NTLM hash.
+```CSS
+▶ 
+```
 ---
 
 
