@@ -204,11 +204,28 @@ fsmith:Thestrokes23
 ![image](https://user-images.githubusercontent.com/83878909/232273868-7d59e938-0c19-440a-a3b0-068c1f34254d.png)
 ![image](https://user-images.githubusercontent.com/83878909/232273829-d93a10a9-96cc-4649-afbc-e29b10572ad1.png)
 
----
-
 #### WinPEAS Output
 ![image](https://user-images.githubusercontent.com/83878909/232279612-c3fb9bd3-5ed9-4b76-a656-465bada7137d.png)
   - Credentials: `svc_loanmanager:Moneymakestheworldgoround!`
 
 ---
+
+## BloodHound
+  - Start `neo4j` as `root`.
+```CSS
+▶ neoj4 console
+```
+
+  - Start `bloodhound`.
+```CSS
+▶ BloodHound --no-sandbox
+```
+
+  - Upload `SharpHound.exe`
+  - Execute
+```CSS
+▶ upload `SharpHound.exe`
+```
+![image](https://user-images.githubusercontent.com/83878909/232280398-222104de-1d6d-484d-b553-867bc5b2760f.png)
+![image](https://user-images.githubusercontent.com/83878909/232280509-77195659-fdce-4f82-8042-321bb62cbf67.png)
 
