@@ -74,19 +74,11 @@ Nmap done: 1 IP address (1 host up) scanned in 214.25 seconds
 ![image](https://user-images.githubusercontent.com/83878909/233007255-a55cb9c3-366e-4829-a1f8-9638da827959.png)
 ### Events
 ![image](https://user-images.githubusercontent.com/83878909/233008739-59e1f807-2a3d-4aa3-8330-d1f533cc569b.png)
-### Evenets - Page Source
+### Events - Page Source
 ![image](https://user-images.githubusercontent.com/83878909/233020210-57f0a1ac-3af7-4f34-985a-6dd1647cdff2.png)
 
+- CMS: `WordPress`
+- Plugin: `Booking Press Appointment Booking`
+
 ---
-
-## Content Discovery
-### Brute-force Common Directories and Files
-```CSS
-▶ ffuf -u http://metapress.htb/FUZZ -w /usr/share/wordlists/ctf/common.txt:FUZZ -mc 200 -o directory.fuzz
-```
-![image](https://user-images.githubusercontent.com/83878909/233014753-408a5dd1-fb01-4d53-841b-b3104fbe05da.png)
-
-### CMS Wordpress
-![image](https://user-images.githubusercontent.com/83878909/233015297-ad8798ea-422b-417f-8fdd-4ca5a4a0de16.png)
-![image](https://user-images.githubusercontent.com/83878909/233015844-eaacb268-d479-4c97-ab3a-39843a3d2951.png)
 
