@@ -109,3 +109,6 @@ $P$B4aNM28N0E.tMy/JIcnVMZbGcU16Q70
 ```
 
 ### Crack Hashes
+```CSS
+▶ john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt 
+```
