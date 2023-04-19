@@ -83,3 +83,6 @@ Nmap done: 1 IP address (1 host up) scanned in 214.25 seconds
 ▶ ffuf -u http://metapress.htb/FUZZ -w /usr/share/wordlists/ctf/common.txt:FUZZ -mc 200 -o directory.fuzz
 ```
 ![image](https://user-images.githubusercontent.com/83878909/233014753-408a5dd1-fb01-4d53-841b-b3104fbe05da.png)
+
+### CMS Wordpress
+![image](https://user-images.githubusercontent.com/83878909/233015297-ad8798ea-422b-417f-8fdd-4ca5a4a0de16.png)
