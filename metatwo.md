@@ -1,7 +1,8 @@
 # Hack the Box - MetaTwo
 
 ```CSS
-IP: 10.10.11.186
+IP: 10.10.11.186 - Linux
+CMS: WordPress
 ```
 
 ## Open TCP Ports
@@ -73,3 +74,12 @@ Nmap done: 1 IP address (1 host up) scanned in 214.25 seconds
 ![image](https://user-images.githubusercontent.com/83878909/233007255-a55cb9c3-366e-4829-a1f8-9638da827959.png)
 ### Events
 ![image](https://user-images.githubusercontent.com/83878909/233008739-59e1f807-2a3d-4aa3-8330-d1f533cc569b.png)
+
+---
+
+## Content Discovery
+### Brute-force Common Directories and Files
+```CSS
+▶ ffuf -u http://metapress.htb/FUZZ -w /usr/share/wordlists/ctf/common.txt:FUZZ -mc 200 -o directory.fuzz
+```
+![image](https://user-images.githubusercontent.com/83878909/233014753-408a5dd1-fb01-4d53-841b-b3104fbe05da.png)
