@@ -65,3 +65,11 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 214.25 seconds
 ```
+
+---
+
+## WebServer
+### Homepage
+![image](https://user-images.githubusercontent.com/83878909/233007255-a55cb9c3-366e-4829-a1f8-9638da827959.png)
+### Events
+![image](https://user-images.githubusercontent.com/83878909/233008739-59e1f807-2a3d-4aa3-8330-d1f533cc569b.png)
