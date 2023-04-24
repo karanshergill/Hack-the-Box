@@ -142,7 +142,19 @@ File Type: Microsoft Outlook Personal Storage
 ```
 ![image](https://user-images.githubusercontent.com/83878909/233937943-92fb0eed-9159-4d42-9f28-8807dc589fa5.png)
 ```CSS
+Username: security
 Password: 4Cc3ssC0ntr0ller
 ```
 
 ---
+
+## Telnet Login
+  - Login using found credentials.
+```CSS 
+▶ telnet 10.10.10.98
+```
+![image](https://user-images.githubusercontent.com/83878909/233939322-189c0e45-6083-4a2f-bed0-05bd8100d025.png)
+
+---
+
+
