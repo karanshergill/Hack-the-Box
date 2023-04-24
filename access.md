@@ -65,8 +65,6 @@ Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231274006-305f40e6-8efc-4af0-8f4c-6e85319bab51.png)
 
-
-
 ---
 
 ## Telnet Anonymous Login
