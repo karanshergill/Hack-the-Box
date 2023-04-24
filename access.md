@@ -100,7 +100,10 @@ Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 
 ### Extract ZIP File Contents
 ```CSS
-▶ 7z x Access\ Control.zip -p access4u@security
+▶ 7z x Access\ Control.zip
+```
+```CSS
+password: access4u@security
 ```
 ![image](https://user-images.githubusercontent.com/83878909/233932586-4b1e138c-13d7-4197-81ac-46189c7cd293.png)
 
