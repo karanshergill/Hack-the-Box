@@ -81,6 +81,28 @@ Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 ![image](https://user-images.githubusercontent.com/83878909/233909126-48769505-adde-4982-beaf-2fe1635970f4.png)
 
 
+### MBD File
+  - Look into the file
+```CSS
+▶ strings backup.mdb
+```
+![image](https://user-images.githubusercontent.com/83878909/233927444-536ae3fa-9377-4efd-b6ac-783b4b7df837.png)
+
+  - Extract Information
+```CSS
+▶ mdb-tables backup.mdb | grep --color=auto user
+```
+![image](https://user-images.githubusercontent.com/83878909/233927978-8404a46f-e088-4f4c-8d8c-5e6638269cbc.png)
+```CSS
+▶ mdb-export backup.mdb auth_user
+```
+![image](https://user-images.githubusercontent.com/83878909/233928307-60dc1282-0923-472e-a148-cdb5bedba4ea.png)
+
+### Extract ZIP File Contents
+```CSS
+▶ 7z x Access\ Control.zip -p access4u@security
+```
+![image](https://user-images.githubusercontent.com/83878909/233932586-4b1e138c-13d7-4197-81ac-46189c7cd293.png)
 
 ---
 
