@@ -51,6 +51,8 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 ```
 
+---
+
 ## FTP Login
   - Log in to ftp, anonymous login allowed. 
 ```CSS
@@ -64,6 +66,21 @@ Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 ▶ wget -m --no-passive ftp://anonymous:anonymous@10.10.10.98
 ```
 ![image](https://user-images.githubusercontent.com/83878909/231274006-305f40e6-8efc-4af0-8f4c-6e85319bab51.png)
+
+### ZIP File
+  - Access File
+```CSS
+▶ 7z x Access\ Control.zip
+```
+![image](https://user-images.githubusercontent.com/83878909/233909981-8b6ad107-b1cf-4ad8-87f8-fc00f663bc5b.png)
+
+  - Technical Information
+```CSS
+▶ 7z l -slt Access\ Control.zip
+```
+![image](https://user-images.githubusercontent.com/83878909/233909126-48769505-adde-4982-beaf-2fe1635970f4.png)
+
+
 
 ---
 
@@ -80,3 +97,4 @@ Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 ![image](https://user-images.githubusercontent.com/83878909/231276321-d9810c39-9ac9-4c59-b50d-0f7a296ede38.png)
 
 ---
+
