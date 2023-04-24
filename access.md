@@ -53,6 +53,20 @@ Nmap done: 1 IP address (1 host up) scanned in 187.59 seconds
 
 ---
 
+## Telnet Anonymous Login
+  - Telent log in failed.
+```CSS
+▶ telnet 10.10.10.98
+```
+![image](https://user-images.githubusercontent.com/83878909/231275176-f81e52d6-3975-497a-b375-17f4cc9eb3e2.png)
+
+---
+
+## Website
+![image](https://user-images.githubusercontent.com/83878909/231276321-d9810c39-9ac9-4c59-b50d-0f7a296ede38.png)
+
+---
+
 ## FTP Login
   - Log in to ftp, anonymous login allowed. 
 ```CSS
@@ -109,17 +123,4 @@ password: access4u@security
 
 ---
 
-## Telnet Anonymous Login
-  - Telent log in failed.
-```CSS
-▶ telnet 10.10.10.98
-```
-![image](https://user-images.githubusercontent.com/83878909/231275176-f81e52d6-3975-497a-b375-17f4cc9eb3e2.png)
-
----
-
-## Website
-![image](https://user-images.githubusercontent.com/83878909/231276321-d9810c39-9ac9-4c59-b50d-0f7a296ede38.png)
-
----
 
