@@ -123,4 +123,26 @@ password: access4u@security
 
 ---
 
+### PST File
+  - Check the file.
+```CSS
+▶ file Access\ Control.pst
+```
+File Type: Microsoft Outlook Personal Storage
 
+  - Convert `.pst` file to `.mbox` file.
+```CSS
+▶ readpst Access\ Control.pst
+```
+![image](https://user-images.githubusercontent.com/83878909/233936965-6d6ef291-91dd-4cd2-b153-8d1101af60b6.png)
+
+  - Read emails
+```CSS
+▶ less Access\ Control.mbox
+```
+![image](https://user-images.githubusercontent.com/83878909/233937943-92fb0eed-9159-4d42-9f28-8807dc589fa5.png)
+```CSS
+Password: 4Cc3ssC0ntr0ller
+```
+
+---
