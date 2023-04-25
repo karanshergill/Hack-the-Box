@@ -38,3 +38,9 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ▶ ffuf -u http://10.10.10.109/sparklays/FUZZ.php -w directory-list-2.3-medium.txt
 ```
 ![image](https://user-images.githubusercontent.com/83878909/234184393-f4915ea3-9ec4-46f5-a818-4da6beb33aae.png)
+
+  - `http://10.10.10.109/sparklays/admin.php`
+![image](https://user-images.githubusercontent.com/83878909/234184649-5d3736d8-42b0-437b-8b86-b7e50f487e50.png)
+  - `http://10.10.10.109/sparklays/login.php`
+![image](https://user-images.githubusercontent.com/83878909/234184743-478cd40a-74f0-46ec-afc7-43f87e26a58e.png)
+
