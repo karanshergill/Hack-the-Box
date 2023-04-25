@@ -29,3 +29,12 @@ PORT   STATE SERVICE VERSION
 |_http-title: Site doesn't have a title (text/html; charset=UTF-8).
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+
+## HTTP
+![image](https://user-images.githubusercontent.com/83878909/234180522-bb09553f-542f-489d-97e8-6801fbcb6287.png)
+
+## Content Discovery
+```CSS
+▶ ffuf -u http://10.10.10.109/sparklays/FUZZ.php -w directory-list-2.3-medium.txt
+```
+![image](https://user-images.githubusercontent.com/83878909/234184393-f4915ea3-9ec4-46f5-a818-4da6beb33aae.png)
