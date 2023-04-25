@@ -44,3 +44,12 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
   - `http://10.10.10.109/sparklays/login.php`
 ![image](https://user-images.githubusercontent.com/83878909/234184743-478cd40a-74f0-46ec-afc7-43f87e26a58e.png)
 
+```CSS
+▶ ffuf -u http://10.10.10.109/sparklays/FUZZ -w directory-list-2.3-medium.txt
+```
+  - `http://10.10.10.109/design`
+![image](https://user-images.githubusercontent.com/83878909/234189057-8b29a378-8541-4523-a916-afe15332d2ae.png)
+
+```CSS
+▶ ffuf -u http://10.10.10.109/design/FUZZ -w directory-list-2.3-medium.txt
+```
