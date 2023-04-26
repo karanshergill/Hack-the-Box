@@ -96,3 +96,13 @@ Credentials: admin:password123
 
 ---
 
+  - Dashboard: `https://nineveh.htb/db/index.php`
+![image](https://user-images.githubusercontent.com/83878909/234558464-b656bd0d-0942-4420-8e46-bbfbb833705f.png)
+
+---
+
+## Searchsploit
+```CSS
+▶ searchsploit phpLiteAdmin
+```
+![image](https://user-images.githubusercontent.com/83878909/234558865-27ea3b54-64e7-4c1a-8ab4-527e8278b051.png)
