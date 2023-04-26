@@ -44,6 +44,12 @@ PORT    STATE SERVICE  VERSION
 ## HTTPS/SSL
 ![image](https://user-images.githubusercontent.com/83878909/234479727-ccec4c69-ee5a-4d14-b0ac-20744987d630.png)
 
+## SSL Certificate Information
+```CSS
+▶ openssl s_client -connect nineveh.htb:443
+```
+![image](https://user-images.githubusercontent.com/83878909/234488440-5c959a74-496a-48b6-87c9-8ff1ddb0ad47.png)
+
 ---
 
 ## Content Discovery
@@ -58,5 +64,17 @@ PORT    STATE SERVICE  VERSION
 ```CSS
 ▶ gobuster dir -u https://nineveh.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 50 --no-tls-validation
 ```
+![image](https://user-images.githubusercontent.com/83878909/234487716-3c05a713-9514-4b7e-848f-5686b58b320b.png)
 ![image](https://user-images.githubusercontent.com/83878909/234484978-13d104de-2e36-46c6-8f17-fbb217cf826e.png)
 
+---
+
+## Brute-force Credentials
+  - Page: `http://nineveh.htb/department/login.php`
+```CSS
+▶ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.43 http-post-form "/department/login.php:username=^USER^&password=^PASS^:Invalid" -t 60
+```
+![image](https://user-images.githubusercontent.com/83878909/234488924-25dd7cb9-7e32-4297-a545-3f04f699c6f7.png)
+```CSS
+Credentials: admin:1q2w3e4r5t
+```
