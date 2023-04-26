@@ -34,9 +34,24 @@ PORT    STATE SERVICE  VERSION
 |_  http/1.1
 ```
 
+---
+
 ## HTTP
 ![image](https://user-images.githubusercontent.com/83878909/234479646-7b054e0f-a213-479e-9a80-3d63bdcbb1ef.png)
+
+---
 
 ## HTTPS/SSL
 ![image](https://user-images.githubusercontent.com/83878909/234479727-ccec4c69-ee5a-4d14-b0ac-20744987d630.png)
 
+---
+
+## Content Discovery
+  - Directory brute-force - `http://nineveh.htb`
+```CSS
+▶ gobuster dir -u nineveh.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+```
+  - Directory brute-force - `https://nineveh.htb`
+```CSS
+▶ gobuster dir -u https://nineveh.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 50 --no-tls-validation
+```
