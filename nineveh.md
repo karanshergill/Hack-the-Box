@@ -87,3 +87,12 @@ Credentials: admin:1q2w3e4r5t
 ```CSS
 Credentials: admin:password123
 ```
+---
+  - Home: `http://nineveh.htb/department/manage.php`
+![image](https://user-images.githubusercontent.com/83878909/234503125-7b01ee2d-05ab-4a4d-99c3-34203400bef2.png)
+
+  - Notes: `http://nineveh.htb/department/manage.php?notes=files/ninevehNotes.txt`
+![image](https://user-images.githubusercontent.com/83878909/234503429-75a2e5b6-f739-4093-b2c2-b137aea0dd91.png)
+
+---
+
