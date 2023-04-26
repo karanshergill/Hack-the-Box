@@ -112,3 +112,8 @@ Credentials: admin:password123
 ▶ searchsploit phpLiteAdmin
 ```
 ![image](https://user-images.githubusercontent.com/83878909/234558865-27ea3b54-64e7-4c1a-8ab4-527e8278b051.png)
+![image](https://user-images.githubusercontent.com/83878909/234563586-f21678b1-c036-4f66-81b4-31cf99ad8690.png)
+![image](https://user-images.githubusercontent.com/83878909/234564279-94bf032a-8eec-4587-a5ca-57939c4c2cc6.png)
+![image](https://user-images.githubusercontent.com/83878909/234564484-13d373a3-d688-4fd8-b547-ef36d506ad93.png)
+
+
