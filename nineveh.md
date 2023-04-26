@@ -105,7 +105,7 @@ Credentials: admin:password123
   - URL: `http://nineveh.htb/department/manage.php?notes=files/ninevehNotes.txt`
 ![image](https://user-images.githubusercontent.com/83878909/234561596-3375a5a2-0015-448b-807c-2a5fb42aca58.png)
 ![image](https://user-images.githubusercontent.com/83878909/234561294-8c2c1a9c-db43-4dc6-baa3-9c53d31d8287.png)
-
+![image](https://user-images.githubusercontent.com/83878909/234562592-182e614e-0287-4ba9-b0ff-6e1f9c626744.png)
 
 ## Searchsploit
 ```CSS
