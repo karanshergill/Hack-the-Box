@@ -51,7 +51,12 @@ PORT    STATE SERVICE  VERSION
 ```CSS
 ▶ gobuster dir -u nineveh.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
 ```
+![image](https://user-images.githubusercontent.com/83878909/234485858-a451bd36-d418-447e-924a-bdecc2cd8c61.png)
+![image](https://user-images.githubusercontent.com/83878909/234485999-3f3e259c-2a1d-420a-ac1f-4a41b74b2480.png)
+
   - Directory brute-force - `https://nineveh.htb`
 ```CSS
 ▶ gobuster dir -u https://nineveh.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 50 --no-tls-validation
 ```
+![image](https://user-images.githubusercontent.com/83878909/234484978-13d104de-2e36-46c6-8f17-fbb217cf826e.png)
+
