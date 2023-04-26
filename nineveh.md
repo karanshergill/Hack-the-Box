@@ -1,4 +1,4 @@
-# HAck the Box - Nineveh
+# Hack the Box - Nineveh
 
 
 ## NMAP
@@ -33,3 +33,10 @@ PORT    STATE SERVICE  VERSION
 | tls-alpn: 
 |_  http/1.1
 ```
+
+## HTTP
+![image](https://user-images.githubusercontent.com/83878909/234479646-7b054e0f-a213-479e-9a80-3d63bdcbb1ef.png)
+
+## HTTPS/SSL
+![image](https://user-images.githubusercontent.com/83878909/234479727-ccec4c69-ee5a-4d14-b0ac-20744987d630.png)
+
