@@ -48,5 +48,11 @@ echo "10.10.10.46 apocalyst.htb" >> /etc/hosts
 
 ![image](https://user-images.githubusercontent.com/83878909/234800289-380fc0b7-bc5b-4345-85f8-9bccb4587432.png)
 
+![image](https://user-images.githubusercontent.com/83878909/234801910-0504a32c-a82c-42f7-9d3a-6bf60cd08204.png)
+
 ---
 
+## WPScan
+```CSS
+▶ wpscan --url http://apocalyst.htb --enumerate vt,tt,u,ap
+```
