@@ -86,3 +86,21 @@ echo "10.10.10.46 apocalyst.htb" >> /etc/hosts
 ![image](https://user-images.githubusercontent.com/83878909/234815066-2eb4c565-5800-44b4-9843-a0f45ac84797.png)
 ![image](https://user-images.githubusercontent.com/83878909/234815258-c8eff383-2cde-41c5-84fb-304e757ca0bf.png)
 
+---
+
+## Stegnography
+  - Extract data from the image.
+```CSS
+▶ steghide extract -sf image.jpg
+```
+  - Wordlist
+![image](https://user-images.githubusercontent.com/83878909/234817333-503e3c8e-a882-48f7-9560-74d930d56867.png)
+
+---
+
+## WordPress Credentials Brute-Force
+  - WPScan to brute-force user `falaraki`'s password.
+```CSS
+▶ 
+```
+
