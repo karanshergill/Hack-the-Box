@@ -120,5 +120,11 @@ Credentials: falaraki:Transclisiation
 ---
 
 ## Initial Foothold
-![image](https://user-images.githubusercontent.com/83878909/234841296-52b80dfc-6a73-4a0b-8045-ceba14e57f5e.png)
 ![image](https://user-images.githubusercontent.com/83878909/234841446-6dc35a83-0d2a-48e8-9254-fcd15073189b.png)
+![image](https://user-images.githubusercontent.com/83878909/234841296-52b80dfc-6a73-4a0b-8045-ceba14e57f5e.png)
+
+## Privilege Escalation
+  - Upload `LinEnum.sh`.
+![image](https://user-images.githubusercontent.com/83878909/234843155-1849834f-3d3b-4046-ad86-57966717173c.png)
+
+
