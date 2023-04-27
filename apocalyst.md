@@ -124,7 +124,9 @@ Credentials: falaraki:Transclisiation
 ![image](https://user-images.githubusercontent.com/83878909/234841296-52b80dfc-6a73-4a0b-8045-ceba14e57f5e.png)
 
 ## Privilege Escalation
-  - Upload `LinEnum.sh`.
+  - Upload and Execute `LinEnum.sh`.
 ![image](https://user-images.githubusercontent.com/83878909/234843155-1849834f-3d3b-4046-ad86-57966717173c.png)
 
+  - Writeable `/etc/passwd` file.
+![image](https://user-images.githubusercontent.com/83878909/234844540-b33dfab0-c742-414c-8e67-e470a551fd84.png)
 
