@@ -64,3 +64,8 @@ echo "10.10.10.46 apocalyst.htb" >> /etc/hosts
 ```CSS
 ▶ gobuster dir -u http://apocalyst.htb -w /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --add-slash --threads 50 --exclude-length 157
 ```
+
+### Custom Wordlist
+```CSS
+▶ cewl http://apocalyst.htb -w apocalyst.lst
+```
