@@ -68,3 +68,14 @@ Nmap done: 1 IP address (1 host up) scanned in 25.14 seconds
   
   - Dashboard
 ![image](https://user-images.githubusercontent.com/83878909/234787909-2f6a4e32-e1b6-42a6-b693-b50abde265dc.png)
+
+### Searchsploit
+```CSS
+▶ searchsploit pfsense 2.1.3
+```
+![image](https://user-images.githubusercontent.com/83878909/234788791-20fa0822-ab0f-436c-9c6c-0da7410f5969.png)
+![image](https://user-images.githubusercontent.com/83878909/234789403-f7e2d729-499e-4a74-bec7-70138323b219.png)
+
+```CSS
+▶ 
+```
