@@ -40,3 +40,22 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 25.14 seconds
 ```
 
+---
+
+## HTTP/ HTTPS
+![image](https://user-images.githubusercontent.com/83878909/234785069-bf67c3ce-c4ee-4b1b-aec8-85854c54acc7.png)
+
+---
+
+## Content Discovery
+  - Directory and File Brute-force
+```CSS
+▶ gobuster dir -u https://10.10.10.60 -w /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --no-tls-validation -x txt -t 50
+```
+![image](https://user-images.githubusercontent.com/83878909/234785696-2768758a-7b87-4b57-8a49-8793f79058fc.png)
+
+  - `https://10.10.10.60/changelog.txt`
+![image](https://user-images.githubusercontent.com/83878909/234785981-a79b17a3-ffc3-4539-9daf-e04081cb0de8.png)
+
+  - `https://10.10.10.60/system-users.txt`
+![image](https://user-images.githubusercontent.com/83878909/234786961-5d7409e2-ae45-4b16-af9a-02cb3aeda529.png)
