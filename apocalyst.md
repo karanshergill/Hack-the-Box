@@ -41,3 +41,12 @@ Nmap done: 1 IP address (1 host up) scanned in 17.18 seconds
 
 ## HTTP
 ![image](https://user-images.githubusercontent.com/83878909/234799547-1b6562ae-e097-4a3a-9754-2e248dd220c4.png)
+
+```CSS
+echo "10.10.10.46 apocalyst.htb" >> /etc/hosts
+```
+
+![image](https://user-images.githubusercontent.com/83878909/234800289-380fc0b7-bc5b-4345-85f8-9bccb4587432.png)
+
+---
+
