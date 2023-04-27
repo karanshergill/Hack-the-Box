@@ -57,15 +57,32 @@ echo "10.10.10.46 apocalyst.htb" >> /etc/hosts
 ```CSS
 ▶ wpscan --url http://apocalyst.htb --enumerate vt,tt,u,ap
 ```
+![image](https://user-images.githubusercontent.com/83878909/234813681-91b0486b-2fd0-4c1b-91db-1cbc0e6aa921.png)
+  - Username found, no other useful information was given by wpscan.
+```CSS
+▶ Username: falaraki
+```
 
+---
 
 ## Content Discovery
   - Gobuster
 ```CSS
 ▶ gobuster dir -u http://apocalyst.htb -w /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --add-slash --threads 50 --exclude-length 157
 ```
+![image](https://user-images.githubusercontent.com/83878909/234814248-b2ce6fa6-335f-47f0-9150-4a97ce13774e.png)
+
 
 ### Custom Wordlist
 ```CSS
 ▶ cewl http://apocalyst.htb -w apocalyst.lst
 ```
+
+### Content Discovery - Custom Worlist
+  - Gobuster
+```CSS
+▶ gobuster dir -u http://apocalyst.htb -w apocalyst.lst --add-slash --threads 50 --exclude-length 157
+```
+![image](https://user-images.githubusercontent.com/83878909/234815066-2eb4c565-5800-44b4-9843-a0f45ac84797.png)
+![image](https://user-images.githubusercontent.com/83878909/234815258-c8eff383-2cde-41c5-84fb-304e757ca0bf.png)
+
