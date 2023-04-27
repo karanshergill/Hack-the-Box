@@ -52,7 +52,15 @@ echo "10.10.10.46 apocalyst.htb" >> /etc/hosts
 
 ---
 
-## WPScan
+## WordPress
+  - WPScan
 ```CSS
 ▶ wpscan --url http://apocalyst.htb --enumerate vt,tt,u,ap
+```
+
+
+## Content Discovery
+  - Gobuster
+```CSS
+▶ gobuster dir -u http://apocalyst.htb -w /seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --add-slash --threads 50 --exclude-length 157
 ```
