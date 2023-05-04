@@ -91,3 +91,6 @@ PS C:\Users\kostas\Desktop>systeminfo
 PS C:\Users\kostas\desktop> ./winPEASx64.exe           
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236154915-b4378173-3efa-4131-b365-dd54291fe8a2.png)
+No useful information was found.
+
+  - Upload 
