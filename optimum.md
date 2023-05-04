@@ -61,3 +61,8 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ![image](https://user-images.githubusercontent.com/83878909/236136805-0bc1601e-7bad-4b11-bad7-3206cf2f3dcd.png)
 ![image](https://user-images.githubusercontent.com/83878909/236137400-fad06366-6e40-4a1f-b0de-1f1d8831b9ff.png)
 
+  - Upload the `Nishang` script.
+  - Start a reverse `Netcat` listener.
+
+![image](https://user-images.githubusercontent.com/83878909/236139893-93d6cafd-91f1-4da8-94cc-4c2a5ca6079b.png)
+![image](https://user-images.githubusercontent.com/83878909/236139759-484a70c3-ca74-4e01-9096-50befb2d0dc6.png)
