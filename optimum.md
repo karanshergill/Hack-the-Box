@@ -2,6 +2,8 @@
 
 ```CSS
 Machine IP: 10.10.10.8
+
+Rejetto HTTP File Server 2.3: CVE-2014-6287
 ```
 
 ## NMAP
