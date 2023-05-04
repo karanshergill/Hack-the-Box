@@ -52,9 +52,8 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ![image](https://user-images.githubusercontent.com/83878909/236134669-802324a7-fbd7-4cf3-9cd8-6bc4c8336c04.png)
 
 #### Reverse Shell (Nishang)
-```CSS
-Invoke-PowerShellTcp.ps1
-```
+
+- `Invoke-PowerShellTcp.ps1`
 ![image](https://user-images.githubusercontent.com/83878909/236135960-4b5a97fd-8c54-4847-ac0e-f6e6c1dbed23.png)
 
   - Copy and Paste the line of code to the bottom of the sciript.
