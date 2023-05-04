@@ -57,3 +57,8 @@ Invoke-PowerShellTcp.ps1
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236135960-4b5a97fd-8c54-4847-ac0e-f6e6c1dbed23.png)
 
+  - Copy and Paste the line of code to the bottom of the sciript.
+  - Edit the code.
+![image](https://user-images.githubusercontent.com/83878909/236136805-0bc1601e-7bad-4b11-bad7-3206cf2f3dcd.png)
+![image](https://user-images.githubusercontent.com/83878909/236137400-fad06366-6e40-4a1f-b0de-1f1d8831b9ff.png)
+
