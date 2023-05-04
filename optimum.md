@@ -187,3 +187,9 @@ Link       : https://aspe1337.blogspot.co.uk/2017/04/writeup-of-cve-2017-7199.h
 VulnStatus : Not Vulnerable
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236177482-a698cbdc-787e-4423-9048-474213818c6f.png)
+
+### Searchsploit
+```CSS
+▶ searchsploit MS16-032
+```
+![image](https://user-images.githubusercontent.com/83878909/236182297-7f6de133-fd91-455a-b1f3-75d1261c90bf.png)
