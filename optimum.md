@@ -69,3 +69,10 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236139893-93d6cafd-91f1-4da8-94cc-4c2a5ca6079b.png)
 ![image](https://user-images.githubusercontent.com/83878909/236139759-484a70c3-ca74-4e01-9096-50befb2d0dc6.png)
+
+  - Target system information.
+```CSS
+PS C:\Users\kostas\Desktop>systeminfo                                                
+```
+![image](https://user-images.githubusercontent.com/83878909/236140832-cb67ae27-8fb1-42cf-8dcc-b03aca12c96c.png)
+
