@@ -76,6 +76,8 @@ PS C:\Users\kostas\Desktop>systeminfo
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236140832-cb67ae27-8fb1-42cf-8dcc-b03aca12c96c.png)
 
+## Privilege Escalation
+
   - Start SMB server.
 ```CSS
 ▶ sudo impacket-smbserver share . -smb2support
