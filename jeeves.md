@@ -5,6 +5,7 @@ Machine IP: 10.10.10.63 - Windows
 Difficulty: Medium
 Category: OSCP Preparation
 ```
+---
 
 ## NMAP
 
@@ -59,11 +60,15 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 53.18 seconds
 ```
 
+---
+
 ## HTTP 80
 ![image](https://user-images.githubusercontent.com/83878909/236389498-19f90e31-9c0d-4d9a-a46d-412576e533ed.png)
 
 ## HTTP 50000
 ![image](https://user-images.githubusercontent.com/83878909/236389674-c5e1bd6b-986d-46fd-b722-774f68fc85b2.png)
+
+---
 
 ## Content Discovery
 ```CSS
@@ -71,8 +76,12 @@ Nmap done: 1 IP address (1 host up) scanned in 53.18 seconds
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236398246-f2078de0-b176-4b58-ad55-50c921f36af9.png)
 
+---
+
 ### Jenkins
 ![image](https://user-images.githubusercontent.com/83878909/236398469-e3cc9985-d477-4eb1-ad5d-c2158413b1a3.png)
+
+---
 
 ## Initial Foothold
 ### Jenkins Code Execution
@@ -99,6 +108,8 @@ println cmd.execute().text
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236404998-1451dc7e-23c3-492c-b2c0-9c4088e3fa56.png)
 ![image](https://user-images.githubusercontent.com/83878909/236405272-c600aa84-8189-4c49-823c-b3a885c9c1b7.png)
+
+---
 
 ## Privilege Escalation
 ```CSS
@@ -220,8 +231,11 @@ aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236430575-90129cb0-9af9-4a9b-8a09-bb6f600b9b1e.png)
 
+---
+
 ## Root Flag
 ![image](https://user-images.githubusercontent.com/83878909/236431367-55a20192-5af7-445e-87b0-022fa53bb53f.png)
   - Check associated streams.
 ![image](https://user-images.githubusercontent.com/83878909/236431881-6f6e76d2-eb3b-4e27-8298-525643b37b1d.png)
 
+---
