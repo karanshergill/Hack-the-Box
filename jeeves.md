@@ -161,3 +161,7 @@ PS C:\Users\kohsuke\Desktop> whoami /priv
 ![image](https://user-images.githubusercontent.com/83878909/236414816-1cb17b36-5c1e-4523-9408-e0f0cd9c4ad7.png)
   - SetImpersonatePrivilege is enabled so we’re very likely to get SYSTEM using Juicy Potato. However it is not the intended way to get SYSTEM on this machine.
 
+### Content Discovery
+![image](https://user-images.githubusercontent.com/83878909/236416012-ac147c3d-f597-4efe-a993-72b5b024ef42.png)
+
+  - A bit of browsing quickly reveals a CEH.kdbx file in the Documents directory.
