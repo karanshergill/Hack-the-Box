@@ -195,3 +195,7 @@ CEH:$keepass$*2*6000*0*1af405cc00f979ddb9bb387c4594fcea2fd01a6a0757c000e1873f3c7
 ▶ keepass2john CEH.kdbx > kdbx.hash
 ▶ john --format=KeePass --wordlist=/usr/share/wordlists/rockyou.txt kdbx.hash
 ```
+![image](https://user-images.githubusercontent.com/83878909/236423036-e30a1c30-dd2c-460a-9d88-54826270cda1.png)
+```CSS
+Database Password: moonshine1
+```
