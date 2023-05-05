@@ -199,3 +199,10 @@ CEH:$keepass$*2*6000*0*1af405cc00f979ddb9bb387c4594fcea2fd01a6a0757c000e1873f3c7
 ```CSS
 Database Password: moonshine1
 ```
+
+### KeePass Database
+  - Access the `keepass` database using `kpcli`.
+```CSS
+▶ kpcli --kdb CEH.kdbx 
+```
+![image](https://user-images.githubusercontent.com/83878909/236424236-8de83712-3f0a-46e0-876d-c2ec3dccff42.png)
