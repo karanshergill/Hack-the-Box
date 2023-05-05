@@ -177,3 +177,8 @@ PS C:\Users\kohsuke\Documents> New-PsDrive -Name "HardyBoy" -PSProvider "FileSys
 PS C:\Users\kohsuke\Documents> cd HardyBoy:
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236418624-4a8aa8da-1174-4551-8c62-5a4ffb6dd317.png)
+
+```CSS
+▶ cp C:\Users\kohsuke\Documents\CEH.kdbx
+```
+![image](https://user-images.githubusercontent.com/83878909/236419375-2e1c8a97-5752-4594-bdf7-9d012466a04f.png)
