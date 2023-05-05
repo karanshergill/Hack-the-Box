@@ -169,5 +169,7 @@ PS C:\Users\kohsuke\Desktop> whoami /priv
 #### File Transfer
   - Transfer the `CEH.kdbx` file to attacker machine. Use `netcat` or `impacket-smbserver` for the file transfer.
 ```CSS
-▶ 
+▶ impacket-smbserver PwnStuff `pwd`
 ```
+![image](https://user-images.githubusercontent.com/83878909/236417913-f7d190bb-1536-423b-9281-108512a2bc16.png)
+
