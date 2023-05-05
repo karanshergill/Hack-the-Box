@@ -59,3 +59,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.18 seconds
 
 ## HTTP 80
 ![image](https://user-images.githubusercontent.com/83878909/236389498-19f90e31-9c0d-4d9a-a46d-412576e533ed.png)
+
+## HTTP 50000
+![image](https://user-images.githubusercontent.com/83878909/236389674-c5e1bd6b-986d-46fd-b722-774f68fc85b2.png)
+
