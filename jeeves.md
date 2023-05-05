@@ -193,5 +193,5 @@ CEH:$keepass$*2*6000*0*1af405cc00f979ddb9bb387c4594fcea2fd01a6a0757c000e1873f3c7
 
 ```CSS
 ▶ keepass2john CEH.kdbx > kdbx.hash
-▶ john kdbx.hash
+▶ john --format=KeePass --wordlist=/usr/share/wordlists/rockyou.txt kdbx.hash
 ```
