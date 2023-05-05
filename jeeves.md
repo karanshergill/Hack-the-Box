@@ -159,3 +159,5 @@ Hyper-V Requirements:      A hypervisor has been detected. Features required for
 PS C:\Users\kohsuke\Desktop> whoami /priv
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236414816-1cb17b36-5c1e-4523-9408-e0f0cd9c4ad7.png)
+  - SetImpersonatePrivilege is enabled so we’re very likely to get SYSTEM using Juicy Potato. However it is not the intended way to get SYSTEM on this machine.
+
