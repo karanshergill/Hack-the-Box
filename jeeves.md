@@ -63,3 +63,11 @@ Nmap done: 1 IP address (1 host up) scanned in 53.18 seconds
 ## HTTP 50000
 ![image](https://user-images.githubusercontent.com/83878909/236389674-c5e1bd6b-986d-46fd-b722-774f68fc85b2.png)
 
+## Content Discovery
+```CSS
+▶ gobuster dir -u http://10.10.10.63:50000 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 25 -o http50000.gobuster
+```
+![image](https://user-images.githubusercontent.com/83878909/236398246-f2078de0-b176-4b58-ad55-50c921f36af9.png)
+
+### Jenkins
+![image](https://user-images.githubusercontent.com/83878909/236398469-e3cc9985-d477-4eb1-ad5d-c2158413b1a3.png)
