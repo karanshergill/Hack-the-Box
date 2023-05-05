@@ -77,6 +77,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.18 seconds
 ![image](https://user-images.githubusercontent.com/83878909/236399568-d5c3513a-e53a-4eb0-ad52-78b57a826a65.png)
 ![image](https://user-images.githubusercontent.com/83878909/236399923-36a48d06-d4bf-4f21-bbbd-774488412b38.png)
 ![image](https://user-images.githubusercontent.com/83878909/236400279-596d3aac-959f-4467-8461-edf489fdb014.png)
+![image](https://user-images.githubusercontent.com/83878909/236403739-d0e075fe-9e51-4c44-a413-c895808a6eb7.png)
 
 ### Reverse Shell (Nishang)
 ```CSS
