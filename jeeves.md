@@ -165,3 +165,9 @@ PS C:\Users\kohsuke\Desktop> whoami /priv
 ![image](https://user-images.githubusercontent.com/83878909/236416012-ac147c3d-f597-4efe-a993-72b5b024ef42.png)
 
   - A bit of browsing quickly reveals a CEH.kdbx file in the Documents directory.
+
+#### File Transfer
+  - Transfer the `CEH.kdbx` file to attacker machine. Use `netcat` or `impacket-smbserver` for the file transfer.
+```CSS
+▶ 
+```
