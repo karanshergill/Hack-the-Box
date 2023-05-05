@@ -152,3 +152,10 @@ Network Card(s):           1 NIC(s) Installed.
                                  [01]: 10.10.10.63
 Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
 ```
+
+### Check Privileges
+  - Enabled privileges for the current user.
+```CSS
+PS C:\Users\kohsuke\Desktop> whoami /priv
+```
+![image](https://user-images.githubusercontent.com/83878909/236414816-1cb17b36-5c1e-4523-9408-e0f0cd9c4ad7.png)
