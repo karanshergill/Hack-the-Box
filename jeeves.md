@@ -97,3 +97,58 @@ println cmd.execute().text
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236404998-1451dc7e-23c3-492c-b2c0-9c4088e3fa56.png)
 ![image](https://user-images.githubusercontent.com/83878909/236405272-c600aa84-8189-4c49-823c-b3a885c9c1b7.png)
+
+## Privilege Escalation
+```CSS
+PS C:\Users\kohsuke\Desktop> systeminfo
+
+Host Name:                 JEEVES
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.10586 N/A Build 10586
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Windows User
+Registered Organization:
+Product ID:                00331-20304-47406-AA297
+Original Install Date:     10/25/2017, 4:45:33 PM
+System Boot Time:          5/5/2023, 6:53:24 AM
+System Manufacturer:       VMware, Inc.
+System Model:              VMware7,1
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 63 Stepping 2 GenuineIntel ~2300 Mhz
+BIOS Version:              VMware, Inc. VMW71.00V.16707776.B64.2008070230, 8/7/2020
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume2
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC-05:00) Eastern Time (US & Canada)
+Total Physical Memory:     2,047 MB
+Available Physical Memory: 1,155 MB
+Virtual Memory: Max Size:  2,687 MB
+Virtual Memory: Available: 1,747 MB
+Virtual Memory: In Use:    940 MB
+Page File Location(s):     C:\pagefile.sys 
+Domain:                    WORKGROUP
+Logon Server:              N/A
+Hotfix(s):                 10 Hotfix(s) Installed.
+                           [01]: KB3150513 
+                           [02]: KB3161102 
+                           [03]: KB3172729 
+                           [04]: KB3173428 
+                           [05]: KB4021702 
+                           [06]: KB4022633 
+                           [07]: KB4033631 
+                           [08]: KB4035632 
+                           [09]: KB4051613 
+                           [10]: KB4041689 
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: Intel(R) 82574L Gigabit Network Connection
+                                 Connection Name: Ethernet0
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 10.10.10.63
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+```
