@@ -109,7 +109,7 @@ Looking at the code, it looks like the version running here removed the `registe
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236633671-13443158-ce89-4071-b9b5-0cf2855fb313.png)
 ![image](https://user-images.githubusercontent.com/83878909/236633708-78ee83d4-b630-4ff4-99b6-bb379a9cbd30.png)
-
+ - Logged in using the created username and password. (`hardyboy`:`password`)
 
 ### Brute-Force Credentials (Optional)
  - Brute-force password for user `Harvey`.
