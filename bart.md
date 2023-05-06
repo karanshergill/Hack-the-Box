@@ -79,3 +79,12 @@ Nmap done: 1 IP address (1 host up) scanned in 14.48 seconds
 
 ---
 
+## Internal Domain
+![image](https://user-images.githubusercontent.com/83878909/236600307-c1d2080d-0b83-41bd-890d-a8f778723d15.png)
+
+### Brute-Force Credentials (Optional)
+```CSS
+
+```
+
+---
