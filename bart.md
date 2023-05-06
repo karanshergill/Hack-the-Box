@@ -99,6 +99,15 @@ Nmap done: 1 IP address (1 host up) scanned in 14.48 seconds
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236611108-bf91d63f-091e-43ad-b4d5-efba299950ab.png)
 
+The source code for the chat server is on github: `https://github.com/magkopian/php-ajax-simple-chat`.
+Looking at the code, it looks like the version running here removed the `register_form.php` page, and the link to it from the `login_form.php` page.
+
+### Create User Account
+ - Using curl create an account and get access to the site.
+```CSS
+▶ curl -X POST http://internal-01.bart.htb/simple_chat/register.php -d "uname=hardyboy&passwd=password"
+```
+![image](https://user-images.githubusercontent.com/83878909/236633671-13443158-ce89-4071-b9b5-0cf2855fb313.png)
 
 
 ### Brute-Force Credentials (Optional)
