@@ -87,6 +87,8 @@ Nmap done: 1 IP address (1 host up) scanned in 14.48 seconds
 ▶ gobuster dir --url http://internal-01.bart.htb --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --status-codes 204,301,302,307 --status-codes-blacklist "" --threads 25
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236602471-f965d25b-1847-4a7a-8793-2a4bfaa768f6.png)
+![image](https://user-images.githubusercontent.com/83878909/236611523-67fd19df-4b47-497f-8c93-72c26f451421.png)
+
 
 ```CSS
 ▶ gobuster dir --url http://internal-01.bart.htb/log --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --status-codes 204,301,302,307 --status-codes-blacklist "" --extensions php --threads 25
