@@ -67,3 +67,15 @@ Nmap done: 1 IP address (1 host up) scanned in 14.48 seconds
 
 ---
 
+## User Credentials
+ - Valid username `harvey`.
+![image](https://user-images.githubusercontent.com/83878909/236599922-2b67ec2b-442a-4052-b6b7-d2b9a32013b6.png)
+ - Valid password `potter`.
+![image](https://user-images.githubusercontent.com/83878909/236600049-60666a88-2774-40e6-9c28-d963b1b3117b.png)
+ - Login
+![image](https://user-images.githubusercontent.com/83878909/236599993-c09e8014-d27d-450d-8895-5024f5090e8d.png)
+ - Servers
+![image](https://user-images.githubusercontent.com/83878909/236600158-b1e5d6c5-4a14-4aef-9e28-12cdf6823f2b.png)
+
+---
+
