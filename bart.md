@@ -44,7 +44,14 @@ Nmap done: 1 IP address (1 host up) scanned in 14.48 seconds
 ---
 
 ## Content Discovery
-  - Directory brute-force on `http://10.10.10.81`. Tactical brute-forcing since everything returns a 200 Ok status code.
+  - Directory brute-force on `http://10.10.10.81`. Tactical brute-forcing since everything returns a 200 OK status code.
 ```CSS
 ▶ gobuster dir --url http://10.10.10.81 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --status-codes 204,301,302,307 --status-codes-blacklist "" --threads 25
 ```
+  - `http://10.10.10.81/forum/`
+![image](https://user-images.githubusercontent.com/83878909/236594545-b9e5b88c-51cc-4d35-b438-4f183f47accf.png)
+
+  - `http://10.10.10.81/monitor/`
+![image](https://user-images.githubusercontent.com/83878909/236594492-585124fd-9ad2-4c69-8e42-73ea8e9f3c17.png)
+
+---
