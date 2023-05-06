@@ -1,7 +1,7 @@
 # Hack the Box - Bart
 
 ```CSS
-Machine IP: 10.10.10.63 - Windows
+Machine IP: 10.10.10.81 - Windows
 Difficulty: Medium
 Category: OSCP Preparation
 ```
