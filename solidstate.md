@@ -90,3 +90,5 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 ---
 
 # Enumeration
+## Port 22 - SSH
+  - The OpenSSH version that is running on port 22 is not associated with any critical vulnerabilities, so it’s unlikely that we gain initial access through this port, unless we find credentials.
