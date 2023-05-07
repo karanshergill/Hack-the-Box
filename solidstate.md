@@ -49,7 +49,40 @@ Nmap done: 1 IP address (1 host up) scanned in 81.67 seconds
 ```CSS
 ▶ nmap -sC -sV -p 22,25,80,110,119,4555 10.10.10.51 -oN services.nmap
 
+Nmap scan report for 10.10.10.51
+Host is up (0.23s latency).
 
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.4p1 Debian 10+deb9u1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 770084f578b9c7d354cf712e0d526d8b (RSA)
+|   256 78b83af660190691f553921d3f48ed53 (ECDSA)
+|_  256 e445e9ed074d7369435a12709dc4af76 (ED25519)
+25/tcp   open  smtp    JAMES smtpd 2.3.2
+|_smtp-commands: solidstate Hello nmap.scanme.org (10.10.14.24 [10.10.14.24])
+80/tcp   open  http    Apache httpd 2.4.25 ((Debian))
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Home - Solid State Security
+110/tcp  open  pop3    JAMES pop3d 2.3.2
+119/tcp  open  nntp    JAMES nntpd (posting ok)
+4555/tcp open  rsip?
+| fingerprint-strings: 
+|   GenericLines: 
+|     JAMES Remote Administration Tool 2.3.2
+|     Please enter your login and password
+|     Login id:
+|     Password:
+|     Login failed for 
+|_    Login id:
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port4555-TCP:V=7.93%I=7%D=5/7%Time=6457C059%P=x86_64-pc-linux-gnu%r(Gen
+SF:ericLines,7C,"JAMES\x20Remote\x20Administration\x20Tool\x202\.3\.2\nPle
+SF:ase\x20enter\x20your\x20login\x20and\x20password\nLogin\x20id:\nPasswor
+SF:d:\nLogin\x20failed\x20for\x20\nLogin\x20id:\n");
+Service Info: Host: solidstate; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 ```
 
 ---
