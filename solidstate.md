@@ -91,4 +91,22 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 
 # Enumeration
 ## Port 22 - SSH
-  - The OpenSSH version that is running on port 22 is not associated with any critical vulnerabilities, so it’s unlikely that we gain initial access through this port, unless we find credentials.
+  - The OpenSSH version that is running is not associated with any critical vulnerabilities, so it’s unlikely to gain initial access through this port, unless some valid credentials are found.
+
+---
+
+## Port 25 - SMTP
+  - Service and Version: `James smtpd 2.3.2`
+```CSS
+▶ searchsploit james 2.3.2
+```
+![image](https://user-images.githubusercontent.com/83878909/236688076-9a3abaef-62ed-443e-96ad-1e902cd6a14b.png)
+
+## Port 80 - HTTP
+![image](https://user-images.githubusercontent.com/83878909/236688134-0d9eac62-a0d4-4172-b2e6-cade79213572.png)
+
+### Content Discovery
+  - Brute-force directories.
+```CSS
+▶ gobuster dir --url http://10.10.10.51 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --threads 25
+```
