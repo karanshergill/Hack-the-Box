@@ -158,7 +158,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236668409-86d65ad4-c6b0-44ef-b69c-42948fb7a440.png)
 
-## Privilege Escalation
+## Privilege Escalation (PENDING)
   - Check OS version using NMAP.
 ```CSS
 ▶ nmap -O --osscan-guess 10.10.10.3
