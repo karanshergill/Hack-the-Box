@@ -4,6 +4,8 @@
 Machine IP: 10.10.10.3 - Linux
 Difficulty: Easy
 Category: OSCP Preparation
+Vulmerabilities:
+  - CVE-2011-2523: vsftpd 2.3.4 - Backdoor Command Execution
 ```
 
 # Reconnaissance
@@ -81,6 +83,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ---
 
 ## FTP
+  - Service and Version:`vsftpd 2.3.4`
   - Anonymous login is allowed.
 ![image](https://user-images.githubusercontent.com/83878909/236660813-dfffeaff-5498-4751-9611-33ed709a53c3.png)
 
@@ -90,6 +93,13 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 
   - No useful information was found.
 ![image](https://user-images.githubusercontent.com/83878909/236660787-9747600c-2dc6-4367-8179-e390ddcc588e.png)
+
+### vsfptd 2.3.4
+```CSS
+▶ searchsploit vsftpd 2.3.4
+```
+![image](https://user-images.githubusercontent.com/83878909/236663999-431d04a9-ed26-40e0-b39e-5bc6106b3579.png)
+
 
 ---
 
