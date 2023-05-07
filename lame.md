@@ -149,7 +149,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 # Exploit - Method I
 
 ## Initial Foothold
-## DistCC Daemon Command Execution
+## DistCC Daemon Command Execution (CVE-2004-2687)
   - Exploit 
 
 ```CSS
