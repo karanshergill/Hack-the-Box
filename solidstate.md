@@ -1,7 +1,11 @@
 # Hack the Box - SolidState
 
 ```CSS
-Machine IP: 10.10.10.51
+Machine IP: 10.10.10.51 - Linux
+Difficulty: Medium
+Category: OSCP Preparation
+Vulmerabilities:
+  - 
 ```
 
 # Reconnaissance
