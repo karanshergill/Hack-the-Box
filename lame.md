@@ -82,7 +82,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 
 ---
 
-## FTP
+## Port 21 - FTP
   - Service and Version:`vsftpd 2.3.4`
   - Anonymous login is allowed.
 ![image](https://user-images.githubusercontent.com/83878909/236660813-dfffeaff-5498-4751-9611-33ed709a53c3.png)
@@ -108,4 +108,9 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
   - The above output shows that the target is not vulnerable.
 
 ---
+
+## Port 139 & 445 - Samba
+  - Service and Version: Samba 3.0.20 Debian
+
+![image](https://user-images.githubusercontent.com/83878909/236665134-25d9feb4-5cd8-4dc4-aadb-5871a4b3b898.png)
 
