@@ -102,6 +102,8 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236688076-9a3abaef-62ed-443e-96ad-1e902cd6a14b.png)
 
+---
+
 ## Port 80 - HTTP
 ![image](https://user-images.githubusercontent.com/83878909/236688134-0d9eac62-a0d4-4172-b2e6-cade79213572.png)
 
@@ -109,4 +111,18 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
   - Brute-force directories.
 ```CSS
 ▶ gobuster dir --url http://10.10.10.51 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --threads 25
+```
+
+---
+
+# Exploit
+
+## Initial Foothold
+  - Apache James Server 2.3.2 - Remote Command Execution using default credentials.
+  - Credentials: `root:root`.
+```CSS
+▶ searchsploit -m linux/remote/35513.py
+```
+```CSS
+▶ python2 35513.py 10.10.10.51
 ```
