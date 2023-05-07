@@ -99,7 +99,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ▶ searchsploit vsftpd 2.3.4
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236663999-431d04a9-ed26-40e0-b39e-5bc6106b3579.png)
-
+  - The above exploit did not work for some reason.
 
 ---
 
