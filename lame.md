@@ -110,7 +110,10 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ---
 
 ## Port 139 & 445 - Samba
-  - Service and Version: Samba 3.0.20 Debian
-
+  - Service and Version: `Samba 3.0.20 Debian`
 ![image](https://user-images.githubusercontent.com/83878909/236665134-25d9feb4-5cd8-4dc4-aadb-5871a4b3b898.png)
 
+  - List Shares Anonymous
+```CSS
+▶ smbclient -L \\lame.hackthebox.gr -I 10.10.10.3 -N 
+```
