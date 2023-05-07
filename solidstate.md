@@ -4,7 +4,7 @@
 Machine IP: 10.10.10.51 - Linux
 Difficulty: Medium
 Category: OSCP Preparation
-Vulmerabilities:
+Vulnerabilities:
   - 
 ```
 
