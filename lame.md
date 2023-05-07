@@ -117,3 +117,5 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ```CSS
 ▶ smbclient -L \\lame.hackthebox.gr -I 10.10.10.3 -N 
 ```
+![image](https://user-images.githubusercontent.com/83878909/236665450-f2a18dcd-6de5-4c71-8a07-40edb57313d8.png)
+
