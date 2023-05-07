@@ -119,3 +119,11 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236665450-f2a18dcd-6de5-4c71-8a07-40edb57313d8.png)
 
+  - View Share Permisssions
+```CSS
+▶ smbmap -H 10.10.10.3
+```
+![image](https://user-images.githubusercontent.com/83878909/236667248-57476b99-3660-4588-988d-06b7be5d5c86.png)
+
+---
+
