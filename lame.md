@@ -95,7 +95,8 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ![image](https://user-images.githubusercontent.com/83878909/236660787-9747600c-2dc6-4367-8179-e390ddcc588e.png)
 
 ### vsfptd 2.3.4
-  - Check if the version is vulnerable using a NMAP script.
+  - Check if the version is vulnerable using NMAP.
+  - Search for a NMAP script to check `ftp` service.
 ```CSS
 ▶ ls /usr/share/nmap/scripts/ftp*
 ```
@@ -109,7 +110,7 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 
 ---
 
-## Port 139 & 445 - Samba
+## Port 139 & 445 - SMB (Samba)
   - Service and Version: `Samba 3.0.20 Debian`
 ![image](https://user-images.githubusercontent.com/83878909/236665134-25d9feb4-5cd8-4dc4-aadb-5871a4b3b898.png)
 
@@ -127,3 +128,16 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 
 ---
 
+## Port 3632 distccd v1
+  - Check if the version is vulnerable using NMAP.
+  - Search for a NMAP script to check `distccd` service.
+
+```CSS
+▶ ls /usr/share/nmap/scripts/dist*
+```
+![image](https://user-images.githubusercontent.com/83878909/236667913-e01b1c12-28a9-4a99-a8ad-8abaaf12d65f.png)
+
+```CSS
+▶ nmap -Pn -p 3632 10.10.10.3 --script distcc-cve2004-2687.nse
+```
+![image](https://user-images.githubusercontent.com/83878909/236667868-56a68f3d-9a51-412f-b315-9b62fb71ec49.png)
