@@ -95,11 +95,17 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ![image](https://user-images.githubusercontent.com/83878909/236660787-9747600c-2dc6-4367-8179-e390ddcc588e.png)
 
 ### vsfptd 2.3.4
+  - Check if the version is vulnerable using a NMAP script.
 ```CSS
-▶ searchsploit vsftpd 2.3.4
+▶ ls /usr/share/nmap/scripts/ftp*
 ```
-![image](https://user-images.githubusercontent.com/83878909/236663999-431d04a9-ed26-40e0-b39e-5bc6106b3579.png)
-  - The above exploit did not work for some reason.
+![image](https://user-images.githubusercontent.com/83878909/236664752-1a4b5dc8-8d51-49c3-b571-ab4953cf5983.png)
+
+```CSS
+▶ nmap -p 21 10.10.10.3 --script ftp-vsftpd-backdoor.nse
+```
+![image](https://user-images.githubusercontent.com/83878909/236664883-3430962a-ccbe-4d05-8348-9ff8ae89c375.png)
+  - The above output shows that the target is not vulnerable.
 
 ---
 
