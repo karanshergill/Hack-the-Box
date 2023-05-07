@@ -77,3 +77,7 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ```
+
+## FTP
+  - Anonymous login is allowed.
+![image](https://user-images.githubusercontent.com/83878909/236660712-4559c6ec-0b42-49ce-878b-d9adbc56e116.png)
