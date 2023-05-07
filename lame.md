@@ -78,6 +78,18 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 53.82 seconds
 ```
 
+---
+
 ## FTP
   - Anonymous login is allowed.
-![image](https://user-images.githubusercontent.com/83878909/236660712-4559c6ec-0b42-49ce-878b-d9adbc56e116.png)
+![image](https://user-images.githubusercontent.com/83878909/236660813-dfffeaff-5498-4751-9611-33ed709a53c3.png)
+
+```CSS
+▶ ftp 10.10.10.3
+```
+
+  - No useful information was found.
+![image](https://user-images.githubusercontent.com/83878909/236660787-9747600c-2dc6-4367-8179-e390ddcc588e.png)
+
+---
+
