@@ -205,3 +205,8 @@ mindy@solidstate:~$ cat /etc/passwd
 adduser ../../../../../../../../etc/bash_completion.d hardyboy
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236778269-50d42f3d-ffb2-46c0-9cf9-3646cb038f16.png)
+
+  - Send the new user an email with a reverse shell, connecting to SMTP on 25 which will create a file `/etc/bash_completion.d` which contains a reverse shell.
+```CSS
+
+```
