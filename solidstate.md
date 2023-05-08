@@ -140,3 +140,9 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 ▶ nc 10.10.10.51 4555
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236746370-6adb3b95-83e9-4ab4-b182-1f9eae2bd06f.png)
+
+  - List all mail accounts using the command `listusers`.
+![image](https://user-images.githubusercontent.com/83878909/236747526-8b0e75ab-02b4-4a01-9f49-e2ab4130bebd.png)
+
+  - Change the password of the `mailadmin` user account using the command `setpassword`.
+![image](https://user-images.githubusercontent.com/83878909/236747790-6eae3333-52cf-44a6-afa3-237bab43889f.png)
