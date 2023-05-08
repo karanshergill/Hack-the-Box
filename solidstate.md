@@ -146,3 +146,21 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 
   - Change the password of the `mailadmin` user account using the command `setpassword`.
 ![image](https://user-images.githubusercontent.com/83878909/236747790-6eae3333-52cf-44a6-afa3-237bab43889f.png)
+
+### Access User E-mail Account
+  - Use `telnet` to access the email account of user `mailadmin`.
+```
+▶ telnet 10.10.10.51 110
+```
+![image](https://user-images.githubusercontent.com/83878909/236748853-bb598a85-1114-41b9-b645-14389fc798d8.png)
+  - No email were found.
+
+### Inspect All User E-mail Accounts
+  - Change the password of all user e-mail accounts.
+  - Access all email accounts using telnet.
+  - Check for interesting information by inspecting emails in all accounts.
+
+#### Change Passwords
+![image](https://user-images.githubusercontent.com/83878909/236750391-5ebf01b4-0eb4-4bbe-b757-cb9875eb12d4.png)
+
+#### Check E-mails
