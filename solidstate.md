@@ -112,6 +112,7 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 ```CSS
 ▶ gobuster dir --url http://10.10.10.51 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --threads 25
 ```
+![image](https://user-images.githubusercontent.com/83878909/236745375-9142a91b-f442-4716-a2d2-a6a2db5766df.png)
 
 ---
 
