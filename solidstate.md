@@ -182,6 +182,7 @@ RETR 2
 ▶ ssh mindy@10.10.10.51
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236756135-c2652272-d7e1-4eed-b8f3-3e40b2d98b21.png)
+![image](https://user-images.githubusercontent.com/83878909/236762145-7aa8329a-e138-4463-84cf-1711df9524ab.png)
 
 ---
 
