@@ -110,7 +110,7 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 ### Content Discovery
   - Brute-force directories.
 ```CSS
-▶ gobuster dir --url http://10.10.10.51 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt --threads 25
+▶ gobuster dir --url http://10.10.10.51 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --threads 25
 ```
 
 ---
