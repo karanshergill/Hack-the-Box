@@ -183,8 +183,10 @@ RETR 2
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236756135-c2652272-d7e1-4eed-b8f3-3e40b2d98b21.png)
 
+---
+
 # Privilege Escalation
-### Restricted Bash
+### Restricted Bash Shell
 ```CSS
 mindy@solidstate:~$ cat /etc/passwd
 ```
