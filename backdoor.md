@@ -64,4 +64,24 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds 
 ```
+![image](https://user-images.githubusercontent.com/83878909/236892792-dee7a77f-2f96-40f7-9375-75b642a52357.png)
 
+---
+
+# Enumeration
+## Port 22 - SSH
+  - The OpenSSH version that is running is not associated with any critical vulnerabilities, so it’s unlikely to gain initial access through this port, unless some valid credentials are found.
+
+---
+
+## Port 80 HTTP
+  - The webpage reveals no interesting information.
+![image](https://user-images.githubusercontent.com/83878909/236893295-d3d776d2-ebb0-4c40-899d-0b6f95c26995.png)
+
+  - The `nmap` result shows that the server is running wordpress.
+![image](https://user-images.githubusercontent.com/83878909/236892706-e1cebe1f-b77f-47bc-8af8-89369fbf0c86.png)
+
+  - Run `wpscan` on the target.
+```CSS
+▶ wpscan
+```
