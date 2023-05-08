@@ -164,3 +164,15 @@ Nmap done: 1 IP address (1 host up) scanned in 270.27 seconds
 ![image](https://user-images.githubusercontent.com/83878909/236750391-5ebf01b4-0eb4-4bbe-b757-cb9875eb12d4.png)
 
 #### Check E-mails
+```
+RETR 1
+```
+  - User `john`.
+![image](https://user-images.githubusercontent.com/83878909/236751189-78724c43-ea2d-4d66-bcb7-f46062a502e3.png)
+
+  - User `mindy`.
+```
+RETR 2
+```
+![image](https://user-images.githubusercontent.com/83878909/236751675-ca0a8ff0-2899-4649-8d68-855893b0fbf5.png)
+  - SSH Credentials: `mindy:P@55W0rd1!2@`
