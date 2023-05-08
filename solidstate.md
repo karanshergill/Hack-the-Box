@@ -176,3 +176,10 @@ RETR 2
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236751675-ca0a8ff0-2899-4649-8d68-855893b0fbf5.png)
   - SSH Credentials: `mindy:P@55W0rd1!2@`
+
+### SSH
+```CSS
+▶ ssh mindy@10.10.10.51
+```
+![image](https://user-images.githubusercontent.com/83878909/236756135-c2652272-d7e1-4eed-b8f3-3e40b2d98b21.png)
+
