@@ -126,4 +126,11 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 
 ## Local File Inclusion and Process ID (PID) Brute-Force
   - Since a LFI exists and the files on the remote server are readable there is one possible way to potentially find some useful information about the service on port `1337`. This can be done by brute forcing the `/proc/{PID}/cmdline` file.
-  - Get a list of the processes running on the system in order to know more about the service running on port `1337`. Look at `/proc`, which has a directory for each process id (pid) currently running. Also check the `self` folder, which is a symbolic link to the pid of the current process running. 
+  - Get a list of the processes running on the system in order to know more about the service running on port `1337`. Look at `/proc`, which has a directory for each process id (pid) currently running. Also check the `self` folder, which is a symbolic link to the pid of the current process running.
+  - To brute-force the process ID's a script is present in the Exploits repository.
+
+```CSS
+▶  python CVE-2016-10924-Exploit.py http://backdoor.htb
+```
+![image](https://user-images.githubusercontent.com/83878909/237006676-c39bdf84-74ed-47ac-928b-e4975f226db9.png)
+  - 
