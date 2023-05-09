@@ -179,3 +179,4 @@ python3 -c "import pty;pty.spawn('/bin/bash')"
 ```CSS
 user@Backdoor:/home/user$ps auxww
 ```
+![image](https://user-images.githubusercontent.com/83878909/237046520-859815bb-b3ff-4635-846b-30030acec366.png)
