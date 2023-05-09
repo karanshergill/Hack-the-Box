@@ -181,6 +181,13 @@ user@Backdoor:/home/user$ps auxww
 ```
 ![image](https://user-images.githubusercontent.com/83878909/237046520-859815bb-b3ff-4635-846b-30030acec366.png)
 ![image](https://user-images.githubusercontent.com/83878909/237048381-271ef8ab-4809-43fa-bf6b-d9821f2fae29.png)
+
+## Exploiting Screen
   - `screen` is a terminal multiplexer similar to tmux . It can be used to start a session and then open any number of windows (virtual terminals) inside that session. Processes running in Screen will continue to run even when their window is not visible and even if you get disconnected. When the session is detached, the process that was originally started from the screen is still running and managed by the screen itself. The process can then re-attach the session at a later time, and the terminals are still there, the way they were left.
   - In the above case the idea is similar to as if the admin is logged in with a screen session.
   - Read more: https://0xdf.gitlab.io/2022/04/23/htb-backdoor.html#screen
+  - Navigate to the /var/run/screen directory on the remote server.
+ ![image](https://user-images.githubusercontent.com/83878909/237050979-cf9700b6-9a05-4cd4-a894-dea2deacf743.png)
+ ![image](https://user-images.githubusercontent.com/83878909/237051959-ca1c9bdc-d064-4203-b405-4202c554c1d6.png)
+   - Screen directories for both users, user & root exist.
+   - No persmission to view the directory listing of the S-root directory.
