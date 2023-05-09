@@ -5,7 +5,7 @@ Machine IP: 10.10.11.125 - Linux
 Difficulty: Easy
 Category: OSCP Preparation
 Vulnerabilities:
-  - Directory Traversal in ebook-download WordPress plugin (CVE-2016-10924) 
+  - Directory Traversal (Local File Inclusion) in ebook-download WordPress plugin (CVE-2016-10924) 
 ```
 
 # Reconnaissance
@@ -105,7 +105,7 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 
 ---
 
-# Seach Exploits
+# Search Exploits
   - Search for exploits: ` Ebook Download 1.1`.
 ```CSS
 ▶ searchsploit Ebook Download 1.1
@@ -124,3 +124,6 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 
 ---
 
+## Local File Inclusion and Process ID (PID) Brute-Force
+  - Since a LFI exists and the files on the remote server are readable there is one possible way to potentially find some useful information about the service on port 1337. This can be done by brute forcing the `/proc/{PID}/cmdline` file.
+  - 
