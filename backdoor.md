@@ -180,3 +180,4 @@ python3 -c "import pty;pty.spawn('/bin/bash')"
 user@Backdoor:/home/user$ps auxww
 ```
 ![image](https://user-images.githubusercontent.com/83878909/237046520-859815bb-b3ff-4635-846b-30030acec366.png)
+![image](https://user-images.githubusercontent.com/83878909/237048381-271ef8ab-4809-43fa-bf6b-d9821f2fae29.png)
