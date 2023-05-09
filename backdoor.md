@@ -191,3 +191,15 @@ user@Backdoor:/home/user$ps auxww
  ![image](https://user-images.githubusercontent.com/83878909/237051959-ca1c9bdc-d064-4203-b405-4202c554c1d6.png)
    - Screen directories for both users, user & root exist.
    - No persmission to view the directory listing of the S-root directory.
+   - There exists a screen-session, which was launched by the root user with session name "root".
+   - The default screen syntax for attaching to a screen-session created for a different user is `screen -x user/session_name`.
+   - To be able to attach to a screen session, the TERM environment variable needs to be set, as it defines the terminal type. In other words, it sets the terminal type for which output is to be prepared.
+
+```CSS
+user@Backdoor:/home/user$export TERM=xterm
+user@Backdoor:/home/user$screen -x root/root
+```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c4b37bd1-8900-4c47-a404-90fa9f160122)
+
+---
