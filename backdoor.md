@@ -82,6 +82,7 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
   - The `nmap` result shows that the server is running wordpress.
 ![image](https://user-images.githubusercontent.com/83878909/236892706-e1cebe1f-b77f-47bc-8af8-89369fbf0c86.png)
 
+### WordPress
   - Run `wpscan` on the target.
 ```CSS
 ▶ wpscan --url http://10.10.11.125 --detection-mode aggressive --random-user-agent --enumerate at,ap,tt,cb,dbe,u --output wpscan.out --api-token XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -95,3 +96,5 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 ![image](https://user-images.githubusercontent.com/83878909/236990737-c53d158e-1148-4029-823e-291e456f559e.png)
   - Vulnerable Plugin: ebook-download 1.1
   - Vulnerability: Directory Traversal (CVE-2016-10924)
+
+---
