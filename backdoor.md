@@ -94,6 +94,7 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 ▶ wpscan --url http://10.10.11.125 --plugins-detection aggressive --random-user-agent --output wpscan-plugins.out --api-token XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236990737-c53d158e-1148-4029-823e-291e456f559e.png)
+![image](https://user-images.githubusercontent.com/83878909/236994080-262df05b-d599-49a5-97d1-3a97adf02434.png)
   - Vulnerable Plugin: Ebook Download 1.1
   - Vulnerability: Directory Traversal (CVE-2016-10924)
 
