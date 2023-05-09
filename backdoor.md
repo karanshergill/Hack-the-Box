@@ -100,9 +100,13 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 
 ---
 
-# Exploit
-## Initial Foothold
-  - Search for exploits
+## Port 1337
+  -  Attempted to access it with telnet and netcat but unsuccessful.
+
+---
+
+# Seach Exploits
+  - Search for exploits: ` Ebook Download 1.1`.
 ```CSS
 ▶ searchsploit Ebook Download 1.1
 ```
@@ -114,7 +118,9 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236992473-9d1109dd-432e-4d0a-88ac-40b34c62f467.png)
 
-  - Database connection information,
+  - Database connection information.
 ![image](https://user-images.githubusercontent.com/83878909/236993040-00d4e363-070d-4495-a87f-cadd3bec3e91.png)
   - Tried to log in WordPress at http://backdoor.htb/wp-login.php with the username `admin` and password `wordpressuser`, but did not work.
+
+---
 
