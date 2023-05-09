@@ -172,3 +172,10 @@ python3 -c "import pty;pty.spawn('/bin/bash')"
 ![image](https://user-images.githubusercontent.com/83878909/237010455-b85bcdc2-76ae-4b17-9a76-b9cb3824a879.png)
 ![image](https://user-images.githubusercontent.com/83878909/237010693-06fa72f5-3f63-4398-90b7-91de222883b1.png)
 
+---
+
+# Privilege Escalation
+  - List all of the running processes on the system.
+```CSS
+user@Backdoor:/home/user$ps auxww
+```
