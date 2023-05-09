@@ -83,5 +83,5 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 
   - Run `wpscan` on the target.
 ```CSS
-▶ wpscan
+▶ wpscan --url http://10.10.11.125 --detection-mode aggressive --random-user-agent --enumerate at,ap,tt,cb,dbe,u --output wpscan.out --api-token XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
