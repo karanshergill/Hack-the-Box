@@ -125,5 +125,5 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 ---
 
 ## Local File Inclusion and Process ID (PID) Brute-Force
-  - Since a LFI exists and the files on the remote server are readable there is one possible way to potentially find some useful information about the service on port 1337. This can be done by brute forcing the `/proc/{PID}/cmdline` file.
-  - Get a list of the processes running on the system in order to know more about the service running on port `1337`. Look at `/proc`, which has a directory for each process id (pid) currently running. Also check the self folder, which is a symbolic link to the pid of the current process running. 
+  - Since a LFI exists and the files on the remote server are readable there is one possible way to potentially find some useful information about the service on port `1337`. This can be done by brute forcing the `/proc/{PID}/cmdline` file.
+  - Get a list of the processes running on the system in order to know more about the service running on port `1337`. Look at `/proc`, which has a directory for each process id (pid) currently running. Also check the `self` folder, which is a symbolic link to the pid of the current process running. 
