@@ -106,3 +106,11 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 ▶ searchsploit Ebook Download 1.1
 ```
 ![image](https://user-images.githubusercontent.com/83878909/236992114-dc056b2e-1e0d-4d90-afb9-719ccd7871ae.png)
+
+  - The Exploit
+```CSS
+▶ searchsploit -x Ebook Download 1.1
+```
+![image](https://user-images.githubusercontent.com/83878909/236992473-9d1109dd-432e-4d0a-88ac-40b34c62f467.png)
+
+![image](https://user-images.githubusercontent.com/83878909/236993040-00d4e363-070d-4495-a87f-cadd3bec3e91.png)
