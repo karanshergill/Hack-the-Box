@@ -8,6 +8,9 @@ Vulnerabilities:
   - Directory Traversal (Local File Inclusion) in ebook-download WordPress plugin (CVE-2016-10924)
   - Process ID (PID) Brute-force
   - GRBServer - Remote Command Execution via ELF Backdoor
+  Privilege Escalation:
+    - PID (Process ID)
+    - SCREEN Session as Root
 ```
 
 # Reconnaissance
