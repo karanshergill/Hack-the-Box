@@ -5,6 +5,7 @@ Machine IP: 10.10.11.125 - Linux
 Difficulty: Easy
 Category: OSCP Preparation
 Vulnerabilities:
+  - Directory Traversal in ebook-download WordPress plugin (CVE-2016-10924) 
 ```
 
 # Reconnaissance
@@ -85,3 +86,12 @@ Nmap done: 1 IP address (1 host up) scanned in 22.51 seconds
 ```CSS
 ▶ wpscan --url http://10.10.11.125 --detection-mode aggressive --random-user-agent --enumerate at,ap,tt,cb,dbe,u --output wpscan.out --api-token XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
+  - The above scan did not produce any fruitful results.
+
+  - Run `wpscan` plugin detection in aggressive mode.
+```CSS
+▶ wpscan --url http://10.10.11.125 --plugins-detection aggressive --random-user-agent --output wpscan-plugins.out --api-token XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+![image](https://user-images.githubusercontent.com/83878909/236990737-c53d158e-1148-4029-823e-291e456f559e.png)
+  - Vulnerable Plugin: ebook-download 1.1
+  - Vulnerability: Directory Traversal (CVE-2016-10924)
