@@ -191,4 +191,7 @@ Nmap done: 1 IP address (1 host up) scanned in 41.80 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3291eb50-58eb-4360-abbb-95612af30e28)
 
   - Login with the account credentials.
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b7438cb8-ead5-40f9-8b37-3080fea0485d)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3299e3ed-1b97-49ff-a439-2cc01bdac7b8)
+
+  - Read permission on repositories.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4bdb75a0-c92e-4bf3-bd5b-1a72c5b9a1d7)
