@@ -146,5 +146,19 @@ Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ed628e06-7e8d-4082-834c-6c0fef76b46c)
 
+#### List Zip Contents
+```CSS
+▶ unzip -l UserInfo.exe.zip
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2fd08177-b803-4cfe-8cd0-e82a0eb24902)
+
+#### Unzip Archieve
+```CSS
+▶ mkdir userinfo
+▶ unzip UserInfo.exe.zip -d userinfo
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1624d058-b88b-4417-b134-6c393792701e)
+
 ---
+
 
