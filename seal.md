@@ -143,6 +143,24 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 41.80 seconds
 ```
+
+---
+
+# Enumeration
+## Port 22 - SSH
+  - The OpenSSH version that is running is not associated with any critical vulnerabilities, so it’s unlikely to gain initial access through this port, unless some valid credentials are found.
+
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4ff70451-a9c1-4926-ae42-8bc7911217b0)
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/67431678-77dc-4620-80e9-211c14b6ce97)
+
+---
+
+# Content Discovery
+
+```CSS
+▶ gobuster dir --url https://10.10.10.250 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt --threads 25 --no-tls-validation
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/79031ee3-0750-4358-9168-c143f1af023d)
+
+
