@@ -183,6 +183,12 @@ Nmap done: 1 IP address (1 host up) scanned in 41.80 seconds
 ---
 
 # Git Bucket
-  - Logging in with Git Bucket default credentials.
+  - Logging in with Git Bucket default credentials failed.
   - Git Bucket default credentials: `root:root`
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ceaddd26-18cb-4181-a557-fb557966d987)
 
+  - Register a new account on Git Bucket.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3291eb50-58eb-4360-abbb-95612af30e28)
+
+  - Login with the account credentials.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b7438cb8-ead5-40f9-8b37-3080fea0485d)
