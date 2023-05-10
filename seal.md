@@ -44,3 +44,5 @@ Nmap done: 1 IP address (1 host up) scanned in 93.26 seconds
 ```CSS
 ▶ nmap -sC -sV -p 22,43,8080 10.10.10.250 -oN services.nmap
 ```
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/67431678-77dc-4620-80e9-211c14b6ce97)
