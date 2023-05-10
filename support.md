@@ -167,6 +167,7 @@ Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
 ```CSS
 ▶ file UserInfo.exe
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/32a50827-af8b-4c3c-9a98-3ec5e8f2e9e6)
 
 ---
 
