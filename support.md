@@ -129,8 +129,22 @@ Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ad0378f1-2068-41f9-9425-fd9f8e43ee7f)
   - Authenticated.
 
-## List SMB Shares
+### List SMB Shares
   - List SMB shares as an anonymous user.
 ```CSS
 ▶ crackmapexec smb 10.10.11.174 --shares -u 'anonymous' -p ''
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1ba2510f-bdfa-45e9-9867-0fdd34b07360)
+
+#### List Contents
+  - List contents of the shared directory `support-tools`
+  - Download `UserInfo.exe.zip` as it is not a common file.
+```CSS
+▶ smbclient -N //10.10.11.174/support-tools
+▶ smb: \> dir
+▶ smb: \> get UserInfo.exe.zip
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ed628e06-7e8d-4082-834c-6c0fef76b46c)
+
+---
+
