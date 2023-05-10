@@ -93,3 +93,44 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
 ```
+
+----
+
+## Port 445 (SMB)
+  - SMB enumeration.
+  - List shares.
+  - Check for null uthentication.
+  - Check for anonymous authentication.
+
+### SMB Enumeration
+```CSS
+▶ crackmapexec smb 10.10.11.174
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b468b3d1-cda4-4c90-95f7-9da2c975dc7b)
+  - Domain Controller(DC): `support.htb` 
+
+### List SMB Shares
+```CSS
+▶ crackmapexec smb 10.10.11.174 --shares
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c4bc2e24-d78e-46b8-890d-0f5ba2e1a1a9)
+  - No results.
+
+### SMB Null Authentication
+```
+▶ crackmapexec smb --shares 10.10.11.174 -u '' -p ''
+```
+  - No results.
+
+### SMB Anonymous Authentication
+```CSS
+▶ crackmapexec smb -u 'anonymous' -p ''
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ad0378f1-2068-41f9-9425-fd9f8e43ee7f)
+  - Authenticated.
+
+## List SMB Shares
+  - List SMB shares as an anonymous user.
+```CSS
+▶ crackmapexec smb 10.10.11.174 --shares -u 'anonymous' -p ''
+```
