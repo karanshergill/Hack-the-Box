@@ -171,5 +171,10 @@ Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
 
 ---
 
+### Decompile EXE File
+  - Decompile `UserInfo.exe` using `ILSpy` to read the source code.
+  - Open the file `UserInfo.exe` in `ILSpy`. 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/006a73ab-227d-457f-b769-5f6daf98e776)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2443765c-1eec-4efb-9285-66d32009753e)
 
+  - LDAP Credentials:  
