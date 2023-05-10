@@ -152,7 +152,7 @@ Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2fd08177-b803-4cfe-8cd0-e82a0eb24902)
 
-#### Unzip Archieve
+#### Unzip Archive
 ```CSS
 ▶ mkdir userinfo
 ▶ unzip UserInfo.exe.zip -d userinfo
@@ -167,7 +167,7 @@ Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
 ```CSS
 ▶ file UserInfo.exe
 ```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/32a50827-af8b-4c3c-9a98-3ec5e8f2e9e6)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/a4ed6261-20bd-46ee-b5a0-5c04b62e8691)
 
 ---
 
