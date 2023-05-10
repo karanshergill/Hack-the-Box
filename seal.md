@@ -198,3 +198,6 @@ Nmap done: 1 IP address (1 host up) scanned in 41.80 seconds
 
   - Developer Comments.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/a7dc4650-7d37-42ea-a77c-530f4cd55c0f)
+
+  - Tomcat Credentials.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/621c388b-8930-4405-a3f9-16617938e594)
