@@ -193,5 +193,8 @@ Nmap done: 1 IP address (1 host up) scanned in 41.80 seconds
   - Login with the account credentials.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3299e3ed-1b97-49ff-a439-2cc01bdac7b8)
 
-  - Read permission on repositories.
+  - Read permission on two repositories. The infra repository reveals ansible templates to configure tomcat.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4bdb75a0-c92e-4bf3-bd5b-1a72c5b9a1d7)
+
+  - Developer Comments.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/a7dc4650-7d37-42ea-a77c-530f4cd55c0f)
