@@ -179,3 +179,10 @@ Nmap done: 1 IP address (1 host up) scanned in 41.80 seconds
 ▶ gobuster dir --url https://10.10.10.250/manager --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt --threads 25 --no-tls-validation
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/afd4b4d6-d29a-495d-bc6f-734ae67e3d2e)
+
+---
+
+# Git Bucket
+  - Logging in with Git Bucket default credentials.
+  - Git Bucket default credentials: `root:root`
+
