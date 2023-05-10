@@ -158,6 +158,11 @@ Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
 ▶ unzip UserInfo.exe.zip -d userinfo
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1624d058-b88b-4417-b134-6c393792701e)
+```CSS
+▶ tree
+▶ file UserInfo.exe
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9859ca19-6a6e-4e08-9fe6-29dbf28d5b68)
 
 ---
 
