@@ -201,6 +201,7 @@ Nmap done: 1 IP address (1 host up) scanned in 41.80 seconds
 
   - Tomcat Credentials.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/621c388b-8930-4405-a3f9-16617938e594)
+Credentials: `tomacat:42MrHBf*z8{Z%`
 
 ## Nginx Path Normalization
 
