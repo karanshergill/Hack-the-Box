@@ -219,3 +219,4 @@ Credentials: `tomacat:42MrHBf*z8{Z%`
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9caf8966-f200-4f8f-bedf-0203debb43fe)
 
   - Bypassing 403 forbidden.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6fbb10f9-5126-44ee-a20c-5b36595068bc)
