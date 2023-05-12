@@ -221,8 +221,14 @@ Credentials: `tomacat:42MrHBf*z8{Z%`
   - Bypassing 403 forbidden.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6fbb10f9-5126-44ee-a20c-5b36595068bc)
 
-  - Shell Upload
+  - Shell Upload.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6ac092b4-8ad5-4a96-b1bc-b15f2c9b094f)
 
-  - Invoke the Shell
+  - Invoke the Shell.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6aee2032-26d2-4e8d-a0d9-eab44c125987)
+
+  - Start `netcat` listener for reverse shell.
+```CSS
+▶ nc -nlvvp 31337
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/04bd1f02-9798-44e7-a151-60df96e5c108)
