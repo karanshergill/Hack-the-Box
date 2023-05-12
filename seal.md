@@ -242,3 +242,4 @@ Credentials: `tomacat:42MrHBf*z8{Z%`
   - Run `pspy64`.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/96b2a128-c970-4d77-b7a8-8770dd92f179)
 
+  - Copy User SSH Keys.
