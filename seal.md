@@ -215,3 +215,5 @@ Credentials: `tomacat:42MrHBf*z8{Z%`
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/eb471ef1-f23b-4b56-a8fc-424a06a194f9)
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7d47d7d9-fe6e-4123-8817-0a2b81465e48)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9caf8966-f200-4f8f-bedf-0203debb43fe)
