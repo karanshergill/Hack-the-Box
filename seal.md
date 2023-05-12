@@ -236,4 +236,9 @@ Credentials: `tomacat:42MrHBf*z8{Z%`
   - Shell upgrade
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b9665c52-eb61-4342-ba7f-5ff73bfeb985)
 
-- 
+  - Upload `pspy64` to the target machine.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b99d54a5-02ee-422b-afc1-3a12d8b6193d)
+
+  - Run `pspy64`.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/96b2a128-c970-4d77-b7a8-8770dd92f179)
+
