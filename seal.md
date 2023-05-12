@@ -232,3 +232,8 @@ Credentials: `tomacat:42MrHBf*z8{Z%`
 ▶ nc -nlvvp 31337
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/04bd1f02-9798-44e7-a151-60df96e5c108)
+
+  - Shell upgrade
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b9665c52-eb61-4342-ba7f-5ff73bfeb985)
+
+- 
