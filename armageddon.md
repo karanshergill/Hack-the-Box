@@ -1,7 +1,7 @@
 # Hack the Box - Armageddon
 
 # NMAP
-```CS
+```JS
 ▶ nmap -Pn -sS -O -p- 10.10.10.233 -T4 --min-rate 1000 -oN ports.nmap
 
 Nmap scan report for 10.10.10.233
