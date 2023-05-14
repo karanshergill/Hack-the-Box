@@ -1,7 +1,7 @@
 # Hack the Box - Armageddon
 
 # NMAP
-```JS
+```CS
 ▶ nmap -Pn -sS -O -p- 10.10.10.233 -T4 --min-rate 1000 -oN ports.nmap
 
 Nmap scan report for 10.10.10.233
@@ -31,5 +31,27 @@ Nmap done: 1 IP address (1 host up) scanned in 85.58 seconds
 ```
 
 ```CSS
-▶ 
+▶ nmap -sC -sV -p 22,80 10.10.10.233 -oN services.nmap
+
+Nmap scan report for 10.10.10.233
+Host is up (0.18s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 82c6bbc7026a93bb7ccbdd9c30937934 (RSA)
+|   256 3aca9530f312d7ca4505bcc7f116bbfc (ECDSA)
+|_  256 7ad4b36879cf628a7d5a61e7060f5f33 (ED25519)
+80/tcp open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.4.16)
+|_http-title: Welcome to  Armageddon |  Armageddon
+|_http-generator: Drupal 7 (http://drupal.org)
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.4.16
+| http-robots.txt: 36 disallowed entries (15 shown)
+| /includes/ /misc/ /modules/ /profiles/ /scripts/ 
+| /themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt 
+| /INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt 
+|_/LICENSE.txt /MAINTAINERS.txt
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.35 seconds
 ```
