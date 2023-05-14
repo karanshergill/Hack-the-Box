@@ -58,3 +58,5 @@ Nmap done: 1 IP address (1 host up) scanned in 15.35 seconds
 
 ## HTTP
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cb5ace1e-fa12-4cc5-b837-4107afa14893)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9a5aaa2b-0ce1-4ec1-b1f4-cab73c395c9f)
