@@ -73,14 +73,12 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 
 ### Brute-Force Mitigation Bypass
   - Search for bypassing brute-force protection.
-```CSS
-▶ searchsploit bludit
-```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c7a9919b-9581-433c-b2e9-8670b9fb257c)
 
   - Google search.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d7d3f417-9f2d-42ab-910e-7430ef76d1fb)
   - Bludit Brute-force Mitigation Bypass (CVE-2019-17240)
+
   - https://github.com/ColdFusionX/CVE-2019-17240_Bludit-BF-Bypass
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1b80229c-69f6-4496-975e-6bf906725572)
 
@@ -92,6 +90,8 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 
   - Login successful to Dashboard.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6fb1a617-4f08-4d12-a236-b860b18cbea5)
+
+---
 
   - Search for exploits.
   - Bludit RCE - https://github.com/bludit/bludit/issues/1081
