@@ -97,9 +97,20 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
   - Bludit RCE - https://github.com/bludit/bludit/issues/1081
 
   - Upload a php reverse shell to the target machine.
-  ```CSS
-  ▶ cp /usr/share/webshells/php/php-reverse-shell.php shell.php
-  ```
-
+```CSS
+▶ cp /usr/share/webshells/php/php-reverse-shell.php shell.php
+```
   - Change the IP address and Port in the shell code.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f91738d7-102a-4418-b21f-3f3eddac9b06)
+  - Change the extension of the shell file from `.php` to `.jpg`.
+  - Upload the shell and modify the `UUID` by intercepting the upload request in burpsuite.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/dfcd390f-c71c-4994-8469-4a26e2c0d8cd)
+  - Also upload the `htaccess` file to make the `jpg` executable as `php`.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/dea6a20e-07fa-490d-976b-9a3217c9ac52)
+  - Browse to the location of the uploaded shell.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b470b90a-15ac-4c31-b032-f7802aafd02f)
+  - Start a `netcat` listener.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/53d65f09-2a0b-4c90-b6e0-1a3cfec4bc76)
+
+  - Uploading `linpeas.sh`
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/abaeecce-bd2b-454c-b2f8-5d4baaf153c4)
