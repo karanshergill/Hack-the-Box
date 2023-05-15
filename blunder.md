@@ -68,6 +68,5 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 ## Brute-Force Credentials
   - A potential username `fergus` is found. Attempt to brute-force the password of this user for the CMS.
 
-```CSS
-▶ 
-```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5486ce91-06ec-466f-b912-f9d4066152f0)
+  - IP address gets banned after a few tries to brute-force the password.
