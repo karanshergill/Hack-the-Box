@@ -96,8 +96,10 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
   - Search for exploits.
   - Bludit RCE - https://github.com/bludit/bludit/issues/1081
 
-  - Upload a blank `.php` file.
-  - Modify the upload request.
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e4cc3b96-b42b-4f7a-8915-06eb18ceca80)
-  
-  
+  - Upload a php reverse shell to the target machine.
+  ```CSS
+  ▶ cp /usr/share/webshells/php/php-reverse-shell.php shell.php
+  ```
+
+  - Change the IP address and Port in the shell code.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f91738d7-102a-4418-b21f-3f3eddac9b06)
