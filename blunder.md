@@ -99,6 +99,9 @@ Login with the credentials to the Bludit dashboard.
   - Search for exploits.
   - Bludit RCE - https://github.com/bludit/bludit/issues/1081
 
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/190c2241-d3d6-46b8-a6aa-f0e8dfbcf2a5)
+
   - Upload a php reverse shell to the target machine.
 ```CSS
 ▶ cp /usr/share/webshells/php/php-reverse-shell.php shell.php
@@ -106,6 +109,8 @@ Login with the credentials to the Bludit dashboard.
   - Change the IP address and Port in the shell code.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f91738d7-102a-4418-b21f-3f3eddac9b06)
   - Change the extension of the shell file from `.php` to `.jpg`.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2a4f8ae9-a014-4322-bcac-c0c22263a038)
+
   - Upload the shell and modify the `UUID` by intercepting the upload request in burpsuite.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/dfcd390f-c71c-4994-8469-4a26e2c0d8cd)
   - Also upload the `htaccess` file to make the `jpg` executable as `php`.
