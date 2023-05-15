@@ -70,3 +70,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5486ce91-06ec-466f-b912-f9d4066152f0)
   - IP address gets banned after a few tries to brute-force the password.
+
+### Bypassing Brute-Force Protection
+  - ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d7d3f417-9f2d-42ab-910e-7430ef76d1fb)
