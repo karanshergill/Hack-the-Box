@@ -35,3 +35,7 @@ PORT   STATE  SERVICE VERSION
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 ```
+
+## HTTP 80
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f70628d0-2b79-45bb-af4e-e683b063aa20)
+
