@@ -1,5 +1,8 @@
 # Hack the Box - Blunder
 
+# Reconnaisance
+
+## NMAP
 ```CSS
 ▶ nmap -Pn -sS -O -p- 10.10.10.191 -T4 --min-rate 1000 -oN ports.nmap
 
@@ -59,5 +62,11 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
   - Probably the CMS is running an older version.
   - Potential username `fergus`.
 
-
 ---
+
+## Brute-Force Credentials
+  - A potential username `fergus` is found. Attempt to brute-force the password of this user for the CMS.
+
+```CSS
+▶ 
+```
