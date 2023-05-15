@@ -39,7 +39,15 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 ## HTTP 80
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f70628d0-2b79-45bb-af4e-e683b063aa20)
 
-## Content Discover
+## Content Discovery
+
+```CSS
+▶ gobuster dir --url http://10.10.10.191 --wordlist /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt --threads 20
+```
+
+
 ```CSS
 ▶ gobuster dir --url http://10.10.10.191 --wordlist /usr/share/seclists/Discovery/Web-Content/raft-large-files.txt --threads 20
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c1979746-2805-426a-9824-c5f46d09a09b)
+
