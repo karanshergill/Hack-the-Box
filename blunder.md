@@ -1,6 +1,6 @@
 # Hack the Box - Blunder
 
-# Reconnaisance
+# Reconnaissance
 
 ## NMAP
 ```CSS
@@ -106,6 +106,13 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
   - Upload the shell and modify the `UUID` by intercepting the upload request in burpsuite.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/dfcd390f-c71c-4994-8469-4a26e2c0d8cd)
   - Also upload the `htaccess` file to make the `jpg` executable as `php`.
+
+Contents of `htaccess` file.
+```CSS
+RewriteEngine off
+AddType application/x-httpd-php .jpg
+```
+
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/dea6a20e-07fa-490d-976b-9a3217c9ac52)
   - Browse to the location of the uploaded shell.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b470b90a-15ac-4c31-b032-f7802aafd02f)
