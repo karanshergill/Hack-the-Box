@@ -71,5 +71,10 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5486ce91-06ec-466f-b912-f9d4066152f0)
   - IP address gets banned after a few tries to brute-force the password.
 
-### Bypassing Brute-Force Protection
-  - ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d7d3f417-9f2d-42ab-910e-7430ef76d1fb)
+### Brute-Force Mitigation Bypass
+  - Search for bypassing brute-force protection.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d7d3f417-9f2d-42ab-910e-7430ef76d1fb)
+  - Bludit Brute-force Mitigation Bypass (CVE-2019-17240)
+  - https://github.com/ColdFusionX/CVE-2019-17240_Bludit-BF-Bypass
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1b80229c-69f6-4496-975e-6bf906725572)
+
