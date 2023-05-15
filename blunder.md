@@ -139,3 +139,24 @@ Upgrade shell to TTY
 Username: Hugo
 Password: faca404fd5c0a31cf1897b823c695c85cffeb98d
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/38669c8c-0d90-416d-bac8-ba5e87c3d283)
+```CSS
+Cracked Password: Password120
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/bc4af429-04ab-4bb3-907e-a1cfe46b0eaf)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ce367232-cff3-49d1-8cee-1e29c348018f)
+
+```CSS
+Matching Defaults entries for hugo on blunder:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User hugo may run the following commands on blunder:
+    (ALL, !root) /bin/bash
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b892c926-361e-4cb7-a5db-cebb5e6149c8)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/446ccef4-6779-47cc-8a9c-88a77a953e31)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/220cf239-203f-44ab-8768-441cdb18ec03)
