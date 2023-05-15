@@ -88,7 +88,10 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
   - Valid password `RolandDeschain` found for the user `fergus`.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8795423e-82bb-40fe-b9d5-c0caeb7668de)
 
-  - Login successful to Dashboard.
+Login with the credentials to the Bludit dashboard.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/46f720ab-ae30-4bb4-a20a-f1f07d6ddf4c)
+
+- Login successful to Dashboard.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6fb1a617-4f08-4d12-a236-b860b18cbea5)
 
 ---
