@@ -56,9 +56,19 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 15.35 seconds
 ```
 
+---
+
 ## HTTP
   - Homepage
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cb5ace1e-fa12-4cc5-b837-4107afa14893)
 
+  - Registering as a new user failed as e-mail authentication is broken broken.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9a5aaa2b-0ce1-4ec1-b1f4-cab73c395c9f)
-  - Registering as a new user failed as e-mail authentication was broken.
+
+---
+
+## Exploit
+  - The Drupal version running is vulnerable to Remote Code Execution - CVE-2018-7600
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/996b2dd6-a19d-4ae4-bcf2-ff0c9057302e)
+
+  
