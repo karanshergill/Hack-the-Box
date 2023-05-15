@@ -53,7 +53,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4075b582-c7ff-44a4-8767-fe978f218cc9)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ae1ef991-a735-481f-ac4e-fbac773d364d)
-  - B
+  - `Bludit` admin login.
 
 ```CSS
 ▶ gobuster dir --url http://10.10.10.191 --wordlist /usr/share/seclists/Discovery/Web-Content/raft-large-files.txt --threads 20
