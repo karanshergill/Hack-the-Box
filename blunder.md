@@ -96,4 +96,8 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
   - Search for exploits.
   - Bludit RCE - https://github.com/bludit/bludit/issues/1081
 
-  - Upload a PHP shell as `.jpg` file.
+  - Upload a blank `.php` file.
+  - Modify the upload request.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e4cc3b96-b42b-4f7a-8915-06eb18ceca80)
+  
+  
