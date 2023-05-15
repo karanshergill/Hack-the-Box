@@ -100,3 +100,4 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 ```CSS
 <?php file_put_contents("../../uploads/shell.php"."<?php phpinfo(); ?>"); ?>
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/413cfaee-5021-4a3b-9ea4-b4f55c9aacb2)
