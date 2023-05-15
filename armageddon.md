@@ -72,3 +72,4 @@ Nmap done: 1 IP address (1 host up) scanned in 15.35 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/996b2dd6-a19d-4ae4-bcf2-ff0c9057302e)
 
   
+  - Drupal exploit is not working.
