@@ -127,5 +127,15 @@ AddType application/x-httpd-php .jpg
   - Start a `netcat` listener.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/53d65f09-2a0b-4c90-b6e0-1a3cfec4bc76)
 
+Upgrade shell to TTY
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/25c44c5d-61c4-42e6-b151-c7c772da3596)
+
   - Uploading `linpeas.sh`
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/abaeecce-bd2b-454c-b2f8-5d4baaf153c4)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/25c2b341-5f95-4700-acf2-ca3b60184014)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/bead94c5-d1c7-4bb2-a641-ff86f1d56f54)
+```CSS
+Username: Hugo
+Password: faca404fd5c0a31cf1897b823c695c85cffeb98d
+```
