@@ -98,3 +98,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.23 seconds
 ▶ searchsploit bludit
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b6560fa1-49b2-4409-b20f-d6d059c0de38)
+
+  - Steps
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7c56455e-b310-46bb-becb-44d583119589)
+
