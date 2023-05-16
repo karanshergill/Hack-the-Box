@@ -119,5 +119,8 @@ Nmap done: 1 IP address (1 host up) scanned in 104.38 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/38815e4f-c1c6-4e60-930a-5a956685abd8)
 
 Create a Ticket
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/96508128-9758-4485-9edf-9f954e617a12)
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/515d3c76-2937-44cd-8726-bbff2b3e2592)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9b98f22f-f994-487b-aae9-74c29a58f032)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ad60040f-94c1-4fe1-a56d-74a5d30f18d8)
+
+Create an Account
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d4a9bbb0-a716-4e04-9f77-4964bb799673)
