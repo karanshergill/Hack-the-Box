@@ -31,7 +31,7 @@ Nmap done: 1 IP address (1 host up) scanned in 81.54 seconds
 ```
 
 ```CSS
-▶ 
+▶ nmap -sC -sV -p 22,80,8065 10.10.10.222 -oN services.nmap  
 
 Nmap scan report for 10.10.10.222
 Host is up (0.18s latency).                                                                                                                                                                                          
