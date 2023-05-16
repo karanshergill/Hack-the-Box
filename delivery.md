@@ -117,3 +117,7 @@ Nmap done: 1 IP address (1 host up) scanned in 104.38 seconds
 
 ## TCP 8065
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/38815e4f-c1c6-4e60-930a-5a956685abd8)
+
+Create a Ticket
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/96508128-9758-4485-9edf-9f954e617a12)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/515d3c76-2937-44cd-8726-bbff2b3e2592)
