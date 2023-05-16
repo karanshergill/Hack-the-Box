@@ -68,4 +68,8 @@ Domain Name: ns1.cronos.htb
 ```
 ▶ dig axfr @10.10.10.13 cronos.htb
 ```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6917c52c-8285-4201-b953-e0279c505e23)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f37c34e6-4d34-4565-87d3-d57ee7464ad4)
+Domain Name: admin.cronos.htb
+
+---
+
