@@ -1,4 +1,7 @@
 # Hack the Box - Blunder
+```CSS
+Machine IP: 10.10.10.191
+```
 
 # Reconnaissance
 
