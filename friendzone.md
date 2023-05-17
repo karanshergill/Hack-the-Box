@@ -126,6 +126,11 @@ files.friendzoneportal.red
 imports.friendzoneportal.red
 vpn.friendzoneportal.red
 ```
+Content Discovery
+```CSS
+▶ gobuster dir --url https://administrator1.friendzone.red --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --extensions php --threads 25 --no-tls-validation
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0da5f1a6-b33e-43f0-aca3-8594537c1577)
 
 SMB
 ```CSS
@@ -140,4 +145,6 @@ admin:WORKWORKHhallelujah@#
 ```
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/15569cf5-0257-45fd-ab1c-fe7cddcaf121)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b43c07db-1ccd-4b9e-8c37-2dbb5f62889e)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9b726551-4fbe-4caf-8601-e899684e65d6)
 
