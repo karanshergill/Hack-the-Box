@@ -127,3 +127,15 @@ imports.friendzoneportal.red
 vpn.friendzoneportal.red
 ```
 
+SMB
+```CSS
+▶ smbmap -H 10.10.10.123 
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/318b883a-f244-4562-a1a4-b145ca77efe7)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2d3fa62f-789e-4b37-9ce2-dc0fe0e355f7)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/10d3cfd7-4f8a-4ad4-bbd2-d75935e016ea)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5672e92e-431e-4765-b445-a685a3341601)
+
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/15569cf5-0257-45fd-ab1c-fe7cddcaf121)
+
