@@ -109,3 +109,12 @@ Zone Transfer
 ▶ dig axfr @10.10.10.123 friendzoneportal.red
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d76122e3-d1b7-41db-b042-16fd11951483)
+
+Virtual Hosts
+```CSS
+admin.friendzoneportal.red
+files.friendzoneportal.red
+imports.friendzoneportal.red
+vpn.friendzoneportal.red
+```
+
