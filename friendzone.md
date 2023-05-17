@@ -97,3 +97,15 @@ Nmap done: 1 IP address (1 host up) scanned in 28.82 seconds
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/06dd652f-5623-439c-9c9c-2a439e9e183e)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e4616dad-d202-41c4-a7b4-31b961b2ef76)
+
+Hostname Disclosure
+```CSS
+▶ nslookup friendzoneportal.red 10.10.10.123
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b2ff9349-a5d3-4348-822e-d68b949fb424)
+
+Zone Transfer
+```CSS
+▶ dig axfr @10.10.10.123 friendzoneportal.red
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d76122e3-d1b7-41db-b042-16fd11951483)
