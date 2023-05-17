@@ -127,4 +127,4 @@ Open a new Ticket:
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3d9eb287-2605-4189-b583-60155a5d0e53)
 
 Create an Account
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d4a9bbb0-a716-4e04-9f77-4964bb799673)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/35f27b2a-9984-466b-ac45-170b9d83b058)
