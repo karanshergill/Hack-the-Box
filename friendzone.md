@@ -99,6 +99,7 @@ Nmap done: 1 IP address (1 host up) scanned in 28.82 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e4616dad-d202-41c4-a7b4-31b961b2ef76)
 
 Hostname Disclosure
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cf335497-84cf-4db5-8478-f16d624e3baf)
 ```CSS
 ▶ nslookup friendzoneportal.red 10.10.10.123
 ```
@@ -106,12 +107,20 @@ Hostname Disclosure
 
 Zone Transfer
 ```CSS
+▶ dig axfr @10.10.10.123 friendzone.red
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d245a5c6-8d45-4d14-ab87-f56c50334d73)
+
+```CSS
 ▶ dig axfr @10.10.10.123 friendzoneportal.red
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d76122e3-d1b7-41db-b042-16fd11951483)
 
 Virtual Hosts
 ```CSS
+administrator1.friendzone.red
+hr.friendzone.red
+uploads.friendzone.red
 admin.friendzoneportal.red
 files.friendzoneportal.red
 imports.friendzoneportal.red
