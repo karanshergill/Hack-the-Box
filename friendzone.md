@@ -94,3 +94,6 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 28.82 seconds
 ```
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/06dd652f-5623-439c-9c9c-2a439e9e183e)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e4616dad-d202-41c4-a7b4-31b961b2ef76)
