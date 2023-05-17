@@ -128,3 +128,6 @@ Open a new Ticket:
 
 Create an Account
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/35f27b2a-9984-466b-ac45-170b9d83b058)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/966270ab-7a1a-41d7-8b95-b419b416add1)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f81f5baa-610f-4dd7-a79a-71311a3e8390)
+
