@@ -123,8 +123,8 @@ Open a new Ticket:
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3a54c263-65ec-47eb-ab8f-209316434399)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1278222e-db9d-4081-94dd-6fca9eff1ec2)
 
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9b98f22f-f994-487b-aae9-74c29a58f032)
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ad60040f-94c1-4fe1-a56d-74a5d30f18d8)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8b1c0a6d-bb6f-447d-a96b-e3d8a35144db)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3d9eb287-2605-4189-b583-60155a5d0e53)
 
 Create an Account
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d4a9bbb0-a716-4e04-9f77-4964bb799673)
