@@ -135,3 +135,8 @@ Create an Account
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5179072c-b983-4cba-872f-c1eb67e15e8d)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/959d707a-f266-48fa-8969-e31b4aef9f8a)
 
+```CSS
+Credentials:
+maildeliverer:Youve_G0t_Mail!
+```
+
