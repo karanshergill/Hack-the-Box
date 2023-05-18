@@ -99,7 +99,7 @@ Credentials: admin:superduperlooperpassword_lol
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0c2411a7-e561-4020-89f3-14742d079906)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d3088807-2330-4199-bbc5-4abb33b23b46)
 
-```
+```CSS
 ▶ john zip.john --format=PKZIP --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8aa73b29-8e05-43a6-9a3d-83c89d75e6df)
