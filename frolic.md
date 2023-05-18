@@ -104,5 +104,3 @@ Credentials: admin:superduperlooperpassword_lol
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8aa73b29-8e05-43a6-9a3d-83c89d75e6df)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ff7c7ed0-e456-43c2-84ba-50816cbe4abd)
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/71bf6b42-94e5-4f81-a8f7-4a746705e6d0)
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/81427d96-bde0-4049-bbeb-78c5e58aa6e7)
