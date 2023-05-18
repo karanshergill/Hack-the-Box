@@ -148,6 +148,7 @@ admin:WORKWORKHhallelujah@#
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/15569cf5-0257-45fd-ab1c-fe7cddcaf121)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b43c07db-1ccd-4b9e-8c37-2dbb5f62889e)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9b726551-4fbe-4caf-8601-e899684e65d6)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f1756d22-95e9-4d63-9779-9b53ad229c5f)
 
 ---
 
