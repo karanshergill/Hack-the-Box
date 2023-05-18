@@ -97,6 +97,7 @@ Credentials: admin:superduperlooperpassword_lol
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/af6f6a17-16bc-440e-b24b-1ed4e5af3922)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e1de19ea-242f-487e-ae2e-3d6486ded4ee)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/62b03e03-0cec-4272-bb66-4b41b5871248)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/a9f4e805-2a03-4516-9623-7d5fc459a029)
 
 ```
 ▶ john zip.john --format=PKZIP --wordlist=/usr/share/wordlists/rockyou.txt
