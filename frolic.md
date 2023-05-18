@@ -90,3 +90,5 @@ Nmap done: 1 IP address (1 host up) scanned in 19.59 seconds
 ```CSS
 Credentials: admin:superduperlooperpassword_lol
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9240e526-17ab-45d1-8d1c-e68d93faad60)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7591df2c-cc20-4b54-a986-4027d2568e1b)
