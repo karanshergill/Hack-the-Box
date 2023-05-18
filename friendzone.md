@@ -131,6 +131,7 @@ Content Discovery
 ▶ gobuster dir --url https://administrator1.friendzone.red --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --extensions php --threads 25 --no-tls-validation
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0da5f1a6-b33e-43f0-aca3-8594537c1577)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b9d30404-2195-4dca-a5ae-752eeb15ca9b)
 
 SMB
 ```CSS
