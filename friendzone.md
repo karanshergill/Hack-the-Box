@@ -149,10 +149,10 @@ admin:WORKWORKHhallelujah@#
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b43c07db-1ccd-4b9e-8c37-2dbb5f62889e)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9b726551-4fbe-4caf-8601-e899684e65d6)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f1756d22-95e9-4d63-9779-9b53ad229c5f)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/46bd3cba-2ec7-4156-8019-9e5ddd4a7b26)
 
 ---
-
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/46bd3cba-2ec7-4156-8019-9e5ddd4a7b26)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ffe49d2e-4219-47f0-9aa8-2032150765f3)
 Development share is writable and the path for the Files share is `/etc/Files`. Assuming the path for Development share to be `/etc/Development` and upload a shell.
 
 PHP Reverse Shell
