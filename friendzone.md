@@ -152,9 +152,15 @@ admin:WORKWORKHhallelujah@#
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/46bd3cba-2ec7-4156-8019-9e5ddd4a7b26)
 
 ---
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ffe49d2e-4219-47f0-9aa8-2032150765f3)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8c38c6ad-0071-4c24-aca7-9851246b186f)
+
 Development share is writable and the path for the Files share is `/etc/Files`. Assuming the path for Development share to be `/etc/Development` and upload a shell.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ffe49d2e-4219-47f0-9aa8-2032150765f3)
 
 PHP Reverse Shell
 Edit the shell file and Upload it to the writabe shared directory.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/05fa9182-9aa7-49c5-8dc9-bb1fc8033b90)
+
+Start a netcat listener and trigger the Reverse Shell
+
+
