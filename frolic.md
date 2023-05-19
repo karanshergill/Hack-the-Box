@@ -118,6 +118,23 @@ Credentials: admin:superduperlooperpassword_lol
 BrainFuck
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0831fb04-a6cd-4018-be64-f7fb94837d86)
 
+Backup
+```CSS
+http://10.10.10.111:9999/backup/
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/fcff568b-9959-4287-9919-41720efd1855)
+
+```CSS
+▶ curl http://10.10.10.111:9999/backup/password.txt
+▶ curl http://10.10.10.111:9999/backup/user.txt
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/db20e0c1-f90f-44fa-901a-2c45d45f6556)
+```CSS
+Credentials - admin:imnothuman
+```
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4ec5c52c-6566-4476-a9ed-f9113c153447)
+
 PlaySMS
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d8c1905f-b1b9-4838-8c9d-cdecb3f0feca)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b3d935c5-d00e-41b4-8cbe-002de92210a9)
