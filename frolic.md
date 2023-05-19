@@ -78,7 +78,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 19.59 seconds
 ```
 Discovered Open Ports:
-1. SSH Port# 22: The OpenSSH version that is running is not associated with any critical vulnerabilities, so it’s unlikely to gain initial access through this port, unless some valid credentials are found.
+1. **SSH Port#22**: The OpenSSH version that is running is not associated with any critical vulnerabilities, so it’s unlikely to gain initial access through this port, unless some valid credentials are found.
 2. 139
 3. 445
 4. 1880
