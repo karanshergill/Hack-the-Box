@@ -117,3 +117,8 @@ Credentials: admin:superduperlooperpassword_lol
 
 BrainFuck
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0831fb04-a6cd-4018-be64-f7fb94837d86)
+
+PlaySMS
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d8c1905f-b1b9-4838-8c9d-cdecb3f0feca)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b3d935c5-d00e-41b4-8cbe-002de92210a9)
+
