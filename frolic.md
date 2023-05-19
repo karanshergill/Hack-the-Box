@@ -138,4 +138,5 @@ Credentials - admin:imnothuman
 PlaySMS
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d8c1905f-b1b9-4838-8c9d-cdecb3f0feca)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b3d935c5-d00e-41b4-8cbe-002de92210a9)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ebe89563-2a21-4379-aa88-4207a74205bd)
 
