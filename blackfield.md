@@ -67,4 +67,6 @@ SMB Enumeration
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ee481776-6d35-4c5a-a235-099ce99ed714)
 
-SMB shares reveals two non-default shares named `forensic` and `profiles$`.
+SMB shares reveal two non-default shares named `forensic` and `profiles$`. The share `forensic` is not accessible however read-only access is allowed on the `profiles$` share. 
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9a1f88cc-ce6c-4ee0-85b8-97579f3e5553)
