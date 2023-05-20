@@ -59,3 +59,12 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 71.98 seconds
 ```
+
+SMB Enumeration
+  - Anonymous and Guest Enumeration 
+```
+▶ smbmap -H 10.10.10.192 -u guest
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ee481776-6d35-4c5a-a235-099ce99ed714)
+
+SMB shares reveals two non-default shares named `forensic` and `profiles$`.
