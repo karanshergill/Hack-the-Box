@@ -134,4 +134,7 @@ rpcclient $> exit
 
 ---
 
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3cd76e5d-a326-45c4-8d63-fd9a2346b84f)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9db2bdf4-995e-46ce-b788-2e8b03bc70cc)
 
