@@ -145,6 +145,7 @@ rpcclient $> exit
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6b970a7a-aa71-4612-8fe8-9f64f037600f)
 
+---
 
 ## Dump File (.DMP)
 ```CSS
@@ -152,3 +153,7 @@ rpcclient $> exit
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e6eed677-d497-4777-be99-34b63bea7628)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cf9d1c3c-c4e2-44e4-a89d-aad2385e9fbe)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/fd9da16d-294e-48e1-818b-3085dd8954d2)
+
+---
+
