@@ -161,6 +161,8 @@ Password: 4Cc3ssC0ntr0ller
   - Modify and upload `nishang` shell.
   - `/opt/nishang/Shells/Invoke-PowerShellTcp.ps1`.
 
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/aabac44e-4472-4b19-8361-484e3da4546a)
+
 ### Nishang
 #### Modify
 ```CSS
