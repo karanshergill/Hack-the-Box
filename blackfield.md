@@ -151,3 +151,4 @@ rpcclient $> exit
 ▶ pypykatz lsa minidump lsass.DMP
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e6eed677-d497-4777-be99-34b63bea7628)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cf9d1c3c-c4e2-44e4-a89d-aad2385e9fbe)
