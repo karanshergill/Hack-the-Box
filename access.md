@@ -202,4 +202,7 @@ C:\Users\security\Desktop> Get-ChildItem "C:\" *.lnk -Recurse -Force | ft fullna
 ```CSS
 C:\Users\security\Desktop> ForEach($file in gc .\shortcuts.txt) {Write-Output $file; gc $file | Select-String runas}
 ```
-The commands is used to enumerate all the accessible shortcut (.lnk) files on the system, and examine them for the presence of the "runas" command.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4a94fd1d-331d-4899-be61-0e6d3cbbfc85)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0b239099-9d01-4e8e-b5bc-54150d0dec2f)
+
+The results above show that the ZKAccess shortcut on the Public Desktop has been configured using the runas `command`.
