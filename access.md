@@ -206,3 +206,8 @@ C:\Users\security\Desktop> ForEach($file in gc .\shortcuts.txt) {Write-Output $f
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/0b239099-9d01-4e8e-b5bc-54150d0dec2f)
 
 The results above show that the ZKAccess shortcut on the Public Desktop has been configured using the runas `command`.
+
+The Desktop folder is not immediately visible since it is a hidden folder. It is possible to traverse the folder and list its contents. The folder is accessible
+to the builtin "NT AUTHORITY\INTERACTIVE" group. Users who log in "interactively" locally, or over a Remote Desktop or telnet session will have the Interactive SID in their access token.
+
+
