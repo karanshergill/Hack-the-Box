@@ -1,7 +1,7 @@
 # Hack the Box - Access
 
 ```CSS
-Machine IP: 10.10.10.98
+Machine IP: 10.10.10.98 - Windows
 ```
 
 - [NMAP: All TCP ports](#nmap-open-ports)
