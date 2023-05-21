@@ -134,8 +134,13 @@ rpcclient $> exit
 
 ---
 
+```CSS
+▶ smbclient \\\\10.10.10.192\\forensic -U "audit2020"
+```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/3cd76e5d-a326-45c4-8d63-fd9a2346b84f)
-
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9db2bdf4-995e-46ce-b788-2e8b03bc70cc)
-
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b748c159-0191-42b0-963f-9d4adc71de12)
+
+---
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/6b970a7a-aa71-4612-8fe8-9f64f037600f)
