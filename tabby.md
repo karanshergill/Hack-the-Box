@@ -137,3 +137,6 @@ Brute-force the URL path `/manager/` to look for some common hidden directories 
 This is successful. It is also well-known that Tomcat deploys Java web applications. Check if a project can be deployed using the text interface.
 
 ---
+
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d59e8d16-7194-467c-acf5-414070103283)
