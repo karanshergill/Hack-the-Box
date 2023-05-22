@@ -99,3 +99,12 @@ Tomcat's manager page requires authentication. Attempting to log in with common 
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b8d36d51-f02c-4ba2-af1f-730dd251cf30)
 However, on clicking cancel we get a 401 Unauthorized message. This page reveals that the credentials are in the file `conf/tomcat-users.xml`. 
+
+Navingating to the location of the `tomcat-users.xml` using the LFI as mentioned, returns a blank page.
+
+Checking if the file `tomcat-users.xml` is located in a different path inside Tomcat's default installation directory.
+- Tomcat default installation directory: `/usr/share/tomcat9/`.
+- Default location of `tomcat-users.xml`: `etc/tomcat-users.xml`.
+
+The final path should be: `/usr/share/tomcat9/etc/tomcat-users.xml`.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c5629bff-e6c1-4aff-9036-8681fa3cdf40)
