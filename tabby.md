@@ -5,6 +5,8 @@ Machine IP: 10.10.10.194 - Linux
 
 ```
 
+---
+
 ```CSS
 ▶ nmap -Pn -sS -O -p- 10.10.10.194 -T4 --min-rate 1000 -oN ports.nmap
 Starting Nmap 7.93 ( https://nmap.org ) at 2023-05-22 11:08 IST
@@ -56,7 +58,9 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 14.13 seconds
 ```
+
 ---
+
 # HTTP Port 80
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/bb960e94-7b85-470f-8501-04813c7744df)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/a1ad3174-c498-4e0b-afc7-11faaf051616)
@@ -65,3 +69,8 @@ Nmap done: 1 IP address (1 host up) scanned in 14.13 seconds
 ```CSS
 ▶ sudo -- sh -c "echo '10.10.10.194 megahosting.htb' >> /etc/hosts"
 ```
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/028519af-034e-4a45-993d-937fa894b7e1)
+
+---
+
