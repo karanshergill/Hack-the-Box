@@ -165,5 +165,9 @@ According to this, it is possible to create a war file and deploy it to the serv
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c096b735-8537-416a-b909-c2f654bb309e)
 
+Shell Upgrade:
+```CSS
+▶ python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
 ---
 
