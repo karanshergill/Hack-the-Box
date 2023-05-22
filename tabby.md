@@ -223,3 +223,16 @@ ash@tabby:~$ groups
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9411a95e-0931-419c-a87e-29754e8508b1)
 
+## Linux Daemon (LXD)
+The `lxd` (Linux Daemon) is a system container manager, that controls the `lxc` (Linux Container). The Linux container is a virtualization technology that runs isolated containers using a single Linux kernel. It is possible for the user `ash` to create a privileged container and then use it to mount the host filesystem. To achieve this, download an Alpine image, and then upload it to the remote machine.
+
+### Alpine
+Download and build the `Alpine` image locally.
+ - https://github.com/saghul/lxd-alpine-builder.git
+
+```CSS
+▶ git clone https://github.com/saghul/lxd-alpine-builder.git
+▶ cd lxd-alpine-builder/
+▶ ./build-alpine
+```
+
