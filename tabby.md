@@ -216,3 +216,7 @@ tomcat@tabby:/dev/shm$ su - ash
 ----
 
 # Privilege Escalation
+
+User enumeration reveals that the current user `ash` is a member of the `lxd` group.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9411a95e-0931-419c-a87e-29754e8508b1)
+
