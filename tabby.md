@@ -204,3 +204,6 @@ Match MD5:
 ▶ md5sum 16162020_backup.zip
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b826db79-25d4-4d78-aa22-926639d73bc1)
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/32ab9b04-e338-4963-8aa2-f692ba218f59)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/813d4c0c-8f08-472f-8326-ee27ee3f9349)
