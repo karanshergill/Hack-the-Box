@@ -121,4 +121,7 @@ Brute-force the URL path `/manager/` to look for some common hidden directories 
 
 ---
 
+# FootHold
+### Tomcat Hostmanager App -- Text Interface
 
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/be4402eb-551e-4078-9f5b-cb2b3fcf7c15)
