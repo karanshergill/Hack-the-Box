@@ -171,5 +171,10 @@ Shell Upgrade:
 ```
 ---
 
+### Lateral Movement
+
+Enumeration of the directories and files reveals the archive `/var/www/html/16162020_backup.zip` , that is owned by the user `ash`.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/021ebaaa-fc5f-4cea-bbff-000c5f6d6a39)
+
+---
 
