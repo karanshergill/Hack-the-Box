@@ -207,3 +207,12 @@ Match MD5:
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/32ab9b04-e338-4963-8aa2-f692ba218f59)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/813d4c0c-8f08-472f-8326-ee27ee3f9349)
+
+```CSS
+tomcat@tabby:/dev/shm$ su - ash
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/68fa825a-3243-45c9-b523-3fa33baf55b3)
+
+----
+
+# Privilege Escalation
