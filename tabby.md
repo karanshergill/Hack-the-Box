@@ -87,7 +87,7 @@ We notice that we are being redirected to http://megahosting.htb/news.php?file=s
 ---
 
 ### Content Discovery
-Brute-force the URL path to look for some command hidden directories and files.
+Brute-force the URL path to look for some common hidden directories and files.
 ```CSS
 ▶ gobuster dir --url http://megahosting.htb:8080 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt --threads 25
 ```
@@ -108,3 +108,12 @@ Checking if the file `tomcat-users.xml` is located in a different path inside To
 
 The final path should be: `/usr/share/tomcat9/etc/tomcat-users.xml`.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c5629bff-e6c1-4aff-9036-8681fa3cdf40)
+
+The file contains the credentials tomcat / $3cureP4s5w0rd123!.
+As the roles xml attribute shows that this user is a member of admin-gui and manager-script . The manager-gui role that allows access to the /manager page is not assigned.
+
+Brute-force the URL path `/manager/` to look for some common hidden directories and files.
+```CSS
+▶ gobuster dir --url http://megahosting.htb:8080/manager --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt --threads 25
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/992d8893-58ec-4b66-888b-8968af93f140)
