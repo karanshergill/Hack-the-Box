@@ -118,3 +118,7 @@ Brute-force the URL path `/manager/` to look for some common hidden directories 
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/992d8893-58ec-4b66-888b-8968af93f140)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4f0c0678-6876-453b-92d0-76be836774fa)
+
+---
+
+
