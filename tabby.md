@@ -178,3 +178,8 @@ Enumeration of the directories and files reveals the archive `/var/www/html/1616
 
 ---
 
+#### Crack ZIP Password
+Trying to unzip this returns a message prompting for a password.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/bf4b9a47-9b9c-40bd-8c07-777750af997b)
+
+---
