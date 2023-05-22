@@ -117,3 +117,4 @@ Brute-force the URL path `/manager/` to look for some common hidden directories 
 ▶ gobuster dir --url http://megahosting.htb:8080/manager --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt --threads 25
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/992d8893-58ec-4b66-888b-8968af93f140)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4f0c0678-6876-453b-92d0-76be836774fa)
