@@ -171,3 +171,5 @@ Shell Upgrade:
 ```
 ---
 
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/021ebaaa-fc5f-4cea-bbff-000c5f6d6a39)
+
