@@ -86,11 +86,14 @@ We notice that we are being redirected to http://megahosting.htb/news.php?file=s
 
 ---
 
-### Content Dicovery
+### Content Discovery
 Brute-force the URL path to look for some command hidden directories and files.
 ```CSS
 ▶ gobuster dir --url http://megahosting.htb:8080 --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt --threads 25
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/230e9c6b-b14c-4504-81aa-5dce91f80bd1)
-Scanning reveals the well-known Tomcat `/manager` page.
+Scanning reveals the well-known Tomcat `/manager` page. This is a default page that allows users to manage web applications.
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2db1b182-901d-42aa-8e29-4770a7036509)
+Tomcat's manager page requires authentication.
 
