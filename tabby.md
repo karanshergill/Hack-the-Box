@@ -128,7 +128,7 @@ Brute-force the URL path `/manager/` to look for some common hidden directories 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/92f28d3e-5c14-4f78-b315-a6f3efeead26)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1553e220-3e63-4dfb-8c07-66e948dfe48c)
 
-#### List the available hosts on Tomcat.
+#### Tomcat - List Available Hosts
 ```CSS
 ▶ curl -u 'tomcat':'$3cureP4s5w0rd123!' http://megahosting.htb:8080/manager/text/list
 ```
@@ -138,5 +138,7 @@ This is successful. It is also well-known that Tomcat deploys Java web applicati
 
 ---
 
+#### Tomcat - Deploy A New Application Archive (WAR) Remotely
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d59e8d16-7194-467c-acf5-414070103283)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cd72da1d-5248-4869-af37-051ddbb153c8)
