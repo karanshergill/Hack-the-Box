@@ -109,7 +109,7 @@ Checking if the file `tomcat-users.xml` is located in a different path inside To
 The final path should be: `/usr/share/tomcat9/etc/tomcat-users.xml`.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c5629bff-e6c1-4aff-9036-8681fa3cdf40)
 
-The file contains the credentials `tomcat / $3cureP4s5w0rd123!`.
+The file contains the credentials `tomcat /$3cureP4s5w0rd123!`.
 As the roles xml attribute shows that this user is a member of admin-gui and manager-script . The manager-gui role that allows access to the /manager page is not assigned.
 
 Brute-force the URL path `/manager/` to look for some common hidden directories and files.
@@ -126,5 +126,6 @@ Brute-force the URL path `/manager/` to look for some common hidden directories 
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/be4402eb-551e-4078-9f5b-cb2b3fcf7c15)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/92f28d3e-5c14-4f78-b315-a6f3efeead26)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1553e220-3e63-4dfb-8c07-66e948dfe48c)
 
 ---
