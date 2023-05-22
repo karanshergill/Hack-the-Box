@@ -77,5 +77,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.13 seconds
 # Local File Inclusion (LFI)
 We notice that we are being redirected to http://megahosting.htb/news.php?file=statement. It's worth noting that `statement` seems to be a filename passed as input to the parameter `file` of the page news.php . Let's check if this is vulnerable to Local File Inclusion (LFI), by trying to load the `/etc/passwd` file.
 
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/afb98396-df84-4b56-b9ef-ce367446f0f7)
 
-
+---
