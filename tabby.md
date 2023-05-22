@@ -128,4 +128,10 @@ Brute-force the URL path `/manager/` to look for some common hidden directories 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/92f28d3e-5c14-4f78-b315-a6f3efeead26)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1553e220-3e63-4dfb-8c07-66e948dfe48c)
 
+```CSS
+▶ curl -u 'tomcat':'$3cureP4s5w0rd123!' http://megahosting.htb:8080/manager/text/list
+```
+
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/42031ecc-31dd-4de8-951b-45e6f289a28d)
+
 ---
