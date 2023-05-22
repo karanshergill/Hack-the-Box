@@ -95,5 +95,7 @@ Brute-force the URL path to look for some command hidden directories and files.
 Scanning reveals the well-known Tomcat `/manager` page. This is a default page that allows users to manage web applications.
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2db1b182-901d-42aa-8e29-4770a7036509)
-Tomcat's manager page requires authentication.
+Tomcat's manager page requires authentication. Attempting to log in with common credentials like admin / admin is not successful.
 
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b8d36d51-f02c-4ba2-af1f-730dd251cf30)
+However, on clicking cancel we get a 401 Unauthorized message. This page reveals that the credentials are in the file `conf/tomcat-users.xml`. 
