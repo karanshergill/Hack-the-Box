@@ -142,3 +142,4 @@ This is successful. It is also well-known that Tomcat deploys Java web applicati
 
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d59e8d16-7194-467c-acf5-414070103283)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cd72da1d-5248-4869-af37-051ddbb153c8)
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/032ae345-7ee6-42e3-b0fc-f6987c9c8475)
