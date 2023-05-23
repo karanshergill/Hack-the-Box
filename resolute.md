@@ -211,3 +211,7 @@ Credentials- ryan:Serv3r4Admin4cc123!
 ▶ evil-winrm -i 10.10.10.169 -u ryan -p Serv3r4Admin4cc123!
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ace42197-fb5a-4682-b066-43566ed68308)
+
+Any changes made to the system will have to be completely used within a minute (or less).
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/98675a6a-ba1f-48b2-b67b-e4bc277e37f0)
+
