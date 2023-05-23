@@ -14,5 +14,7 @@ rpcclient $> enumdomusers
 
   - Query User
 ```CSS
-
+rpcclient $> queryuser 0x1f4
 ```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/56612aa0-fa48-41b2-ad95-e6cd47bf97a5)
+
