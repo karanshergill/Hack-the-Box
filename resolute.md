@@ -215,3 +215,6 @@ Credentials- ryan:Serv3r4Admin4cc123!
 Any changes made to the system will have to be completely used within a minute (or less).
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/98675a6a-ba1f-48b2-b67b-e4bc277e37f0)
 
+### Groups (DNSAdmin)
+Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions. By default the DNSAdmins don’t have the ability to start or stop the DNS service, but it’s not unusual for an admin to give this group that privilege.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9e20d82d-2ceb-4239-9718-be3ff15717ca)
