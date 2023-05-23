@@ -34,3 +34,18 @@ rpcclient $> queryuser 0x1f4
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/56612aa0-fa48-41b2-ad95-e6cd47bf97a5)
 
+---
+
+## SMB
+  - Attempt to login with found credentials.
+```CSS
+▶ crackmapexec smb 10.10.10.169 -u marco -p 'Welcome123!' --continue-on-success
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/a8ca9538-8a8c-45f6-8263-89df0d2eaeb9)
+
+### Password Spray
+  - Create a file containing the list of users found via RPC.
+  - Authenticate as any user using the password default password found.
+```CSS
+▶ 
+```
