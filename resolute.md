@@ -13,6 +13,9 @@ rpcclient $> enumdomusers
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/d4596127-4b1b-4957-ac1b-c0e30d6cd312)
 
   - Query Users Info
+```CSS
+rpcclient $> querydispinfo
+```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ec7322f6-3ebb-4fb8-8691-c8c92af2dc0e)
 
   - Query Single User's Info
