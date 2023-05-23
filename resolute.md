@@ -1,5 +1,11 @@
 # Hack the Box - Resolute
 
+# Enumeration
+## NMAP
+```CSS
+▶ 
+```
+
 ## RPC Client
   - Null Session Authentication
 ```CSS
@@ -19,7 +25,7 @@ rpcclient $> querydispinfo
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ec7322f6-3ebb-4fb8-8691-c8c92af2dc0e)
 The above command return brief information about all the users. An interesting comment for `RID 0x457` is also found.
 ```CSS
-Credentials - Marko:Welcome123!
+Credentials - marko:Welcome123!
 ```
 
   - Query Single User's Info
