@@ -197,10 +197,10 @@ This directory further contains a hidden subdirectory `C:\PSTranscripts\20191203
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/89917f19-ef1d-4acc-8abb-1e76588a2b2e)
 
 ###  PowerShell Transcription Logging
+PowerShell transcription logging is a feature in PowerShell that allows to record and save a transcript of the commands and output in a PowerShell session. It provides a way to capture the entire session, including input, output, and error messages, into a text file for later review and analysis. When transcription logging is enabled, PowerShell will create a log file that contains a record of all the commands executed within the session, along with their corresponding outputs.
 ```CSS
 *Evil-WinRM* PS C:\PSTranscripts\20191203> type PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt
 ```
-PowerShell transcription logging is a feature in PowerShell that allows to record and save a transcript of the commands and output in a PowerShell session. It provides a way to capture the entire session, including input, output, and error messages, into a text file for later review and analysis. When transcription logging is enabled, PowerShell will create a log file that contains a record of all the commands executed within the session, along with their corresponding outputs.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5df52d02-73c9-49c0-8a43-a08fbb1dae7a)
 ```CSS
 Credentials- ryan:Serv3r4Admin4cc123!
