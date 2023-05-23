@@ -3,7 +3,37 @@
 # Enumeration
 ## NMAP
 ```CSS
-▶ 
+▶ nmap -Pn -sS -p- 10.10.10.169 -T4 --min-rate 1000 -oN ports.nmap
+
+Nmap scan report for 10.10.10.169
+Host is up (0.19s latency).
+Not shown: 65512 closed tcp ports (reset)
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+5985/tcp  open  wsman
+9389/tcp  open  adws
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49671/tcp open  unknown
+49676/tcp open  unknown
+49677/tcp open  unknown
+49682/tcp open  unknown
+49711/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 66.74 seconds
 ```
 
 ## RPC Client
