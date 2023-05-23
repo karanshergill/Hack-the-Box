@@ -185,8 +185,13 @@ Credentials- melanie:Welcome123!
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e36af976-1ab7-4e1d-80f3-4512e6388fd6)
 
 # Lateral Movement
+Use the `-force` option to reveal hidden files and directories.
 ```CSS
 *Evil-WinRM* PS C:\Users\melanie\Documents> cd C:\
 *Evil-WinRM* PS C:\> dir -force
 ```
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/5685fdb2-0738-4a96-93c2-5e87c98c70d9)
+A hidden directory `C:\PSTranscripts\ .` is revealed.
+
+This directory further contains a hidden subdirectory `C:\PSTranscripts\20191203\ .` After running the command dir -force again, a hidden file: `C:\PSTranscripts\2019120\PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt .` is revealed.
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/89917f19-ef1d-4acc-8abb-1e76588a2b2e)
