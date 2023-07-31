@@ -1,7 +1,4 @@
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8a8e168f-1769-4f1c-a2bd-217432675ebe)
-
-
-
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4a86a492-964b-4f52-8e58-d4ed950e808d)
 
 
 
