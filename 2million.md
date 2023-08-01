@@ -18,8 +18,10 @@ GoLinkFinder --domain http://2million.htb/ \
 Deobfuscated and Unpaked Code:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a3262db5-961b-4988-9b20-dadefc3dc2f6)
 
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/59517b62-10d8-4979-b9ee-f30009d280db)
+BurpSuite "POST" request:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3f352610-464e-4f7a-9514-2f62704ba7e2)
 
+Curl "POST" request:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/62afc69f-00bb-4e16-a223-d9f5fc1e1ef3)
 
 
