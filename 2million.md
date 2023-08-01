@@ -29,11 +29,11 @@ BurpSuite "POST" request:
 Curl "POST" request:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c48c6149-93c9-4cc5-9ea8-a4d59c181718)
 
+Decode ROT 13:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8d080ae6-7b10-4989-8fbf-1d8c85b2a237)
 
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c05daab2-a9d8-4edc-a4f1-bd4283d70534)
-
-POST request to generate invite code:
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2521be49-4264-457e-913a-7a11f815e9c5)
+BurpSuite "POST" request to generate invite code:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f18d354c-289d-4c75-94b2-d1710998a2dc)
 
 Decode invite code:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/60e33920-c0bc-452c-8507-a963ddca5c51)
