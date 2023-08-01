@@ -47,4 +47,10 @@ Login:
 ```
 http://2million.htb/login
 ```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a5c2572d-b99d-40e5-96a7-045d66dd0fd6)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/87cdd7d9-6597-4b08-9b96-03ae781794cc)
+
+User Dashboard:
+```CSS
+http://2million.htb/home
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4435ad90-cddc-4709-8216-518ddce50685)
