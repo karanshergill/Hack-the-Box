@@ -32,3 +32,9 @@ POST request to generate invite code:
 
 Decode invite code:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/60e33920-c0bc-452c-8507-a963ddca5c51)
+
+Invite code form:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3de52c84-8f83-459c-b6b8-94b7a8d1db88)
+
+Registration form:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/daff1891-7a13-4c2b-a212-83ed57d52a2f)
