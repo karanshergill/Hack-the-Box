@@ -35,6 +35,16 @@ Decode invite code:
 
 Invite code form:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3de52c84-8f83-459c-b6b8-94b7a8d1db88)
-
+```
+http://2million.htb/invite
+```
 Registration form:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/daff1891-7a13-4c2b-a212-83ed57d52a2f)
+```
+http://2million.htb/register
+```
+Login:
+```
+http://2million.htb/login
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a5c2572d-b99d-40e5-96a7-045d66dd0fd6)
