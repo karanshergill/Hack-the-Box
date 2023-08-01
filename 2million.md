@@ -59,3 +59,9 @@ User Dashboard:
 http://2million.htb/home
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4435ad90-cddc-4709-8216-518ddce50685)
+
+Route List:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2d6341f6-18cd-4304-833f-eab7b10a44c3)
+
+Is Admin:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b5944855-e079-4028-b290-376f7d2b7cbd)
