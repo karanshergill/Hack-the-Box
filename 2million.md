@@ -27,3 +27,5 @@ Curl "POST" request:
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c05daab2-a9d8-4edc-a4f1-bd4283d70534)
 
+POST request to generate invite code:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2521be49-4264-457e-913a-7a11f815e9c5)
