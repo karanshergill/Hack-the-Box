@@ -73,6 +73,9 @@ Send PUT request to /api/v1/admin/settings/update:
 Verify Admin:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9920a5f0-a730-45d7-bdc8-3be8c2f88ad5)
 
+Command Injection:
+VPN file generation end-point
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5e179418-e2d2-44e5-93e9-2a60780b77f0)
 
 
 
