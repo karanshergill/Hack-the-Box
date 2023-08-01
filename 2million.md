@@ -2,7 +2,7 @@
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e50c6152-3712-4f06-9de5-f57966c064ae)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b8b6ea67-e726-4542-8d83-7bf320db840d)
 ```CSS
-GoLinkFinder --domain http://2million.htb/invite \
+GoLinkFinder --domain http://2million.htb/ \
 | grep -vE "\.css$|\.png$|\.jpg$|application/x-www-form-urlencoded|text/xml|text/plain|text/html|text/css|text/png|image/png" \
 | sed '/^\s*$/d' \
 | sort -u
@@ -12,6 +12,7 @@ GoLinkFinder --domain http://2million.htb/invite \
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fd9dc172-9886-4b28-8962-7be3ded751a3)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c7668030-3c04-4f97-9741-217dfeac01c2)
 
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6c1dde86-0d63-4961-83c2-c57a4e24046b)
 
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/59517b62-10d8-4979-b9ee-f30009d280db)
