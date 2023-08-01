@@ -23,17 +23,11 @@ JS File (/js/inviteapi.min.js):
 Deobfuscated and Unpaked Code:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0fd3fd9d-79ec-4ca4-a89f-2f78b421f98c)
 
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fd9dc172-9886-4b28-8962-7be3ded751a3)
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c7668030-3c04-4f97-9741-217dfeac01c2)
-
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6c1dde86-0d63-4961-83c2-c57a4e24046b)
-
-
 BurpSuite "POST" request:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3f352610-464e-4f7a-9514-2f62704ba7e2)
 
 Curl "POST" request:
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/62afc69f-00bb-4e16-a223-d9f5fc1e1ef3)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c48c6149-93c9-4cc5-9ea8-a4d59c181718)
 
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c05daab2-a9d8-4edc-a4f1-bd4283d70534)
