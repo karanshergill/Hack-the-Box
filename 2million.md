@@ -8,12 +8,15 @@ GoLinkFinder --domain http://2million.htb/ \
 | sort -u
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9b5d3d5e-ecd8-4255-af8c-53593846158a)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6ba312ef-250e-4656-8bee-c51d75b241ad)
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fd9dc172-9886-4b28-8962-7be3ded751a3)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c7668030-3c04-4f97-9741-217dfeac01c2)
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6c1dde86-0d63-4961-83c2-c57a4e24046b)
 
+Deobfuscated and Unpaked Code:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a3262db5-961b-4988-9b20-dadefc3dc2f6)
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/59517b62-10d8-4979-b9ee-f30009d280db)
 
