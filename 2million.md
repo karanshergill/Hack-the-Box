@@ -65,3 +65,14 @@ Route List:
 
 Is Admin:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b5944855-e079-4028-b290-376f7d2b7cbd)
+
+Escalate to Admin:
+Send PUT request to /api/v1/admin/settings/update:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ae362cf1-f30c-48c2-96e0-44a2b5545e2e)
+
+Verify Admin:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9920a5f0-a730-45d7-bdc8-3be8c2f88ad5)
+
+
+
+
