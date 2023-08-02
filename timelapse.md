@@ -177,12 +177,9 @@ Key Attributes
 # Extract .crt and .key files from .pfx file
 - Extract the key
 ```CSS
-▶ 
-```
-- Extract the certificate
-```CSS
 ▶ openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -nodes -out legacyy_dev_auth.key
 ```
+- Extract the certificate
 ```CSS
 ▶ openssl pkcs12 -in legacyy_dev_auth.pfx -nokeys -clcerts -out legacyy_dev_auth.crt
 ```
