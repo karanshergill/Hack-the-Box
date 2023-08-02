@@ -56,7 +56,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 79.49 seconds
 ```
 # Hostnames
-  - Get machine `hostname` via SMB.
+  - Get machine `hostname` via SMB in order to fet all the potential names for this machine.
 ```CSS
 ▶ crackmapexec smb 10.10.11.152
 SMB         10.10.11.152    445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:False)
