@@ -18,6 +18,13 @@ PORT     STATE SERVICE
 636/tcp  open  ldapssl
 3268/tcp open  globalcatLDAP
 3269/tcp open  globalcatLDAPssl
+5986/tcp  open  wsmans
+9389/tcp  open  adws
+49667/tcp open  unknown
+49673/tcp open  unknown
+49674/tcp open  unknown
+49696/tcp open  unknown
+60937/tcp open  unknown
 
 Nmap done: 1 IP address (1 host up) scanned in 3.45 seconds
 ```
