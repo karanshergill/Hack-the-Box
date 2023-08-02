@@ -197,3 +197,4 @@ Use the extracted certificate and the key to get a shell on the machine.
 
 *Evil-WinRM* PS C:\Users\legacyy\Documents> 
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6170e1ea-7ff9-4e5a-809a-1cc5c730f903)
