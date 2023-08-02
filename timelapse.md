@@ -61,3 +61,23 @@ Nmap done: 1 IP address (1 host up) scanned in 79.49 seconds
 ▶ crackmapexec smb 10.10.11.152
 SMB         10.10.11.152    445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:False)
 ```
+# SMB Enumeration
+- List available shared folders using `crakmapexec`.
+```CSS
+▶ crackmapexec smb 10.10.11.152 --shares
+```
+  - crackmap did not produce any results.
+
+- List available shared folders using `smbclient`.
+```CSS
+▶ smbclient -L //10.10.11.152/
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        ADMIN$          Disk      Remote Admin
+        C$              Disk      Default share
+        IPC$            IPC       Remote IPC
+        NETLOGON        Disk      Logon server share 
+        Shares          Disk      
+        SYSVOL          Disk      Logon server share 
+```
