@@ -198,3 +198,8 @@ Use the extracted certificate and the key to get a shell on the machine.
 *Evil-WinRM* PS C:\Users\legacyy\Documents> 
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6170e1ea-7ff9-4e5a-809a-1cc5c730f903)
+
+## PowerShell Console History
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e9190572-d720-48dd-8c86-fe65c496c101)
+-  Username: 'svc_deploy'
+-  Password: 'E3R$Q62^12p7PLlC%KWaxuaV'
