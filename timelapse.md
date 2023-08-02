@@ -155,3 +155,23 @@ legacyy_dev_auth.pfx:thuglegacy:::::legacyy_dev_auth.pfx
 
 1 password hash cracked, 0 left
 ```
+- Password: thuglegacy
+
+# SSL Certificate in `PKCS#12` format.
+```CSS
+▶ openssl pkcs12 -in legacyy_dev_auth.pfx -info
+                                                                                                          
+Enter Import Password:                                                                
+MAC: sha1, Iteration 2000                                                             
+MAC length: 20, salt length: 20                                                       
+PKCS7 Data                                                                            
+Shrouded Keybag: pbeWithSHA1And3-KeyTripleDES-CBC, Iteration 2000
+Bag Attributes                                                                        
+    Microsoft Local Key set: <No Values>                                              
+    localKeyID: 01 00 00 00                                                           
+    friendlyName: te-4a534157-c8f1-4724-8db6-ed12f25c2a9b       
+    Microsoft CSP Name: Microsoft Software Key Storage Provider 
+Key Attributes                                                                        
+    X509v3 Key Usage: 90          
+```
+# Extract .crt and .key files from .pfx file
