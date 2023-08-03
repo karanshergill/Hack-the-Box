@@ -99,10 +99,18 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 /home.php             (Status: 302) [Size: 55034] [--> login.php]
 /index.php            (Status: 200) [Size: 2117]          
 ```
-# User Registration
+# Register as User
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d1a301dc-c230-4f25-9a2b-fdd0e5f0a0fb)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bfda213b-da7f-426f-a939-5eaed9228bc3)
 # Login
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9c5f7937-5861-41b4-b118-f4bdee5ff6c7)
-# Dashboard
+# User Dashboard
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6d632e69-0a50-4e7d-8180-c6c8fdbe0510)
+# Register as Admin
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/56fc49e3-0fc6-4bd8-85b9-6afbac9d0c2a)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6b7b2ffb-4497-4b45-8b42-f83fb7859704)
+# Login
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c792546c-9aee-4a27-b9b4-d17a32e138ee)
+# Admin Page
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/46732760-b24d-4c69-a088-5afd136e69b1)
+
