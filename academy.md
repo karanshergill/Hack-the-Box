@@ -171,7 +171,7 @@ $ aureport --tty
 $ /bin/bash -i
 ```
 ```
-▶ mrb3n@10.10.10.215
-
-Password: mrb3n_Ac@d3my!
+▶ ssh mrb3n@10.10.10.215
 ```
+Password: mrb3n_Ac@d3my!
+
