@@ -113,4 +113,6 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c792546c-9aee-4a27-b9b4-d17a32e138ee)
 # Admin Page
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/46732760-b24d-4c69-a088-5afd136e69b1)
-
+# Error Page
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ad4c8c30-b309-41a8-93c7-da658733df47)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dd0a38a4-f0d6-40e1-b913-857e2cd68eff)
