@@ -99,3 +99,10 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 /home.php             (Status: 302) [Size: 55034] [--> login.php]
 /index.php            (Status: 200) [Size: 2117]          
 ```
+# User Registration
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d1a301dc-c230-4f25-9a2b-fdd0e5f0a0fb)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bfda213b-da7f-426f-a939-5eaed9228bc3)
+# Login
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9c5f7937-5861-41b4-b118-f4bdee5ff6c7)
+# Dashboard
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6d632e69-0a50-4e7d-8180-c6c8fdbe0510)
