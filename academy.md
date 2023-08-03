@@ -76,4 +76,26 @@ Nmap done: 1 IP address (1 host up) scanned in 44.41 seconds
 # Directory and File Brute-Force
 ```CSS
 ▶ gobuster dir --url http://academy.htb --extensions php --wordlist raft-medium-directories.txt
+
+===============================================================                                                                                                            
+Gobuster v3.5                                                                                                                                                              
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)                                                                                                              
+===============================================================                                                                                                            
+[+] Url:                     http://academy.htb                                                                                                                            
+[+] Method:                  GET
+[+] Threads:                 5                                                                                                                                             
+[+] Wordlist:                /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-directories.txt                                                               
+[+] Negative Status codes:   404                                                                                                                                           
+[+] User Agent:              gobuster/3.5                                                                                                                                  
+[+] Extensions:              php                                                                                                                                           
+[+] Timeout:                 10s                                                                                                                                           ===============================================================                                                                                                            
+2023/08/03 11:30:32 Starting gobuster in directory enumeration mode                                                                                                        
+===============================================================                                                                                                            
+/images               (Status: 301) [Size: 311] [--> http://academy.htb/images/]                                                                                           
+/admin.php            (Status: 200) [Size: 2633]                                                                                                                           
+/register.php         (Status: 200) [Size: 3003]                                                                                                                           
+/login.php            (Status: 200) [Size: 2627]                                                                                                                           
+/config.php           (Status: 200) [Size: 0]                                                                                                                              
+/home.php             (Status: 302) [Size: 55034] [--> login.php]
+/index.php            (Status: 200) [Size: 2117]          
 ```
