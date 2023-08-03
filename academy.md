@@ -159,14 +159,19 @@ Group `adm` is used for system monitoring tasks. Members of this group can read 
 
 # Logs
 ```CSS
-aureport --tty
+$ aureport --tty
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/36c12e1b-b565-4189-89c4-2a85895d964b)
 - That is just decoding what’s in these lines from /var/log/audit/audit.log.3
 
 # Shell as mrb3n
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/838bfc07-85e6-4bcb-8911-6d22b021221a)
-- Upgrade shell
-```
+- Upgrade shell or ssh for a new shell as nrb3n.
+```CSS
 $ /bin/bash -i
+```
+```
+▶ mrb3n@10.10.10.215
+
+Password: mrb3n_Ac@d3my!
 ```
