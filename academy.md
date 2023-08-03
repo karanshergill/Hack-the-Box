@@ -69,3 +69,11 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 44.41 seconds
 ```
+
+# HTTP-80
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b666dcb7-0daf-4fde-992b-31407d91f5a7)
+
+# Directory and File Brute-Force
+```CSS
+▶ gobuster dir --url http://academy.htb --extensions php --wordlist raft-medium-directories.txt
+```
