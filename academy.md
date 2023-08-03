@@ -166,3 +166,7 @@ aureport --tty
 
 # Shell as mrb3n
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/838bfc07-85e6-4bcb-8911-6d22b021221a)
+- Upgrade shell
+```
+$ /bin/bash -i
+```
