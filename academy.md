@@ -174,4 +174,5 @@ $ /bin/bash -i
 ▶ ssh mrb3n@10.10.10.215
 ```
 Password: mrb3n_Ac@d3my!
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/213ee902-f476-4d65-a699-7dc6e69c8d75)
 
