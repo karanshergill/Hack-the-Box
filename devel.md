@@ -90,3 +90,5 @@ c:\windows\system32\inetsrv>systeminfo
 - Set session and run.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/89f9dbdf-ae82-4ea8-bdcd-da4bb09dc17b)
 
+- Suggested exploits
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5d6fae9d-2038-44c0-9fa3-84cddd61153f)
