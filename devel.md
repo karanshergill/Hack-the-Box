@@ -84,3 +84,7 @@ meterpreter> sysinfo
 meterpreter> shell
 c:\windows\system32\inetsrv>systeminfo
 ```
+
+- Exit the upgraded shell.
+- Search for exploit suggester.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fdeb30ff-1cf4-46be-a238-1fe6b508745d)
