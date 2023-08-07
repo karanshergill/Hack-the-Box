@@ -38,7 +38,7 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 ```
 
 # FTP
-Status - Open
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d7c41409-5936-4da5-8464-17f3d93385d2)
 
 # HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1b24c617-3c50-4c19-a2c6-4993b136cba5)
