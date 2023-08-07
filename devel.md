@@ -44,7 +44,8 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1b24c617-3c50-4c19-a2c6-4993b136cba5)
 
 # Foothold
-- Obeserve that the FTP server is in the same route as the HTTP server. Which mean if a file is uploaded via FTP it can be accessed directly using the browser.
+- Observe that the FTP server is in the same route as the HTTP server. Which means if a file is uploaded via FTP it can be accessed directly using the browser.
+
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a94a4267-2326-4851-9cae-7da69ae1da6e)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/43ce2b5e-170d-40e1-96b9-26541fa165ee)
 
