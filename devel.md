@@ -73,7 +73,7 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 ▶ run
 ```
   - View `sysinfo`.
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c64fc822-539f-4fb3-9e1e-8e06a0500bfa)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a5f8ee11-f4e3-4ae6-860d-617f6fa13175)
 ```CSS
 meterpreter> sysinfo
 ```
