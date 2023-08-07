@@ -48,6 +48,7 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a94a4267-2326-4851-9cae-7da69ae1da6e)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/43ce2b5e-170d-40e1-96b9-26541fa165ee)
 
-- Create a text file using any random name and upload it. The access the file in the `/home` directly using the browser.
+- Create a text file with any random name and upload it. Then access the uploaded file in the browser.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/db8bd9ae-4356-43c7-ad3d-2501ebb011a1)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3c67d341-5538-410c-aa80-6caa588743c0)
+
