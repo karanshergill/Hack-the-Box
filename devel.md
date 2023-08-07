@@ -88,3 +88,7 @@ c:\windows\system32\inetsrv>systeminfo
 - Exit the upgraded shell.
 - Search for exploit suggester.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fdeb30ff-1cf4-46be-a238-1fe6b508745d)
+
+- Set session and run.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5ca39469-d646-4dc9-9f9f-8eec1c61cf61)
+
