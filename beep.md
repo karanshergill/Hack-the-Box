@@ -80,3 +80,7 @@ Service Info: Hosts:  beep.localdomain, 127.0.0.1, example.com
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 400.11 seconds
 ```
+
+## HTTP
+- Elastix Login Page
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5150d735-7a74-4f0d-b6d6-cfe7d5ef5fe9)
