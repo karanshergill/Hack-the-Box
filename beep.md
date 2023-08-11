@@ -84,3 +84,9 @@ Nmap done: 1 IP address (1 host up) scanned in 400.11 seconds
 ## HTTP
 - Elastix Login Page
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5150d735-7a74-4f0d-b6d6-cfe7d5ef5fe9)
+
+## Content Discovery
+- Brute-force directories and files
+```CSS
+▶ gobuster dir --url https://10.10.10.7 --extensions php --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-directories.txt --threads 10 --no-tls-validation
+```
