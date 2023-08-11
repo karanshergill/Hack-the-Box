@@ -103,5 +103,12 @@ Nmap done: 1 IP address (1 host up) scanned in 400.11 seconds
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a0e55005-02c0-4e54-800c-c5378e2603cc)
 
 # Elastix 2.2.0 (VTiger CRM) Exploit - LFI
-
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1c2e07d9-5241-4df4-a0e5-761a5a603cd5)
+- Password found: jEhdIekWmdjE
+
+# SSH Login
+- SSH as root
+```CSS
+▶ ssh root@10.10.10.7
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8598d677-48df-4c24-9128-cf1380f14271)
