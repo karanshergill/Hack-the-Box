@@ -91,3 +91,9 @@ Nmap done: 1 IP address (1 host up) scanned in 400.11 seconds
 ▶ gobuster dir --url https://10.10.10.7 --extensions php --wordlist /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-directories.txt --threads 10 --no-tls-validation
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/281c923c-e137-4866-9dd6-986ad724abd2)
+
+## Search Exploit
+```CSS
+▶ searchsploit elastix
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d5e7a3be-8a35-4934-8e0e-3c54643cfede)
