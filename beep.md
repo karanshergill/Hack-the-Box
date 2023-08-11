@@ -2,7 +2,7 @@
 
 ## NMAP
 ```CSS
-sudo nmap -Pn -sS -T4 --min-rate 5000 -p- 10.10.10.7
+▶ nmap -Pn -sS -T4 --min-rate 5000 -p- 10.10.10.7
 
 Nmap scan report for 10.10.10.7
 Host is up (0.29s latency).
@@ -26,4 +26,10 @@ PORT      STATE SERVICE
 10000/tcp open  snet-sensor-mgmt
 
 Nmap done: 1 IP address (1 host up) scanned in 19.06 seconds
+```
+
+```CSS
+▶ nmap -Pn -sC -sV -T4 --min-rate 5000 -p 22,25,80,110,111,143,443,878,993,995,3306,4190,4445,4459,5038,10000 10.10.10.7
+
+
 ```
