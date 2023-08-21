@@ -38,5 +38,16 @@ Nmap done: 1 IP address (1 host up) scanned in 15.61 seconds
 ```
 
 ## HTTP
+- Home
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d2d1e1bf-d68b-4eec-82ba-671144701bb8)
+
+- Contact Us
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7c7c8a9c-e443-4322-9df5-d9f8dc3050cf)
+
+## Cross Site Scripting
+- Contact Form
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/82186fed-786c-49a0-85c8-fcad35d89080)
+
+- Cross Site Scripting in Contact Form
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ed23d09e-b6b4-43dd-92bd-0eb03cab0d00)
 
