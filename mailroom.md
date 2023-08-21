@@ -55,9 +55,14 @@ Nmap done: 1 IP address (1 host up) scanned in 15.61 seconds
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/136580e5-5969-4a22-9049-a3f787c6679f)
 
 - File: auth.php
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/74fc66c0-fcf7-44b5-ae25-24a6d2b72029)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/67f02370-f22c-4b7f-a255-597fb9d8d5e5)
+
 - File: index.php
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cdba2d96-74fa-4414-b568-98144dabee8b)
+
+- Forbidden
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/92e6113a-dd50-42f6-a8ff-d3660c733c26)
 
 ## Cross Site Scripting
 - Contact Form
