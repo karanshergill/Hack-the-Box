@@ -50,9 +50,14 @@ Nmap done: 1 IP address (1 host up) scanned in 15.61 seconds
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a51df4f4-8aee-4b12-b245-9e8df0efa8b2)
 
-# Gitea Instance
+## Gitea Instance
 - Public Repository
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/136580e5-5969-4a22-9049-a3f787c6679f)
+
+- File: auth.php
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/67f02370-f22c-4b7f-a255-597fb9d8d5e5)
+- File: index.php
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cdba2d96-74fa-4414-b568-98144dabee8b)
 
 ## Cross Site Scripting
 - Contact Form
