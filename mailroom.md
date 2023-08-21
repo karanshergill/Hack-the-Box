@@ -36,3 +36,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 15.61 seconds
 ```
+
+## HTTP
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d2d1e1bf-d68b-4eec-82ba-671144701bb8)
+
