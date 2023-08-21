@@ -44,6 +44,12 @@ Nmap done: 1 IP address (1 host up) scanned in 15.61 seconds
 - Contact Us
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7c7c8a9c-e443-4322-9df5-d9f8dc3050cf)
 
+## VHost
+```CSS
+▶ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0.1' -H 'Host: FUZZ.mailroom.htb' -u http://10.10.11.209 -fs 7748
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a51df4f4-8aee-4b12-b245-9e8df0efa8b2)
+
 ## Cross Site Scripting
 - Contact Form
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/82186fed-786c-49a0-85c8-fcad35d89080)
