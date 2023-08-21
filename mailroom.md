@@ -2,7 +2,7 @@
 
 ## NMAP Scans
 ```CSS
-nmap -Pn -sS -T4 --min-rate 5000 -p- 10.10.11.209 -oN mailroom.surface                                           
+> nmap -Pn -sS -T4 --min-rate 5000 -p- 10.10.11.209 -oN mailroom.surface                                           
 
 Starting Nmap 7.94 ( https://nmap.org ) at 2023-08-22 01:12 IST
 Nmap scan report for 10.10.11.209
