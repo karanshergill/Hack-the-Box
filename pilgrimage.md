@@ -73,3 +73,11 @@ searchsploit magick
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dfc0dea8-95b2-412e-9509-488bcf24d57e)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2a7440d9-e578-4433-a503-4c280c16ddd1)
+
+### Exploit - Magick (Arbitrary File Read): CVE-2022-44268
+The exploit allows to read arbitrary files on the server.
+The suggested exploit has been scripted using rust. Using an explot scripted using python.
+```
+https://github.com/kljunowsky/CVE-2022-44268
+```
+
