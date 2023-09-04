@@ -13,10 +13,13 @@ nmap -sV -sC -A --min-rate 1000 10.10.11.219 -p 22,80
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8e7088bb-eda7-48c9-a997-9aff249734e7)
 
 ### HTTP
-```URL
+```
 http://pilgrimage.htb
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/926d244a-ec49-4f00-b52e-2470dcf12de7)
 
 #### /.git
+```
+http://pilgrimage,htb/.git/
+```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cf236a5d-c1d5-4e61-b79b-51f8ee5df32f)
