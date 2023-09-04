@@ -42,3 +42,23 @@ http://pilgrimage,htb/.git/
 git-dumper http://pilgrimage.htb/.git/ git
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8e034218-7ed2-4956-b0e3-821f84f9a665)
+
+## Interaction
+### Create Account
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8aace601-5083-47e0-9097-4d362135c8cb)
+
+### Login
+
+### /dashboard
+```
+http://pilgrimage.htb/dashboard.php
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2baf238c-a0fd-4fa2-8492-96816f3450e4)
+
+### Shrink Image
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/28416acf-9319-4a20-aca5-0f2477231c16)
+
+### Shrunk Image
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/45222057-30a0-40cb-9236-277ac66f3cdb)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b7769831-449a-4948-ad62-33f08d6fbae5)
+
