@@ -120,3 +120,14 @@ cat data.hex | xxd -r -p && echo ''
 ssh emily@10.10.11.219
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c917b15a-555d-4fc4-8dd2-b21d8c8be882)
+
+### List Processes
+```
+ps -aux
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f693978e-2530-4cfd-97de-bc04979feabf)
+
+- Contents of `/usr/sbin/malwarescan.sh`
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c61faa6e-3264-4917-a728-9faef849e886)
+
+The bash script uses a command `inotifywait` to monitor a directory for newly created files and then checks if the content of those files contains certain blacklisted phrases using the `binwalk` tool.
