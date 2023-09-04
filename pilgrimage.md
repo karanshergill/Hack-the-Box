@@ -76,7 +76,7 @@ searchsploit magick
 
 ### Exploit - Magick (Arbitrary File Read): CVE-2022-44268
 The exploit allows to read arbitrary files on the server.
-The suggested exploit has been scripted using rust. Using an explot scripted using python.
+The suggested exploit is scripted in rust. I will be using an explot scripted in python.
 ```
 https://github.com/kljunowsky/CVE-2022-44268
 ```
