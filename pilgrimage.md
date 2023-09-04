@@ -157,6 +157,10 @@ mv binwalk_exploit.png pwnstuff.png
 ```
 rlwrap nc -nlvvp 4444
 ```
-
+- Start a local python server
+```
+python -m http.server 9999
+```
 - Upload the payload file (binwalk_exploit.png) to the target. Since the bash script `malwarescan.sh` uses the binwalk tool to scan the images uploaded to the `/var/www/pilgrimage.htb/shrunk` directory, the payload needs to be placed here.
-- 
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9623d341-033c-4935-aa82-945a668c3498)
+
