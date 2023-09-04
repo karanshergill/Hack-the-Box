@@ -63,3 +63,13 @@ http://pilgrimage.htb/dashboard.php
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/45222057-30a0-40cb-9236-277ac66f3cdb)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b7769831-449a-4948-ad62-33f08d6fbae5)
 
+## Source Code
+- The code uses "magick" to shrink the uploaded image.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e1e8ac77-b705-4a8a-a2f3-a1e887ede57d)
+
+### Search Exploits
+```
+searchsploit magick
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dfc0dea8-95b2-412e-9509-488bcf24d57e)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2a7440d9-e578-4433-a503-4c280c16ddd1)
