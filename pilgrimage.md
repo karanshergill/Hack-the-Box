@@ -48,8 +48,9 @@ git-dumper http://pilgrimage.htb/.git/ git
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8aace601-5083-47e0-9097-4d362135c8cb)
 
 ### Login
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/59281814-60c3-4606-aa98-5b736e27baee)
 
-### /dashboard
+### Dashboard
 ```
 http://pilgrimage.htb/dashboard.php
 ```
