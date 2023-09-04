@@ -36,3 +36,9 @@ http://pilgrimage.htb/register.php
 http://pilgrimage,htb/.git/
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cf236a5d-c1d5-4e61-b79b-51f8ee5df32f)
+
+### Dump /.git
+```JS
+git-dumper http://pilgrimage.htb/.git/ git
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8e034218-7ed2-4956-b0e3-821f84f9a665)
