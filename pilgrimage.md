@@ -114,3 +114,9 @@ cat data.hex | xxd -r -p && echo ''
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bf82acca-237f-434e-8797-cebf1f19f690)
 
 - Credentials found: emily:abigchonkyboi123
+
+### FootHold
+```
+ssh emily@10.10.11.219
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c917b15a-555d-4fc4-8dd2-b21d8c8be882)
