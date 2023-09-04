@@ -40,4 +40,8 @@ nc -l -p 9090 > keeper.zip
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8b230c17-acee-4527-9086-cb9e3185991a)
 
+Unzip:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8ec9d78e-9d40-4420-b4cb-517a8f99204b)
+
+
 
