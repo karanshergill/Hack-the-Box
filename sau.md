@@ -16,3 +16,6 @@ http://10.10.11.224:55555/web
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/79f69a5d-4089-415f-a730-95af922adc0a)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/90cf2208-534e-48e8-ac26-f19e52370a7d)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e3295c04-4b3e-47ca-9d22-bbcb09054e93)
+
+Search Exploits
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/133c49dc-5684-4ead-ab67-a918ada9b649)
