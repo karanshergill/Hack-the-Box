@@ -56,3 +56,8 @@ SSH
 ssh vdaisley@10.10.11.217
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e79458fc-bfad-4c93-b993-6c9bf105d98a)
+
+Privilege Escalation
+
+Upload PSPY
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/de0a9d35-057a-484b-9013-771c9864fb17)
