@@ -61,3 +61,4 @@ Privilege Escalation
 
 Upload PSPY
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/de0a9d35-057a-484b-9013-771c9864fb17)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/70fad80b-5c24-4e2d-81d4-9b0233e4883e)
