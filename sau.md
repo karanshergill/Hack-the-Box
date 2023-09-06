@@ -12,4 +12,4 @@ HTTP 55555
 ```
 http://10.10.11.224:55555/web
 ```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7b31d1f4-54ea-4192-89a2-d8c133665324)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d765624b-9fbf-476d-9ef9-ffbced68b099)
