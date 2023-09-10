@@ -60,3 +60,5 @@ ssh daniel@10.129.95.192 -i id_rsa
 Privilege Escalation
 Upload WinPEAS
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3cef7999-c36e-49b1-a45c-1c10d9e77f95)
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cc01220f-3f5f-494c-a006-f9a89735865d)
