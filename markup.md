@@ -11,3 +11,8 @@ nmap -Pn -sC -sV -p 22,80,43 10.129.95.192 --min-rate 1000 -oN service.scan
 
 HTTP:80
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4a2e0956-7829-4e84-8572-a3a0a7c6d224)
+
+Content Discovery
+```
+ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt:FUZZ -u http://10.129.95.192/FUZZ -mc 200 -c -fs 12100
+```
