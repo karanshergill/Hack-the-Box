@@ -30,6 +30,9 @@ administrator:password
 
 Login successful using default credentials `admin:password`.
 
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7742947e-777a-482f-ac54-9ca53cfa9b99)
+Username: Daniel
+
 XXE
 The "order" page is interactive.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5cec6e4c-bfec-4956-8415-b983e3c8d030)
@@ -37,3 +40,7 @@ The "order" page is interactive.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c5bd7af6-1bc7-4462-81dd-f868606fc482)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0d4ea184-3f8e-4daa-9c2a-eac458939105)
 
+The website uses XML to send the order values to the server, could be vulnerable to XEE.
+XEE: or XML External Entity attack is a type of attack against an application that parses XML input and allows XML entities. XML entities can be used to tell the XML parser to fetch specific content on the server.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b8428ea7-1b18-4d97-8764-a7bfccd1c0a7)
+Vulnerable to XXE
