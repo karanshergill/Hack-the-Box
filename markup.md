@@ -29,3 +29,7 @@ administrator:password
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9c5a32c2-cbf5-41a7-a75e-d68eb90c1f2c)
 
 Login successful using default credentials `admin:password`.
+
+XXE
+The "order" page is interactive.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5cec6e4c-bfec-4956-8415-b983e3c8d030)
