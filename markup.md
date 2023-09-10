@@ -14,5 +14,5 @@ HTTP:80
 
 Content Discovery
 ```
-ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt:FUZZ -u http://10.129.95.192/FUZZ -mc 200 -c -fs 12100
+ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt:FUZZ -u http://10.129.95.192/FUZZ -mc 200 -t 10 -c
 ```
