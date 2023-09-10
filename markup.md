@@ -61,4 +61,8 @@ Privilege Escalation
 Upload WinPEAS
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3cef7999-c36e-49b1-a45c-1c10d9e77f95)
 
+Easy Way:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cc01220f-3f5f-494c-a006-f9a89735865d)
+
+Hard Way:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e564611a-226b-4667-8e3c-a9e3310206a4)
