@@ -55,3 +55,4 @@ Login with SSH
 ```
 ssh daniel@10.129.95.192 -i id_rsa
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dc03e956-1a0c-4815-9106-701802ef8ffb)
