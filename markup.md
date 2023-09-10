@@ -65,4 +65,5 @@ Easy Way:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cc01220f-3f5f-494c-a006-f9a89735865d)
 
 Hard Way:
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e564611a-226b-4667-8e3c-a9e3310206a4)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/348d23d7-3ad1-4846-bf01-003e2eb0b425)
+
