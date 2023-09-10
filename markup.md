@@ -49,3 +49,5 @@ Vulnerable to XXE
 
 Since a LFI exists, find SSH keys for the user Daniel.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8dc3e18c-7adf-4d4a-bcd3-c3f228046f07)
+
+Save the Key to a file `id_rsa` and give permissions `chmod 600 id_rsa`.
