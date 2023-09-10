@@ -16,3 +16,16 @@ Content Discovery
 ```
 ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt:FUZZ -u http://10.129.95.192/FUZZ -mc 200 -t 10 -c
 ```
+
+Default Credentials
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a41685ee-dd5f-4651-bc75-aac3d405e430)
+```
+admin:admin
+administrator:administrator
+admin:administrator
+admin:password
+administrator:password
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9c5a32c2-cbf5-41a7-a75e-d68eb90c1f2c)
+
+Login successful using default credentials `admin:password`.
