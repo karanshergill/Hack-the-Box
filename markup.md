@@ -46,3 +46,6 @@ The website uses XML to send the order values to the server, could be vulnerable
 XEE: or XML External Entity attack is a type of attack against an application that parses XML input and allows XML entities. XML entities can be used to tell the XML parser to fetch specific content on the server.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b8428ea7-1b18-4d97-8764-a7bfccd1c0a7)
 Vulnerable to XXE
+
+Since a LFI exists, find SSH keys for the user Daniel.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8dc3e18c-7adf-4d4a-bcd3-c3f228046f07)
