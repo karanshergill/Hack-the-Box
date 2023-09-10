@@ -33,3 +33,7 @@ Login successful using default credentials `admin:password`.
 XXE
 The "order" page is interactive.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5cec6e4c-bfec-4956-8415-b983e3c8d030)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/36dd1aa7-2fa6-49af-a84d-b3fcb3bf04f2)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c5bd7af6-1bc7-4462-81dd-f868606fc482)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0d4ea184-3f8e-4daa-9c2a-eac458939105)
+
