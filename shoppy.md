@@ -123,3 +123,9 @@ http://shoppy.htb
 ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://10.10.11.180 -H "Host:FUZZ.shoppy.htb" -fs 169 
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f184e103-8603-4b3d-83a0-926e9c53f0a1)
+
+### HTTP:80
+```HTTP
+http://mattermost.shoppy.htb
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f80f2b1f-c235-469e-bbd2-d2a10a91bfc6)
