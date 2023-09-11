@@ -1,6 +1,6 @@
 # Hack the Box - Shoppy
 
-```
+```RUST
 rustscan -a 10.10.11.180 -r 0-65535 --ulimit 5000
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5064e200-0843-4fc2-851e-026109d25f01)
@@ -122,7 +122,7 @@ http://shoppy.htb:9093
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4f04b074-35e4-4540-bf76-d7295d52fe02)
 
 ### Subdomain Brute-Force
-```
+```CSS
 ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://10.10.11.180 -H "Host:FUZZ.shoppy.htb" -fs 169 
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f184e103-8603-4b3d-83a0-926e9c53f0a1)
@@ -132,3 +132,11 @@ ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-11000
 http://mattermost.shoppy.htb
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f80f2b1f-c235-469e-bbd2-d2a10a91bfc6)
+
+### Directory Brute-Force
+```CSS
+ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u http://shoppy.htb/FUZZ -mc 200 -fs 2178 -c
+```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e787b91a-d4c3-4c4b-a616-c38d18f6c55a)
+
