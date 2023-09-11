@@ -142,3 +142,11 @@ ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-s
 
 ### NoSQL Injection
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ef0cbb29-d5f0-45ca-b1bc-bc70b761504b)
+
+Trying for SQL injection by modifying the POST data by adding a (') and sent it to the server. The server takes quite long to return a response which suggests that something is fishy.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/03db74ec-e150-45b9-a33d-ba4ebd61db69)
+
+Trying for NoSQL injection, but did not work.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6ce23e7e-a091-465a-ace4-3c09bdbbcf4a)
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8161a909-855f-4b05-879b-c721cfca861f)
