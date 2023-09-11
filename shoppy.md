@@ -140,3 +140,5 @@ ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-s
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/55df7414-f472-4fb6-9375-03a51ce5fa4f)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e787b91a-d4c3-4c4b-a616-c38d18f6c55a)
 
+### NoSQL Injection
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ef0cbb29-d5f0-45ca-b1bc-bc70b761504b)
