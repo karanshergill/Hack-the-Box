@@ -115,3 +115,7 @@ Nmap done: 1 IP address (1 host up) scanned in 111.42 seconds
 ### HTTP:9093
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4f04b074-35e4-4540-bf76-d7295d52fe02)
 
+### Subdomain Brute-Force
+```
+ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://10.10.11.180 -H "Host:FUZZ.shoppy.htb" -fs 169 
+```
