@@ -110,12 +110,15 @@ Nmap done: 1 IP address (1 host up) scanned in 111.42 seconds
 ```
 
 ### HTTP:80
-```
+```HTTP
 http://shoppy.htb
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8b153d62-54ef-4ae8-9e35-25cb87d8dd12)
 
 ### HTTP:9093
+```
+http://shoppy.htb:9093
+```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4f04b074-35e4-4540-bf76-d7295d52fe02)
 
 ### Subdomain Brute-Force
