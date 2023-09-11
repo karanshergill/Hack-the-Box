@@ -110,6 +110,9 @@ Nmap done: 1 IP address (1 host up) scanned in 111.42 seconds
 ```
 
 ### HTTP:80
+```
+http://shoppy.htb
+```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8b153d62-54ef-4ae8-9e35-25cb87d8dd12)
 
 ### HTTP:9093
@@ -119,3 +122,4 @@ Nmap done: 1 IP address (1 host up) scanned in 111.42 seconds
 ```
 ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://10.10.11.180 -H "Host:FUZZ.shoppy.htb" -fs 169 
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f184e103-8603-4b3d-83a0-926e9c53f0a1)
