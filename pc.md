@@ -25,8 +25,12 @@ Postman
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0714ae19-e6f5-4295-8da1-56d8635ea767)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0ec15b54-67ac-494c-80c1-5c40b93643aa)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/389b7c7a-31c3-4705-b0b4-dc86200c197d)
+
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ecdf80e2-83db-401d-892e-94f3146cbb49)
+
 ```JS
-token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoicm9tZW8iLCJleHAiOjE2OTQ2MTMxNjJ9.kEsxNE9hh69Hyhh2R2eTcjiJfC6Wh1MDjxA_PiqtU0Y
+token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoicm9tZW8iLCJleHAiOjE2OTQ2MTM5MjB9.6Shw-GaSrxB3vup4llpY02g84mqlY3m5n-AYFNqFiko
 ```
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7b3e743e-a423-4566-bfb5-d801ebcead73)
