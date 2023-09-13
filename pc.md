@@ -28,3 +28,6 @@ Postman
 ```JS
 token : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoicm9tZW8iLCJleHAiOjE2OTQ2MTMxNjJ9.kEsxNE9hh69Hyhh2R2eTcjiJfC6Wh1MDjxA_PiqtU0Y
 ```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7b3e743e-a423-4566-bfb5-d801ebcead73)
+
