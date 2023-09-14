@@ -1,4 +1,4 @@
-# Hack the Box - PC
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/097dd259-e711-4547-9bc6-1a70be4d9c84)# Hack the Box - PC
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f1689777-0e2f-42a8-a5ec-c01bb7657e6a)
 
@@ -26,5 +26,17 @@ Postman
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/08b10387-7228-4cbb-b1ea-439c98f455eb)
 
 Register
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cbeffeaa-5b30-43d9-966e-c1da0a9e90a6)
+```
 
+```
+
+SQL Injection
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a60ee3b7-b865-4047-b234-3d3bb6ffcb57)
+
+```
+Credentials:
+sau:HereIsYourPassWord1431
+```
+
+SSH
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1a921f3a-55ce-427b-a802-b6fa5cd5c7f9)
