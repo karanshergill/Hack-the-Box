@@ -24,4 +24,7 @@ gRPC (Google Remote Procedure Call) is an open-source, high-performance framewor
 Postman
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/688aab5e-e579-4fbc-aa91-4fbb8772e4ea)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/08b10387-7228-4cbb-b1ea-439c98f455eb)
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0714ae19-e6f5-4295-8da1-56d8635ea767)
+
+Register
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cbeffeaa-5b30-43d9-966e-c1da0a9e90a6)
+
