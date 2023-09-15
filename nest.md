@@ -9,3 +9,8 @@ rustscan -a 10.10.10.178 -r 0-65535 --ulimit 5000
 crackmapexec smb 10.10.10.178
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/76ffbf1e-765e-4337-8453-9b6c1cb6f562)
+
+```CSS
+crackmapexec smb 10.10.10.178 -u 'anonymous' -p '' --shares
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d1462bd8-e064-4449-9345-939825a37550)
