@@ -27,4 +27,7 @@ File Fuzzing
 ```CSS
 feroxbuster -u http://10.10.10.93 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -x aspx -s 200 -n
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/17b59a3d-7084-471b-b337-854971c477d4)
 
+Secure File Transfer: File Upload
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e3bc0a21-f5cb-4a33-98e9-69b7adf437f9)
