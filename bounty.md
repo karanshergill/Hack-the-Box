@@ -25,5 +25,6 @@ feroxbuster -u http://10.10.10.93 -w /usr/share/wordlists/seclists/Discovery/Web
 
 File Fuzzing
 ```CSS
-feroxbuster -u http://10.10.10.93 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -x aspx -C 200 -n
+feroxbuster -u http://10.10.10.93 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -x aspx -s 200 -n
 ```
+
