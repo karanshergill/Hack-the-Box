@@ -16,3 +16,14 @@ HTTP:80
 HTTP:80 (Source-Code)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b9dfdf95-1160-4519-9a1c-41ac0f452e27)
 
+Directory Fuzzing
+```CSS
+feroxbuster -u http://10.10.10.93 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -n
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e055ef8b-a99f-477d-8796-95a910bb9a76)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2141f6c4-5b42-48ae-9379-0f2fb9bdb62e)
+
+File Fuzzing
+```CSS
+feroxbuster -u http://10.10.10.93 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt -x aspx -C 200 -n
+```
