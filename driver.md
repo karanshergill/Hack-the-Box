@@ -273,3 +273,9 @@ Get the list of running processes
 meterpreter > ps
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/56fa0fa3-76f2-4903-b902-3d465ddc1e2b)
+
+Migrate to a process
+```CSS
+meterpreter > migrate 1864
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/362b2c35-6f96-4096-8c44-3372d3e60f01)
