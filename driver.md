@@ -194,3 +194,9 @@ Read File
 *Evil-WinRM* PS C:\programdata> type C:\Users\tony\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/00ea8f19-e778-4315-8529-baa38c4a8c27)
+
+Search Exploits
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c9e58a05-1752-4875-b9bd-468dcc096fe0)
+Read - [Local Privilege Escalation](https://www.pentagrid.ch/en/blog/local-privilege-escalation-in-ricoh-printer-drivers-for-windows-cve-2019-19363/)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dee82084-c5d5-4c78-b13f-8c7b107e34db)
+
