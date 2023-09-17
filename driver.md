@@ -49,3 +49,50 @@ PORT     STATE SERVICE      REASON
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.39 seconds
 ```
+
+```CSS
+nmap -sC -sV 10.10.11.106 -p 80,135,445,5985
+```
+```CSS
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-17 12:28 IST
+Nmap scan report for 10.10.11.106
+Host is up (0.15s latency).
+
+PORT     STATE SERVICE      VERSION
+80/tcp   open  http         Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=MFP Firmware Update Center. Please enter password for admin
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_http-server-header: Microsoft-IIS/10.0
+135/tcp  open  msrpc        Microsoft Windows RPC
+445/tcp  open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+5985/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+Service Info: Host: DRIVER; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-security-mode: 
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 6h59m59s, deviation: 0s, median: 6h59m59s
+| smb2-time: 
+|   date: 2023-09-17T13:58:28
+|_  start_date: 2023-09-17T13:30:08
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 48.67 seconds
+```
+
+HTTP:80
+```HTTP
+http://10.10.11.106/
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fb3fbdf9-f765-4378-b4c7-304bf9e4b572)
