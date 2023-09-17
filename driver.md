@@ -137,6 +137,8 @@ responder.py -I tun0
 What is Responder?
 Responder enables DNS poisoning on a target, along with built-in auth servers for HTTP, SMB, FTP, LDAP and MSSQL protocols, and also supports the NTLM authentication protocol (Windows Challenge/Response), which is used by the Microsoft Windows operating systems. Responder can be described as a program which listens for any outbound request from a machine to the outside network, like an FTP request, and then falsely represents itself as the requested server, enabling it to intercept all communication between the targeted machine and the server.
 
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dfba4d5b-4300-4709-94e4-9334bd6ec04b)
+
 Depending on the protocol and the type of authentication, Responder forwards the auth request towards the server, which can in turn respond with a challenge that the target has to respond to in order to successfully authenticate. Responder forwards that challenge towards the target, to which the targeted PC responds with a generated response, possibly a hash of its password made using the challenge sent by the server, which it sends back to the Responder, thinking it’s in fact, the target server.
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/986a37ae-1c85-4065-b026-3658bc612df6)
@@ -184,3 +186,4 @@ Switch to the `C:\programdata` directory and upload `WinPEASany.exe`.
 *Evil-WinRM* PS C:\programdata> upload winPEASany.exe
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3d5623e5-2dfd-4602-805a-6fbe3a7180bc)
+
