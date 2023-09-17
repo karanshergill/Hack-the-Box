@@ -262,9 +262,14 @@ Upload and Execute the `shell.exe` on the target machine using the existing Evil
 Meterpreter session received
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f36b208d-6133-48e2-889e-df98d08e2b45)
 
-Get the UID
-```
+Get the UID of the current user
+```CSS
 meterpreter > getuid
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2c032730-0789-4a96-a9d8-233f0b9eefd4)
 
+Get the list of running processes
+```CSS
+meterpreter > ps
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/56fa0fa3-76f2-4903-b902-3d465ddc1e2b)
