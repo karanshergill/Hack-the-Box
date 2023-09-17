@@ -115,6 +115,11 @@ feroxbuster -u http://10.10.11.106 -w /usr/share/wordlists/seclists/Discovery/We
 Firmware Update
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/29efdec0-7744-4955-a5ea-1e2cdedc0d10)
 
+SMB File Upload
+- This [blog](https://pentestlab.blog/2017/12/13/smb-share-scf-file-attacks/) suggests that by crafting a malicious SCF file and placing it somewhere in network shares, we can automatically capture a user's NTLM password hashes when they access the share.
+
+
+
 SMB Enumeration
 ```CSS
 crackmapexec smb 10.10.11.106 -u '' -p '' --shares
