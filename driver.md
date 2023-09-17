@@ -165,3 +165,9 @@ SMB         10.10.11.106    445    DRIVER           IPC$                        
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/543ce28c-ab6c-4609-a3c2-f5a28fe992b5)
 
+WinRM
+
+```CSS
+crackmapexec winrm 10.10.11.106 -u tony -p liltony
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7f13374d-bbc0-4d34-b183-3a397bed36e5)
