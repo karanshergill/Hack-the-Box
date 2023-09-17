@@ -1,9 +1,5 @@
 # Hack the Box - Driver
 
-```
-Printer Exploitation
-```
-
 ```CSS
 rustscan -a 10.10.11.106 -r 0-65535 --ulimit 5000
 ```
