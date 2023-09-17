@@ -97,14 +97,14 @@ http://10.10.11.106/
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fb3fbdf9-f765-4378-b4c7-304bf9e4b572)
 
-Login successful using credentials: `admin:admin`
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c9faf283-3920-4f1a-b18d-f986b8327a7f)
-
 Brute-force Basic HTTP Authentication
-```
+```CSS
 hydra -l admin -P ~/Wordlists/passwords-common.txt 10.10.11.106 http-get
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/34d7e7e1-12c3-4e23-80f7-54485d90f407)
+
+Login successful using credentials: `admin:admin`
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c9faf283-3920-4f1a-b18d-f986b8327a7f)
 
 Firmware Update
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/29efdec0-7744-4955-a5ea-1e2cdedc0d10)
