@@ -187,3 +187,10 @@ Switch to the `C:\programdata` directory and upload `WinPEASany.exe`.
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3d5623e5-2dfd-4602-805a-6fbe3a7180bc)
 
+WinPEAS Results
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a09432a6-95bb-43fe-852f-3686c7a31fb5)
+Read File
+```CSS
+*Evil-WinRM* PS C:\programdata> type C:\Users\tony\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/00ea8f19-e778-4315-8529-baa38c4a8c27)
