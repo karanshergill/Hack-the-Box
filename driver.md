@@ -108,3 +108,15 @@ Login successful using credentials: `admin:admin`
 
 Firmware Update
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/29efdec0-7744-4955-a5ea-1e2cdedc0d10)
+
+SMB Enumeration
+```CSS
+➜  ~ crackmapexec smb 10.10.11.106 -u '' -p '' --shares
+SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
+SMB         10.10.11.106    445    DRIVER           [-] DRIVER\: STATUS_ACCESS_DENIED 
+SMB         10.10.11.106    445    DRIVER           [-] Error enumerating shares: Error occurs while reading from remote(104)
+
+➜  ~ crackmapexec smb 10.10.11.106 -u 'anonymous' -p '' --shares
+SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
+SMB         10.10.11.106    445    DRIVER           [-] DRIVER\anonymous: STATUS_LOGON_FAILURE 
+```
