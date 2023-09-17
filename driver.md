@@ -1,7 +1,7 @@
 # Hack the Box - Driver
 
 ```CSS
-rustscan -a 10.10.11.106 -r 0-65535 --ulimit 5000
+➜ rustscan -a 10.10.11.106 -r 0-65535 --ulimit 5000
 ```
 ```CSS
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
@@ -51,7 +51,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.39 seconds
 ```
 
 ```CSS
-nmap -sC -sV 10.10.11.106 -p 80,135,445,5985
+➜ nmap -sC -sV 10.10.11.106 -p 80,135,445,5985
 ```
 ```CSS
 Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-17 12:28 IST
@@ -99,7 +99,7 @@ http://10.10.11.106/
 
 Brute-force Basic HTTP Authentication
 ```CSS
-hydra -l admin -P ~/Wordlists/passwords-common.txt 10.10.11.106 http-get
+➜ hydra -l admin -P ~/Wordlists/passwords-common.txt 10.10.11.106 http-get
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/34d7e7e1-12c3-4e23-80f7-54485d90f407)
 
@@ -111,12 +111,12 @@ Firmware Update
 
 SMB Enumeration
 ```CSS
-➜  ~ crackmapexec smb 10.10.11.106 -u '' -p '' --shares
+➜  crackmapexec smb 10.10.11.106 -u '' -p '' --shares
 SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
 SMB         10.10.11.106    445    DRIVER           [-] DRIVER\: STATUS_ACCESS_DENIED 
 SMB         10.10.11.106    445    DRIVER           [-] Error enumerating shares: Error occurs while reading from remote(104)
 
-➜  ~ crackmapexec smb 10.10.11.106 -u 'anonymous' -p '' --shares
+➜ crackmapexec smb 10.10.11.106 -u 'anonymous' -p '' --shares
 SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
 SMB         10.10.11.106    445    DRIVER           [-] DRIVER\anonymous: STATUS_LOGON_FAILURE 
 ```
