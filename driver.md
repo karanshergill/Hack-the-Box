@@ -100,3 +100,5 @@ http://10.10.11.106/
 Login successful using credentials: `admin:admin`
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c9faf283-3920-4f1a-b18d-f986b8327a7f)
 
+Firmware Update
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/29efdec0-7744-4955-a5ea-1e2cdedc0d10)
