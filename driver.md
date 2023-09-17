@@ -96,3 +96,7 @@ HTTP:80
 http://10.10.11.106/
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fb3fbdf9-f765-4378-b4c7-304bf9e4b572)
+
+Login successful using credentials: `admin:admin`
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c9faf283-3920-4f1a-b18d-f986b8327a7f)
+
