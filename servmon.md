@@ -274,3 +274,19 @@ SSH Login
 ssh nadine@10.10.10.184
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6c90d7c4-1e86-4b71-834b-2cf12ebcb511)
+
+Privilege Escalation
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0ba157cd-f296-41be-a2fd-513ae1508a92)
+
+Search Exploits
+```CSS
+searchsploit nsclient++
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e8d0efe7-b2e5-4e04-b21e-1e97a14c99ae)
+
+```CSS
+searchsploit -x windows/local/46802.txt
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b8615c7c-382c-42e8-a1c6-afcbbd8b7a7e)
+
+
