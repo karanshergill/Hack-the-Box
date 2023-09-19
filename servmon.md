@@ -241,3 +241,18 @@ NVMS 1000 Directory Traversal Vulnerability Exploit
 searchsploit -x hardware/webapps/47774.txt
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/419f2395-d750-40a7-882e-74351e6b7eb0)
+
+Exploitation
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/44a63ceb-e59f-4236-8452-164ef300e2a3)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b09da494-8025-4d9c-897f-25616f36f1ce)
+```CSS
+Passwords:
+----------
+1nsp3ctTh3Way2Mars!
+Th3r34r3To0M4nyTrait0r5!
+B3WithM30r4ga1n5tMe
+L1k3B1gBut7s@W0rk
+0nly7h3y0unGWi11F0l10w
+IfH3s4b0Utg0t0H1sH0me
+Gr4etN3w5w17hMySk1Pa5$
+```
