@@ -1,3 +1,5 @@
+# Hack the Box - ServMon
+
 ```CSS
 rustscan -a 10.10.10.184 -r 0-65535 --ulimit 5000
 ```
@@ -299,3 +301,18 @@ nscp.exe web -- password --display
 Current password: ew2x6SsGTxjRwXOT
 ```
 - Login and enable the `CheckExternalScripts` and `Scheduler` modules including enable at startup and save configuration
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9a06fd46-514b-4d1b-8b6a-b6342f578ae0)
+
+Blocked, need to come from `127.0.0.1`. The allowed hosts mentioned in the `nsclient.ini` file.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/34915dc4-7c2a-4cd3-b4c1-899944325ae9)
+
+Port Forwarding
+```
+sshpass -p 'L1k3B1gBut7s@W0rk' ssh nadine@10.10.10.184 -L 8443:127.0.0.1:8443
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3167437b-77ec-47d7-956b-e5471153bc3d)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cca0cd29-1eb0-4ae7-878f-207116cfd737)
+
+Enable Modules
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/27791269-4c10-4b6f-be21-17c48da712b2)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/aed9ad00-3992-42ab-9981-9c441794fab8)
