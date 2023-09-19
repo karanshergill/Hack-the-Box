@@ -235,3 +235,9 @@ Search for Exploits
 searchsploit NVMS
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/eb2cb9e1-43a5-4dc6-9946-43b69ed0ac93)
+
+NVMS 1000 Directory Traversal Vulnerability Exploit
+```CSS
+searchsploit -x hardware/webapps/47774.txt
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/419f2395-d750-40a7-882e-74351e6b7eb0)
