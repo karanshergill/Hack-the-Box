@@ -85,8 +85,133 @@ Nmap done: 1 IP address (1 host up) scanned in 0.49 seconds
 nmap -sC -sV 10.10.10.184 -p 21,22,80,135,445,6699,8443,49664-49670
 ```
 ```CSS
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-19 10:27 IST
+Nmap scan report for 10.10.10.184
+Host is up (0.15s latency).
 
+PORT      STATE SERVICE       VERSION
+21/tcp    open  ftp           Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_02-28-22  07:35PM       <DIR>          Users
+| ftp-syst: 
+|_  SYST: Windows_NT
+22/tcp    open  ssh           OpenSSH for_Windows_8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 c7:1a:f6:81:ca:17:78:d0:27:db:cd:46:2a:09:2b:54 (RSA)
+|   256 3e:63:ef:3b:6e:3e:4a:90:f3:4c:02:e9:40:67:2e:42 (ECDSA)
+|_  256 5a:48:c8:cd:39:78:21:29:ef:fb:ae:82:1d:03:ad:af (ED25519)
+80/tcp    open  http
+|_http-title: Site doesn't have a title (text/html).
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 200 OK
+|     Content-type: text/html
+|     Content-Length: 340
+|     Connection: close
+|     AuthInfo: 
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <title></title>
+|     <script type="text/javascript">
+|     window.location.href = "Pages/login.htm";
+|     </script>
+|     </head>
+|     <body>
+|     </body>
+|     </html>
+|   NULL: 
+|     HTTP/1.1 408 Request Timeout
+|     Content-type: text/html
+|     Content-Length: 0
+|     Connection: close
+|_    AuthInfo:
+135/tcp   open  msrpc         Microsoft Windows RPC
+445/tcp   open  microsoft-ds?
+6699/tcp  open  napster?
+8443/tcp  open  ssl/https-alt
+|_ssl-date: TLS randomness does not represent time
+| fingerprint-strings: 
+|   FourOhFourRequest, HTTPOptions, RTSPRequest, SIPOptions: 
+|     HTTP/1.1 404
+|     Content-Length: 18
+|     Document not found
+|   GetRequest: 
+|     HTTP/1.1 302
+|     Content-Length: 0
+|     Location: /index.html
+|     workers
+|_    jobs
+| ssl-cert: Subject: commonName=localhost
+| Not valid before: 2020-01-14T13:24:20
+|_Not valid after:  2021-01-13T13:24:20
+| http-title: NSClient++
+|_Requested resource was /index.html
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  msrpc         Microsoft Windows RPC
+49670/tcp open  msrpc         Microsoft Windows RPC
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94%I=7%D=9/19%Time=65092A5A%P=x86_64-pc-linux-gnu%r(NULL
+SF:,6B,"HTTP/1\.1\x20408\x20Request\x20Timeout\r\nContent-type:\x20text/ht
+SF:ml\r\nContent-Length:\x200\r\nConnection:\x20close\r\nAuthInfo:\x20\r\n
+SF:\r\n")%r(GetRequest,1B4,"HTTP/1\.1\x20200\x20OK\r\nContent-type:\x20tex
+SF:t/html\r\nContent-Length:\x20340\r\nConnection:\x20close\r\nAuthInfo:\x
+SF:20\r\n\r\n\xef\xbb\xbf<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20X
+SF:HTML\x201\.0\x20Transitional//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/D
+SF:TD/xhtml1-transitional\.dtd\">\r\n\r\n<html\x20xmlns=\"http://www\.w3\.
+SF:org/1999/xhtml\">\r\n<head>\r\n\x20\x20\x20\x20<title></title>\r\n\x20\
+SF:x20\x20\x20<script\x20type=\"text/javascript\">\r\n\x20\x20\x20\x20\x20
+SF:\x20\x20\x20window\.location\.href\x20=\x20\"Pages/login\.htm\";\r\n\x2
+SF:0\x20\x20\x20</script>\r\n</head>\r\n<body>\r\n</body>\r\n</html>\r\n")
+SF:%r(HTTPOptions,1B4,"HTTP/1\.1\x20200\x20OK\r\nContent-type:\x20text/htm
+SF:l\r\nContent-Length:\x20340\r\nConnection:\x20close\r\nAuthInfo:\x20\r\
+SF:n\r\n\xef\xbb\xbf<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\
+SF:x201\.0\x20Transitional//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xh
+SF:tml1-transitional\.dtd\">\r\n\r\n<html\x20xmlns=\"http://www\.w3\.org/1
+SF:999/xhtml\">\r\n<head>\r\n\x20\x20\x20\x20<title></title>\r\n\x20\x20\x
+SF:20\x20<script\x20type=\"text/javascript\">\r\n\x20\x20\x20\x20\x20\x20\
+SF:x20\x20window\.location\.href\x20=\x20\"Pages/login\.htm\";\r\n\x20\x20
+SF:\x20\x20</script>\r\n</head>\r\n<body>\r\n</body>\r\n</html>\r\n")%r(RT
+SF:SPRequest,1B4,"HTTP/1\.1\x20200\x20OK\r\nContent-type:\x20text/html\r\n
+SF:Content-Length:\x20340\r\nConnection:\x20close\r\nAuthInfo:\x20\r\n\r\n
+SF:\xef\xbb\xbf<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\
+SF:.0\x20Transitional//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-
+SF:transitional\.dtd\">\r\n\r\n<html\x20xmlns=\"http://www\.w3\.org/1999/x
+SF:html\">\r\n<head>\r\n\x20\x20\x20\x20<title></title>\r\n\x20\x20\x20\x2
+SF:0<script\x20type=\"text/javascript\">\r\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20window\.location\.href\x20=\x20\"Pages/login\.htm\";\r\n\x20\x20\x20\
+SF:x20</script>\r\n</head>\r\n<body>\r\n</body>\r\n</html>\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8443-TCP:V=7.94%T=SSL%I=7%D=9/19%Time=65092A63%P=x86_64-pc-linux-gn
+SF:u%r(GetRequest,74,"HTTP/1\.1\x20302\r\nContent-Length:\x200\r\nLocation
+SF::\x20/index\.html\r\n\r\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\x12\x02\x18\0\x1aE\n\x07workers\x12\x0b\n\x04jobs\x12\x03\
+SF:x18\xd1\x03\x12")%r(HTTPOptions,36,"HTTP/1\.1\x20404\r\nContent-Length:
+SF:\x2018\r\n\r\nDocument\x20not\x20found")%r(FourOhFourRequest,36,"HTTP/1
+SF:\.1\x20404\r\nContent-Length:\x2018\r\n\r\nDocument\x20not\x20found")%r
+SF:(RTSPRequest,36,"HTTP/1\.1\x20404\r\nContent-Length:\x2018\r\n\r\nDocum
+SF:ent\x20not\x20found")%r(SIPOptions,36,"HTTP/1\.1\x20404\r\nContent-Leng
+SF:th:\x2018\r\n\r\nDocument\x20not\x20found");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-09-19T05:00:01
+|_  start_date: N/A
+|_clock-skew: 2s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 133.05 seconds
 ```
+
 FTP:21
 Anonymous Authentication
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2f035b58-c3a9-4916-a41a-a6b8b6ac56f1)
