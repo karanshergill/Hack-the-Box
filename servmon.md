@@ -174,6 +174,14 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 120.69 seconds
 ```
+FTP:21
+Anonymous Authentication
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2f035b58-c3a9-4916-a41a-a6b8b6ac56f1)
+
+File `User\Nadine\Confidential.txt`
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3e72ed0e-42bf-459f-b5df-b04d0eff3acb)
+File `User\Nathan\Notes to do.txt`
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cd8f8766-ee47-489a-84b7-28be57b8a207)
 
 HTTP:80
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9e16766d-8877-4ae0-8d00-330fae6cf5fb)
