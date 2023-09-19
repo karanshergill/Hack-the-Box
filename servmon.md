@@ -226,3 +226,12 @@ File `User\Nathan\Notes to do.txt`
 
 HTTP:80
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9e16766d-8877-4ae0-8d00-330fae6cf5fb)
+
+HTTPS:8443
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/74a11426-fe56-4fc9-98de-881edbd35a61)
+
+Search for Exploits
+```CSS
+searchsploit NVMS
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/eb2cb9e1-43a5-4dc6-9946-43b69ed0ac93)
