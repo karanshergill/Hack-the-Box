@@ -180,8 +180,11 @@ Anonymous Authentication
 
 File `User\Nadine\Confidential.txt`
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3e72ed0e-42bf-459f-b5df-b04d0eff3acb)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/804dd021-5bd9-4367-8eb3-c87c39c152d4)
+
 File `User\Nathan\Notes to do.txt`
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cd8f8766-ee47-489a-84b7-28be57b8a207)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5d24a73c-3278-4454-bbfe-4ce87a4ffe86)
 
 HTTP:80
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9e16766d-8877-4ae0-8d00-330fae6cf5fb)
