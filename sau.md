@@ -69,3 +69,5 @@ sudo systemctl status trail.service
 
 Reference: https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/sudo/sudo-systemctl-privilege-escalation/
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e56fc35b-43e5-4a91-b509-4b488c90f000)
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4d9a0eb9-77f7-4635-b78b-65c9643f2f83)
