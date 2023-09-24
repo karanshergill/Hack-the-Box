@@ -526,3 +526,10 @@ get main.yml
 Contents of `main.yml`
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e66a80fd-d7bc-4639-9bba-ca3c931f561b)
 
+Create `yaml` files for the keys (ex: vault1.yml)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fd57f4ed-04f4-49d9-afba-e3602435ebf8)
+
+Generate Key Hashes
+```
+ansible2john vault1.yml
+```
