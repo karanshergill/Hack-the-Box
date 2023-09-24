@@ -559,3 +559,6 @@ cat vault1.yml | ansible-vault decrypt
 
 Port-80 HTTPS
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/edd75fa3-e1cf-4958-b76c-89c2b507577d)
+
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/90544cbe-e6b7-432e-a043-157382479a21)
