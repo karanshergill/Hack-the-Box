@@ -1,5 +1,6 @@
 # Hack the Box: Authority
 
+## Open Ports
 ```CSS
 rustscan -b 1000 -a 10.10.11.222 -r 0-65535 -u 5000 -- -Pn
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
@@ -83,3 +84,10 @@ PORT      STATE SERVICE          REASON
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.34 seconds
 ```
+
+## Exposed Services
+
+
+### Port-80 HTTP
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/59af5066-2212-4520-a735-8d59161dfa52)
+
