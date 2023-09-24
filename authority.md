@@ -84,10 +84,23 @@ PORT      STATE SERVICE          REASON
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.34 seconds
 ```
+Open Ports - 53,80,88,135,139,389,445,464,3269,3268,5985,8443,9389,47001,49666,49664,49665,49667,49673,49689,49688,49691,49692,49701,49703,49715
 
 ## Exposed Services
-
+```CSS
+rustscan -a 10.10.11.222 -p 53,80,88,135,139,389,445,464,3269,3268,5985,8443,9389,47001,49666,49664,49665,49667,49673,49689,49688,49691,49692,49701,49703,49715 -- -sC -sV
+```
 
 ### Port-80 HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/59af5066-2212-4520-a735-8d59161dfa52)
 
+### Port-445 SMB
+```CSS
+crackmapexec smb 10.10.11.222
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2394d263-6a78-47e3-8ac0-337232085d07)
+
+```CSS
+crackmapexec smb 10.10.11.222 -u 'anonymous' -p '' --shares
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c2f196a4-5a55-42cf-bf87-fc74e72d54a0)
