@@ -496,6 +496,12 @@ Nmap done: 1 IP address (1 host up) scanned in 169.54 seconds
 ### Port-80 HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/59af5066-2212-4520-a735-8d59161dfa52)
 
+#### Content Discovery
+```CSS
+feroxbuster -u http://authority.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-small-directories-lowercase.txt -s 200 -n
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dd73ae5a-ef67-4d12-91f6-c21b5a9814dc)
+
 ### Port-445 SMB
 ```CSS
 crackmapexec smb 10.10.11.222
