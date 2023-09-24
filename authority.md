@@ -530,6 +530,29 @@ Create `yaml` files for the keys (ex: vault1.yml)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fd57f4ed-04f4-49d9-afba-e3602435ebf8)
 
 Generate Key Hashes
-```
+```CSS
 ansible2john vault1.yml
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3b262e22-5ba1-4e0e-b025-23eed68060f2)
+
+```CSS
+ansible2john vault2.yml
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/63ebec8a-9f21-4e02-95c8-23ce6e4c5b9f)
+
+```CSS
+ansible2john vault3.yml
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/aecc4426-719e-49e8-be40-2fa279bd6f07)
+
+Crack the hash
+```CSS
+john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/69b0e7a5-b7bb-45c2-91d3-5554e61c1cf5)
+
+Decrypt
+```CSS
+cat vault1.yml | ansible-vault decrypt
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8f2df6f5-d979-4aed-906f-894f2552309f)
