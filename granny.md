@@ -2,7 +2,7 @@
 
 ## Port Scan
 Discover open ports on the target machine.
-```CSS
+```shell
 rustscan -a 10.10.10.15 -r 0-65535 -b 1000 -u 5000 -- -Pn
 
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
@@ -44,7 +44,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
 
 ## Exposed Services
 Identify services running on the open ports.
-```CSS
+```shell
 rustscan -a 10.10.10.15 -p 80 -u 5000 -- -sC -sV
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
@@ -142,7 +142,7 @@ Nmap done: 1 IP address (1 host up) scanned in 12.65 seconds
 ## WebDAV
 Web Distributed Authoring and Versioning or WebDAV is a protocol whose basic functionality includes enabling users to share, copy, move and edit files through a web server. 
 
-```
+```shell
 davtest --url http://10.10.10.15
 
 ********************************************************
