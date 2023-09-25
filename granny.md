@@ -43,6 +43,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
 ```
 
 ## Exposed Services
+Identify services running on the open ports.
 ```CSS
 rustscan -a 10.10.10.15 -p 80 -u 5000 -- -sC -sV
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
