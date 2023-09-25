@@ -132,5 +132,5 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 12.65 seconds
 ```
 
-# Port #80 HTTP
+## Port #80 HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/98a3bc59-afc0-4947-9331-a9c0203a5635)
