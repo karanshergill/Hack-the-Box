@@ -3,7 +3,7 @@
 ## Port Scan
 Discover open ports on the target machine.
 ```shell
-➜ rustscan -a 10.10.10.15 -r 0-65535 -b 1000 -u 5000 -- -Pn
+root@kali# rustscan -a 10.10.10.15 -r 0-65535 -b 1000 -u 5000 -- -Pn
 
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
