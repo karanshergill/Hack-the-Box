@@ -132,5 +132,62 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 12.65 seconds
 ```
 
-## Port #80 HTTP
+---
+
+### Port #80 HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/98a3bc59-afc0-4947-9331-a9c0203a5635)
+
+---
+
+## WebDAV
+Web Distributed Authoring and Versioning or WebDAV is a protocol whose basic functionality includes enabling users to share, copy, move and edit files through a web server. 
+
+```
+davtest --url http://10.10.10.15
+
+********************************************************
+ Testing DAV connection
+OPEN            SUCCEED:                http://10.10.10.15
+********************************************************
+NOTE    Random string for this session: lOl40HHuEoYCr
+********************************************************
+ Creating directory
+MKCOL           SUCCEED:                Created http://10.10.10.15/DavTestDir_lOl40HHuEoYCr
+********************************************************
+ Sending test files
+PUT     aspx    FAIL
+PUT     php     SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.php
+PUT     cfm     SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.cfm
+PUT     html    SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.html
+PUT     cgi     FAIL
+PUT     jhtml   SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.jhtml
+PUT     txt     SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.txt
+PUT     asp     FAIL
+PUT     pl      SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.pl
+PUT     jsp     SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.jsp
+PUT     shtml   FAIL
+********************************************************
+ Checking for test file execution
+EXEC    php     FAIL
+EXEC    cfm     FAIL
+EXEC    html    SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.html
+EXEC    html    FAIL
+EXEC    jhtml   FAIL
+EXEC    txt     SUCCEED:        http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.txt
+EXEC    txt     FAIL
+EXEC    pl      FAIL
+EXEC    jsp     FAIL
+
+********************************************************
+/usr/bin/davtest Summary:
+Created: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr
+PUT File: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.php
+PUT File: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.cfm
+PUT File: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.html
+PUT File: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.jhtml
+PUT File: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.txt
+PUT File: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.pl
+PUT File: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.jsp
+Executes: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.html
+Executes: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.txt
+```
