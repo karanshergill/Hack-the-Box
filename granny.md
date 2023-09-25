@@ -3,7 +3,7 @@
 ## Port Scan
 Discover open ports on the target machine.
 ```shell
-root@kali# rustscan -a 10.10.10.15 -r 0-65535 -b 1000 -u 5000 -- -Pn
+rustscan -a 10.10.10.15 -r 0-65535 -b 1000 -u 5000 -- -Pn
 
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
@@ -45,7 +45,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
 ## Exposed Services
 Identify services running on the open ports.
 ```shell
-➜ rustscan -a 10.10.10.15 -p 80 -u 5000 -- -sC -sV
+rustscan -a 10.10.10.15 -p 80 -u 5000 -- -sC -sV
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
 | .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
@@ -143,7 +143,7 @@ Nmap done: 1 IP address (1 host up) scanned in 12.65 seconds
 Web Distributed Authoring and Versioning or WebDAV is a protocol whose basic functionality includes enabling users to share, copy, move and edit files through a web server. 
 
 ```shell
-➜ davtest --url http://10.10.10.15
+davtest --url http://10.10.10.15
 
 ********************************************************
  Testing DAV connection
@@ -194,14 +194,14 @@ Executes: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.txt
 
 ### Testing WebDAV Manually
 ```shell
-➜ echo "PwnStuff" > test.txt
-➜ curl -X PUT http://10.10.10.15/test.txt -d @test.txt
-➜ curl http://10.10.10.15/test.txt
+echo "PwnStuff" > test.txt
+curl -X PUT http://10.10.10.15/test.txt -d @test.txt
+curl http://10.10.10.15/test.txt
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1c36428b-c238-45b6-8777-204a653acd71)
 
 ```shell
-root@kali# curl -X PUT http://10.10.10.15/test.aspx -d @test.txt
+curl -X PUT http://10.10.10.15/test.aspx -d @test.txt
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>The page cannot be displayed</TITLE>
@@ -234,3 +234,4 @@ You have attempted to execute a CGI, ISAPI, or other executable program from a d
 
 </TD></TR></TABLE></BODY></HTML>
 ```
+
