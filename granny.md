@@ -1,3 +1,7 @@
+# Hack the Box: Granny
+IP: 10.10.10.15
+OS: Windows
+Tags: #OSCP
 
 Granny is an easy Windows OS box, which can be exploited using several different methods. In this write-up I will be following the intended method of pwning this box. 
 
