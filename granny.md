@@ -18,7 +18,7 @@ For privilege escalation I will exploit the "NULL Pointer Dereference" vulnerabi
 ### Initial Port Scan
 Perform a comprehensive port scan to find the open ones on the target machine by scanning all ports.
 ```shell
-root@kali# rustscan -a 10.10.10.15 -r 0-65535 -b 1000 -u 5000 -- -Pn
+root@kali# rustscan -b 1000 -u 5000 -r 0-65535 -a 10.10.10.15 -- -Pn
 ```
 
 Port scan result:
