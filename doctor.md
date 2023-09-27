@@ -188,3 +188,17 @@ root@kali# sudo bash -c "echo '10.10.10.209    doctors.htb' >> /etc/hosts"
 ## Virtual Host
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/975f588d-00eb-445d-86b5-6d5329c73a4a)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c4ff87b3-8fb5-4997-b54e-73d290e0cbf5)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8deeafa5-d798-43d5-8c6f-ad3ec96c16ee)
+
+```http
+HTTP/1.1 200 OK
+Date: Wed, 27 Sep 2023 09:18:26 GMT
+Server: Werkzeug/1.0.1 Python/3.8.2
+Content-Type: text/html; charset=utf-8
+Vary: Cookie,Accept-Encoding
+Set-Cookie: session=eyJfZnJlc2giOmZhbHNlfQ.ZRPzYg.2BsJtAPYE0-phjRisk3VGsN81Nk; HttpOnly; Path=/
+Content-Encoding: gzip
+Content-Length: 1465
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+```
