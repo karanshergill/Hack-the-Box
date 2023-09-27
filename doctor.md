@@ -1,55 +1,52 @@
 # Hack the Box - Doctor
 
-```CSS 
-Machine IP: 10.10.10.209
+```shell
+root@kali# rustscan -b 1000 -u 5000 -r 0-65535 -a 10.10.10.209 -- -Pn
 ```
+```shell
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
+| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
+`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
+The Modern Day Port Scanner.
+________________________________________
+: http://discord.skerritt.blog           :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+😵 https://admin.tryhackme.com
 
-```CSS
-▶ nmap -Pn -sS -O -p- 10.10.10.209 -T4 --min-rate 1000 -oN ports.nmap
-
+[~] The config file is expected to be at "/home/superuser/.rustscan.toml"
+[~] Automatically increasing ulimit value to 5000.
+Open 10.10.10.209:22
+Open 10.10.10.209:80
+Open 10.10.10.209:8089
+[~] Starting Script(s)
+[>] Running script "nmap -vvv -p {{port}} {{ip}} -Pn" on ip 10.10.10.209
+Depending on the complexity of the script, results may take some time to appear.
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
+[~] Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-27 13:24 IST
+Initiating Parallel DNS resolution of 1 host. at 13:24
+Completed Parallel DNS resolution of 1 host. at 13:24, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 3, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 13:24
+Scanning 10.10.10.209 [3 ports]
+Discovered open port 80/tcp on 10.10.10.209
+Discovered open port 22/tcp on 10.10.10.209
+Discovered open port 8089/tcp on 10.10.10.209
+Completed Connect Scan at 13:24, 0.15s elapsed (3 total ports)
 Nmap scan report for 10.10.10.209
-Host is up (0.21s latency).
-Not shown: 65532 filtered tcp ports (no-response)
-PORT     STATE SERVICE
-22/tcp   open  ssh
-80/tcp   open  http
-8089/tcp open  unknown
-Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-Aggressive OS guesses: Linux 5.0 (97%), Linux 4.15 - 5.6 (92%), Linux 5.4 (90%), Crestron XPanel control system (90%), Linux 5.3 - 5.4 (90%), Linux 5.0 - 5.3 (89%), Linux 5.0 - 5.4 (88%), Linux 2.6.32 (88%), ASUS RT-N56U WAP (Linux 3.4) (87%), Linux 3.1 (87%)
-No exact OS matches for host (test conditions non-ideal).
+Host is up, received user-set (0.15s latency).
+Scanned at 2023-09-27 13:24:41 IST for 0s
 
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 138.10 seconds
+PORT     STATE SERVICE REASON
+22/tcp   open  ssh     syn-ack
+80/tcp   open  http    syn-ack
+8089/tcp open  unknown syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
 ```
 
-```CSS
-▶ nmap -sC -sV -p 22,80,8089 10.10.10.209 -oN services.nmap
-
-Nmap scan report for 10.10.10.209
-Host is up (0.18s latency).
-
-PORT     STATE SERVICE  VERSION
-22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
-| ssh-hostkey: 
-|   3072 594d4ec2d8cfda9da8c8d0fd99a84617 (RSA)
-|   256 7ff3dcfb2dafcbff9934ace0f8001e47 (ECDSA)
-|_  256 530e966b9ce9c1a170516c2dce7b43e8 (ED25519)
-80/tcp   open  http     Apache httpd 2.4.41 ((Ubuntu))
-|_http-server-header: Apache/2.4.41 (Ubuntu)
-|_http-title: Doctor
-8089/tcp open  ssl/http Splunkd httpd
-| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
-| Not valid before: 2020-09-06T15:57:27
-|_Not valid after:  2023-09-06T15:57:27
-|_http-title: splunkd
-|_http-server-header: Splunkd
-| http-robots.txt: 1 disallowed entry 
-|_/
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 46.01 seconds
-```
 ## HTTP 80
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4fdf842b-3b62-46fd-8ce2-de8b1d5aec36)
 
