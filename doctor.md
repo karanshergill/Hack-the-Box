@@ -202,3 +202,57 @@ Content-Length: 1465
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 ```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a48ba5c5-6d81-4919-8430-75657ce607df)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/eaf27a32-62d9-4c97-b7c4-6121f8d2ddc1)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/46c795cb-e179-4891-bb74-3cf58581321f)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c5dc8408-4fe6-4e48-b070-80e656197ea7)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/33c86aff-e6ae-434d-9b4c-6b208ffab093)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d63cc17a-0c94-46f1-985e-8a8ecb55b6f7)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+
+    
+        <title>Doctor Secure Messaging</title>
+    
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/">Doctor Secure Messaging</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="/home">Home</a>
+              <!--archive still under beta testing<a class="nav-item nav-link" href="/archive">Archive</a>-->
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              
+                <a class="nav-item nav-link" href="/post/new">New Message</a>
+                <a class="nav-item nav-link" href="/account">Account</a>
+                <a class="nav-item nav-link" href="/logout">Logout</a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-12">
+```
