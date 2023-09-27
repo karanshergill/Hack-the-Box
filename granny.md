@@ -65,7 +65,7 @@ Identify services running on the open ports.
 ### Service and Version Detection
 Detect all running services and their versions by running a script scan on all open ports found.
 ```shell
-root@kali# rustscan -a 10.10.10.15 -p 80 -u 5000 -- -sC -sV
+root@kali# rustscan -u 5000 -a 10.10.10.15 -p 80 -- -sC -sV
 ```
 
 Script scan result:
