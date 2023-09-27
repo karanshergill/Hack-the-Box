@@ -256,3 +256,5 @@ Connection: Keep-Alive
       <div class="row">
         <div class="col-md-12">
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7d6ee387-ee30-4184-b233-c31b96096184)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/82dca24b-10fb-4e1d-b0f4-0ab29f189cd1)
