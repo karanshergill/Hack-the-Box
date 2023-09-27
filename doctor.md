@@ -182,7 +182,7 @@ Nmap done: 1 IP address (1 host up) scanned in 45.88 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4fdf842b-3b62-46fd-8ce2-de8b1d5aec36)
 
 ```shell
-sudo bash -c "echo '10.10.10.209    doctors.htb' >> /etc/hosts"
+root@kali# sudo bash -c "echo '10.10.10.209    doctors.htb' >> /etc/hosts"
 ```
 
 ## Virtual Host
