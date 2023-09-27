@@ -258,3 +258,8 @@ Connection: Keep-Alive
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7d6ee387-ee30-4184-b233-c31b96096184)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/82dca24b-10fb-4e1d-b0f4-0ab29f189cd1)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5a0724c6-0add-4b02-a4aa-c98f395d52ce)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a1fec5ed-4eb7-477a-bb39-a87b8f3b253e)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b2a4b8fa-5f7e-454e-82ea-0133dd3ff0ef)
+
+
