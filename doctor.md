@@ -181,6 +181,10 @@ Nmap done: 1 IP address (1 host up) scanned in 45.88 seconds
 ## HTTP 80
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/4fdf842b-3b62-46fd-8ce2-de8b1d5aec36)
 
+```shell
+sudo bash -c "echo '10.10.10.209    doctors.htb' >> /etc/hosts"
+```
+
 ## Virtual Host
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/975f588d-00eb-445d-86b5-6d5329c73a4a)
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c4ff87b3-8fb5-4997-b54e-73d290e0cbf5)
