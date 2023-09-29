@@ -438,8 +438,11 @@ root@kali# crackmapexec smb 10.10.11.202 -u 'DoesNotExist' -p '' --shares
 
 - Public Share Contents
 ```shell
-smbclinet //10.10.11.202/Public -N
+root@kali# smbclinet //10.10.11.202/Public -N
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c1b21bf3-c81c-405c-bafa-7ba3b8ac888c)
 
-
+```shell
+root@kali# open SQL\ Server\ Procedures.pdf
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/400a083f-4e00-4655-bd7a-ab12d250697f)
