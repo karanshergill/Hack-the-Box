@@ -411,3 +411,21 @@ Certificate:
         ed:74:bc:26:69:fd:85:20:48:bf:1b:82:dc:ed:b4:21:98:37:
         dd:8b:2a:b4
 ```
+
+SMB
+- OS Version
+```shell
+root@kali# crackmapexec smb 10.10.11.202
+```
+```shell
+SMB         10.10.11.202    445    DC               [*] Windows 10.0 Build 17763 x64 (name:DC) (domain:sequel.htb) (signing:True) (SMBv1:False)
+```
+
+- Enumerate Shares
+```shell
+root@kali# crackmapexec smb 10.10.11.202 --shares
+```
+```shell
+SMB         10.10.11.202    445    DC               [*] Windows 10.0 Build 17763 x64 (name:DC) (domain:sequel.htb) (signing:True) (SMBv1:False)
+SMB         10.10.11.202    445    DC               [-] Error enumerating shares: STATUS_USER_SESSION_DELETED
+```
