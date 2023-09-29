@@ -86,4 +86,11 @@ Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.32 seconds
 ```
 
-Open Ports: 
+Open Ports: 53,88,135,139,389,445,464,593,636,5985,9389,49248,49667,49687,49688,49709,49717
+
+```shell
+rustscan -u 5000 -a 10.10.11.202 -p 53,88,135,139,389,445,464,593,636,5985,9389,49248,49667,49687,49688,49709,49717 -- -Pn -sC -sV
+```
+```shell
+
+```
