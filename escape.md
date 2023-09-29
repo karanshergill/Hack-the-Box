@@ -429,3 +429,10 @@ root@kali# crackmapexec smb 10.10.11.202 --shares
 SMB         10.10.11.202    445    DC               [*] Windows 10.0 Build 17763 x64 (name:DC) (domain:sequel.htb) (signing:True) (SMBv1:False)
 SMB         10.10.11.202    445    DC               [-] Error enumerating shares: STATUS_USER_SESSION_DELETED
 ```
+
+- Null Session Authentication
+```shell
+crackmapexec smb 10.10.11.202 -u 'DoesNotExist' -p '' --shares
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0a7b782e-fd9c-4a23-989c-92e9afc5fcfa)
+
