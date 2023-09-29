@@ -321,5 +321,5 @@ Nmap done: 1 IP address (1 host up) scanned in 97.92 seconds
 ```
 
 ```shell
-root@kali# echo "10.10.11.202    sequel.htb dc.sequel.htb" >> /etc/hosts
+root@kali# echo "10.10.11.202    sequel.htb dc.sequel.htb" | sudo tee -a /etc/hosts
 ```
