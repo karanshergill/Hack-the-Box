@@ -529,3 +529,6 @@ Certify
 ```shell
 *Evil-WinRM* PS C:\Users\Ryan.Cooper> .\Certify.exe find /vulnerable
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/edff4cd9-5b74-4e12-8f25-60487f0d2edc)
+The danger here is that sequel\Domain Users has Enrollment Rights for the certificate (this is scenario 3 in the Certify README).
+
