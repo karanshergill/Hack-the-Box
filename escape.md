@@ -500,6 +500,7 @@ evil-winrm -i 10.10.11.202 -u sql_svc -p REGGIE1234ronnie
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/79d3cb4b-7747-4ddd-9a5a-35a21c958b53)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bc229d84-29d7-46de-ada8-2510a43236a9)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0a04d3eb-76fd-4d39-9641-6fee9b56d5d7)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0bfd4f2b-5674-43de-9dbe-9e2d55eb572e)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dcdc3232-9f22-4ebd-8861-6c18b00dc58c)
 
