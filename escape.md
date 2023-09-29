@@ -89,7 +89,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.32 seconds
 Open Ports: 53,88,135,139,389,445,464,593,636,5985,9389,49248,49667,49687,49688,49709,49717
 
 ```shell
-rustscan -u 5000 -a 10.10.11.202 -p 53,88,135,139,389,445,464,593,636,5985,9389,49248,49667,49687,49688,49709,49717 -- -Pn -sC -sV
+root@kali# rustscan -u 5000 -a 10.10.11.202 -p 53,88,135,139,389,445,464,593,636,5985,9389,49248,49667,49687,49688,49709,49717 -- -Pn -sC -sV
 ```
 ```shell
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
@@ -326,7 +326,7 @@ root@kali# echo "10.10.11.202    sequel.htb dc.sequel.htb" | sudo tee -a /etc/ho
 
 Fetch SSL Certificvate from LDAPS
 ```shell
-openssl s_client -showcerts -connect 10.10.11.202:3269 | openssl x509 -noout -text
+root@kali# openssl s_client -showcerts -connect 10.10.11.202:3269 | openssl x509 -noout -text
 ```
 ```shell
 Can't use SSL_get_servername
@@ -430,9 +430,16 @@ SMB         10.10.11.202    445    DC               [*] Windows 10.0 Build 17763
 SMB         10.10.11.202    445    DC               [-] Error enumerating shares: STATUS_USER_SESSION_DELETED
 ```
 
-- Null Session Authentication
+- Enumerate Shares with Null Session Authentication
 ```shell
-crackmapexec smb 10.10.11.202 -u 'DoesNotExist' -p '' --shares
+root@kali# crackmapexec smb 10.10.11.202 -u 'DoesNotExist' -p '' --shares
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0a7b782e-fd9c-4a23-989c-92e9afc5fcfa)
+
+- Public Share Contents
+```shell
+smbclinet //10.10.11.202/Public -N
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c1b21bf3-c81c-405c-bafa-7ba3b8ac888c)
+
 
