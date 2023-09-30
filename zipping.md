@@ -1,4 +1,4 @@
-# HAck the Box - Zipping
+# Hack the Box - Zipping
 
 ```shell
 rustscan -b 1000 -u 5000 -r 0-65535 -a 10.10.11.229 -- -Pn
