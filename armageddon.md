@@ -160,7 +160,7 @@ john -w=/usr/share/wordlists/rockyou.txt hash.txt
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f117cef3-9ef1-4107-a71b-7d576b6ffe0c)
 
-## Initial Foothold
+## Foothold
 ```shell
 ssh brucetherealadmin@10.10.10.233
 ```
