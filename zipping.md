@@ -161,3 +161,8 @@ Web Shell
 </body>
 </html>
 ```
+
+Zip
+```shell
+root@kali# zip webshell webshell.phpD.pdf
+```
