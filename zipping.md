@@ -137,3 +137,9 @@ HTTP - TCP 80
 
 File Upload
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b796d165-a542-485f-9d24-c1306171c082)
+Only zip files, containing a pdf file inside them can be uploaded.
+
+Bypass File Upload Restrictions
+Craft a web shell with the extension `.phpD.pdf` and then zip the file.
+
+
