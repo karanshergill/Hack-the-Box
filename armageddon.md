@@ -86,9 +86,11 @@ Connection: Keep-Alive
 Content-Type: text/html; charset=utf-8
 ```
 
-## Exploit
-  - The Drupal version running is vulnerable to Remote Code Execution - CVE-2018-7600
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/996b2dd6-a19d-4ae4-bcf2-ff0c9057302e)
+---
 
-  
-  - Drupal exploit is not working.
+## Drupal Version
+- `changelog.txt`.
+```shell
+curl -s 10.10.10.233/CHANGELOG.txt | head
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9e732973-d6d1-4287-acdd-47f785645a1f)
