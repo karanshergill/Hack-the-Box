@@ -166,3 +166,9 @@ Zip
 ```shell
 root@kali# zip webshell webshell.phpD.pdf
 ```
+
+Upload
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4c0eef9d-e2c6-4ae8-9d04-8b928dc395dd)
+
+Modify the filename
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c26547d5-8f0c-4288-ae84-cd53e0036086)
