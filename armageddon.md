@@ -68,6 +68,24 @@ Nmap done: 1 IP address (1 host up) scanned in 15.35 seconds
 
 ---
 
+## HTTP Response Header
+```http
+HTTP/1.1 200 OK
+Date: Sat, 30 Sep 2023 11:35:57 GMT
+Server: Apache/2.4.6 (CentOS) PHP/5.4.16
+X-Powered-By: PHP/5.4.16
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+X-Content-Type-Options: nosniff
+Content-Language: en
+X-Frame-Options: SAMEORIGIN
+X-Generator: Drupal 7 (http://drupal.org)
+Content-Length: 7440
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=utf-8
+```
+
 ## Exploit
   - The Drupal version running is vulnerable to Remote Code Execution - CVE-2018-7600
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/996b2dd6-a19d-4ae4-bcf2-ff0c9057302e)
