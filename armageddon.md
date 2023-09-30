@@ -63,7 +63,8 @@ Nmap done: 1 IP address (1 host up) scanned in 15.35 seconds
 ![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/cb5ace1e-fa12-4cc5-b837-4107afa14893)
 
   - Registering as a new user failed as e-mail authentication is broken broken.
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9a5aaa2b-0ce1-4ec1-b1f4-cab73c395c9f)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4abc8d0c-1e80-479a-b0ca-3d6eaa55f28c)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/56f3bf84-4cfa-42ea-b0de-db89db01746d)
 
 ---
 
