@@ -94,3 +94,19 @@ Content-Type: text/html; charset=utf-8
 curl -s 10.10.10.233/CHANGELOG.txt | head
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9e732973-d6d1-4287-acdd-47f785645a1f)
+
+---
+
+## Search for Exploit
+```shell
+root@kali# searchsploit drupal 7.56
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e8217b76-c132-4084-8b46-a44a1c78af1a)
+```shell
+root@kali# searchsploit -x php/webapps/44449.rb
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0592413d-3aca-457e-bab1-9404dc5c36e3)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bf373420-7ea7-4e73-b86c-8bd1884c4b06)
+```shell
+root@kali# searchsploit -x php/webapps/44449.rb
+```
