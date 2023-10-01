@@ -181,4 +181,14 @@ centos  7
 kernel  3.10.0-1160.6.1.el7.x86_64
 ```
 
+```
+root@kali# searchsploit snap
+```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2b99630f-ce24-491a-a60e-63bb8e812a90)
+
+```shell
+root@kali# searchsploit -m linux/local/46361.py
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/21656604-c4dc-49fa-8482-3898c9aec9c5)
+
+
