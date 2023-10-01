@@ -180,3 +180,5 @@ series  16
 centos  7
 kernel  3.10.0-1160.6.1.el7.x86_64
 ```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2b99630f-ce24-491a-a60e-63bb8e812a90)
