@@ -165,3 +165,18 @@ john -w=/usr/share/wordlists/rockyou.txt hash.txt
 ssh brucetherealadmin@10.10.10.233
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/895a58dc-0c2b-45f1-a0a9-a944be595775)
+
+## Privilege Escalation
+```shell
+[brucetherealadmin@armageddon ~]$ sudo -l
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fb12ff2c-5963-46ed-82e4-969d90e91e12)
+
+```shell
+[brucetherealadmin@armageddon ~]$ snap --version
+snap    2.47.1-1.el7
+snapd   2.47.1-1.el7
+series  16
+centos  7
+kernel  3.10.0-1160.6.1.el7.x86_64
+```
