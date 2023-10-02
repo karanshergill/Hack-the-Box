@@ -225,3 +225,23 @@ Visiting the URL `http://admin.forge.htb` returns an error.
 Accessing FTP `ftp://admin.forge.htb` returns another error.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f98801e8-ab81-4547-b871-759ee7ebeb42)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f1d950ad-08d3-482a-9e21-7492056518a0)
+
+Flask Server
+```python
+#!/usr/bin/env python
+
+from flask import Flask, redirect, request
+
+app = Flask(__name__)
+
+@app.route("/")
+def admin():
+    return redirect('http://admin.forge.htb/')
+
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=80)  
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/380a981e-f9f9-4b0f-aca7-71af1ad06e6b)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c6f1a624-2366-441a-a192-f8872d72d1bf)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/df7b6337-a66e-4221-b089-5ad18ef9375b)
