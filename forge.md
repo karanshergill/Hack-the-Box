@@ -142,6 +142,43 @@ TCP 80: HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7812a2c1-cef1-4903-9315-15016492ebe2)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e660be1e-be06-4fb4-8507-64aa67e4c5e1)
 
+```shell
+feroxbuster -u http://forge.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-small-words.txt -s 200 -n
+```
+```shell
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://forge.htb
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/raft-small-words.txt
+ 👌  Status Codes          │ [200]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.10.0
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🔎  Extract Links         │ true
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+200      GET       56l      102w      874c http://forge.htb/static/css/main.css
+200      GET       33l       58w      929c http://forge.htb/upload
+200      GET       26l       64w      963c http://forge.htb/static/js/main.js
+200      GET       39l       66w      553c http://forge.htb/static/css/upload.css
+200      GET      737l     3629w   289124c http://forge.htb/static/images/image9.jpg
+200      GET      583l     3316w   262102c http://forge.htb/static/images/image5.jpg
+200      GET      467l     2872w   259443c http://forge.htb/static/images/image3.jpg
+200      GET     1050l     6302w   461659c http://forge.htb/static/images/image2.jpg
+200      GET     1068l     5977w   438325c http://forge.htb/static/images/image4.jpg
+200      GET     1570l     8945w   698879c http://forge.htb/static/images/image8.jpg
+200      GET     2355l    12931w  1041359c http://forge.htb/static/images/image1.jpg
+200      GET       72l       92w     2050c http://forge.htb/
+[####################] - 2m     43030/43030   0s      found:12      errors:18     
+[####################] - 2m     43008/43008   322/s   http://forge.htb/  
+```
 
 Virtual Host Bure-force
 ```shell
