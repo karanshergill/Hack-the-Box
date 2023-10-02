@@ -217,3 +217,7 @@ ________________________________________________
 :: Progress: [4990/4990] :: Job [1/1] :: 269 req/sec :: Duration: [0:00:19] :: Errors: 0 ::
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/155ce940-2f69-45e8-b624-2654c913b3a1)
+
+Visiting the URL `http://admin.forge.htb` returns an error.
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d524fd60-2246-4eb9-b2f7-93979103e895)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5a00036e-94ed-40f0-a38a-13a3ed3e3cb3)
