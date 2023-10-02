@@ -140,5 +140,5 @@ TCP 80: HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/285334ee-5f76-4ba2-a309-b1b300de5689)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/53e4d0eb-d059-41c5-8440-26b9758308c1)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7812a2c1-cef1-4903-9315-15016492ebe2)
-
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e660be1e-be06-4fb4-8507-64aa67e4c5e1)
 
