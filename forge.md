@@ -219,5 +219,5 @@ ________________________________________________
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/155ce940-2f69-45e8-b624-2654c913b3a1)
 
 Visiting the URL `http://admin.forge.htb` returns an error.
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d524fd60-2246-4eb9-b2f7-93979103e895)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/737112e3-2801-401a-86c6-2e3931b93700)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5a00036e-94ed-40f0-a38a-13a3ed3e3cb3)
