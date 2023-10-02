@@ -142,6 +142,11 @@ TCP 80: HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7812a2c1-cef1-4903-9315-15016492ebe2)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e660be1e-be06-4fb4-8507-64aa67e4c5e1)
 
+Upload from URL
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b583f8cd-856f-4579-9f46-592cc982e205)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d2ac0a02-e9f3-4db6-ae24-aa8173f1be42)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/80decb70-fc31-459b-abf9-1f259545322b)
+
 ```shell
 feroxbuster -u http://forge.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-small-words.txt -s 200 -n
 ```
