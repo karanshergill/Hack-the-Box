@@ -146,7 +146,8 @@ TCP 80: HTTP
 Virtual Host Bure-force
 ```shell
 ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.forge.htb" -u http://forge.htb -mc 200
-
+```
+```shell
         /'___\  /'___\           /'___\       
        /\ \__/ /\ \__/  __  __  /\ \__/       
        \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
