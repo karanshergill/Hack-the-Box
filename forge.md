@@ -135,3 +135,10 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 11.74 seconds
 ```
 
+TCP 80: HTTP
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9298fe1e-5e8a-42e7-a84f-b18c14604d07)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/285334ee-5f76-4ba2-a309-b1b300de5689)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/53e4d0eb-d059-41c5-8440-26b9758308c1)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7812a2c1-cef1-4903-9315-15016492ebe2)
+
+
