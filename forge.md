@@ -224,3 +224,4 @@ Visiting the URL `http://admin.forge.htb` returns an error.
 
 Accessing FTP `ftp://admin.forge.htb` returns another error.
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f98801e8-ab81-4547-b871-759ee7ebeb42)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/f1d950ad-08d3-482a-9e21-7492056518a0)
