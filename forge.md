@@ -142,3 +142,34 @@ TCP 80: HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7812a2c1-cef1-4903-9315-15016492ebe2)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e660be1e-be06-4fb4-8507-64aa67e4c5e1)
 
+
+Virtual Host Bure-force
+```shell
+ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.forge.htb" -u http://forge.htb -mc 200
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.0.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://forge.htb
+ :: Wordlist         : FUZZ: /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+ :: Header           : Host: FUZZ.forge.htb
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200
+________________________________________________
+
+[Status: 200, Size: 27, Words: 4, Lines: 2, Duration: 683ms]
+    * FUZZ: admin
+
+:: Progress: [4990/4990] :: Job [1/1] :: 269 req/sec :: Duration: [0:00:19] :: Errors: 0 ::
+```
