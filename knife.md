@@ -146,3 +146,17 @@ Nmap done: 1 IP address (1 host up) scanned in 11.46 seconds
 
 TCP 80 - HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2b4de6f6-928e-4a17-b356-438ba1d10537)
+
+HTTP Headers
+```http
+HTTP/1.1 200 OK
+Date: Tue, 03 Oct 2023 11:46:00 GMT
+Server: Apache/2.4.41 (Ubuntu)
+X-Powered-By: PHP/8.1.0-dev
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 2406
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+```
