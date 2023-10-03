@@ -333,4 +333,7 @@ if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=80)
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/57a20b26-e42f-43fd-afbd-6a1cafff35a5)
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2c25be95-ff2d-415d-89af-8c9b7adcedb3)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/861d8e7f-24ce-4f92-b1f3-1447805c8eb9)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a9d62889-f3db-4d5e-8db6-1f65fda6e462)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9a00ee75-8fbf-4f75-ae34-b4a427e5ec7c)
+
