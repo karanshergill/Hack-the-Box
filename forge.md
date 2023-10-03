@@ -377,3 +377,19 @@ if __name__ == "__main__":
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/60335d90-8dec-4da5-b00e-386bbcf3ca07)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6a87895a-d435-421f-aba9-adb40f2ca4b8)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ac88bb37-0a76-4750-bddd-7a2c0303486c)
+
+Change permissions on `id_rsa`
+```shell
+chmod 600 id_rsa
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d13838bd-a532-40dc-8566-0905a6f00560)
+
+Privilege Escalation
+```shell
+user@forge:~$ sudo -l
+Matching Defaults entries for user on forge:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User user may run the following commands on forge:
+    (ALL : ALL) NOPASSWD: /usr/bin/python3 /opt/remote-manage.py
+```
