@@ -245,3 +245,10 @@ if __name__ == "__main__":
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/380a981e-f9f9-4b0f-aca7-71af1ad06e6b)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c6f1a624-2366-441a-a192-f8872d72d1bf)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/df7b6337-a66e-4221-b089-5ad18ef9375b)
+
+Announcements:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/08d9d23f-58b4-4f08-b9d2-80814cd117f1)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ec5250d8-22af-4536-99c5-36f1b04443b3)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a19acd6a-c8c8-4316-a3f9-5cf8a9e65630)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4c5e43fd-dba0-4ce5-a897-df0c3e1cf0c4)
+
