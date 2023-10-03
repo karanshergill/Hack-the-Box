@@ -46,6 +46,69 @@ Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
 
 ```shell
 root@kali# rustscan -u 5000 -p 22,80 -a 10.10.10.242 -- -Pn -sC -sV
+```
+
+```shell
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.                                                                                                                   
+| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |                                                                                                                   
+| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |                                                                                                                   
+`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'                                                                                                                   
+The Modern Day Port Scanner.                                                                                                                                               
+________________________________________                                                                                                                                   
+: http://discord.skerritt.blog           :                                                                                                                                 
+: https://github.com/RustScan/RustScan :                                                                                                                                   
+ --------------------------------------                                                                                                                                    
+Nmap? More like slowmap.🐢                                                                                                                                                 
+                                                                                                                                                                           
+[~] The config file is expected to be at "/home/superuser/.rustscan.toml"                                                                                                  
+[~] Automatically increasing ulimit value to 5000.                                                                                                                         
+Open 10.10.10.242:80                                                                                                                                                       
+Open 10.10.10.242:22                                                                                                                                                       
+[~] Starting Script(s)                                                                                                                                                     
+[>] Running script "nmap -vvv -p {{port}} {{ip}} -Pn -sC -sV" on ip 10.10.10.242                                                                                           
+Depending on the complexity of the script, results may take some time to appear.                                                                                           
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.                                                                             
+[~] Starting Nmap 7.94 ( https://nmap.org ) at 2023-10-03 17:08 IST                                                                                                        
+NSE: Loaded 156 scripts for scanning.                                                                                                                                      
+NSE: Script Pre-scanning.                                                                                                                                                  
+NSE: Starting runlevel 1 (of 3) scan.                                                                                                                                      
+Initiating NSE at 17:08                                                                                                                                                    
+Completed NSE at 17:08, 0.00s elapsed                                                                                                                                      
+NSE: Starting runlevel 2 (of 3) scan.                                                                                                                                      
+Initiating NSE at 17:08                                                                                                                                                    
+Completed NSE at 17:08, 0.00s elapsed                                                                                                                                      
+NSE: Starting runlevel 3 (of 3) scan.                                                                                                                                      
+Initiating NSE at 17:08                                                                                                                                                    
+Completed NSE at 17:08, 0.00s elapsed                                                                                                                                      
+Initiating Parallel DNS resolution of 1 host. at 17:08                                                                                                                     
+Completed Parallel DNS resolution of 1 host. at 17:08, 0.00s elapsed                                                                                                       
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 3, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]                                                                           
+Initiating Connect Scan at 17:08                                                                                                                                           
+Scanning 10.10.10.242 [2 ports]                                                                                                                                            
+Discovered open port 22/tcp on 10.10.10.242                                                                                                                                
+Discovered open port 80/tcp on 10.10.10.242                                                                                                                                
+Completed Connect Scan at 17:08, 0.14s elapsed (2 total ports)                                                                                                             
+Initiating Service scan at 17:08
+Scanning 10.10.10.242 [2 ports]                                                                                                                                            
+Discovered open port 22/tcp on 10.10.10.242                                                                                                                                
+Discovered open port 80/tcp on 10.10.10.242                                                                                                                                
+Completed Connect Scan at 17:08, 0.14s elapsed (2 total ports)                                                                                                             
+Initiating Service scan at 17:08                                                                                                                                           
+Scanning 2 services on 10.10.10.242
+Completed Service scan at 17:08, 6.29s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.10.242.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:08
+Completed NSE at 17:08, 4.11s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:08
+Completed NSE at 17:08, 0.58s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:08
+Completed NSE at 17:08, 0.00s elapsed
+Nmap scan report for 10.10.10.242
+Host is up, received user-set (0.14s latency).
+Scanned at 2023-10-03 17:08:46 IST for 12s
 
 PORT   STATE SERVICE REASON  VERSION
 22/tcp open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
@@ -65,6 +128,20 @@ n/qdutNQ7cRnNvBVXbNm0CpiNfoHBCBDJ1LR8p8k=
 |_http-server-header: Apache/2.4.41 (Ubuntu)
 |_http-title:  Emergent Medical Idea
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:08
+Completed NSE at 17:08, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:08
+Completed NSE at 17:08, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:08
+Completed NSE at 17:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 11.46 seconds
 ```
 
 TCP 80 - HTTP
