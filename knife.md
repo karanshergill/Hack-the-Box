@@ -45,9 +45,8 @@ Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
 ```
 
 ```shell
-rustscan -u 5000 -p 22,80 -a 10.10.10.242 -- -Pn -sC -sV
-```
-```shell
+root@kali# rustscan -u 5000 -p 22,80 -a 10.10.10.242 -- -Pn -sC -sV
+
 PORT   STATE SERVICE REASON  VERSION
 22/tcp open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
