@@ -443,7 +443,6 @@ Listening on localhost:56636
 ```shell
 user@forge:~$ nc 127.0.0.1 56636
 ```
-
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7b578779-7542-4772-abe1-866c6434918b)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b448cd7f-1902-4b95-b5f8-28d61fe179d5)
-
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/88a6f8d6-b179-49f1-834e-556cafad6729)
