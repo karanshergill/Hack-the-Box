@@ -247,6 +247,24 @@ if __name__ == "__main__":
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/df7b6337-a66e-4221-b089-5ad18ef9375b)
 
 Announcements:
+```python
+#!/usr/bin/env python
+
+from flask import Flask, redirect, request
+
+app = Flask(__name__)
+
+@app.route("/")
+def admin():
+    return redirect('http://admin.forge.htb/')
+
+@app.route("/announcements")
+def announcements():
+    return redirect('http://admin.forge.htb/announcements')
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=80)
+```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/08d9d23f-58b4-4f08-b9d2-80814cd117f1)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ec5250d8-22af-4536-99c5-36f1b04443b3)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a19acd6a-c8c8-4316-a3f9-5cf8a9e65630)
