@@ -1,7 +1,7 @@
 # Hack the Box - Forge
 
 ```shell
-rustscan -b 1000 -u 5000 -r 0-65535 -a 10.10.11.111 -- -Pn
+root@kali# rustscan -b 1000 -u 5000 -r 0-65535 -a 10.10.11.111 -- -Pn
 ```
 ```shell
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
@@ -45,7 +45,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
 ```
 
 ```shell
-rustscan -u 5000 -p 22,80 -a 10.10.11.111 -- -Pn -sC -sV
+root@kali# rustscan -u 5000 -p 22,80 -a 10.10.11.111 -- -Pn -sC -sV
 ```
 ```shell
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
@@ -148,7 +148,7 @@ Upload from URL
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/80decb70-fc31-459b-abf9-1f259545322b)
 
 ```shell
-feroxbuster -u http://forge.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-small-words.txt -s 200 -n
+root@kali# feroxbuster -u http://forge.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-small-words.txt -s 200 -n
 ```
 ```shell
  ___  ___  __   __     __      __         __   ___
@@ -187,7 +187,7 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 
 Virtual Host Bure-force
 ```shell
-ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.forge.htb" -u http://forge.htb -mc 200
+root@#kali# ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.forge.htb" -u http://forge.htb -mc 200
 ```
 ```shell
         /'___\  /'___\           /'___\       
@@ -380,7 +380,7 @@ if __name__ == "__main__":
 
 Change permissions on `id_rsa`
 ```shell
-chmod 600 id_rsa
+root@kali# chmod 600 id_rsa
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/d13838bd-a532-40dc-8566-0905a6f00560)
 
@@ -436,3 +436,14 @@ except Exception as e:
 finally:
     quit()
 ```
+```shell
+user@forge:~$ sudo /usr/bin/python3 /opt/remote-manage.py
+Listening on localhost:56636
+```
+```shell
+user@forge:~$ nc 127.0.0.1 56636
+```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7b578779-7542-4772-abe1-866c6434918b)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b448cd7f-1902-4b95-b5f8-28d61fe179d5)
+
