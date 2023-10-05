@@ -524,7 +524,21 @@ Add Hostnames:
 echo "10.10.11.168    DC1.scrm.local scrm.local" | sudo tee -a /etc/hosts
 ```
 
+TCP 80: HTTP
 ![image](https://user-images.githubusercontent.com/83878909/232773506-b152dfdb-7b41-4e3a-af62-378ac592cb28.png)
+
+Headers:
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html
+Last-Modified: Thu, 04 Nov 2021 18:13:14 GMT
+Accept-Ranges: bytes
+ETag: "3aed29a2a7d1d71:0"
+Server: Microsoft-IIS/10.0
+Date: Thu, 05 Oct 2023 13:31:16 GMT
+Content-Length: 2313
+```
+
 ![image](https://user-images.githubusercontent.com/83878909/232774019-ba86df41-9239-4124-8166-3791221c24cf.png)
 
 #### Potential Usernames
