@@ -519,11 +519,18 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 199.91 seconds
 ```
 
+Add Hostnames:
+```shell
+echo "10.10.11.168    DC1.scrm.local scrm.local" | sudo tee -a /etc/hosts
+```
+
 ![image](https://user-images.githubusercontent.com/83878909/232773506-b152dfdb-7b41-4e3a-af62-378ac592cb28.png)
 ![image](https://user-images.githubusercontent.com/83878909/232774019-ba86df41-9239-4124-8166-3791221c24cf.png)
 
 #### Potential Usernames
 ![image](https://user-images.githubusercontent.com/83878909/232775328-80c40259-0128-4143-afb0-f0d16bfad00f.png)
+
+
 
 ```CSS
 support
