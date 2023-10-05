@@ -580,3 +580,32 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 79s    26584/26584   0s      found:4       errors:0      
 [####################] - 79s    26584/26584   338/s   http://10.10.11.168/        
 ```
+
+TCP 389: LDAP
+```
+ldapsearch -H ldap://10.10.11.168 -x -s base namingcontexts
+```
+```
+# extended LDIF
+#
+# LDAPv3
+# base <> (default) with scope baseObject
+# filter: (objectclass=*)
+# requesting: namingcontexts 
+#
+
+#
+dn:
+namingcontexts: DC=scrm,DC=local
+namingcontexts: CN=Configuration,DC=scrm,DC=local
+namingcontexts: CN=Schema,CN=Configuration,DC=scrm,DC=local
+namingcontexts: DC=DomainDnsZones,DC=scrm,DC=local
+namingcontexts: DC=ForestDnsZones,DC=scrm,DC=local
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
+```
