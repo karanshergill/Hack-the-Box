@@ -545,9 +545,38 @@ Content-Length: 2313
 ![image](https://user-images.githubusercontent.com/83878909/232775328-80c40259-0128-4143-afb0-f0d16bfad00f.png)
 
 
-
 ```CSS
 support
 ksimpson
 ```
 
+Content Discovery
+```shell
+feroxbuster --url http://10.10.11.168 --wordlist /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --no-recursion --dont-extract-links
+```
+```
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://10.10.11.168
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
+ 👌  Status Codes          │ All Status Codes!
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.10.0
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET       29l       95w     1245c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET       84l      156w     2313c http://10.10.11.168/
+301      GET        2l       10w      150c http://10.10.11.168/images => http://10.10.11.168/images/
+301      GET        2l       10w      150c http://10.10.11.168/assets => http://10.10.11.168/assets/
+400      GET        6l       26w      324c http://10.10.11.168/error%1F_log
+[####################] - 79s    26584/26584   0s      found:4       errors:0      
+[####################] - 79s    26584/26584   338/s   http://10.10.11.168/        
+```
