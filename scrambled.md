@@ -609,3 +609,8 @@ result: 0 Success
 # numResponses: 2
 # numEntries: 1
 ```
+
+```shell
+impacket-smbclient scrm.local/ksimpson:ksimpson@DC1.scrm.local -k
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/31776fc8-90d0-437d-b39d-80ba71dd0947)
