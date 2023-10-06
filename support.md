@@ -1,13 +1,5 @@
 # Hack the Box - Support
 
-```CSS
-Machine IP: 10.10.11.174 - Windows
-Difficulty: Easy
-Category: OSCP Preparation
-Vulnerabilities:
-  - 
-```
-
 ## Reconnaissance
   - Scan for open TCP ports on target machine.
   - Perform service and version detection of open ports.
@@ -51,48 +43,99 @@ Nmap done: 1 IP address (1 host up) scanned in 135.87 seconds
 ```
 
 ## Service and Version Detection
-```CSS
-
-▶ nmap -Pn -sC -sV -p 53,88,135,389,445,464,593,636,3268,3269,5985,9389,49664,49668,49674,49676,49703,57664 10.10.11.174 -oN services.nmap
-
-Nmap scan report for 10.10.11.174
-Host is up (0.18s latency).
-
-PORT      STATE SERVICE       VERSION
-53/tcp    open  domain        Simple DNS Plus
-88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2023-05-10 03:53:40Z)
-135/tcp   open  msrpc         Microsoft Windows RPC
-389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: support.htb0., Site: Default-First-Site-Name)
-445/tcp   open  microsoft-ds?
-464/tcp   open  kpasswd5?
-593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
-636/tcp   open  tcpwrapped
-3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: support.htb0., Site: Default-First-Site-Name)
-3269/tcp  open  tcpwrapped
-5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
-|_http-server-header: Microsoft-HTTPAPI/2.0
-|_http-title: Not Found
-9389/tcp  open  mc-nmf        .NET Message Framing
-49664/tcp open  msrpc         Microsoft Windows RPC
-49668/tcp open  msrpc         Microsoft Windows RPC
-49674/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
-49676/tcp open  msrpc         Microsoft Windows RPC
-49703/tcp open  msrpc         Microsoft Windows RPC
-57664/tcp open  msrpc         Microsoft Windows RPC
-Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
-
-Host script results:
-| smb2-time: 
-|   date: 2023-05-10T03:54:32
-|_  start_date: N/A
-| smb2-security-mode: 
-|   311: 
-|_    Message signing enabled and required
-|_clock-skew: -25s
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 102.53 seconds
+```shell
+rustscan -b 1000 -u 5000 -r 0-65535 -a 10.10.11.174 -- -Pn
 ```
+```shell
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
+| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
+`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
+The Modern Day Port Scanner.
+________________________________________
+: https://discord.gg/GFrQsGy           :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+Please contribute more quotes to our GitHub https://github.com/rustscan/rustscan
+
+[~] The config file is expected to be at "/home/superuser/.rustscan.toml"
+[~] Automatically increasing ulimit value to 5000.
+Open 10.10.11.174:53
+Open 10.10.11.174:88
+Open 10.10.11.174:135
+Open 10.10.11.174:139
+Open 10.10.11.174:389
+Open 10.10.11.174:445
+Open 10.10.11.174:464
+Open 10.10.11.174:593
+Open 10.10.11.174:636
+Open 10.10.11.174:3269
+Open 10.10.11.174:3268
+Open 10.10.11.174:5985
+Open 10.10.11.174:9389
+Open 10.10.11.174:49664
+Open 10.10.11.174:49667
+Open 10.10.11.174:49674
+Open 10.10.11.174:49686
+Open 10.10.11.174:49700
+[~] Starting Script(s)
+[>] Script to be run Some("nmap -vvv -p {{port}} {{ip}}")
+
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
+[~] Starting Nmap 7.94 ( https://nmap.org ) at 2023-10-06 16:47 IST
+Initiating Parallel DNS resolution of 1 host. at 16:47
+Completed Parallel DNS resolution of 1 host. at 16:47, 0.01s elapsed
+DNS resolution of 1 IPs took 0.01s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 16:47
+Scanning 10.10.11.174 [18 ports]
+Discovered open port 445/tcp on 10.10.11.174
+Discovered open port 53/tcp on 10.10.11.174
+Discovered open port 139/tcp on 10.10.11.174
+Discovered open port 3269/tcp on 10.10.11.174
+Discovered open port 135/tcp on 10.10.11.174
+Discovered open port 3268/tcp on 10.10.11.174
+Discovered open port 593/tcp on 10.10.11.174
+Discovered open port 5985/tcp on 10.10.11.174
+Discovered open port 464/tcp on 10.10.11.174
+Discovered open port 9389/tcp on 10.10.11.174
+Discovered open port 49686/tcp on 10.10.11.174
+Discovered open port 49664/tcp on 10.10.11.174
+Discovered open port 389/tcp on 10.10.11.174
+Discovered open port 88/tcp on 10.10.11.174
+Discovered open port 49700/tcp on 10.10.11.174
+Discovered open port 49667/tcp on 10.10.11.174
+Discovered open port 49674/tcp on 10.10.11.174
+Discovered open port 636/tcp on 10.10.11.174
+Completed Connect Scan at 16:47, 0.33s elapsed (18 total ports)
+Nmap scan report for 10.10.11.174
+Host is up, received user-set (0.16s latency).
+Scanned at 2023-10-06 16:47:45 IST for 0s
+
+PORT      STATE SERVICE          REASON
+53/tcp    open  domain           syn-ack
+88/tcp    open  kerberos-sec     syn-ack
+135/tcp   open  msrpc            syn-ack
+139/tcp   open  netbios-ssn      syn-ack
+389/tcp   open  ldap             syn-ack
+445/tcp   open  microsoft-ds     syn-ack
+464/tcp   open  kpasswd5         syn-ack
+593/tcp   open  http-rpc-epmap   syn-ack
+636/tcp   open  ldapssl          syn-ack
+3268/tcp  open  globalcatLDAP    syn-ack
+3269/tcp  open  globalcatLDAPssl syn-ack
+5985/tcp  open  wsman            syn-ack
+9389/tcp  open  adws             syn-ack
+49664/tcp open  unknown          syn-ack
+49667/tcp open  unknown          syn-ack
+49674/tcp open  unknown          syn-ack
+49686/tcp open  unknown          syn-ack
+49700/tcp open  unknown          syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
+```
+
+
 
 ----
 
