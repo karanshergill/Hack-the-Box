@@ -614,3 +614,4 @@ result: 0 Success
 impacket-smbclient scrm.local/ksimpson:ksimpson@DC1.scrm.local -k
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/31776fc8-90d0-437d-b39d-80ba71dd0947)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e5a2242d-c2d1-42fb-917d-095ce6cec7de)
