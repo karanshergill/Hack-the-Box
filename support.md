@@ -4,45 +4,6 @@
   - Scan for open TCP ports on target machine.
   - Perform service and version detection of open ports.
 
-### Port Scan (TCP)
-```CSS
-▶ nmap -Pn -sS -O -p- 10.10.11.174 -T4 --min-rate 1000 -oN ports.nmap
-
-Nmap scan report for 10.10.11.174
-Host is up (0.17s latency).
-Not shown: 65516 filtered tcp ports (no-response)
-PORT      STATE SERVICE
-53/tcp    open  domain
-88/tcp    open  kerberos-sec
-135/tcp   open  msrpc
-139/tcp   open  netbios-ssn
-389/tcp   open  ldap
-445/tcp   open  microsoft-ds
-464/tcp   open  kpasswd5
-593/tcp   open  http-rpc-epmap
-636/tcp   open  ldapssl
-3268/tcp  open  globalcatLDAP
-3269/tcp  open  globalcatLDAPssl
-5985/tcp  open  wsman
-9389/tcp  open  adws
-49664/tcp open  unknown
-49668/tcp open  unknown
-49674/tcp open  unknown
-49676/tcp open  unknown
-49703/tcp open  unknown
-57664/tcp open  unknown
-Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-Device type: general purpose
-Running (JUST GUESSING): Microsoft Windows 2016 (85%)
-OS CPE: cpe:/o:microsoft:windows_server_2016
-Aggressive OS guesses: Microsoft Windows Server 2016 (85%)
-No exact OS matches for host (test conditions non-ideal).
-
-OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 135.87 seconds
-```
-
-## Service and Version Detection
 ```shell
 rustscan -b 1000 -u 5000 -r 0-65535 -a 10.10.11.174 -- -Pn
 ```
@@ -135,7 +96,137 @@ Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
 ```
 
+```shell
+rustscan -u 5000 -p 53,88,135,139,389,445,464,593,636,3269,3268,5985,9389 -a 10.10.11.174 -- -Pn -sC -sV
+```
+```shell
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
+| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
+`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
+The Modern Day Port Scanner.
+________________________________________
+: https://discord.gg/GFrQsGy           :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+😵 https://admin.tryhackme.com
 
+[~] The config file is expected to be at "/home/superuser/.rustscan.toml"
+[~] Automatically increasing ulimit value to 5000.
+Open 10.10.11.174:53
+Open 10.10.11.174:88
+Open 10.10.11.174:389
+Open 10.10.11.174:139
+Open 10.10.11.174:135
+Open 10.10.11.174:445
+Open 10.10.11.174:593
+Open 10.10.11.174:636
+Open 10.10.11.174:3269
+Open 10.10.11.174:464
+Open 10.10.11.174:3268
+Open 10.10.11.174:5985
+Open 10.10.11.174:9389
+[~] Starting Script(s)
+[>] Script to be run Some("nmap -vvv -p {{port}} {{ip}}")
+
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
+[~] Starting Nmap 7.94 ( https://nmap.org ) at 2023-10-06 16:53 IST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 16:53
+Completed NSE at 16:53, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 16:53
+Completed NSE at 16:53, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 16:53
+Completed NSE at 16:53, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 16:53
+Completed Parallel DNS resolution of 1 host. at 16:53, 0.01s elapsed
+DNS resolution of 1 IPs took 0.01s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 16:53
+Scanning 10.10.11.174 [13 ports]
+Discovered open port 139/tcp on 10.10.11.174
+Discovered open port 53/tcp on 10.10.11.174
+Discovered open port 135/tcp on 10.10.11.174
+Discovered open port 445/tcp on 10.10.11.174
+Discovered open port 5985/tcp on 10.10.11.174
+Discovered open port 88/tcp on 10.10.11.174
+Discovered open port 389/tcp on 10.10.11.174
+Discovered open port 3268/tcp on 10.10.11.174
+Discovered open port 593/tcp on 10.10.11.174
+Discovered open port 9389/tcp on 10.10.11.174
+Discovered open port 636/tcp on 10.10.11.174
+Discovered open port 464/tcp on 10.10.11.174
+Discovered open port 3269/tcp on 10.10.11.174
+Completed Connect Scan at 16:53, 0.34s elapsed (13 total ports)
+Initiating Service scan at 16:53
+Scanning 13 services on 10.10.11.174
+Completed Service scan at 16:54, 15.27s elapsed (13 services on 1 host)
+NSE: Script scanning 10.10.11.174.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 16:54
+NSE Timing: About 99.94% done; ETC: 16:54 (0:00:00 remaining)
+Completed NSE at 16:54, 40.09s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 16:54
+Completed NSE at 16:54, 4.91s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 16:54
+Completed NSE at 16:54, 0.00s elapsed
+Nmap scan report for 10.10.11.174
+Host is up, received user-set (0.17s latency).
+Scanned at 2023-10-06 16:53:53 IST for 61s
+
+PORT     STATE SERVICE       REASON  VERSION
+53/tcp   open  domain        syn-ack Simple DNS Plus
+88/tcp   open  kerberos-sec  syn-ack Microsoft Windows Kerberos (server time: 2023-10-06 11:24:01Z)
+135/tcp  open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+389/tcp  open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: support.htb0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds? syn-ack
+464/tcp  open  kpasswd5?     syn-ack
+593/tcp  open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped    syn-ack
+3268/tcp open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: support.htb0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped    syn-ack
+5985/tcp open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp open  mc-nmf        syn-ack .NET Message Framing
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 19493/tcp): CLEAN (Timeout)
+|   Check 2 (port 14647/tcp): CLEAN (Timeout)
+|   Check 3 (port 45724/udp): CLEAN (Timeout)
+|   Check 4 (port 20897/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2023-10-06T11:24:13
+|_  start_date: N/A
+|_clock-skew: 0s
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 16:54
+Completed NSE at 16:54, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 16:54
+Completed NSE at 16:54, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 16:54
+Completed NSE at 16:54, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 60.95 seconds
+```
 
 ----
 
