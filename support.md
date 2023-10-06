@@ -241,38 +241,27 @@ echo "10.10.11.174    dc.dupport.htb support.htb" | sudo tee -a /etc/hosts
   - Check for anonymous authentication.
 
 ### SMB Enumeration
-```CSS
-▶ crackmapexec smb 10.10.11.174
+```shell
+crackmapexec smb 10.10.11.174
 ```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/b468b3d1-cda4-4c90-95f7-9da2c975dc7b)
-  - Domain Controller(DC): `support.htb` 
+```shell
+SMB         dc.dupport.htb  445    DC               [*] Windows 10.0 Build 20348 x64 (name:DC) (domain:support.htb) (signing:True) (SMBv1:False)
+```
+- Domain Controller - `dc.support.htb`
+- Hostname - `support.htb`
+- OS - Windows 10
 
 ### List SMB Shares
 ```CSS
 ▶ crackmapexec smb 10.10.11.174 --shares
 ```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/c4bc2e24-d78e-46b8-890d-0f5ba2e1a1a9)
-  - No results.
+- No results.
 
-### SMB Null Authentication
+### SMB Null Session Authentication
 ```
-▶ crackmapexec smb --shares 10.10.11.174 -u '' -p ''
+▶ crackmapexec smb 10.10.11.174 -u 'Null' -p '' --shares
 ```
-  - No results.
-
-### SMB Anonymous Authentication
-```CSS
-▶ crackmapexec smb -u 'anonymous' -p ''
-```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ad0378f1-2068-41f9-9425-fd9f8e43ee7f)
-  - Authenticated.
-
-### List SMB Shares
-  - List SMB shares as an anonymous user.
-```CSS
-▶ crackmapexec smb 10.10.11.174 --shares -u 'anonymous' -p ''
-```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1ba2510f-bdfa-45e9-9867-0fdd34b07360)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4e4b28af-77c6-4469-b2ef-816b7af15917)
 
 #### List Contents
   - List contents of the shared directory `support-tools`
@@ -282,7 +271,9 @@ echo "10.10.11.174    dc.dupport.htb support.htb" | sudo tee -a /etc/hosts
 ▶ smb: \> dir
 ▶ smb: \> get UserInfo.exe.zip
 ```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/ed628e06-7e8d-4082-834c-6c0fef76b46c)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/71bcc2b8-6c09-4579-b255-90b0d0d8570a)
+
+---
 
 #### List Zip Contents
 ```CSS
