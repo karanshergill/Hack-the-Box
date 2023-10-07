@@ -275,35 +275,10 @@ SMB         dc.dupport.htb  445    DC               [*] Windows 10.0 Build 20348
 
 ---
 
-#### List Zip Contents
-```CSS
-▶ unzip -l UserInfo.exe.zip
+## Unzip
+```shell
+mkdir UserInfo
+unzip UserInfo.exe.zip -d UserInfo
 ```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2fd08177-b803-4cfe-8cd0-e82a0eb24902)
-
-#### Unzip Archive
-```CSS
-▶ mkdir userinfo
-▶ unzip UserInfo.exe.zip -d userinfo
-```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/1624d058-b88b-4417-b134-6c393792701e)
-
-```CSS
-▶ tree
-```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/9859ca19-6a6e-4e08-9fe6-29dbf28d5b68)
-
-```CSS
-▶ file UserInfo.exe
-```
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/a4ed6261-20bd-46ee-b5a0-5c04b62e8691)
-
----
-
-### Decompile EXE File
-  - Decompile `UserInfo.exe` using `ILSpy` to read the source code.
-  - Open the file `UserInfo.exe` in `ILSpy`. 
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/006a73ab-227d-457f-b769-5f6daf98e776)
-![image](https://github.com/0xhardyboy/Hack-the-Box/assets/83878909/2443765c-1eec-4efb-9285-66d32009753e)
-
-  - LDAP Credentials:  
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9c031459-e535-4be1-a0bf-f84ba9db9f5c)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/36985a17-7e22-4098-adbe-11ef5be505f0)
