@@ -312,6 +312,13 @@ sudo neo4j console
 ```shell
 bloodhound
 ```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7c44e2fa-d851-4ea2-bd79-99c0b7fcc2f5)
-
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/708f5728-49ff-418f-a352-4c7054c45848)
 BloodHound did not find any useful results.
+
+```shell
+ldapsearch -H ldap://support.htb -D 'ldap@support.htb' -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b 'dc=support,dc=htb' > ldap.out
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/890ce297-1b5d-4b2e-93be-d51ac9532ebf)
+```shell
+password: Ironside47pleasure40Watchful
+```
