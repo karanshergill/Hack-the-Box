@@ -283,3 +283,8 @@ unzip UserInfo.exe.zip -d UserInfo
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9c031459-e535-4be1-a0bf-f84ba9db9f5c)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/36985a17-7e22-4098-adbe-11ef5be505f0)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4b024eb5-7e29-4e6a-ac0a-1691f853a93e)
+
+```shell
+UserInfo ./UserInfo.exe find -first pwnstuff
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/54f8dabe-d785-4401-bc6e-41546c626403)
