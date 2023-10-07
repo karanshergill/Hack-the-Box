@@ -312,3 +312,6 @@ sudo neo4j console
 ```shell
 bloodhound
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/7c44e2fa-d851-4ea2-bd79-99c0b7fcc2f5)
+
+BloodHound did not find any useful results.
