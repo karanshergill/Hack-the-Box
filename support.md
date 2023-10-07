@@ -289,5 +289,5 @@ unzip UserInfo.exe.zip -d UserInfo
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/54f8dabe-d785-4401-bc6e-41546c626403)
 ```shell
-LDPA Creds: support:nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
+LDPA Creds: ldap:nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
 ```
