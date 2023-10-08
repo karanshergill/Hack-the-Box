@@ -133,3 +133,40 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 16.82 seconds
 ```
+
+```shell
+feroxbuster -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --no-recursion --dont-extract-links -u http://10.10.10.25:8000 --random-agent```
+```shell
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://10.10.10.25:8000
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
+ 👌  Status Codes          │ All Status Codes!
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET       10l       15w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET       18l       38w      621c http://10.10.10.25:8000/
+301      GET        9l       15w      165c http://10.10.10.25:8000/css => http://10.10.10.25:8000/css/
+302      GET        1l        4w       28c http://10.10.10.25:8000/admin => http://10.10.10.25:8000/login
+302      GET        1l        4w       28c http://10.10.10.25:8000/logout => http://10.10.10.25:8000/login
+200      GET       30l       78w     1171c http://10.10.10.25:8000/login
+302      GET        1l        4w       28c http://10.10.10.25:8000/agent => http://10.10.10.25:8000/login
+[####################] - 79s    26584/26584   0s      found:6       errors:0      
+[####################] - 78s    26584/26584   340/s   http://10.10.10.25:8000/     
+```
+
+TCP 8000
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/2d7b8665-72f3-4208-b93d-2052e429b879)
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/249197b9-330a-4c99-87b8-d3cac61b9ce4)
+
