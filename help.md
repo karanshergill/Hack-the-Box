@@ -142,3 +142,6 @@ Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 17.36 seconds
 ```
+
+TCP 80 - HTTP
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a98828d4-4165-4b0e-98d2-2076cc3fed22)
