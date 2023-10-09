@@ -208,4 +208,5 @@ Exploits
 searchsploit helpdeskz
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/38476700-c1d5-402e-b5e2-01fa9ca93c82)
-
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0e056840-2ec1-4eb7-b655-2a45f0755cc1)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1d554e7f-1f36-4dd8-a809-7fc85efa8639)
