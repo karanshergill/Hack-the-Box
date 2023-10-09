@@ -202,3 +202,14 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 86s    26584/26584   307/s   http://help.htb/support/    
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b2fe2ec8-f2bb-4e2c-92b6-af15b77ea7ac)
+
+Exploits
+```shell
+searchsploit helpdeskz
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/38476700-c1d5-402e-b5e2-01fa9ca93c82)
+```shell
+searchsploit -x php/webapps/40300.py
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a8bb6f08-cf74-4d68-8f25-00b50310c8e9)
+
