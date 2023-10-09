@@ -145,3 +145,60 @@ Nmap done: 1 IP address (1 host up) scanned in 17.36 seconds
 
 TCP 80 - HTTP
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a98828d4-4165-4b0e-98d2-2076cc3fed22)
+
+```shell
+feroxbuster -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --no-recursion --dont-extract-links -u http://help.htb/support --random-agent
+```
+```shell
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://help.htb/support
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
+ 👌  Status Codes          │ All Status Codes!
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ Random
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+403      GET       11l       32w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+404      GET        9l       32w        -c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+301      GET        9l       28w      313c http://help.htb/support/images => http://help.htb/support/images/
+301      GET        9l       28w      306c http://help.htb/support => http://help.htb/support/
+301      GET        9l       28w      309c http://help.htb/support/js => http://help.htb/support/js/
+301      GET        9l       28w      315c http://help.htb/support/includes => http://help.htb/support/includes/
+301      GET        9l       28w      314c http://help.htb/support/uploads => http://help.htb/support/uploads/
+301      GET        9l       28w      310c http://help.htb/support/css => http://help.htb/support/css/
+301      GET        9l       28w      312c http://help.htb/support/views => http://help.htb/support/views/
+301      GET        9l       28w      318c http://help.htb/support/controllers => http://help.htb/support/controllers/
+404      GET        9l       33w      292c http://help.htb/support/reports%20list
+404      GET        9l       33w      294c http://help.htb/support/external%20files
+404      GET        9l       33w      293c http://help.htb/support/style%20library
+404      GET        9l       33w      290c http://help.htb/support/modern%20mom
+404      GET        9l       34w      295c http://help.htb/support/neuf%20giga%20photo
+404      GET        9l       33w      294c http://help.htb/support/web%20references
+404      GET        9l       33w      290c http://help.htb/support/my%20project
+404      GET        9l       33w      290c http://help.htb/support/contact%20us
+404      GET        9l       33w      291c http://help.htb/support/donate%20cash
+404      GET        9l       33w      289c http://help.htb/support/home%20page
+404      GET        9l       33w      294c http://help.htb/support/press%20releases
+404      GET        9l       33w      294c http://help.htb/support/privacy%20policy
+404      GET        9l       33w      294c http://help.htb/support/planned%20giving
+404      GET        9l       33w      288c http://help.htb/support/site%20map
+404      GET        9l       33w      288c http://help.htb/support/about%20us
+404      GET        9l       33w      292c http://help.htb/support/bequest%20gift
+404      GET        9l       33w      289c http://help.htb/support/gift%20form
+404      GET        9l       34w      296c http://help.htb/support/life%20income%20gift
+404      GET        9l       33w      290c http://help.htb/support/new%20folder
+404      GET        9l       33w      291c http://help.htb/support/site%20assets
+404      GET        9l       34w      291c http://help.htb/support/what%20is%20new
+[####################] - 87s    26584/26584   0s      found:29      errors:0      
+[####################] - 86s    26584/26584   307/s   http://help.htb/support/    
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b2fe2ec8-f2bb-4e2c-92b6-af15b77ea7ac)
