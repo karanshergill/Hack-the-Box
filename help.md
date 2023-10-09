@@ -1,1 +1,1 @@
-# HAck the Box - Help
+# Hack the Box - Help
