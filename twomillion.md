@@ -235,3 +235,9 @@ Login:
 
 Dashboard:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/87fd652c-b3c1-4e0f-b0c1-0241d02b5f48)
+
+API Routes:
+```shell
+curl -s http://2million.htb/api/v1 -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" | jq
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/72f89f63-f675-43ae-8f24-568f52a21466)
