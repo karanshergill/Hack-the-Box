@@ -47,7 +47,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.22 seconds
 ```shell
 rustscan -u 5000 -p 22,80 -a 10.10.11.221 -- -Pn -sCV
 ```
-```shelll
+```shell
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
 | .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
@@ -130,4 +130,64 @@ Completed NSE at 04:34, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 13.17 seconds
+```
+```shell
+ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt -u http://2million.htb -H 'Host: FUZZ.2million.htb' -mc 200
+```
+```shell
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.0.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://2million.htb
+ :: Wordlist         : FUZZ: /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+ :: Header           : Host: FUZZ.2million.htb
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200
+________________________________________________
+
+:: Progress: [4989/4989] :: Job [1/1] :: 139 req/sec :: Duration: [0:00:24] :: Errors: 0 ::
+```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0ef99e9a-bc56-47c0-8bf3-7181152fe9fb)
+
+```shell
+feroxbuster -u http://2million.htb -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt --no-recursion --dont-extract-links --status-codes 200
+```
+```shell
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://2million.htb
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
+ 👌  Status Codes          │ [200]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.10.0
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 🚫  Do Not Recurse        │ true
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+200      GET       94l      293w     4527c http://2million.htb/register
+200      GET       80l      232w     3704c http://2million.htb/login
+200      GET     1242l     3326w    64952c http://2million.htb/
+200      GET       46l      152w     1674c http://2million.htb/404
+200      GET       96l      285w     3859c http://2million.htb/invite
+[####################] - 2m     26584/26584   0s      found:5       errors:0      
+[####################] - 2m     26584/26584   249/s   http://2million.htb/ 
 ```
