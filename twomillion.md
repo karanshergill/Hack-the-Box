@@ -226,3 +226,12 @@ Base64 Decode:
 echo "Sk9TTUItS1pMSzUtNUdVQTQtWkdOQTE=" | base64 -d
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/56698181-2f81-4852-85af-ce55033f31f3)
+
+Signup:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/35957105-5b23-4642-b962-17c5cf2a0a23)
+
+Login:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/befaa95b-3fd1-4970-8351-60b2bf1a16e2)
+
+Dashboard:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/87fd652c-b3c1-4e0f-b0c1-0241d02b5f48)
