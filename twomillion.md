@@ -206,3 +206,9 @@ Obfuscated:
 
 Deobfuscated:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a7b6186a-dcca-4445-8bd0-236d7cbe4e77)
+
+Curl:
+```curl
+curl -s -X POST http://2million.htb/api/v1/invite/how/to/generate | jq
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cad026bd-b85f-40ce-b0f7-5ddd8907343d)
