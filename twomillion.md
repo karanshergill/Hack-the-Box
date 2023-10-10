@@ -197,3 +197,7 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 [####################] - 2m     26584/26584   0s      found:5       errors:0      
 [####################] - 2m     26584/26584   249/s   http://2million.htb/ 
 ```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/22f029f5-2c93-4b03-9de0-3c684d5401cd)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5e6f1090-1cf2-4ea3-935f-8f88533a0ebe)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bee450a0-fc56-4811-8c53-8948c7ccad21)
