@@ -212,3 +212,11 @@ Curl:
 curl -s -X POST http://2million.htb/api/v1/invite/how/to/generate | jq
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/cad026bd-b85f-40ce-b0f7-5ddd8907343d)
+
+ROT13 Decode:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/82b1b064-3394-4f89-8678-790a919b566c)
+
+```curl
+curl -s -X POST http://2million.htb/api/v1/invite/generate | jq
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/be3e9c4b-031d-4b11-8a33-56ec014abc81)
