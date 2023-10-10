@@ -220,3 +220,9 @@ ROT13 Decode:
 curl -s -X POST http://2million.htb/api/v1/invite/generate | jq
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/be3e9c4b-031d-4b11-8a33-56ec014abc81)
+
+Base64 Decode:
+```shell
+echo "Sk9TTUItS1pMSzUtNUdVQTQtWkdOQTE=" | base64 -d
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/56698181-2f81-4852-85af-ce55033f31f3)
