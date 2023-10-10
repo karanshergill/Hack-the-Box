@@ -112,9 +112,15 @@ PORT   STATE SERVICE REASON  VERSION
 |   256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519)
 |_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOtuEdoYxTohG80Bo6YCqSzUY9+qbnAFnhsk4yAZNqhM
 80/tcp open  http    syn-ack nginx
+|_http-trane-info: Problem with XML parsing of /evox/about
 | http-methods: 
-|_  Supported Methods: GET HEAD POST OPTIONS
-|_http-title: Did not follow redirect to http://2million.htb/
+|_  Supported Methods: GET
+|_http-favicon: Unknown favicon MD5: 20E95ACF205EBFDCB6D634B7440B0CEE
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-title: Hack The Box :: Penetration Testing Labs
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 NSE: Script Post-scanning.
