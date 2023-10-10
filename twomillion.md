@@ -200,4 +200,9 @@ by Ben "epi" Risher 🤓                 ver: 2.10.0
 
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/22f029f5-2c93-4b03-9de0-3c684d5401cd)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5e6f1090-1cf2-4ea3-935f-8f88533a0ebe)
+
+Obfuscated:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bee450a0-fc56-4811-8c53-8948c7ccad21)
+
+Deobfuscated:
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a7b6186a-dcca-4445-8bd0-236d7cbe4e77)
