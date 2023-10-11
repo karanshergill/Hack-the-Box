@@ -543,4 +543,15 @@ HTB Godfather
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9beecbd1-37e4-4bff-b665-1e9f26b6aba4)
 
+OS and Kernel Version
+```shell
+admin@2million:~$ uname -a
+Linux 2million 5.15.70-051570-generic #202209231339 SMP Fri Sep 23 13:45:37 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+admin@2million:~$ cat /etc/lsb-release 
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=22.04
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Ubuntu 22.04.2 LTS"
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/53694f5d-c5f0-4d21-8f5b-a8cf0d2da9c0)
 
