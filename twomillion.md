@@ -206,3 +206,51 @@ Obfuscated:
 
 Deobfuscated:
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a7b6186a-dcca-4445-8bd0-236d7cbe4e77)
+
+Curl:
+```shell
+> curl -vvv -X POST http://2million.htb/api/v1/invite/how/to/generate \
+* processing: http://2million.htb/api/v1/invite/how/to/generate
+*   Trying 10.10.11.221:80...
+* Connected to 2million.htb (10.10.11.221) port 80
+> GET /api/v1/invite/how/to/generate HTTP/1.1
+> Host: 2million.htb
+> User-Agent: curl/8.2.1
+> Accept: */*
+> 
+< HTTP/1.1 405 Method Not Allowed
+< Server: nginx
+< Date: Wed, 11 Oct 2023 03:48:47 GMT
+< Content-Type: text/html; charset=UTF-8
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Set-Cookie: PHPSESSID=icm6l9ofqbmqc97pfvsngse3k0; path=/
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< 
+* Connection #0 to host 2million.htb left intact
+> curl -vvv http://2million.htb/api/v1/invite/how/to/generate \
+> -X POST
+* processing: http://2million.htb/api/v1/invite/how/to/generate
+*   Trying 10.10.11.221:80...
+* Connected to 2million.htb (10.10.11.221) port 80
+> POST /api/v1/invite/how/to/generate HTTP/1.1
+> Host: 2million.htb
+> User-Agent: curl/8.2.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx
+< Date: Wed, 11 Oct 2023 03:49:43 GMT
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Set-Cookie: PHPSESSID=bcuos6e1in30m1038kev7hb1be; path=/
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< 
+* Connection #0 to host 2million.htb left intact
+{"0":200,"success":1,"data":{"data":"Va beqre gb trarengr gur vaivgr pbqr, znxr n CBFG erdhrfg gb \/ncv\/i1\/vaivgr\/trarengr","enctype":"ROT13"},"hint":"Data is encrypted ... We should probbably check the encryption type in order to decrypt it..."}%   
+```
