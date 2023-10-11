@@ -516,6 +516,31 @@ SSH as Admin
 ```shell
 > ssh admin@10.10.11.221
 ```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ea4e5ad6-dabe-4d6f-8852-e472d626f212)
 
-![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ebcb43a4-e951-43f1-b9a3-683ad93da8f3)
+Admin Email
+```shell
+admin@2million:~$ cd /var/mail/
+admin@2million:/var/mail$ ls -lah
+total 12K
+drwxrwsr-x  2 root  mail  4.0K Jun  2 23:20 .
+drwxr-xr-x 14 root  root  4.0K Jun  6 10:22 ..
+-rw-r--r--  1 admin admin  540 Jun  2 23:20 admin
+admin@2million:/var/mail$ cat admin 
+From: ch4p <ch4p@2million.htb>
+To: admin <admin@2million.htb>
+Cc: g0blin <g0blin@2million.htb>
+Subject: Urgent: Patch System OS
+Date: Tue, 1 June 2023 10:45:22 -0700
+Message-ID: <9876543210@2million.htb>
+X-Mailer: ThunderMail Pro 5.2
+
+Hey admin,
+
+I'm know you're working as fast as you can to do the DB migration. While we're partially down, can you also upgrade the OS on our web host? There have been a few serious Linux kernel CVEs already this year. That one in OverlayFS / FUSE looks nasty. We can't get popped by that.
+
+HTB Godfather
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/9beecbd1-37e4-4bff-b665-1e9f26b6aba4)
+
 
