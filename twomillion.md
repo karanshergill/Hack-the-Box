@@ -512,3 +512,10 @@ DB_USERNAME=admin
 DB_PASSWORD=SuperDuperPass123
 ```
 
+SSH as Admin
+```shell
+> ssh admin@10.10.11.221
+```
+
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ebcb43a4-e951-43f1-b9a3-683ad93da8f3)
+
