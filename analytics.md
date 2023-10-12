@@ -167,3 +167,7 @@ c2ggLWkgPiYgL2Rldi90Y3AvMTAuMTAuMTQuMjMvMTMzNyAwPiYxCg==
 creds: metalytics:An4lytics_ds20223#
 ```
 ![image](https://github.com/karanshergill/Hack-the-Box/assets/83878909/31231793-fd25-4e45-994b-2623f742f1bd)
+
+Privilege Escalation
+
+Pending!
