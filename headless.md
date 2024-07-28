@@ -104,3 +104,7 @@ by Ben "epi" Risher 🤓                 ver: 2.10.4
 ```
 ![image](https://github.com/user-attachments/assets/1c522809-9751-4e4f-b49b-c7f9034f057d)
 
+![image](https://github.com/user-attachments/assets/a4648355-36a0-49ec-b160-1b5beb5e8ecf)
+
+Response in browser:
+![image](https://github.com/user-attachments/assets/c542ecdc-e135-43eb-99f5-6dd7d2656af8)
