@@ -92,3 +92,7 @@ by Ben "epi" Risher 🤓                 ver: 2.10.4
 [####################] - 23s     4724/4724    202/s   http://10.10.11.8:5000/          
 ```
 ![image](https://github.com/user-attachments/assets/bd0d8ceb-9499-4274-9c79-631a16e67878)
+
+![image](https://github.com/user-attachments/assets/1a624181-7897-4005-bb0f-13fac63fc3ec)
+
+![image](https://github.com/user-attachments/assets/dc1d7bcf-ed72-4b3a-ba99-d321a19c5282)
