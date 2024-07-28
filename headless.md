@@ -45,6 +45,15 @@ Nmap done: 1 IP address (1 host up) scanned in 0.27 seconds
 ```
 
 ![image](https://github.com/user-attachments/assets/3f8bfa63-74f2-45f5-bf57-0aa09aab8802)
+```http
+HTTP/1.1 200 OK
+Server: Werkzeug/2.2.2 Python/3.11.2
+Date: Sun, 28 Jul 2024 13:12:35 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2799
+Set-Cookie: is_admin=InVzZXIi.uAlmXlTvm8vyihjNaPDWnvB_Zfs; Path=/
+Connection: close
+```
 ![image](https://github.com/user-attachments/assets/7f735d8a-1c76-438f-869c-7a5ef2bcf244)
 ![image](https://github.com/user-attachments/assets/cf9b28f5-7fae-4ee1-9987-c46479da10be)
 ![image](https://github.com/user-attachments/assets/480f95e3-2ac1-4db1-a882-33250ba8247f)
