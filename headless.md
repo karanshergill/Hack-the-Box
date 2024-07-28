@@ -52,3 +52,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.27 seconds
 fname=Ricky&lname=1337&email=ricky%40hackme.com&phone=9879879870&message=<script>alert('XSS')</script>
 ```
 ![image](https://github.com/user-attachments/assets/b43b8b99-2efb-4feb-a712-da2b2e09dd35)
+
+```shell
+feroxbuster -u http://10.10.11.8:5000 -w /usr/share/seclists/Discovery/Web-Content/RobotsTxtPaths-Trickest-Wordlists/top-10000-websites.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects --filter-words 259
+```
