@@ -54,5 +54,31 @@ fname=Ricky&lname=1337&email=ricky%40hackme.com&phone=9879879870&message=<script
 ![image](https://github.com/user-attachments/assets/b43b8b99-2efb-4feb-a712-da2b2e09dd35)
 
 ```shell
-feroxbuster -u http://10.10.11.8:5000 -w /usr/share/seclists/Discovery/Web-Content/RobotsTxtPaths-Trickest-Wordlists/top-10000-websites.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects --filter-words 259
+feroxbuster -u http://10.10.11.8:5000 -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt --no-recursion --dont-extract-links --random-agent --filter-status 404 --redirects
+```
+```shell
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.4
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://10.10.11.8:5000
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt
+ 👌  Status Codes          │ All Status Codes!
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.10.4
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🔎  Extract Links         │ true
+ 🏁  HTTP methods          │ [GET]
+ 🔃  Recursion Depth       │ 4
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+404      GET        5l       31w      207c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET       93l      179w     2363c http://10.10.11.8:5000/support
+200      GET       96l      259w     2799c http://10.10.11.8:5000/
+500      GET        5l       37w      265c http://10.10.11.8:5000/dashboard
+[####################] - 24s     4725/4725    0s      found:3       errors:0      
+[####################] - 23s     4724/4724    202/s   http://10.10.11.8:5000/          
 ```
