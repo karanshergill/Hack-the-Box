@@ -43,3 +43,5 @@ PORT     STATE SERVICE REASON
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.27 seconds
 ```
+
+![image](https://github.com/user-attachments/assets/3f8bfa63-74f2-45f5-bf57-0aa09aab8802)
