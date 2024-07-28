@@ -82,3 +82,4 @@ by Ben "epi" Risher 🤓                 ver: 2.10.4
 [####################] - 24s     4725/4725    0s      found:3       errors:0      
 [####################] - 23s     4724/4724    202/s   http://10.10.11.8:5000/          
 ```
+![image](https://github.com/user-attachments/assets/bd0d8ceb-9499-4274-9c79-631a16e67878)
