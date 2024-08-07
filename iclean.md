@@ -366,4 +366,5 @@ Generate QR:
 ![image](https://github.com/user-attachments/assets/a87912a3-53f4-4f1f-ab08-62f3bd50b88c)
 
 Invoice:
+![image](https://github.com/user-attachments/assets/b429e32d-1f60-47ed-ac29-cf0401be7706)
 ![image](https://github.com/user-attachments/assets/bff2a218-5d89-4e59-b6b7-f0b2f602875d)
