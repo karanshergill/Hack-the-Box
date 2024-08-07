@@ -355,9 +355,10 @@ Using the cookie access the `/dashboard` endpoint:
 
 
 Generate Invoice:
-```
-Invoice ID generated: 2186596245
+![image](https://github.com/user-attachments/assets/7dcfa7ef-7892-4e59-baab-92a378eb1f2b)
 
 ```
-![image](https://github.com/user-attachments/assets/7dcfa7ef-7892-4e59-baab-92a378eb1f2b)
+Invoice ID generated: 2186596245
+```
+
 ![image](https://github.com/user-attachments/assets/313c4a9d-076a-4bcc-b805-6daebffe9bfc)
