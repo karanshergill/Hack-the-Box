@@ -162,3 +162,19 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 14.37 seconds
            Raw packets sent: 102 (8.282KB) | Rcvd: 40 (3.244KB)
 ```
+
+## HTTP 80
+- http://capiclean.htb
+
+```http
+HTTP/1.1 200 OK
+Date: Wed, 07 Aug 2024 06:03:22 GMT
+Server: Werkzeug/2.3.7 Python/3.10.12
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 3431
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+```
+![image](https://github.com/user-attachments/assets/8ae7d66c-fa7a-4205-925c-da43ba8c21e8)
