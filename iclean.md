@@ -165,7 +165,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.37 seconds
 
 ## HTTP 80
 - http://capiclean.htb
-
 ```http
 HTTP/1.1 200 OK
 Date: Wed, 07 Aug 2024 06:03:22 GMT
@@ -178,3 +177,87 @@ Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 ```
 ![image](https://github.com/user-attachments/assets/8ae7d66c-fa7a-4205-925c-da43ba8c21e8)
+
+- http://capiclean.htb/quote
+![image](https://github.com/user-attachments/assets/fbc29c20-8a65-4e9c-92e9-dedcbe0a0d67)
+![image](https://github.com/user-attachments/assets/feb1d62e-d4d1-46cd-8adb-bb7291e875d9)
+![image](https://github.com/user-attachments/assets/5f02546b-d144-4557-833f-00d64f1dfef3)
+
+-http://capiclean.htb/login
+![image](https://github.com/user-attachments/assets/142ddacb-2288-49bb-9f7b-04653b460c1a)
+
+## Content Discovery
+```
+feroxbuster -u http://capiclean.htb -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt
+```
+```
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.10.4
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://capiclean.htb
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt
+ 👌  Status Codes          │ All Status Codes!                                                                                                                                     
+ 💥  Timeout (secs)        │ 7                                                                                                                                                     
+ 🦡  User-Agent            │ feroxbuster/2.10.4                                                                                                                                    
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml                                                                                                                    
+ 🔎  Extract Links         │ true                                                                                                                                                  
+ 🏁  HTTP methods          │ [GET]                                                                                                                                                 
+ 🔃  Recursion Depth       │ 4                                                                                                                                                     
+───────────────────────────┴──────────────────────                                                                                                                                 
+ 🏁  Press [ENTER] to use the Scan Management Menu™                                                                                                                                
+──────────────────────────────────────────────────                                                                                                                                 
+404      GET        5l       31w      207c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter                                            
+200      GET      213l     1380w    11324c http://capiclean.htb/static/js/jquery-3.0.0.min.js                                                                                      
+200      GET      369l     1201w     9644c http://capiclean.htb/static/js/custom.js                                                                                                
+200      GET        5l       52w     2215c http://capiclean.htb/static/images/linkden-icon.png                                                                                     
+200      GET        5l       46w     1384c http://capiclean.htb/static/images/search-icon.png                                                                                      
+200      GET      446l     1347w    11748c http://capiclean.htb/static/css/responsive.css                                                                                          
+200      GET        3l       50w     1779c http://capiclean.htb/static/images/map-icon.png                                                                                         
+200      GET       15l      110w     7039c http://capiclean.htb/static/images/logo.png                                                                                             
+200      GET        5l       57w     2262c http://capiclean.htb/static/images/instagram-icon.png                                                                                   
+200      GET        4l       53w     1995c http://capiclean.htb/static/images/fb-icon.png                                                                                          
+200      GET       90l      181w     2237c http://capiclean.htb/quote                                                                                                              
+200      GET      154l      399w     6084c http://capiclean.htb/choose                                                                                                             
+200      GET        3l       17w     1061c http://capiclean.htb/static/images/favicon.png                                                                                          
+200      GET        4l       53w     2119c http://capiclean.htb/static/images/twitter-icon.png                                                 
+200      GET        3l       56w     2181c http://capiclean.htb/static/images/icon-1.png                                                       
+200      GET       88l      159w     2106c http://capiclean.htb/login                                                                          
+200      GET      130l      355w     5267c http://capiclean.htb/about                                                                          
+200      GET        6l       44w     1013c http://capiclean.htb/static/css/owl.theme.default.min.css                                           
+200      GET        6l       73w     3248c http://capiclean.htb/static/css/owl.carousel.min.css                                                
+200      GET        8l       63w     2400c http://capiclean.htb/static/images/call-icon.png                                                    
+200      GET        3l       39w     1008c http://capiclean.htb/static/images/toggle-icon.png                                                  
+200      GET        8l       53w     2064c http://capiclean.htb/static/images/icon-2.png                                                       
+200      GET        6l      352w    19190c http://capiclean.htb/static/js/popper.min.js                                                        
+200      GET      193l      579w     8592c http://capiclean.htb/services                                                                       
+200      GET      183l      564w     8109c http://capiclean.htb/team                                                                           
+200      GET      872l     1593w    16549c http://capiclean.htb/static/css/style.css                      
+200      GET      162l      931w    80352c http://capiclean.htb/static/images/img-4.png             
+200      GET      180l     1125w    84070c http://capiclean.htb/static/images/img-6.png         
+200      GET      167l      997w    83329c http://capiclean.htb/static/images/img-7.png                        
+200      GET        1l      870w    42839c http://capiclean.htb/static/css/jquery.mCustomScrollbar.min.css
+200      GET        7l      896w    70808c http://capiclean.htb/static/js/bootstrap.bundle.min.js              
+200      GET        1l      153w    22994c http://capiclean.htb/static/js/jquery.fancybox.min.js                                               
+302      GET        5l       22w      189c http://capiclean.htb/dashboard => http://capiclean.htb/
+200      GET      229l     1282w    93801c http://capiclean.htb/static/images/img-5.png                                                        
+200      GET        5l      478w    45479c http://capiclean.htb/static/js/jquery.mCustomScrollbar.concat.min.js                                
+200      GET      332l     1920w   144448c http://capiclean.htb/static/images/img-2.png                                                        
+200      GET        5l     1287w    87088c http://capiclean.htb/static/js/jquery.min.js                                                        
+302      GET        5l       22w      189c http://capiclean.htb/logout => http://capiclean.htb/                                                
+200      GET     3448l    10094w    89992c http://capiclean.htb/static/js/owl.carousel.js                                                      
+200      GET        7l     1604w   140421c http://capiclean.htb/static/css/bootstrap.min.css                                                   
+405      GET        5l       20w      153c http://capiclean.htb/sendMessage                                                                    
+403      GET        9l       28w      278c http://capiclean.htb/server-status                                                                  
+200      GET      605l     3945w   299706c http://capiclean.htb/static/images/img-3.png
+200      GET        0l        0w   918708c http://capiclean.htb/static/js/plugin.js                                                           
+200      GET        0l        0w   155871c http://capiclean.htb/static/images/img-1.png
+200      GET      349l     1208w    16697c http://capiclean.htb/
+[####################] - 12s     4773/4773    0s      found:45      errors:4      
+[####################] - 12s     4724/4724    396/s   http://capiclean.htb/                                                                    
+```
+![image](https://github.com/user-attachments/assets/841e5497-b81d-45e0-be99-b514ee84d582)
+
+
