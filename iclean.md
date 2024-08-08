@@ -371,3 +371,8 @@ Invoice:
 
 ![image](https://github.com/user-attachments/assets/b429e32d-1f60-47ed-ac29-cf0401be7706)
 ![image](https://github.com/user-attachments/assets/bff2a218-5d89-4e59-b6b7-f0b2f602875d)
+
+## Server Side Template Injection
+![image](https://github.com/user-attachments/assets/87142d11-44c5-48df-ab67-5f98a321c57b)
+![image](https://github.com/user-attachments/assets/e1d92853-c7d2-43b5-ae55-5ebeca5b6e03)
+
